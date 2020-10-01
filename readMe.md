@@ -19,6 +19,17 @@
     - [Writing Code on Browser Console](#writing-code-on-browser-console)
       - [Console.log](#consolelog)
       - [Console.log with Multiple Arguments](#consolelog-with-multiple-arguments)
+      - [Comments](#comments)
+      - [Syntax](#syntax)
+    - [Arithmetics](#arithmetics)
+  - [Code Editor](#code-editor)
+    - [Installing Visual Studio Code](#installing-visual-studio-code)
+    - [How to Use Visual Studio Code](#how-to-use-visual-studio-code)
+- [Adding JavaScript to a Web Page](#adding-javascript-to-a-web-page)
+  - [Inline Script](#inline-script)
+  - [Internal Script](#internal-script)
+  - [External Script](#external-script)
+  - [Multiple External Scripts](#multiple-external-scripts)
 - [JavaScript Refresher](#javascript-refresher)
 - [1. Variables](#1-variables)
 - [2. Data types](#2-data-types)
@@ -189,7 +200,7 @@ In this step by step 30 Days React challenge, you will learn React which is one 
 React can do everything that JavaJavaScript can do. React can be used **_to add interactivity to websites, to develop mobile apps, desktop applications, games_**.
 I believe you will learn quite a lot in the next 30 days and your programming and problem solving skills will also be improved significantly.
 
-I will use converstational English and less jargons to write this challenge. The content will be continousely updated. If you find a typo or grammar mistakes don't suprised because I don't do any proof read before I publish it. I would recommond you to focus on the main message of the challenge instead of the English and some minor mistakes. I really appreciate if you send me pull requests for improvement and remember to pull first from master before you send pull requests.
+I will use converstational English and less jargons to write this challenge. The content will be continousely updated. If you find a typo or grammar mistakes don't suprised because I don't do any proof read before I publish it. I would recommond you to focus on the main message of the challenge instead of the English and some minor mistakes. I really appreciate if you send me pull requests for improvement and remember to pull first from master before you send pull requests. Most of the images I have used in this challenge came from 30DaysOfJavaScript challenge therefore you may need to rename file names and folders 30DaysOfReact
 
 ## Requirements
 
@@ -291,6 +302,227 @@ console.log('Welcome', 'to', 30, 'Days', 'Of', 'JavaScript')
 ```
 
 As you can see from the snippet code above, _console.log()_ can take multiple arguments. It is recommended to use as many console.log() prints to check what is happening in your code but don't keep all console.log() tests on your code forever. Make your life easy by keeping the browser console open.
+
+##### Comments
+
+We add comments to our code. Comments are very important to make code more readable and to leave remarks in our code. JavaScript does not execute the comment part of our code.In JavaScript, any text line starting with // in JavaScript is a comment, and anything enclosed like this /\* \*/ is also a comment.
+
+**Example: Single Line Comment**
+
+// This is the first comment  
+ // This is the second comment  
+ // I am a single line comment
+
+**Example: Multiline Comment**
+
+/_
+This is a multiline comment  
+ Multiline comments can take multiple lines  
+ JavaScript is the language of the web  
+ _/
+
+##### Syntax
+
+Programming languages are similar to human languages. English or many other language uses words, phrases, sentences,compound sentences and other more to convey a meaningful message. The English meaning of syntax is _the arrangement of words and phrases to create well-formed sentences in a language_. The technical definition of syntax is _the structure of statements in a computer language._ Programing languages have syntax. JavaScript is a programming language and like other programming languages it has its own syntax. If we do not write a syntax that JavaScript understands, it will raise different types of errors. We will explore different kinds of JavaScript errors later. For now, let us see syntax errors.
+
+![Error](images/raising_syntax_error.png)
+
+I made a deliberate mistake. As a result, the console raises syntax errors. Actually, the syntax is very informative. It informs what type of mistake was made. By reading the error feedback guideline, we can correct the syntax and fix the problem. The process of identifying and removing errors from a program is called debugging. Let us fix the errors:
+
+```js
+console.log('Hello, World!')
+console.log('Hello, World!')
+```
+
+So far, we saw how to display text using the _console.log()_. If we are printing text or string using _console.log()_, the text has to be inside the single quotes, double quotes, or a backtick quotes.
+**Example:**
+
+```js
+console.log('Hello, World!')
+console.log('Hello, World!')
+console.log(`Hello, World!`)
+```
+
+#### Arithmetics
+
+Now, let us practice more writing JavaScript codes using _console.log()_ on google chrome console for number data types.
+In addition to the text, we can also do mathematical calculations using JavaScript. Let us do the following simple calculations.
+The console can directly take arguments without the **_console.log()_** function. However, it is included in this introduction because most of this challenge would be taking place in a text editor where the usage of the function would be mandatory. You can play around directly with instructions on the console.
+
+![Arithmetic](images/arithmetic.png)
+
+```js
+console.log(2 + 3) // Addition
+console.log(3 - 2) // Subtraction
+console.log(2 * 3) // Multiplication
+console.log(3 / 2) // Division
+console.log(3 % 2) // Modulus - finding remainder
+console.log(3 ** 2) // Exponentiation 3 ** 2 == 3 * 3
+```
+
+### Code Editor
+
+We can write our codes on the browser console, but it won't do for bigger projects. In a real working environment, developers use different code editors to write their codes. In this 30 days JavaScript challenge, we will be using Visual Studio Code.
+
+#### Installing Visual Studio Code
+
+Visual studio code is a very popular open-source text editor. I would recommend to [download Visual Studio Code](https://code.visualstudio.com/), but if you are in favor of other editors, feel free to follow with what you have.
+
+![Vscode](images/vscode.png)
+
+If you installed Visual Studio Code, let us start using it.
+
+#### How to Use Visual Studio Code
+
+Open the Visual Studio Code by double-clicking its icon. When you open it, you will get this kind of interface. Try to interact with the labeled icons.
+
+![Vscode ui](./images/vscode_ui.png)
+
+![Vscode add project](./images/adding_project_to_vscode.png)
+
+![Vscode open project](./images/opening_project_on_vscode.png)
+
+![script file](images/scripts_on_vscode.png)
+
+![Installing Live Server](images/vsc_live_server.png)
+
+![running script](./images/running_script.png)
+
+![coding running](./images/launched_on_new_tab.png)
+
+## Adding JavaScript to a Web Page
+
+JavaScript can be added to a web page in three different ways:
+
+- **_Inline script_**
+- **_Internal script_**
+- **_External script_**
+- **_Multiple External scripts_**
+
+The following sections show different ways of adding JavaScript code to your web page.
+
+### Inline Script
+
+Create a project folder on your desktop or in any location, name it 30DaysOfJS and create an **_index.html_** file in the project folder. Then paste the following code and open it in a browser, for example [Chrome](https://www.google.com/chrome/).
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>30DaysOfScript:Inline Script</title>
+  </head>
+  <body>
+    <button onclick="alert('Welcome to 30DaysOfJavaScript!')">Click Me</button>
+  </body>
+</html>
+```
+
+Now, you just wrote your first inline script. We can create a pop up alert message using the _alert()_ built-in function.
+
+### Internal Script
+
+The internal script can be written in the _head_ or the _body_, but it is preferred to put it on the body of the HTML document.
+First, let us write on the head part of the page.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>30DaysOfScript:Internal Script</title>
+    <script>
+      console.log('Welcome to 30DaysOfJavaScript')
+    </script>
+  </head>
+  <body></body>
+</html>
+```
+
+This is how we write an internal script most of the time. Writing the JavaScript code in the body section is the most preferred option. Open the browser console to see the output from the console.log()
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>30DaysOfScript:Internal Script</title>
+  </head>
+  <body>
+    <button onclick="alert('Welcome to 30DaysOfJavaScript!');">Click Me</button>
+    <script>
+      console.log('Welcome to 30DaysOfJavaScript')
+    </script>
+  </body>
+</html>
+```
+
+Open the browser console to see the output from the console.log()
+
+![js code from vscode](./images/js_code_vscode.png)
+
+### External Script
+
+Similar to the internal script, the external script link can be on the header or body, but it is preferred to put it in the body.
+First, we should create an external JavaScript file with .js extension. All files ending with .js extension. All files ending with .js extension are JavaScript files. Create a file named introduction.js inside your project directory and write the following code and link this .js file at the bottom of the body.
+
+```js
+console.log('Welcome to 30DaysOfJavaScript')
+```
+
+External scripts in the _head_:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>30DaysOfJavaScript:External script</title>
+    <script src="introduction.js"></script>
+  </head>
+  <body></body>
+</html>
+```
+
+External scripts in the _body_:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>30DaysOfJavaScript:External script</title>
+  </head>
+  <body>
+    //it could be in the header or in the body // Here is the recommended place
+    to put the external script
+    <script src="introduction.js"></script>
+  </body>
+</html>
+```
+
+Open the browser console to see the output of the console.log()
+
+### Multiple External Scripts
+
+We can also link multiple external JavaScript files to a web page.
+Create a helloworld.js file inside the 30DaysOfJS folder and write the following code.
+
+```js
+console.log('Hello, World!')
+```
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiple External Scripts</title>
+  </head>
+  <body>
+    <script src="./helloworld.js"></script>
+    <script src="./introduction.js"></script>
+  </body>
+</html>
+```
+
+_Your main.js file should be below all other scripts_. It is very important to remember this.
+
+![Multiple Script](./images/multiple_script.png)
 
 Congratulations! You have completed the setup you need to get started with React, but before we dive in to React let's do JavaScript refresher. If you are very comfortable with JavaScript you may skip the JavaScript refresher. The JavaScript refresh section is vast and it may take more than one day. From my experience people usually stuck in React because their JavaScript knowledge is very shallow therefore to fill that gap all the necessary JavaScript feature which can be use in React are cover in the JavaScript refresher. In the JavaScript refresher there are many questions and you are not required to solve them.
 
