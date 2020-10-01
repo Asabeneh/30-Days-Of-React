@@ -9,7 +9,6 @@
 
 🧡🧡🧡 HAPPY CODING 🧡🧡🧡
 
-- [Introduction](#introduction)
 - [Requirements](#requirements)
 - [Setup](#setup)
   - [Install Node.js](#install-nodejs)
@@ -191,7 +190,7 @@
 
 </div>
 
-## Introduction
+<h1 style="color:#61dbfb;text-transform:uppercase;">Introduction</h1>
 
 **Congratulations** on deciding to participate in 30 days of React programming challenge. In this challenge you will learn everything you need to use to develop a React application. In the end of the challenge you will get a 30DaysOfReact programming challenge completion certificate. In case you need help or if you would like to help others you may join the [telegram group](https://t.me/thirtydaysofreact).
 
@@ -200,7 +199,8 @@ In this step by step 30 Days React challenge, you will learn React which is one 
 React can do everything that JavaJavaScript can do. React can be used **_to add interactivity to websites, to develop mobile apps, desktop applications, games_**.
 I believe you will learn quite a lot in the next 30 days and your programming and problem solving skills will also be improved significantly.
 
-I will use converstational English and less jargons to write this challenge. The content will be continousely updated. If you find a typo or grammar mistakes don't suprised because I don't do any proof read before I publish it. I would recommond you to focus on the main message of the challenge instead of the English and some minor mistakes. I really appreciate if you send me pull requests for improvement and remember to pull first from master before you send pull requests. Most of the images I have used in this challenge came from 30DaysOfJavaScript challenge therefore you may need to rename file names and folders 30DaysOfReact
+I will use converstational English and less jargons to write this challenge. The content will be continousely updated. If you find a typo or grammar mistakes don't suprised because I don't do any proof read before I publish it. I would recommond you to focus on the main message of the challenge instead of the English and some minor mistakes. I really appreciate if you send me pull requests for improvement and remember to pull first from master before you send pull requests. Most of the images I have used in this challenge came from 30DaysOfJavaScript challenge therefore you may need to rename file names and folders 30DaysOfReact.
+If 
 
 ## Requirements
 
