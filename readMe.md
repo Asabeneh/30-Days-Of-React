@@ -2,10 +2,10 @@
 <img align="right" width="100%"  src="./images/30_days_of_react.jpg" />
 </div>
 
-| # Day |                                                              Topics                                                               |
-| ----- | :-------------------------------------------------------------------------------------------------------------------------------: |
-| 01    | [Introduction](./readMe.)<br> [Requirements](#requirements)<br> [Setup](#setup)<br> [JavaScript Refresher](#javascript-refresher) |
-| 02    |                                                          [React](#React)                                                          |
+| # Day |                                                                Topics                                                                 |
+| ----- | :-----------------------------------------------------------------------------------------------------------------------------------: |
+| 01    | [Introduction](#introduction)<br> [Requirements](#requirements)<br> [Setup](#setup)<br> [JavaScript Refresher](#javascript-refresher) |
+| 02    |                                                            [React](#React)                                                            |
 
 🧡🧡🧡 HAPPY CODING 🧡🧡🧡
 
@@ -155,7 +155,6 @@
     - [Exercises Level 1](#exercises-level-1-3)
     - [Exercises Level 2](#exercises-level-2-3)
     - [Exercises Level 3](#exercises-level-3-3)
-
 
 <div align="center">
   <h1> 30 Days Of React</h1>
