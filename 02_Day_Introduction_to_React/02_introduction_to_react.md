@@ -25,15 +25,16 @@
     - [React vs Vue popularity in October 2020](#react-vs-vue-popularity-in-october-2020)
     - [React vs Vue popularity in February 2020](#react-vs-vue-popularity-in-february-2020)
   - [3. JSX](#3-jsx)
-  - [JSX Element](#jsx-element)
-  - [Rendering JSX Element](#rendering-jsx-element)
-- [Style and className](#style-and-classname)
-  - [Exercises: What is React?](#exercises-what-is-react)
-  - [Exercises: Why React?](#exercises-why-react)
-  - [Exercises: JSX](#exercises-jsx)
-  - [Exercises:JSX Elements](#exercisesjsx-elements)
-  - [Exercises - Inline Style](#exercises---inline-style)
-  - [Exercises - Internal Styles](#exercises---internal-styles)
+    - [JSX Element](#jsx-element)
+    - [Rendering JSX Element](#rendering-jsx-element)
+    - [Style and className in JSX](#style-and-classname-in-jsx)
+  - [Exercises](#exercises)
+    - [Exercises: What is React?](#exercises-what-is-react)
+    - [Exercises: Why React?](#exercises-why-react)
+    - [Exercises: JSX](#exercises-jsx)
+    - [Exercises:JSX Elements](#exercisesjsx-elements)
+    - [Exercises - Inline Style](#exercises---inline-style)
+    - [Exercises - Internal Styles](#exercises---internal-styles)
 
 ## Getting Started React
 
@@ -65,27 +66,27 @@ To summarize:
 
 ### 2. Why React?
 
-React is one of the most popular JavaScript library. Many developers and companies have been using it for the last couple of years. Its popularity has been growing fast and it has a huge community. How do we measure popularity? One measure of popularity could be GitHub repository stars, watchers and fork.Let us compare the popularity of [react](https://github.com/facebook/react) and [vue](https://github.com/vuejs/vue). As of today, the popularity between the two most popular JavaScript looks like as follows. From the diagram, you can speculate the most popular JavaScript library. You may look at the number of watchers, stars and forks for both React and Vue. These alone will not be a very good measure of popularity but still it tells something. If I have to recommend another JavaScript library next to React would  Vue.js.
+React is one of the most popular JavaScript library. Many developers and companies have been using it for the last couple of years. Its popularity has been growing fast and it has a huge community. How do we measure popularity? One measure of popularity could be GitHub repository stars, watchers and fork.Let us compare the popularity of [react](https://github.com/facebook/react) and [vue](https://github.com/vuejs/vue). As of today, the popularity between the two most popular JavaScript looks like as follows. From the diagram, you can speculate the most popular JavaScript library. You may look at the number of watchers, stars and forks for both React and Vue. These alone will not be a very good measure of popularity but still it tells something. If I have to recommend another JavaScript library next to React would Vue.js.
 
 #### React vs Vue popularity in October 2020
 
 React Official GitHub Repository
 
-![React Populary](../images/react_repo_1_oct_2020.png)
+![React Popularity October 2020](../images/react_repo_1_oct_2020.png)
 
 Vue Official GitHub Repository
 
-![Vue Popularity](../images/vue_repo_1_oct_2020.png)
+![Vue Popularity October 2020](../images/vue_repo_1_oct_2020.png)
 
 #### React vs Vue popularity in February 2020
 
 React Official GitHub Repository
 
-![React Populary](../images/react_popularity.png)
+![React Popularity February 2020](../images/react_popularity.png)
 
 Vue Official GitHub Repository
 
-![Vue Popularity](../images/vue_popularity.png)
+![Vue Popularity February 2020](../images/vue_popularity.png)
 
 Why we choose to use react ? We use react because of the following reasons:
 
@@ -106,7 +107,7 @@ const jsxElement = <h1>I am a JSX element</h1>
 
 The above strange looking code seems a JavaScrip but it is not JavaScript and it seems an HTML but not completely an HTML element. It is a mix of JavaScript and and an HTML element. JSX can allow us to use HTML in JavaScript. The HTML element in the above JSX is h1.
 
-### JSX Element
+#### JSX Element
 
 As you have seen in the above example, JSX has a JavaScript and HTML like syntax. JSX element could be a single HTML element or many HTML elements wrapped in a parent HTML element.
 
@@ -148,7 +149,7 @@ const header = (
 
 As you can see the header element is a parent element for all the inner HTML elements and JSX must be wrapped by an outer parent element. Without the header HTML element or other parent HTML element the above JSX is invalid.
 
-### Rendering JSX Element
+#### Rendering JSX Element
 
 To render a JSX element to HTML document. We should create on index HTML. The index.html is the only HTML file you will have in any react application. That is why every react application is a single page application. Let us create an index.html file.
 
@@ -462,9 +463,9 @@ Let us apply some style to our JSX elements and see the result.
 
 Now, lets us apply style the header part only [Live on code pen](https://codepen.io/Asabeneh/full/ZEGBYBG).
 
-## Style and className
+#### Style and className in JSX
 
-So far, we did apply any style. Now, let us add style to our JSX elements. Inline style became very popular after the emergence of react. Let us add border to the header JSX element.
+So far, we did not apply any style in the JSX elements. Now, let us add style to our JSX elements. Inline style became very popular after the emergence of react. Let us add border to the header JSX element.
 
 To add style to a JSX element we use inline style or className. We inject the style object using {}. Every CSS properties become a key and every CSS properties value become value for the the object. For instance, in the example below, border is a key and '2px solid orange' is a value, color is a key and 'black' is a value, fontSize is a key and '18px' is a value. All two word CSS properties will change to camelCase when we use them as key in the CSS object in react or JavaScript.[Live on code pen](https://codepen.io/Asabeneh/full/ZEGBYbY).
 
@@ -779,7 +780,9 @@ Instead of style object using regular styling method is more easier than the abo
 
 🌕 You are awesome. You have just completed day 2 challenges and you are two steps ahead on your way to greatness. Now do some exercises for your brain and for your muscle.
 
-### Exercises: What is React?
+### Exercises
+
+#### Exercises: What is React?
 
 1. What is React?
 2. What is a library ?
@@ -790,13 +793,13 @@ Instead of style object using regular styling method is more easier than the abo
 7. What is React Virtual DOM
 8. What does a web application or a website(composed of) may have?
 
-### Exercises: Why React?
+#### Exercises: Why React?
 
 1. Why you chose to use react?
 2. What measures do you use to know popularity ?
 3. What is more popular, react or Vue ?
 
-### Exercises: JSX
+#### Exercises: JSX
 
 1. What is an HTML element ?
 2. Write is a self closing HTML element ?
@@ -805,20 +808,20 @@ Instead of style object using regular styling method is more easier than the abo
 5. What is babel ?
 6. What is a transpiler?
 
-### Exercises:JSX Elements
+#### Exercises:JSX Elements
 
 1. What is JSX element
 2. Write your name in JSX element and store it in a name variable
 3. Write a JSX element which displays your full name, country, title, gender, email, phone number. Use h1 for the name and p for the rest of the information and store it in a user variable.
 4. Write a footer JSX element
 
-### Exercises - Inline Style
+#### Exercises - Inline Style
 
 1. Create a style object for the main JSX
 2. Create a style object for the footer and app JSX
 3. Add more styles to the JSX elements
 
-### Exercises - Internal Styles
+#### Exercises - Internal Styles
 
 1. Apply different styles to your JSX elements
 
