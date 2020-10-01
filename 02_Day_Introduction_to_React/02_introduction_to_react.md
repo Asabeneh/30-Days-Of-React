@@ -476,7 +476,7 @@ const header = (
     <h1>Getting Started React</h1>
     <h2>JavaScript Library</h2>
     <p>Asabeneh Yetayeh</p>
-    <p>Feb 10, 2020</p>
+    <p>Oct 1, 2020</p>
   </header>
 )
 
@@ -558,7 +558,7 @@ Now, you know how to use the inline style and how to use className and let us st
             <h1>Getting Started React</h1>
             <h2>JavaScript Library</h2>
             <p>Asabeneh Yetayeh</p>
-            <p>Feb 10, 2020</p>
+            <p>Oct 1, 2020</p>
           </div>
         </header>
       )
@@ -573,7 +573,7 @@ Now, you know how to use the inline style and how to use className and let us st
           <ul>
             <li>HTML</li>
             <li>CSS</li>
-            <li> JavaScript</li>
+            <li>JavaScript</li>
           </ul>
         </main>
       )
@@ -725,7 +725,7 @@ Instead of style object using regular styling method is more easier than the abo
             <h1>Getting Started React</h1>
             <h2>JavaScript Library</h2>
             <p>Instructor: Asabeneh Yetayeh</p>
-            <p>Date: Feb 10, 2020</p>
+            <p>Date: Oct 1, 2020</p>
           </div>
         </header>
       )
