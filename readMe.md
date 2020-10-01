@@ -5,7 +5,8 @@
 | # Day |                                                                Topics                                                                 |
 | ----- | :-----------------------------------------------------------------------------------------------------------------------------------: |
 | 01    | [Introduction](#introduction)<br> [Requirements](#requirements)<br> [Setup](#setup)<br> [JavaScript Refresher](#javascript-refresher) |
-| 02    |                                                            [React](#React)                                                            |
+| 02    |                            [Getting Started React](./02_Introduction_to_React/02_introduction_to_react.md)                            |
+| 02    |                                            [Setting Up](./03_Setting_Up/03_Setting_Up.md)                                             |
 
 🧡🧡🧡 HAPPY CODING 🧡🧡🧡
 
@@ -44,7 +45,7 @@
     - [Creating static values with fill](#creating-static-values-with-fill)
     - [Concatenating array using concat](#concatenating-array-using-concat)
     - [Getting array length](#getting-array-length)
-    - [Getting index an element in arr array](#getting-index-an-element-in-arr-array)
+    - [Getting index of an element in an array](#getting-index-of-an-element-in-an-array)
     - [Getting last index of an element in array](#getting-last-index-of-an-element-in-array)
     - [Checking array](#checking-array)
     - [Converting array to string](#converting-array-to-string)
@@ -80,7 +81,7 @@
     - [4. for of](#4-for-of)
     - [5. forEach](#5-foreach)
     - [6. for in](#6-for-in)
-  - [Intrupting a loop and skipping an item](#intrupting-a-loop-and-skipping-an-item)
+  - [Interrupting  a loop and skipping an item](#interrupting-a-loop-and-skipping-an-item)
     - [break](#break)
     - [continue](#continue)
   - [Conclusions](#conclusions)
@@ -532,13 +533,14 @@ Congratulations! You have completed the setup you need to get started with React
 
 ## 1. Variables
 
-We use var, let and const to declare a variable. The var is functions scope, however let and const are block scope. In this challenge we use ES6 and above features of JavaScript.
+We use *var*, *let* and *const* to declare a variable. The *var* is functions scope, however *let* and *const* are block scope. In this challenge we use ES6 and above features of JavaScript. Avoid using *var*. 
 
 ```js
 let firstName = 'Asabeneh'
 firstName = 'Eyob'
 
-const PI = 3.14 // Not allowed to reasign PI to a new value
+const PI = 3.14 // Not allowed to reassign PI to a new value
+// PI = 3.
 ```
 
 ## 2. Data types
@@ -862,7 +864,7 @@ const numbers = [1, 2, 3, 4, 5]
 console.log(numbers.length) // -> 5 is the size of the array
 ```
 
-#### Getting index an element in arr array
+#### Getting index of an element in an array
 
 indexOf:To check if an item exist in an array. If it exists it returns the index else it returns -1.
 
@@ -1498,7 +1500,7 @@ switch (true) {
 
 Ternary operator is very common in _React_. It is a short way to write if else statement. In React we use ternary operator in many cases.
 
-To generalize, tenary operator is another way to write conditionals.
+To generalize, ternary operator is another way to write conditionals.
 
 ```js
 let isRaining = true
@@ -1511,7 +1513,7 @@ isRaining
 
 #### Exercises: Level 1
 
-1. Get user input using prompt(“Enter your age:”). If user is 18 or older , give feedback:'You are old enough to drive' but if not 18 give another feedback stating to wait for the number of years he neds to turn 18.
+1. Get user input using prompt(“Enter your age:”). If user is 18 or older , give feedback:'You are old enough to drive' but if not 18 give another feedback stating to wait for the number of years he needs to turn 18.
 
    ```sh
    Enter your age: 30
@@ -1617,7 +1619,7 @@ Loops:
 - forEach
 - for in
 
-A loop usually goes until the condition gets false. But sometimes we like to intrupt the loop or skip an item during iteration. We use _break_ to intrupt the loop and _continue_ to skip an item during iteration.
+A loop usually goes until the condition gets false. But sometimes we like to interrupt the loop or skip an item during iteration. We use _break_ to interrupt the loop and _continue_ to skip an item during iteration.
 
 ### Types of Loops
 
@@ -1789,7 +1791,7 @@ for (const key in user) {
 }
 ```
 
-### Intrupting a loop and skipping an item
+### Interrupting  a loop and skipping an item
 
 #### break
 
@@ -4720,7 +4722,7 @@ HTML document is structured as a JavaScript Object. Every HTML element has a dif
 
 When it comes to React we do not directly manipulate the DOM instead React Virtual DOM will take care of update all necessary changes.
 
-So do not directly manipuate the DOM if you are using react. The only place we directly touch the DOM is here at the index.html. React is a single page application because all the components will be rendered on the index.html page and there will not be any other HTML in the entire React Application. You don't have to know DOM very well to use react but recommended to know.
+So do not directly manipulate the DOM if you are using react. The only place we directly touch the DOM is here at the index.html. React is a single page application because all the components will be rendered on the index.html page and there will not be any other HTML in the entire React Application. You don't have to know DOM very well to use react but recommended to know.
 
 ```html
 <!DOCTYPE html>
@@ -4732,12 +4734,20 @@ So do not directly manipuate the DOM if you are using react. The only place we d
   </head>
 
   <body>
-    <div class="root"></div>
+    <!-- <div class="root"></div> -->
+    <div id="root"></div>
 
     <script>
-      const root = document.querySelector('.root')
-      const root = document.getElementById('root')
+      // const root = document.querySelector('.root')
+      // const root = document.getElementById('root')
+      const root = document.querySelector('#root')
     </script>
   </body>
 </html>
 ```
+
+🌕 You are amazing! You have just completed day 1 challenge and you are on your way to greatness. Now you are a JavaScript Ninja and ready to dive in to React.
+
+🎉 CONGRATULATIONS ! 🎉
+
+[Day 2 >>](./02_Day_Introduction_to_React/02_introduction_to_react.md)
