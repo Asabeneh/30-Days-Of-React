@@ -793,14 +793,14 @@ Instead of style object using regular styling method is more easier than the abo
 ### Exercises: Why React?
 
 1. Why you chose to use react?
-2. How measures do you use to know popularity ?
+2. What  measures do you use to know popularity ?
 3. What is more popular, react or Vue ?
 
 ### Exercises: JSX
 
 1. What is an HTML element ?
-2. Write is a self closing elements ?
-3. What is HTML attribute, write some HTML attributes
+2. Write is a self closing HTML element ?
+3. What is HTML attribute, write some HTML attributes ?
 4. What is JSX ?
 5. What is babel ?
 6. What is a transpiler?
@@ -808,7 +808,7 @@ Instead of style object using regular styling method is more easier than the abo
 ### Exercises:JSX Elements
 
 1. What is JSX element
-2. Write you name in JSX element and store it in a name variable
+2. Write your name in JSX element and store it in a name variable
 3. Write a JSX element which displays your full name, country, title, gender, email, phone number. Use h1 for the name and p for the rest of the information and store it in a user variable.
 4. Write a footer JSX element
 

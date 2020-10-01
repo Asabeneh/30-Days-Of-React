@@ -5,7 +5,7 @@
 | # Day |                                                                Topics                                                                 |
 | ----- | :-----------------------------------------------------------------------------------------------------------------------------------: |
 | 01    | [Introduction](#introduction)<br> [Requirements](#requirements)<br> [Setup](#setup)<br> [JavaScript Refresher](#javascript-refresher) |
-| 02    |                            [Getting Started React](./02_Introduction_to_React/02_introduction_to_react.md)                            |
+| 02    |                            [Getting Started React](./02_Day_Introduction_to_React/02_introduction_to_react.md)                            |
 | 02    |                                            [Setting Up](./03_Setting_Up/03_Setting_Up.md)                                             |
 
 🧡🧡🧡 HAPPY CODING 🧡🧡🧡
