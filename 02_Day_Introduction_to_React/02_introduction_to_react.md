@@ -65,7 +65,7 @@ To summarize:
 
 ### 2. Why React?
 
-React is one of the most popular JavaScript library. Many developers and companies have been using it for the last couple of years. Its popularity has been growing fast and it has a huge community. How do we measure popularity? One measure of popularity could be GitHub repository stars, watchers and fork.Let us compare the popularity of [react](https://github.com/facebook/react) and [vue](https://github.com/vuejs/vue). As of today, the popularity between the two most popular JavaScript looks like as follows. From the diagram, you can speculate the most popular JavaScript library. You may look at the number of watchers, stars and forks for both React and Vue. These alone will not be a very good measure of popularity but still it tells something. If I have recommend another JavaScript library instead of React I would recommend Vue.js.
+React is one of the most popular JavaScript library. Many developers and companies have been using it for the last couple of years. Its popularity has been growing fast and it has a huge community. How do we measure popularity? One measure of popularity could be GitHub repository stars, watchers and fork.Let us compare the popularity of [react](https://github.com/facebook/react) and [vue](https://github.com/vuejs/vue). As of today, the popularity between the two most popular JavaScript looks like as follows. From the diagram, you can speculate the most popular JavaScript library. You may look at the number of watchers, stars and forks for both React and Vue. These alone will not be a very good measure of popularity but still it tells something. If I have to recommend another JavaScript library next to React would  Vue.js.
 
 #### React vs Vue popularity in October 2020
 
@@ -793,7 +793,7 @@ Instead of style object using regular styling method is more easier than the abo
 ### Exercises: Why React?
 
 1. Why you chose to use react?
-2. What  measures do you use to know popularity ?
+2. What measures do you use to know popularity ?
 3. What is more popular, react or Vue ?
 
 ### Exercises: JSX
