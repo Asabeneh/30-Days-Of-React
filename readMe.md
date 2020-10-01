@@ -166,6 +166,7 @@
     - [Exercises Level 1](#exercises-level-1-3)
     - [Exercises Level 2](#exercises-level-2-3)
     - [Exercises Level 3](#exercises-level-3-3)
+- [13 Document Object Model(DOM)](#13-document-object-modeldom)
 
 <div align="center">
   <h1> 30 Days Of React</h1>
@@ -201,7 +202,7 @@ React can do everything that JavaJavaScript can do. React can be used **_to add 
 I believe you will learn quite a lot in the next 30 days and your programming and problem solving skills will also be improved significantly.
 
 I will use converstational English and less jargons to write this challenge. The content will be continousely updated. If you find a typo or grammar mistakes don't suprised because I don't do any proof read before I publish it. I would recommond you to focus on the main message of the challenge instead of the English and some minor mistakes. I really appreciate if you send me pull requests for improvement and remember to pull first from master before you send pull requests. Most of the images I have used in this challenge came from 30DaysOfJavaScript challenge therefore you may need to rename file names and folders 30DaysOfReact.
-If you are good at arrays, loops, functions, objects, functional programming, destructuring and spreading and class then  you will be able to follow the challenge properly. Otherwise, I strongly recommend you to check [30DaysOfJavaScript](https://github.com/Asabeneh/30-Days-Of-React).
+If you are good at arrays, loops, functions, objects, functional programming, destructuring and spreading and class then you will be able to follow the challenge properly. Otherwise, I strongly recommend you to check [30DaysOfJavaScript](https://github.com/Asabeneh/30-Days-Of-React).
 
 ## Requirements
 
@@ -4711,4 +4712,32 @@ Mode:  (26, 5)
 Variance:  17.5
 Standard Deviation:  4.2
 Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
+```
+
+## 13 Document Object Model(DOM)
+
+HTML document is structured as a JavaScript Object. Every HTML element has a different properties which can help us to manipulate it. It is possible to get, create, append or remove HTML elements using JavaScript.
+
+When it comes to React we do not directly manipulate the DOM instead React Virtual DOM will take care of update all necessary changes.
+
+So do not directly manipuate the DOM if you are using react. The only place we directly touch the DOM is here at the index.html. React is a single page application because all the components will be rendered on the index.html page and there will not be any other HTML in the entire React Application. You don't have to know DOM very well to use react but recommended to know.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React App</title>
+  </head>
+
+  <body>
+    <div class="root"></div>
+
+    <script>
+      const root = document.querySelector('.root')
+      const root = document.getElementById('root')
+    </script>
+  </body>
+</html>
 ```
