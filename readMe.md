@@ -5,7 +5,7 @@
 | # Day |                                                                Topics                                                                 |
 | ----- | :-----------------------------------------------------------------------------------------------------------------------------------: |
 | 01    | [Introduction](#introduction)<br> [Requirements](#requirements)<br> [Setup](#setup)<br> [JavaScript Refresher](#javascript-refresher) |
-| 02    |                            [Getting Started React](./02_Day_Introduction_to_React/02_introduction_to_react.md)                            |
+| 02    |                          [Getting Started React](./02_Day_Introduction_to_React/02_introduction_to_react.md)                          |
 | 02    |                                            [Setting Up](./03_Setting_Up/03_Setting_Up.md)                                             |
 
 🧡🧡🧡 HAPPY CODING 🧡🧡🧡
@@ -81,7 +81,7 @@
     - [4. for of](#4-for-of)
     - [5. forEach](#5-foreach)
     - [6. for in](#6-for-in)
-  - [Interrupting  a loop and skipping an item](#interrupting-a-loop-and-skipping-an-item)
+  - [Interrupting a loop and skipping an item](#interrupting-a-loop-and-skipping-an-item)
     - [break](#break)
     - [continue](#continue)
   - [Conclusions](#conclusions)
@@ -533,7 +533,7 @@ Congratulations! You have completed the setup you need to get started with React
 
 ## 1. Variables
 
-We use *var*, *let* and *const* to declare a variable. The *var* is functions scope, however *let* and *const* are block scope. In this challenge we use ES6 and above features of JavaScript. Avoid using *var*. 
+We use _var_, _let_ and _const_ to declare a variable. The _var_ is functions scope, however _let_ and _const_ are block scope. In this challenge we use ES6 and above features of JavaScript. Avoid using _var_.
 
 ```js
 let firstName = 'Asabeneh'
@@ -1791,7 +1791,7 @@ for (const key in user) {
 }
 ```
 
-### Interrupting  a loop and skipping an item
+### Interrupting a loop and skipping an item
 
 #### break
 
@@ -4741,10 +4741,13 @@ So do not directly manipulate the DOM if you are using react. The only place we 
       // const root = document.querySelector('.root')
       // const root = document.getElementById('root')
       const root = document.querySelector('#root')
+      root.innerHTML = <h1>Welcome to 30 Days Of React </h1>
     </script>
   </body>
 </html>
 ```
+
+Check out there result on [codepen](https://codepen.io/Asabeneh/full/vYGqQxP)
 
 🌕 You are amazing! You have just completed day 1 challenge and you are on your way to greatness. Now you are a JavaScript Ninja and ready to dive in to React.
 
