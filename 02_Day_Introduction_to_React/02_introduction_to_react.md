@@ -29,6 +29,11 @@
     - [Commenting JSX element](#commenting-jsx-element)
     - [Rendering JSX Element](#rendering-jsx-element)
     - [Style and className in JSX](#style-and-classname-in-jsx)
+    - [Injecting data to JSX Element](#injecting-data-to-jsx-element)
+      - [Injecting a string to JSX Element](#injecting-a-string-to-jsx-element)
+    - [Injecting a number to JSX Element](#injecting-a-number-to-jsx-element)
+      - [Injecting an array to JSX Element](#injecting-an-array-to-jsx-element)
+      - [Injecting an object to JSX Element](#injecting-an-object-to-jsx-element)
   - [Exercises](#exercises)
     - [Exercises: What is React?](#exercises-what-is-react)
     - [Exercises: Why React?](#exercises-why-react)
@@ -36,6 +41,7 @@
     - [Exercises: JSX Elements](#exercises-jsx-elements)
     - [Exercises: Inline Style](#exercises-inline-style)
     - [Exercises: Internal Styles](#exercises-internal-styles)
+    - [Exercise: Inject data to JSX](#exercise-inject-data-to-jsx)
 
 ## Getting Started React
 
@@ -45,7 +51,7 @@ Prerequisite to get started with React. You should have a good understanding of 
 - CSS
 - JavaScript
 
-If you have the above skills you will enjoy doing React. React for Everyone contains anything you need to know about react. In every section, it has some exercises and mini-projects and it is recommended to work on them. This 30 Days Of React challenge will help you learn the latest version of React and the old version step by step. The topics are broken down into 30 days, where each day contains several topics with easy-to-understand explanations, real-world examples and many hands on exercises.
+If you have the above skills you will enjoy doing React. The 30 Days Of React challenge contains anything you need to know about react. In every section, it has some exercises and mini-projects and it is recommended to work on them. This 30 Days Of React challenge will help you learn the latest version of React and the old version step by step. The topics are broken down into 30 days, where each day contains several topics with easy-to-understand explanations, real-world examples and many hands on exercises.
 This challenge is designed for beginners and professionals who want to build a web application using React and JavaScript.
 
 ### 1. What is React?
@@ -813,6 +819,741 @@ Instead of style object using regular styling method is more easier than the abo
 
 ![Internal Style](../images/internal_style.png)
 
+#### Injecting data to JSX Element
+
+So far, we used static data on the JSX elements but we can also pass different data types as a dynamic data. The dynamic data could be string, number, boolean, array or object. Let us see each of the data types step by step. To inject data to a JSX we use the {} bracket.
+
+```js
+const welcome = 'Welcome to 30 Days Of React'
+const title = 'Getting Started React'
+const subtitle = 'JavaScript Library'
+const authorFirstName = 'Asabeneh'
+const authorLastName = 'Yetayeh'
+const date = 'Oct 1, 2020'
+
+// JSX element, header
+const header = (
+  <header>
+    <div className='header-wrapper'>
+      <h1>{welcome}</h1>
+      <h2>{title}</h2>
+      <h3>{subtitle}</h3>
+      <p>
+        Instructor: {authorFirstName} {authorLastName}
+      </p>
+      <small>Date: {date}</small>
+    </div>
+  </header>
+)
+```
+
+Similar to the header JSX element we can implement to main and footer JSX element.
+
+##### Injecting a string to JSX Element
+
+In this section we only inject only strings
+
+```js
+const welcome = 'Welcome to 30 Days Of React'
+const title = 'Getting Started React'
+const subtitle = 'JavaScript Library'
+const authorFirstName = 'Asabeneh'
+const authorLastName = 'Yetayeh'
+const date = 'Oct 2, 2020'
+
+// JSX element, header
+
+// JSX element, header
+const header = (
+  <header>
+    <div className='header-wrapper'>
+      <h1>{welcome}</h1>
+      <h2>{title}</h2>
+      <h3>{subtitle}</h3>
+      <p>
+        Instructor: {authorFirstName} {authorLastName}
+      </p>
+      <small>Date: {date}</small>
+    </div>
+  </header>
+)
+```
+
+#### Injecting a number to JSX Element
+
+```js
+const numOne = 3
+const numTwo = 2
+
+const result = (
+  <p>
+    {numOne} + {numTwo} = {numOne + numTwo}
+  </p>
+)
+
+const yearBorn = 1820
+const currentYear = new Date().getFullYear()
+const age = currentYear - yearBorn
+const personAge = <p> {age}</p>
+```
+
+As you can see in the above example, it is possible to do some arithmetic calculation and ternary operations.
+
+##### Injecting an array to JSX Element
+
+To give example for an array, let us change the HTML, CSS, JavaScript an array and inject it to the main JSX element below. We will cover in much detail in rendering lists section.
+
+```js
+const techs = ['HTML', 'CSS', 'JavaScript']
+
+// JSX element, main
+const main = (
+  <main>
+    <div className='main-wrapper'>
+      <p>
+        Prerequisite to get started{' '}
+        <strong>
+          <em>react.js</em>
+        </strong>
+        :
+      </p>
+      <ul>{techs}</ul>
+    </div>
+  </main>
+)
+```
+
+##### Injecting an object to JSX Element
+
+We can inject string, number, boolean, array data to JSX but we can not directly inject object. We should extract object values first or destructure the content of the object before we inject to the JSX element. For instance, let us write firstName and lastName inside an object and extract them out to use them inside JSX.
+
+Now, let us put everything together. Here in the example below, the data is injected dynamically to the JSX. [Live on code pen](https://codepen.io/Asabeneh/full/YzXWgpZ)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>React For Everyone</title>
+    <style>
+      /* == General style === */
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        line-height: 1.5;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        color: black;
+      }
+
+      .root {
+        min-height: 100%;
+        position: relative;
+      }
+
+      .header-wrapper,
+      .main-wrapper,
+      .footer-wrapper {
+        width: 85%;
+        margin: auto;
+      }
+
+      .header-wrapper,
+      .main-wrapper {
+        padding: 10px;
+        margin: 2px auto;
+      }
+
+      h1 {
+        font-size: 70px;
+        font-weight: 300;
+      }
+
+      h2,
+      h3 {
+        font-weight: 300;
+      }
+
+      header {
+        background-color: #61dbfb;
+        padding: 25;
+        padding: 10px;
+      }
+
+      main {
+        padding: 10px;
+        padding-bottom: 60px;
+        /* Height of the footer */
+      }
+
+      ul {
+        margin-left: 15px;
+      }
+
+      ul li {
+        list-style: none;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        /* Height of the footer */
+        background: #6cf;
+      }
+
+      .footer-wrapper {
+        font-weight: 400;
+        text-align: center;
+        line-height: 60px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      // To get the root element from the HTML document
+      const rootElement = document.querySelector('.root')
+      // JSX element, header
+      const welcome = 'Welcome to 30 Days Of React'
+      const title = 'Getting Started React'
+      const subtitle = 'JavaScript Library'
+      const author = {
+        firstName: 'Asabeneh',
+        lastName: 'Yetayeh',
+      }
+      const date = 'Oct 2, 2020'
+
+      // JSX element, header
+      const header = (
+        <header>
+          <div className='header-wrapper'>
+            <h1>{welcome}</h1>
+            <h2>{title}</h2>
+            <h3>{subtitle}</h3>
+            <p>
+              Instructor: {author.firstName} {author.lastName}
+            </p>
+            <small>Date: {date}</small>
+          </div>
+        </header>
+      )
+
+      const numOne = 3
+      const numTwo = 2
+
+      const result = (
+        <p>
+          {numOne} + {numTwo} = {numOne + numTwo}
+        </p>
+      )
+
+      const yearBorn = 1820
+      const currentYear = 2020
+      const age = currentYear - yearBorn
+      const personAge = (
+        <p>
+          {' '}
+          {author.firstName} {author.lastName} is {age} years old
+        </p>
+      )
+
+      // JSX element, main
+      const techs = ['HTML', 'CSS', 'JavaScript']
+
+      // JSX element, main
+      const main = (
+        <main>
+          <div className='main-wrapper'>
+            <p>
+              Prerequisite to get started{' '}
+              <strong>
+                <em>react.js</em>
+              </strong>
+              :
+            </p>
+            <ul>{techs}</ul>
+            {result}
+            {personAge}
+          </div>
+        </main>
+      )
+
+      const copyRight = 'Copyright 2020'
+
+      // JSX element, footer
+      const footer = (
+        <footer>
+          <div className='footer-wrapper'>
+            <p>{copyRight}</p>
+          </div>
+        </footer>
+      )
+
+      // JSX element, app
+      const app = (
+        <div className='app'>
+          {header}
+          {main}
+          {footer}
+        </div>
+      )
+
+      // we render the JSX element using the ReactDOM package
+      ReactDOM.render(app, rootElement)
+    </script>
+  </body>
+</html>
+```
+
+![Dynamic Data](images/dynamic_data.png)
+
+As you can see the lists are all in one line. Therefore, we should format the list the way we want before we inject to JSX. In order to format the list we should modify the array before we will inject to JSX. We can modify the array using _map_. As a react developer you should have a very good understanding of functional programming(map, filter, reduce, find, some, every). If you don't have good understanding of functional programming check out day 1.
+
+```js
+const techs = ['HTML', 'CSS', 'JavaScript']
+const techsFormatted = techs.map((tech) => <li>{tech}</li>)
+```
+
+In the following code example, the list is now containing list elements and formatted properly.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>React For Everyone</title>
+    <style>
+      /* == General style === */
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        line-height: 1.5;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        color: black;
+      }
+
+      .root {
+        min-height: 100%;
+        position: relative;
+      }
+
+      .header-wrapper,
+      .main-wrapper,
+      .footer-wrapper {
+        width: 85%;
+        margin: auto;
+      }
+
+      .header-wrapper,
+      .main-wrapper {
+        padding: 10px;
+        margin: 2px auto;
+      }
+
+      h1 {
+        font-size: 70px;
+        font-weight: 300;
+      }
+
+      h2,
+      h3 {
+        font-weight: 300;
+      }
+
+      header {
+        background-color: #61dbfb;
+        padding: 25;
+        padding: 10px;
+      }
+
+      main {
+        padding: 10px;
+        padding-bottom: 60px;
+        /* Height of the footer */
+      }
+
+      ul {
+        margin-left: 15px;
+      }
+
+      ul li {
+        list-style: none;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        /* Height of the footer */
+        background: #6cf;
+      }
+
+      .footer-wrapper {
+        font-weight: 400;
+        text-align: center;
+        line-height: 60px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      // To get the root element from the HTML document
+      const rootElement = document.querySelector('.root')
+      // JSX element, header
+      const welcome = 'Welcome to 30 Days Of React Challenge'
+      const title = 'Getting Started React'
+      const subtitle = 'JavaScript Library'
+      const author = {
+        firstName: 'Asabeneh',
+        lastName: 'Yetayeh',
+      }
+      const date = 'Oct 2, 2020'
+
+      // JSX element, header
+      const header = (
+        <header>
+          <div className='header-wrapper'>
+            <h1>{welcome}</h1>
+            <h2>{title}</h2>
+            <h3>{subtitle}</h3>
+            <p>
+              Instructor: {author.firstName} {author.lastName}
+            </p>
+            <small>Date: {date}</small>
+          </div>
+        </header>
+      )
+
+      const numOne = 3
+      const numTwo = 2
+
+      const result = (
+        <p>
+          {numOne} + {numTwo} = {numOne + numTwo}
+        </p>
+      )
+
+      const yearBorn = 1820
+      const currentYear = new Date().getFullYear()
+      const age = currentYear - yearBorn
+      const personAge = (
+        <p>
+          {' '}
+          {author.firstName} {author.lastName} is {age} years old
+        </p>
+      )
+
+      // JSX element, main
+      const techs = ['HTML', 'CSS', 'JavaScript']
+      const techsFormatted = techs.map((tech) => <li>{tech}</li>)
+
+      // JSX element, main
+      const main = (
+        <main>
+          <div className='main-wrapper'>
+            <p>
+              Prerequisite to get started{' '}
+              <strong>
+                <em>react.js</em>
+              </strong>
+              :
+            </p>
+            <ul>{techsFormatted}</ul>
+            {result}
+            {personAge}
+          </div>
+        </main>
+      )
+
+      const copyRight = 'Copyright 2020'
+
+      // JSX element, footer
+      const footer = (
+        <footer>
+          <div className='footer-wrapper'>
+            <p>{copyRight}</p>
+          </div>
+        </footer>
+      )
+
+      // JSX element, app
+      const app = (
+        <div className='app'>
+          {header}
+          {main}
+          {footer}
+        </div>
+      )
+
+      // we render the JSX element using the ReactDOM package
+      ReactDOM.render(app, rootElement)
+    </script>
+  </body>
+</html>
+```
+
+Rendering list
+
+![List Id](images/map_list_id.png)
+As you can see above, now the lists are formatted properly but there is warning on the console which says each list child should have a unique key. In the array, we do not have id but it is common to pass id as a unique value when you have id in your data. Now, let us just pass each items as a unique key and remove the warning.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>React For Everyone</title>
+    <style>
+      /* == General style === */
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        line-height: 1.5;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        color: black;
+      }
+
+      .root {
+        min-height: 100%;
+        position: relative;
+      }
+
+      .header-wrapper,
+      .main-wrapper,
+      .footer-wrapper {
+        width: 85%;
+        margin: auto;
+      }
+
+      .header-wrapper,
+      .main-wrapper {
+        padding: 10px;
+        margin: 2px auto;
+      }
+
+      h1 {
+        font-size: 70px;
+        font-weight: 300;
+      }
+
+      h2,
+      h3 {
+        font-weight: 300;
+      }
+
+      header {
+        background-color: #61dbfb;
+        padding: 25;
+        padding: 10px;
+      }
+
+      main {
+        padding: 10px;
+        padding-bottom: 60px;
+        /* Height of the footer */
+      }
+
+      ul {
+        margin-left: 15px;
+      }
+
+      ul li {
+        list-style: none;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        /* Height of the footer */
+        background: #6cf;
+      }
+
+      .footer-wrapper {
+        font-weight: 400;
+        text-align: center;
+        line-height: 60px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      // To get the root element from the HTML document
+      const rootElement = document.querySelector('.root')
+      // JSX element, header
+      const welcome = 'Welcome to 30 Days Of React Challenge'
+      const title = 'Getting Started React'
+      const subtitle = 'JavaScript Library'
+      const author = {
+        firstName: 'Asabeneh',
+        lastName: 'Yetayeh',
+      }
+      const date = 'Oct 2, 2020'
+
+      // JSX element, header
+      const header = (
+        <header>
+          <div className='header-wrapper'>
+            <h1>{welcome}</h1>
+            <h2>{title}</h2>
+            <h3>{subtitle}</h3>
+            <p>
+              Instructor: {author.firstName} {author.lastName}
+            </p>
+            <small>Date: {date}</small>
+          </div>
+        </header>
+      )
+
+      const numOne = 3
+      const numTwo = 2
+
+      const result = (
+        <p>
+          {numOne} + {numTwo} = {numOne + numTwo}
+        </p>
+      )
+
+      const yearBorn = 1820
+      const currentYear = 2020
+      const age = currentYear - yearBorn
+      const personAge = (
+        <p>
+          {' '}
+          {author.firstName} {author.lastName} is {age} years old
+        </p>
+      )
+
+      // JSX element, main
+      const techs = ['HTML', 'CSS', 'JavaScript']
+      const techsFormatted = techs.map((tech) => <li key={tech}>{tech}</li>)
+
+      // JSX element, main
+      const main = (
+        <main>
+          <div className='main-wrapper'>
+            <p>
+              Prerequisite to get started{' '}
+              <strong>
+                <em>react.js</em>
+              </strong>
+              :
+            </p>
+            <ul>{techsFormatted}</ul>
+            {result}
+            {personAge}
+          </div>
+        </main>
+      )
+
+      const copyRight = 'Copyright 2020'
+
+      // JSX element, footer
+      const footer = (
+        <footer>
+          <div className='footer-wrapper'>
+            <p>{copyRight}</p>
+          </div>
+        </footer>
+      )
+
+      // JSX element, app
+      const app = (
+        <div className='app'>
+          {header}
+          {main}
+          {footer}
+        </div>
+      )
+
+      // we render the JSX element using the ReactDOM package
+      ReactDOM.render(app, rootElement)
+    </script>
+  </body>
+</html>
+```
+
+![Removing warning ](images/removing_unique_id_warning.png)
+
+Now, you have a very good understanding of how to create JSX element and also how to inject data to JSX. In the next section, we will talk about component which are more powerful and useful than JSX.
+
 🌕 You are awesome. You have just completed day 2 challenges and you are two steps ahead on your way to greatness. Now do some exercises for your brain and for your muscle.
 
 ### Exercises
@@ -859,6 +1600,10 @@ Instead of style object using regular styling method is more easier than the abo
 #### Exercises: Internal Styles
 
 1. Apply different styles to your JSX elements
+
+#### Exercise: Inject data to JSX
+
+1. Practice how to make JSX element and injecting dynamic data(string, number, boolean, array, object)
 
 🎉 CONGRATULATIONS ! 🎉
 
