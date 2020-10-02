@@ -6,7 +6,7 @@
 | ----- | :-----------------------------------------------------------------------------------------------------------------------------------: |
 | 01    | [Introduction](#introduction)<br> [Requirements](#requirements)<br> [Setup](#setup)<br> [JavaScript Refresher](#javascript-refresher) |
 | 02    |                          [Getting Started React](./02_Day_Introduction_to_React/02_introduction_to_react.md)                          |
-| 02    |                                            [Setting Up](./03_Setting_Up/03_Setting_Up.md)                                             |
+| 02    |                                            [Setting Up](./03_Setting_Up/03_setting_up.md)                                             |
 
 🧡🧡🧡 HAPPY CODING 🧡🧡🧡
 
@@ -294,7 +294,7 @@ console.log('Hello, World!')
 
 ##### Console.log with Multiple Arguments
 
-The **conole.log()** function can take multiple parameters separated by comma. The syntax looks like as follows:**console.log(param1, param2, param3)**
+The **console.log()** function can take multiple parameters separated by comma. The syntax looks like as follows:**console.log(param1, param2, param3)**
 
 ![console log multiple arguments](./images/console_log_multipl_arguments.png)
 
