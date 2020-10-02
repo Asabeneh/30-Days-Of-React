@@ -31,7 +31,7 @@
     - [Style and className in JSX](#style-and-classname-in-jsx)
     - [Injecting data to JSX Element](#injecting-data-to-jsx-element)
       - [Injecting a string to JSX Element](#injecting-a-string-to-jsx-element)
-    - [Injecting a number to JSX Element](#injecting-a-number-to-jsx-element)
+      - [Injecting a number to JSX Element](#injecting-a-number-to-jsx-element)
       - [Injecting an array to JSX Element](#injecting-an-array-to-jsx-element)
       - [Injecting an object to JSX Element](#injecting-an-object-to-jsx-element)
   - [Exercises](#exercises)
@@ -879,7 +879,7 @@ const header = (
 )
 ```
 
-#### Injecting a number to JSX Element
+##### Injecting a number to JSX Element
 
 ```js
 const numOne = 3
@@ -1130,7 +1130,7 @@ Now, let us put everything together. Here in the example below, the data is inje
 </html>
 ```
 
-![Dynamic Data](images/dynamic_data.png)
+![Dynamic Data](../images/dynamic_data.png)
 
 As you can see the lists are all in one line. Therefore, we should format the list the way we want before we inject to JSX. In order to format the list we should modify the array before we will inject to JSX. We can modify the array using _map_. As a react developer you should have a very good understanding of functional programming(map, filter, reduce, find, some, every). If you don't have good understanding of functional programming check out day 1.
 
@@ -1345,7 +1345,7 @@ In the following code example, the list is now containing list elements and form
 
 Rendering list
 
-![List Id](images/map_list_id.png)
+![List Id](../images/map_list_id.png)
 As you can see above, now the lists are formatted properly but there is warning on the console which says each list child should have a unique key. In the array, we do not have id but it is common to pass id as a unique value when you have id in your data. Now, let us just pass each items as a unique key and remove the warning.
 
 ```html
@@ -1550,7 +1550,7 @@ As you can see above, now the lists are formatted properly but there is warning 
 </html>
 ```
 
-![Removing warning ](images/removing_unique_id_warning.png)
+![Removing warning ](../images/removing_unique_id_warning.png)
 
 Now, you have a very good understanding of how to create JSX element and also how to inject data to JSX. In the next section, we will talk about component which are more powerful and useful than JSX.
 
