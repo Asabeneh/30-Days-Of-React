@@ -26,6 +26,7 @@
     - [React vs Vue popularity in February 2020](#react-vs-vue-popularity-in-february-2020)
   - [3. JSX](#3-jsx)
     - [JSX Element](#jsx-element)
+    - [Commenting JSX element](#commenting-jsx-element)
     - [Rendering JSX Element](#rendering-jsx-element)
     - [Style and className in JSX](#style-and-classname-in-jsx)
   - [Exercises](#exercises)
@@ -52,7 +53,7 @@ This challenge is designed for beginners and professionals who want to build a w
 
 ### 1. What is React?
 
-React is a JavaScript library for building a reusable user interfaces(UI). It was initially released on May 29, 2013. The current version is 16.13.1 and somehow it is stable. React was created by Facebook. React makes creating UI components very easy. When we work with react we do not interact directly with the DOM. React has its own way to handle the DOM(Document Object Model). React uses it virtual DOM to make a new change and it update only the element that needs change. Do not directly interact with DOM when you build react application leave that job for the virtual DOM. In this challenge, we will develop 10-15 web applications using React. A web application or a website is made up of buttons, links, forms with different input fields, header, footer, images, links, sections, articles, texts and boxes with different shapes. We use react to make a reusable UI component of a website.
+React is a JavaScript library for building a reusable user interfaces(UI). It was initially released on May 29, 2013. The current version is 16.13.1 and somehow it is stable. React was created by Facebook. React makes creating UI components very easy.The official React documentation can be found [here](https://reactjs.org/docs/getting-started.html). When we work with react we do not interact directly with the DOM. React has its own way to handle the DOM(Document Object Model). React uses it virtual DOM to make a new change and it update only the element that needs change. Do not directly interact with DOM when you build react application leave that job for the virtual DOM. In this challenge, we will develop 10-15 web applications using React. A web application or a website is made up of buttons, links, forms with different input fields, header, footer, images, links, sections, articles, texts and boxes with different shapes. We use react to make a reusable UI component of a website.
 
 To summarize:
 
@@ -63,10 +64,11 @@ To summarize:
 - React allows us to create reusable UI components
 - React latest release is 16.13.1
 - [React versions](https://reactjs.org/versions/)
+- React official documentation can be found [her](https://reactjs.org/docs/getting-started.html)
 
 ### 2. Why React?
 
-React is one of the most popular JavaScript library. Many developers and companies have been using it for the last couple of years. Its popularity has been growing fast and it has a huge community. How do we measure popularity? One measure of popularity could be GitHub repository stars, watchers and fork.Let us compare the popularity of [react](https://github.com/facebook/react) and [vue](https://github.com/vuejs/vue). As of today, the popularity between the two most popular JavaScript looks like as follows. From the diagram, you can speculate the most popular JavaScript library. You may look at the number of watchers, stars and forks for both React and Vue. These alone will not be a very good measure of popularity but still it tells something. If I have to recommend another JavaScript library next to React would Vue.js.
+React is one of the most popular JavaScript library. Many developers and companies have been using it for the last couple of years. Its popularity has been growing fast and it has a huge community. How do we measure popularity? One measure of popularity could be GitHub repository stars, watchers and fork.Let us compare the popularity of [React](https://github.com/facebook/react) and [Vue](https://github.com/vuejs/vue). As of today, the popularity between the two most popular JavaScript looks like as follows. From the diagram, you can speculate the most popular JavaScript library. You may look at the number of watchers, stars and forks for both React and Vue. These alone will not be a very good measure of popularity but still it tells something. If I have to recommend another JavaScript library next to React would Vue.js.
 
 #### React vs Vue popularity in October 2020
 
@@ -102,7 +104,12 @@ Why we choose to use react ? We use react because of the following reasons:
 JSX stands for JavaScript XML. JSX allows us to write HTML elements with JavaScript code. An HTML element has an opening and closing tag, content, and attribute in the opening tag. However, some HTML tag may not have a content and a closing tag, they are self closing elements. To create HTML elements in React we do not use the _createElement()_ instead we just use JSX elements. Therefore, JSX makes it easier to write and add HTML elements in React. JSX will be converted to JavaScript on browser using transpiler which [babel.js](https://babeljs.io/). Babel is a library which transpile JSX to pure JavaScript and latest JavaScript to older version. See the JSX code below.
 
 ```js
+// JSX syntax
+// we don't need to use string when we use JSX
+
 const jsxElement = <h1>I am a JSX element</h1>
+const welcome = <h1>Welcome to 30 Days of React Challenge</h1>
+const data = <small>Oct 2, 2020</small>
 ```
 
 The above strange looking code seems a JavaScrip but it is not JavaScript and it seems an HTML but not completely an HTML element. It is a mix of JavaScript and and an HTML element. JSX can allow us to use HTML in JavaScript. The HTML element in the above JSX is h1.
@@ -114,20 +121,21 @@ As you have seen in the above example, JSX has a JavaScript and HTML like syntax
 This JSX element has only on HTML element which is h1.
 
 ```js
-const jsxElement = <h1>I am a JSX element</h1>
+const jsxElement = <h1>I am a JSX element</h1> // JS with HTML
 ```
 
-Let's make more JSX elements by declaring a new variable name title and content inside h1.
+Let's make more JSX elements by declaring new variables name title, message and its content inside h1.
 
 ```js
 const title = <h1>Getting Started React</h1>
 ```
 
-Let us add a subtitle to the above JSX element by adding additional HTML element. Every HTML element should be wrapped by an outer HTML element to create a valid JSX element. The name title variable also should be changed to header because our JSX element is containing almost all the header of the application.
+Let us add a subtitle and other contents to the above JSX element by adding additional HTML elements. Every HTML element should be wrapped by an outer HTML element to create a valid JSX element. The name title variable also should be changed to header because our JSX element is containing almost all the header of the application.
 
 ```js
 const header = (
   <header>
+    <h1>Welcome to 30 Days Of React</h1>
     <h1>Getting Started React</h1>
     <h2>JavaScript Library</h2>
   </header>
@@ -139,15 +147,35 @@ Let us keep adding more elements. Additional HTML element to display the author 
 ```js
 const header = (
   <header>
+    <h1>Welcome to 30 Days Of React</h1>
     <h1>Getting Started React</h1>
     <h2>JavaScript Library</h2>
-    <h3>Asabeneh Yetayeh</h3>
-    <p>Oct 1, 2020</p>
+    <p>Asabeneh Yetayeh</p>
+    <small>Oct 2, 2020</small>
   </header>
 )
 ```
 
 As you can see the header element is a parent element for all the inner HTML elements and JSX must be wrapped by an outer parent element. Without the header HTML element or other parent HTML element the above JSX is invalid.
+
+#### Commenting JSX element
+
+We comment codes for different reasons and it is also go to know how to comment out JSX element in React.
+
+```js
+{
+  /*
+ <header>
+    <h1>Welcome to 30 Days Of React</h1>
+    <h1>Getting Started React</h1>
+    <h2>JavaScript Library</h2>
+    <h3>Asabeneh Yetayeh</h3>
+    <small>Oct 1, 2020</small>
+  </header>
+
+*/
+}
+```
 
 #### Rendering JSX Element
 
@@ -159,7 +187,7 @@ To render a JSX element to HTML document. We should create on index HTML. The in
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React For Everyone</title>
+    <title>30 Days Of React Challenge</title>
   </head>
 
   <body>
@@ -178,7 +206,7 @@ As you can see from the above index.html, we have one div with a class root and 
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React For Everyone</title>
+    <title>30 Days Of React Challenge</title>
   </head>
 
   <body>
@@ -191,7 +219,7 @@ As you can see from the above index.html, we have one div with a class root and 
 </html>
 ```
 
-The babel library is linked to our document and now we can make use of it. The next step is importing React and ReactDOM using CDN or link. Attach the react and react-dom to your file. To test if react is connected to the index.html try to check by doing console.log(React). If you see an object containing react methods then you managed to React CND to your React project.
+The babel library is linked to our document and now we can make use of it. The next step is importing React and ReactDOM using CDN or link. Attach the react and react-dom to your file. To test if react is connected to the index.html try to check by doing console.log(React). Open the browser console and you should get an object. If you see an object containing react methods then you managed to link your project with React CND.
 
 ```html
 <!DOCTYPE html>
@@ -231,7 +259,7 @@ Now, you knew JSX and JSX element. Let us render the JSX element on the browser,
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React For Everyone</title>
+    <title>30 Days Of React Challenge</title>
   </head>
 
   <body>
@@ -263,7 +291,7 @@ Now, you knew JSX and JSX element. Let us render the JSX element on the browser,
 
 ![Rendering JSX](../images/rendering_jsx.png)
 
-Let us render more content. To render more content the JSX element should have more HTML elements. For instance, we can create a header of a website and header may have a title, subtitle, author or date etc.
+Let us render more content. To render more content the JSX element should have more HTML elements. For instance, we can create a header of a website and header may have a title, subtitle, author or date etc. We can render only one on JSX element at a time.
 [Live on code pen](https://codepen.io/Asabeneh/full/QWbGWeY).
 
 ```html
@@ -272,7 +300,7 @@ Let us render more content. To render more content the JSX element should have m
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React For Everyone</title>
+    <title>30 Days Of React Challenge</title>
   </head>
 
   <body>
@@ -294,10 +322,11 @@ Let us render more content. To render more content the JSX element should have m
       // JSX element
       const header = (
         <header>
+          <h1>30 Days Of React Challenge</h1>
           <h1>Getting Started React</h1>
           <h2>JavaScript Library</h2>
           <p>Asabeneh Yetayeh</p>
-          <p>Oct 1, 2020</p>
+          <small>Oct 2, 2020</small>
         </header>
       )
 
@@ -309,7 +338,7 @@ Let us render more content. To render more content the JSX element should have m
 </html>
 ```
 
-![Rendering more content](../images/rendering_more_content.png)
+![Rendering more content](../images/rendering_more_js_content_.png)
 
 We have created a JSX element for the header of the website. How about the main and the footer for the website? Similar to the header, let us create a JSX element for the main and the footer.
 
@@ -346,10 +375,11 @@ Now, we have three JSX elements:the header, main and footer. The best way to ren
 // JSX element for the header part of the website
 const header = (
   <header>
+    <h1>30 Days Of React Challenge</h1>
     <h1>Getting Started React</h1>
     <h2>JavaScript Library</h2>
     <p>Asabeneh Yetayeh</p>
-    <p>Oct 1, 2020</p>
+    <small>Oct 2, 2020</small>
   </header>
 )
 
@@ -390,7 +420,7 @@ Now, let us put everything together and render it to the browser. [Live on code 
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React For Everyone</title>
+    <title>30 Days Of React Challenge</title>
   </head>
 
   <body>
@@ -412,10 +442,11 @@ Now, let us put everything together and render it to the browser. [Live on code 
       // JSX element, header
       const header = (
         <header>
+          <h1>30 Days Of React Challenge</h1>
           <h1>Getting Started React</h1>
           <h2>JavaScript Library</h2>
           <p>Asabeneh Yetayeh</p>
-          <p>Oct 1, 2020</p>
+          <small>Oct 1, 2020</small>
         </header>
       )
 
@@ -474,10 +505,11 @@ const header = (
   <header
     style={{ border: '2px solid orange', color: 'black', fontSize: '18px' }}
   >
+    <h1>30 Days Of React Challenge</h1>
     <h1>Getting Started React</h1>
     <h2>JavaScript Library</h2>
     <p>Asabeneh Yetayeh</p>
-    <p>Oct 1, 2020</p>
+    <small>Oct 2, 2020</small>
   </header>
 )
 
@@ -487,10 +519,11 @@ const style = { border: '2px solid orange', color: 'black', fontSize: '18px' }
 
 const header = (
   <header style={style}>
+    <h1>30 Days Of React Challenge</h1>
     <h1>Getting Started React</h1>
     <h2>JavaScript Library</h2>
-    <h3>Asabeneh Yetayeh</h3>
-    <p>Feb 10, 2020</p>
+    <p>Asabeneh Yetayeh</p>
+    <small>Oct 2, 2020</small>
   </header>
 )
 ```
@@ -525,7 +558,7 @@ Now, you know how to use the inline style and how to use className and let us st
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React For Everyone</title>
+    <title>30 Days Of React Challenge</title>
   </head>
 
   <body>
@@ -556,10 +589,11 @@ Now, you know how to use the inline style and how to use className and let us st
       const header = (
         <header style={headerStyles}>
           <div className='header-wrapper'>
+            <h1>30 Days Of React Challenge</h1>
             <h1>Getting Started React</h1>
             <h2>JavaScript Library</h2>
             <p>Asabeneh Yetayeh</p>
-            <p>Oct 1, 2020</p>
+            <small>Oct 1, 2020</small>
           </div>
         </header>
       )
@@ -723,10 +757,11 @@ Instead of style object using regular styling method is more easier than the abo
       const header = (
         <header>
           <div className='header-wrapper'>
+            <h1>30 Days Of React Challenge</h1>
             <h1>Getting Started React</h1>
             <h2>JavaScript Library</h2>
             <p>Instructor: Asabeneh Yetayeh</p>
-            <p>Date: Oct 1, 2020</p>
+            <small>Date: Oct 1, 2020</small>
           </div>
         </header>
       )
