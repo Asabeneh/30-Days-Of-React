@@ -119,7 +119,7 @@ As you have seen in the above example, JSX has a JavaScript and HTML like syntax
 This JSX element has only on HTML element which is _h1_.
 
 ```js
-const jsxElement = <h>I am a JSX element</h1> // JS with HTML
+const jsxElement = <h1>I am a JSX element</h1> // JS with HTML
 ```
 
 Let's make more JSX elements by declaring a new variable name title and content inside h1.
