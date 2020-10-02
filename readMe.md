@@ -527,7 +527,7 @@ _Your main.js file should be below all other scripts_. It is very important to r
 
 ![Multiple Script](./images/multiple_script.png)
 
-Congratulations! You have completed the setup you need to get started with React, but before we dive in to React let's do JavaScript refresher. If you are very comfortable with JavaScript you may skip the JavaScript refresher. The JavaScript refresh section is vast and it may take more than one day. From my experience people usually stuck in React because their JavaScript knowledge is very shallow therefore to fill that gap all the necessary JavaScript feature which can be use in React are cover in the JavaScript refresher. In the JavaScript refresher there are many questions and you are not required to solve them.
+Congratulations! You have completed the setup you need to get started with React, but before we dive into React let's do JavaScript refresher. If you are very comfortable with JavaScript you may skip the JavaScript refresher. The JavaScript refresh section is vast and it may take more than one day. From my experience people usually get stuck in React because their JavaScript knowledge is very shallow therefore to fill that gap all the necessary JavaScript feature which can be use in React are covered in the JavaScript refresher. In the JavaScript refresher there are many questions and you are not required to solve them. Click [here](../30-Days-Of-React/02_Day_Introduction_to_React/02_introduction_to_react.md) if you want to jump into React.
 
 ## JavaScript Refresher
 
@@ -1215,7 +1215,7 @@ const webTechs = [
 
 #### Exercise: Level 2
 
-1. Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
+1. Create a separate countries.js file and store the countries array into this file, create a separate file web_techs.js and store the webTechs array into this file. Access both file in main.js file
 1. First remove all the punctuations and change the string to array and count the number of words in the array
 
    ```js
@@ -1530,7 +1530,7 @@ isRaining
    You are 5 years older than me.
    ```
 
-1. If a is greater than b return 'a is greater than b' else 'a is less than b'. Try to implement it in to ways
+1. If a is greater than b return 'a is greater than b' else 'a is less than b'. Try to implement it in two ways
 
    - using if else
    - ternary operator.
@@ -2206,7 +2206,7 @@ console.log(copyPerson.hasOwnProperty('name'))
 console.log(copyPerson.hasOwnProperty('score'))
 ```
 
-🌕 You are astonishing. Now, you are super charged with the power of objects. You have just completed day 8 challenges and you are 8 steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.
+🌕 You are astonishing. Now, you are super charged with the power of objects. You have just completed day 8 challenges and you are 8 steps a head into your way to greatness. Now do some exercises for your brain and for your muscle.
 
 ### 💻 Exercises
 
@@ -4749,7 +4749,7 @@ So do not directly manipulate the DOM if you are using react. The only place we 
 
 Check out there result on [codepen](https://codepen.io/Asabeneh/full/vYGqQxP)
 
-🌕 You are amazing! You have just completed day 1 challenge and you are on your way to greatness. Now you are a JavaScript Ninja and ready to dive in to React.
+🌕 You are amazing! You have just completed day 1 challenge and you are on your way to greatness. Now you are a JavaScript Ninja and ready to dive into React.
 
 🎉 CONGRATULATIONS ! 🎉
 
