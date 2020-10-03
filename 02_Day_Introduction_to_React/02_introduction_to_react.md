@@ -15,7 +15,7 @@
 </div>
 </div>
 
-[<< Day 1](../readMe.md) | [Day 3 >>](../03_Day_Setting_Up/03_day_setting_up.md)
+[<< Day 1](../01_Day_JavaScript_Refresher/01_javascript_refresher.md) | [Day 3 >>](../03_Day_Setting_Up/03_day_setting_up.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_2.jpg)
 
@@ -1607,4 +1607,4 @@ Now, you have a very good understanding of how to create JSX element and also ho
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 1](../readMe.md) | [Day 3 >>](../03_Day_Setting_Up/03_day_setting_up.md)
+[<< Day 1](../01_Day_JavaScript_Refresher/01_javascript_refresher.md) | [Day 3 >>](../03_Day_Setting_Up/03_day_setting_up.md)
