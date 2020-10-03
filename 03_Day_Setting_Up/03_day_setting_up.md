@@ -68,15 +68,34 @@ In react we do not use link to access modules or packages instead we import the 
 export const addTwo = (a, b) => a + b
 export const multiply = (a, b) => a * b
 export const subtract = (a, b) => a - b
-default export doSomeMath = () => {
-  return {
-    addTwo, multiply, subtract
-  }
 
-}
+export default (function doSomeMath() {
+  return {
+    addTwo,
+    multiply,
+    subtract,
+  }
+})()
 ```
 
-Now let's import the _math.js_ modules to a different file
+Now let's import the _math.js_ modules to a different file.
+
+```js
+// index.js
+// to import the doSomeMath from the math.js with or without extension
+import doSomeMath from './math.js'
+
+// to import the other modules
+// since these modules were not exported as default we have to desctructure
+import { addTwo, multiply, subtract } from './math.js'
+
+import * as everything from './math.js' // to import everything renaming
+console.log(addTwo(5, 5))
+console.log(doSomeMath.addTwo(5, 5))
+console.log(everything)
+```
+
+After this, when you see _import React from 'react'_ or _import ReactDOM from 'react-dom'_ you will not be surprised.
 
 ## Package
 
