@@ -15,7 +15,7 @@
 </div>
 </div>
 
-[<< Day 1](../readMe.md) | [Day 3 >>](../03_Day_Booleans_operators_date/03_booleans_operators_date.md)
+[<< Day 1](../readMe.md) | [Day 3 >>](../03_Day_Setting_Up/03_day_setting_up.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_2.jpg)
 
