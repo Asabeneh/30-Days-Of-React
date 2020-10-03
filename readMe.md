@@ -6,9 +6,33 @@
 | ----- | :-----------------------------------------------------------------------------------------------------------------------------------: |
 | 01    | [Introduction](#introduction)<br> [Requirements](#requirements)<br> [Setup](#setup)<br> [JavaScript Refresher](#javascript-refresher) |
 | 02    |                          [Getting Started React](./02_Day_Introduction_to_React/02_introduction_to_react.md)                          |
-| 02    |                                            [Setting Up](./03_Setting_Up/03_setting_up.md)                                             |
+| 03    |                                        [Setting Up](./03_Day_Setting_Up/03_day_setting_up.md)                                         |
 
-🧡🧡🧡 HAPPY CODING 🧡🧡🧡
+🧡🧡🧡 HAPPY CODING 🧡🧡🧡<div>
+<small>Support [**Asabeneh**](https://www.patreon.com/asabeneh?fan_landing=true) to create more educational materials</small>  
+[<img src = './images/become_patreon.png' alt='become-asabeneh-patreon' title='click' />](https://www.patreon.com/asabeneh?fan_landing=true)
+
+</div>
+
+<div>
+<img align="right" width="100%"  src="./images/30_days_of_react_banner_day_1.jpg" />
+</div>
+
+<div align="center">
+
+  <h1> 30 Days Of React: Introduction</h1>
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
+  </a>
+
+  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  </a>
+
+<sub>Author:<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<small> October, 2020</small></sub>
+
+</div>
 
 - [Introduction](#introduction)
 - [Requirements](#requirements)
@@ -168,30 +192,6 @@
     - [Exercises Level 2](#exercises-level-2-3)
     - [Exercises Level 3](#exercises-level-3-3)
 - [13 Document Object Model(DOM)](#13-document-object-modeldom)
-
-<div align="center">
-  <h1> 30 Days Of React</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
-  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
-  </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
-  </a>
-
-<sub>Author:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small> October, 2020</small>
-</sub>
-
-</div>
-</div>
-
-<div>
-
-<small>Support [**Asabeneh**](https://www.patreon.com/asabeneh?fan_landing=true) to create more educational materials</small>  
-[<img src = './images/become_patreon.png' alt='become-asabeneh-patreon' title='click' />](https://www.patreon.com/asabeneh?fan_landing=true)
-
-</div>
 
 ## Introduction
 
