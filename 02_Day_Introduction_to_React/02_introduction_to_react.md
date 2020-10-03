@@ -116,7 +116,7 @@ const welcome = <h1>Welcome to 30 Days of React Challenge</h1>
 const data = <small>Oct 2, 2020</small>
 ```
 
-The above strange looking code seems a JavaScrip but it is not JavaScript and it seems an HTML but not completely an HTML element. It is a mix of JavaScript and an HTML element. JSX can allow us to use HTML in JavaScript. The HTML element in the above JSX is _h1_ and _small_.
+The above strange looking code seems a JavaScript but it is not JavaScript and it seems an HTML but not completely an HTML element. It is a mix of JavaScript and an HTML element. JSX can allow us to use HTML in JavaScript. The HTML element in the above JSX is _h1_ and _small_.
 
 #### JSX Element
 

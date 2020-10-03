@@ -37,11 +37,11 @@
 
 # Setting Up
 
-In the previous section, we learned about JSX and we access the React and ReactDOM package using CDN. However, in real life work in environment instead of CDN you will use create-react-app package to generate a React project starter(boilerplate). The initial _create-react-app_ was released on Jul 22, 2016. Before this time, developers used to configure webpack which a JavaScript module bundler, babel and all the necessary packages manually and this used to take half an hour or may be more. Now, create-react-app will take care of everything and you will be in charge developing product only instead of spending too much time configuring and setting up projects. Before we start using different tools, let's have a brief introduction for all the tools we are going to use in this challenge. You do not have understand everything but I will try to give a very short introduction about some of the tools and technologies which we use when we work with React.
+In the previous section, we learned about JSX and we accessed the React and ReactDOM package using CDN. However, in real projects instead of CDN you will use the create-react-app package to generate a React project starter(boilerplate). The initial _create-react-app_ was released on Jul 22, 2016. Before this time, developers used to configure webpack which a JavaScript module bundler, babel and all the necessary packages manually and this used to take half an hour or may be more. Now, create-react-app will take care of everything and you will be in charge of developing the product only instead of spending too much time configuring and setting up projects. Before we start using different tools, let's have a brief introduction for all the tools we are going to use in this challenge. You do not have to understand everything but I will try to give a very short introduction about some of the tools and technologies which we use when we work with React.
 
 ## Node
 
-Node is a JavaScript run time environment which allows to run JavaScript on the server. Node was created in 2019. Node has played a great role for the growth of JavaScript. React application starts by default at localhost 3000. The create-react-app has configured a node server for the React Application. We will see create-react-app soon.
+Node is a JavaScript runtime environment which allows JavaScript to run on the server. Node was created in 2019. Node has played a great role for the growth of JavaScript. The React application starts by default at localhost 3000. The create-react-app has configured a node server for the React Application. That is why we need node and node modules. We will see create-react-app soon.
 
 If you do have node, install node. Install [node.js](https://nodejs.org/en/).
 
@@ -51,7 +51,7 @@ After downloading double click and install
 
 ![Install node](../images/install_node.png)
 
-We can check if node is installed on our local machine by opening our device terminal or command prompt.
+We can check if node is installed on our local machine by opening our device terminal or command prompt and writing the following command.
 
 ```sh
 asabeneh $ node -v
@@ -61,6 +61,22 @@ v12.18.0
 ## Module
 
 A single or multiple functions which can be exported and imported when needed and can be included in a project.
+In react we do not use link to access modules or packages instead we import the module. Let's see how to import and export a module or modules
+
+```js
+// math.js
+export const addTwo = (a, b) => a + b
+export const multiply = (a, b) => a * b
+export const subtract = (a, b) => a - b
+default export doSomeMath = () => {
+  return {
+    addTwo, multiply, subtract
+  }
+
+}
+```
+
+Now let's import the _math.js_ modules to a different file
 
 ## Package
 
@@ -155,7 +171,7 @@ It is good to know these folders and files.
   - favicon.io - a favicon
   - manifest.json - is use to make the application a progressive web app
   - other images- which can be used for open graph image or for other purposes
-  - rotots.txt - information if the website allow web scraping
+  - robots.txt - information if the website allow web scraping
 
 - src
 
