@@ -37,12 +37,11 @@
 
 # Setting Up
 
-In the previous section, we learned about JSX and we access the React and ReactDOM package using CDN. However, in real life work in environment instead of CDN you will use create-react-app package to generate a React project starter(boilerplate). The initial public release was on Jul 22, 2016. Before this developer used to configure webpack which a JavaScript module bundler, babel and all the necessary packages manually and this used to take half an hour or may be more. Now, create-react-app will take care of everything and you will be in charge developing product only instead of spending too much time configuring and setting up projects. Before we start using different tools let's have a brief introduction for all the tools we are going to use in this challenge. You do not have understand everything but I will try to give a very short introduction about some of the tools and technologies which we use when we work with React.
+In the previous section, we learned about JSX and we access the React and ReactDOM package using CDN. However, in real life work in environment instead of CDN you will use create-react-app package to generate a React project starter(boilerplate). The initial public release was released on Jul 22, 2016. Before this time,  developers used to configure webpack which a JavaScript module bundler, babel and all the necessary packages manually and this used to take half an hour or may be more. Now, create-react-app will take care of everything and you will be in charge developing product only instead of spending too much time configuring and setting up projects. Before we start using different tools,  let's have a brief introduction for all the tools we are going to use in this challenge. You do not have understand everything but I will try to give a very short introduction about some of the tools and technologies which we use when we work with React.
 
 ## Node
 
-Node is a JavaScript run time environment which allows to run JavaScript on the server.Node was created in 2019. Node has played a great role for the growth of JavaScript.
-
+Node is a JavaScript run time environment which allows to run JavaScript on the server. Node was created in 2019. Node has played a great role for the growth of JavaScript. React application starts by defaul at localhost 3000. The create-react-app has configured a node server for the application the React Application. We will see create-react-app soon.
 If you do have node, install node. Install [node.js](https://nodejs.org/en/).
 
 ![Node download](../images/download_node.png)
