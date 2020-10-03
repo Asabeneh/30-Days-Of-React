@@ -30,18 +30,18 @@
   - [Create React App](#create-react-app)
 - [Your first React App](#your-first-react-app)
   - [React Boilerplate](#react-boilerplate)
-  - [Style in JSX](#style-in-jsx)
+  - [Styles in JSX](#styles-in-jsx)
   - [Injecting data to JSX elements](#injecting-data-to-jsx-elements)
   - [Importing Media Objects in React](#importing-media-objects-in-react)
 - [Exercises](#exercises)
 
 # Setting Up
 
-In the previous section, we learned about JSX and we access the React and ReactDOM package using CDN. However, in real life work projects instead of CDN you will use create-react-app package to generate a React project starter(boilerplate). The initial public release of *create-react-app* was on Jul 22, 2016. Before this time, developer used to configure webpack which a JavaScript module bundler, babel and all the necessary packages manually to get started React and this used to take half an hour or may be more. Now create-react-app will take care of everything and you will be in charge of developing only instead of spending too much time configuring and setting up projects. Before we start using different tools let's have a brief introduction for all the tools we are going to use in this challenge. You do not have to understand everything well but I will try to give a very short introduction about some of the tools and technologies which we use when we work with React.
+In the previous section, we learned about JSX and we access the React and ReactDOM package using CDN. However, in real life work in environment instead of CDN you will use create-react-app package to generate a React project starter(boilerplate). The initial _create-react-app_ was released on Jul 22, 2016. Before this time, developers used to configure webpack which a JavaScript module bundler, babel and all the necessary packages manually and this used to take half an hour or may be more. Now, create-react-app will take care of everything and you will be in charge developing product only instead of spending too much time configuring and setting up projects. Before we start using different tools, let's have a brief introduction for all the tools we are going to use in this challenge. You do not have understand everything but I will try to give a very short introduction about some of the tools and technologies which we use when we work with React.
 
 ## Node
 
-Node is a JavaScript run time environment which allows to run JavaScript on the server. Node was created in 2019. Node has played a great role for the growth of JavaScript. React application starts by defaul at localhost 3000. The create-react-app has configured a node server for the application the React Application. We will see create-react-app soon. 
+Node is a JavaScript run time environment which allows to run JavaScript on the server. Node was created in 2019. Node has played a great role for the growth of JavaScript. React application starts by default at localhost 3000. The create-react-app has configured a node server for the React Application. We will see create-react-app soon.
 
 If you do have node, install node. Install [node.js](https://nodejs.org/en/).
 
@@ -81,6 +81,7 @@ We will use Visual Studio Code as a code editor and [download](https://code.visu
 We will use Google chrome
 
 ## Visual Studio Extensions
+
 You may need to install these extensions from Visual Studio Code
 
 - Prettier
@@ -148,8 +149,9 @@ It is good to know these folders and files.
 
 - node_modules - store all the necessary node packages of the react applications.
 
-- Public 
+- Public
   -index.html - the only HTML file we have in the entire application
+
   - favicon.io - a favicon
   - manifest.json - is use to make the application a progressive web app
   - other images- which can be used for open graph image or for other purposes
@@ -564,7 +566,7 @@ ReactDOM.render(app, rootElement)
 ## Importing Media Objects in React
 
 How do we import images, video and audio in react? Let's see how we import image first.
-Create images folder in the src folder and save an image. For instance let's save asabeneh.jpg image and let's import this image to index.js. After importing we will inject it to a JSX expression, user. See the code below. 
+Create images folder in the src folder and save an image. For instance let's save asabeneh.jpg image and let's import this image to index.js. After importing we will inject it to a JSX expression, user. See the code below.
 
 ```js
 // index.js
