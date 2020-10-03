@@ -11,6 +11,7 @@
 <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
 <small> October, 2020</small>
 </sub>
+
 </div>
 
 [<< Day 1](../01_Day_JavaScript_Refresher/01_javascript_refresher.md) | [Day 3 >>](../03_Day_Setting_Up/03_day_setting_up.md)
@@ -706,7 +707,6 @@ Instead of style object using regular styling method is more easier than the abo
 
       header {
         background-color: #61dbfb;
-        padding: 25;
         padding: 10px;
       }
 
@@ -986,13 +986,11 @@ Now, let us put everything together. Here in the example below, the data is inje
 
       header {
         background-color: #61dbfb;
-        padding: 25;
         padding: 10px;
       }
 
       main {
-        padding: 10px;
-        padding-bottom: 60px;
+        padding: 10px 10px 60px;
         /* Height of the footer */
       }
 
@@ -1198,13 +1196,11 @@ In the following code example, the list is now containing list elements and form
 
       header {
         background-color: #61dbfb;
-        padding: 25;
         padding: 10px;
       }
 
       main {
-        padding: 10px;
-        padding-bottom: 60px;
+        padding: 10px 10px 60px;
         /* Height of the footer */
       }
 
@@ -1405,7 +1401,6 @@ As you can see above, now the lists are formatted properly but there is warning 
 
       header {
         background-color: #61dbfb;
-        padding: 25;
         padding: 10px;
       }
 
