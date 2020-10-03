@@ -1,8 +1,8 @@
 // index.js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
 // To get the root element from the HTML document
-import asabenehImage from './images/asabeneh.jpg'
+import asabenehImage from './images/asabeneh.jpg';
 // JSX element, header
 const welcome = 'Welcome to 30 Days Of React'
 const title = 'Getting Started React'
