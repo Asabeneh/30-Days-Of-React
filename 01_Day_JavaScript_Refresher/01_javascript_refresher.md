@@ -1,24 +1,27 @@
 <div align="center">
+
   <h1> 30 Days Of React: JavaScript Refresher</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
     <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
+
   <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
     <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-  <sub>
-    Author: <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-    <small> October, 2020</small>
-  </sub>
+<sub>Author:
+<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<small> October, 2020</small>
+</sub>
 </div>
+
 
 [<< Day 0](../readMe.md) | [Day 2 >>](../02_Day_Introduction_to_React/02_introduction_to_react.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_1.jpg)
 
 - [JavaScript Refresher](#javascript-refresher)
-  - [0. Adding JavaScript to a Web Page](#adding-javascript-to-a-web-page)
+  - [0. Adding JavaScript to a Web Page](#0-adding-javascript-to-a-web-page)
     - [Inline Script](#inline-script)
     - [Internal Script](#internal-script)
     - [External Script](#external-script)
@@ -50,7 +53,7 @@
       - [Reversing array order](#reversing-array-order)
       - [Sorting elements in array](#sorting-elements-in-array)
     - [Array of arrays](#array-of-arrays)
-    - [💻 Exercise](#-exercise)
+  - [💻 Exercise](#-exercise)
       - [Exercise: Level 1](#exercise-level-1)
       - [Exercise: Level 2](#exercise-level-2)
       - [Exercise: Level 3](#exercise-level-3)
@@ -60,7 +63,7 @@
     - [If Else if Else](#if-else-if-else)
     - [Switch](#switch)
     - [Ternary Operators](#ternary-operators)
-    - [💻 Exercises](#-exercises)
+  - [💻 Exercises](#-exercises)
       - [Exercises: Level 1](#exercises-level-1)
       - [Exercises: Level 2](#exercises-level-2)
       - [Exercises: Level 3](#exercises-level-3)
@@ -91,7 +94,7 @@
       - [Getting object values using Object.values()](#getting-object-values-using-objectvalues)
       - [Getting object keys and values using Object.entries()](#getting-object-keys-and-values-using-objectentries)
       - [Checking properties using hasOwnProperty()](#checking-properties-using-hasownproperty)
-    - [💻 Exercises](#-exercises-1)
+  - [💻 Exercises](#-exercises-1)
       - [Exercises: Level 1](#exercises-level-1-1)
       - [Exercises: Level 2](#exercises-level-2-1)
       - [Exercises: Level 3](#exercises-level-3-1)
@@ -111,7 +114,7 @@
     - [Arrow Function](#arrow-function)
     - [Function with default parameters](#function-with-default-parameters)
     - [Function declaration versus Arrow function](#function-declaration-versus-arrow-function)
-    - [💻 Exercises](#-exercises-2)
+  - [💻 Exercises](#-exercises-2)
       - [Exercises: Level 1](#exercises-level-1-2)
       - [Exercises: Level 2](#exercises-level-2-2)
       - [Exercises: Level 3](#exercises-level-3-2)
