@@ -155,7 +155,7 @@ It is good to know these folders and files.
   - favicon.io - a favicon
   - manifest.json - is use to make the application a progressive web app
   - other images- which can be used for open graph image or for other purposes
-  - rotots.txt - information if the website allow web scraping
+  - robots.txt - information if the website allow web scraping
 
 - src
 
