@@ -30,18 +30,19 @@
   - [Create React App](#create-react-app)
 - [Your first React App](#your-first-react-app)
   - [React Boilerplate](#react-boilerplate)
-  - [Style in JSX](#style-in-jsx)
+  - [Styles in JSX](#styles-in-jsx)
   - [Injecting data to JSX elements](#injecting-data-to-jsx-elements)
   - [Importing Media Objects in React](#importing-media-objects-in-react)
 - [Exercises](#exercises)
 
 # Setting Up
 
-In the previous section, we learned about JSX and we access the React and ReactDOM package using CDN. However, in real life work in environment instead of CDN you will use create-react-app package to generate a React project starter(boilerplate). The initial public release was released on Jul 22, 2016. Before this time,  developers used to configure webpack which a JavaScript module bundler, babel and all the necessary packages manually and this used to take half an hour or may be more. Now, create-react-app will take care of everything and you will be in charge developing product only instead of spending too much time configuring and setting up projects. Before we start using different tools,  let's have a brief introduction for all the tools we are going to use in this challenge. You do not have understand everything but I will try to give a very short introduction about some of the tools and technologies which we use when we work with React.
+In the previous section, we learned about JSX and we access the React and ReactDOM package using CDN. However, in real life work in environment instead of CDN you will use create-react-app package to generate a React project starter(boilerplate). The initial _create-react-app_ was released on Jul 22, 2016. Before this time, developers used to configure webpack which a JavaScript module bundler, babel and all the necessary packages manually and this used to take half an hour or may be more. Now, create-react-app will take care of everything and you will be in charge developing product only instead of spending too much time configuring and setting up projects. Before we start using different tools, let's have a brief introduction for all the tools we are going to use in this challenge. You do not have understand everything but I will try to give a very short introduction about some of the tools and technologies which we use when we work with React.
 
 ## Node
 
-Node is a JavaScript run time environment which allows to run JavaScript on the server. Node was created in 2019. Node has played a great role for the growth of JavaScript. React application starts by defaul at localhost 3000. The create-react-app has configured a node server for the application the React Application. We will see create-react-app soon.
+Node is a JavaScript run time environment which allows to run JavaScript on the server. Node was created in 2019. Node has played a great role for the growth of JavaScript. React application starts by default at localhost 3000. The create-react-app has configured a node server for the React Application. We will see create-react-app soon.
+
 If you do have node, install node. Install [node.js](https://nodejs.org/en/).
 
 ![Node download](../images/download_node.png)
@@ -73,13 +74,15 @@ NPM was created in 2010. You do not need to install NPM separately when you inst
 
 ## Visual Studio Code
 
-We will use Visual Studio Code and [download](https://code.visualstudio.com) and install it if you do not have one yet.
+We will use Visual Studio Code as a code editor and [download](https://code.visualstudio.com) and install it if you do not have one yet.
 
 ## Browser
 
 We will use Google chrome
 
 ## Visual Studio Extensions
+
+You may need to install these extensions from Visual Studio Code
 
 - Prettier
 - ESLint
@@ -128,30 +131,26 @@ Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop
 
 ```sh
 Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/30-days-of-react (master)
-\$ cd 30-days-of-react
-```
-
-```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/30-days-of-react (master)
 \$ npm start
 ```
 
 Now your react app should run at localhost 3000. Go to the App.js and modify the content by writing some text, you will see the latest change on the browsers.
-To stop the running server, press CTR + C
+To stop the running server, press Ctr + C
 
 ![React Starting](../images/react_app_starting.png)
 
 ## React Boilerplate
 
-Let's see the React boiler plate which has been created by create-react-app. Whenever you create a new project you run create-react-app and name of the project.
+Let's see the React boilerplate which has been created by create-react-app. Whenever you create a new project you run create-react-app and name of the project.
 
-In the following React boilerplate, there are three folders:node_modules, public and src. In addition, there are .gitignore, README.mde, package.json and yarn.lock. In some of you instead of yarn.lock, you may have package-lock.lock.
+In the following React boilerplate, there are three folders:node_modules, public and src. In addition, there are .gitignore, README.mde, package.json and yarn.lock. In some of you instead of yarn.lock, you may have package-lock.json.
 
 It is good to know these folders and files.
 
 - node_modules - store all the necessary node packages of the react applications.
 
-- Public - index.html - the only HTML file we have in the entire application
+- Public
+  -index.html - the only HTML file we have in the entire application
 
   - favicon.io - a favicon
   - manifest.json - is use to make the application a progressive web app
@@ -329,9 +328,9 @@ ReactDOM.render(app, rootElement)
 
 ![JSX using create react app to render more jsx](../images/rendering_multiple_jsx_elements_create-react_app.png)
 
-## Style in JSX
+## Styles in JSX
 
-Let's apply style to the JSX elements. We can style JSX either using inline style, internal or external CSS. Now, let's apply an inline style to each JSX element.
+Let's apply style to the JSX elements. We can style JSX either using inline, internal or external CSS styles. Now, let's apply an inline styles to each JSX elements.
 
 ```js
 // index.js
@@ -399,7 +398,7 @@ ReactDOM.render(app, rootElement)
 
 ![Inline styling JSX](../images/styling_jsx_inline_create_react_app.png)
 
-Now, lets apply an internal style, we put all the CSS on the header of the index.css.
+Now, lets apply an internal style, we put all the CSS on the header of the index.html.
 
 ```js
 // index.js
@@ -567,7 +566,7 @@ ReactDOM.render(app, rootElement)
 ## Importing Media Objects in React
 
 How do we import images, video and audio in react? Let's see how we import image first.
-Create images folder in the src folder and save an image. For instance let's save asabeneh.jpg image and let's import this image to index.js
+Create images folder in the src folder and save an image. For instance let's save asabeneh.jpg image and let's import this image to index.js. After importing we will inject it to a JSX expression, user. See the code below.
 
 ```js
 // index.js
