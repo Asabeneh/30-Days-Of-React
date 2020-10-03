@@ -489,7 +489,9 @@ ReactDOM.render(<HexaColor />, rootElement)
 
 3. Use functional component to create the following design
 
-![News Letter](../images/news_letter_design.png) 4. Use the give hexadecimal color generator in the example to create these random colors
+![News Letter](../images/news_letter_design.png)
+
+ 4. Use the given hexadecimal color generator in the example to create these random colors
 
 ![Hexadecimal colors](../images/hexadecimal_color_exercise.png)
 
