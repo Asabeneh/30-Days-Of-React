@@ -2995,10 +2995,10 @@ Let us see were we use call back functions.For instance the _forEach_ method use
 
 ```js
 const numbers = [1, 2, 3, 4]
-​
+
 const sumArray = arr => {
   let sum = 0
-  const callBack = function(element) {
+  const callback = function(element) {
     sum += element
   }
   numbers.forEach(callback)
@@ -3009,14 +3009,14 @@ console.log(sumArray(numbers))
 ```
 
 ```sh
-15
+10
 ```
 
 The above example can be simplified as follows:
 
 ```js
 const numbers = [1, 2, 3, 4]
-​
+
 const sumArray = arr => {
   let sum = 0
   numbers.forEach(function(element) {
@@ -3029,7 +3029,7 @@ console.log(sumArray(numbers))
 ```
 
 ```sh
-15
+10
 ```
 
 ### setting time
