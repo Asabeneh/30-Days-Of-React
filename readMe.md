@@ -199,7 +199,7 @@
 
 **A 30DaysOfReact** challenge is a guide for both beginners and advanced JavaScript and React developers. Welcome to 30 Days Of React. React is a JavaScript library. I enjoy using and teaching React and I hope you will do so too.
 In this step by step 30 Days React challenge, you will learn React which is one of most popular user interface JavaScript libraries.
-React can do everything that JavaJavaScript can do. React can be used **_to add interactivity to websites, to develop mobile apps, desktop applications, games_**.
+React can do everything that JavaScript can do. React can be used **_to add interactivity to websites, to develop mobile apps, desktop applications, games_**.
 I believe you will learn quite a lot in the next 30 days and your programming and problem solving skills will also be improved significantly.
 
 I will use converstational English and less jargons to write this challenge. The content will be continousely updated. If you find a typo or grammar mistakes don't suprised because I don't do any proof read before I publish it. I would recommond you to focus on the main message of the challenge instead of the English and some minor mistakes. I really appreciate if you send me pull requests for improvement and remember to pull first from master before you send pull requests. Most of the images I have used in this challenge came from 30DaysOfJavaScript challenge therefore you may need to rename file names and folders 30DaysOfReact.
@@ -2998,7 +2998,7 @@ const numbers = [1, 2, 3, 4]
 ​
 const sumArray = arr => {
   let sum = 0
-  const callBack = function(element) {
+  const callback = function(element) {
     sum += element
   }
   numbers.forEach(callback)
@@ -3045,7 +3045,7 @@ In JavaScript, we use setInterval higher order function to do some activity cont
 
 ```js
 // syntax
-function callBack() {
+function callback() {
   // code goes here
 }
 setInterval(callback, duration)
