@@ -13,7 +13,7 @@
 </sub>
 
 </div>
-</div>
+
 
 [<< Day 1](../readMe.md) | [Day 3 >>](../03_Day_Booleans_operators_date/03_booleans_operators_date.md)
 
