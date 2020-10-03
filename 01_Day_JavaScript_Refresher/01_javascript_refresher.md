@@ -750,7 +750,7 @@ console.log(names.join()) // Asabeneh,Mathias,Elias,Brook
 console.log(names.join('')) //AsabenehMathiasEliasBrook
 console.log(names.join(' ')) //Asabeneh Mathias Elias Brook
 console.log(names.join(', ')) //Asabeneh, Mathias, Elias, Brook
-console.log(names.join(' # ')) //Asabeneh ## Mathias ## Elias ## Brook
+console.log(names.join(' # ')) //Asabeneh # Mathias # Elias # Brook
 
 const webTechs = [
   'HTML',
@@ -763,7 +763,7 @@ const webTechs = [
 ] // List of web technologies
 
 console.log(webTechs.join()) // "HTML,CSS,JavaScript,React,Redux,Node,MongoDB"
-console.log(webTechs.join(' # ')) // "HTML ## CSS ## JavaScript ## React ## Redux ## Node ## MongoDB"
+console.log(webTechs.join(' # ')) // "HTML # CSS # JavaScript # React # Redux # Node # MongoDB"
 ```
 
 ##### Slice array elements
@@ -2763,7 +2763,7 @@ const numbers = [1, 2, 3, 4]
 ​
 const sumArray = arr => {
   let sum = 0
-  const callBack = function(element) {
+  const callback = function(element) {
     sum += element
   }
   numbers.forEach(callback)
@@ -2810,7 +2810,7 @@ In JavaScript, we use setInterval higher order function to do some activity cont
 
 ```js
 // syntax
-function callBack() {
+function callback() {
   // code goes here
 }
 setInterval(callback, duration)
