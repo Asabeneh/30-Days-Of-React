@@ -205,7 +205,7 @@ First, let us write on the head part of the page.
   <head>
     <title>30DaysOfScript:Internal Script</title>
     <script>
-      console.log('Welcome to 30DaysOfJavaScript')
+      console.log('Hello, World!')
     </script>
   </head>
   <body></body>
@@ -223,7 +223,7 @@ This is how we write an internal script most of the time. Writing the JavaScript
   <body>
     <button onclick="alert('Welcome to 30DaysOfJavaScript!');">Click Me</button>
     <script>
-      console.log('Welcome to 30DaysOfJavaScript')
+      console.log('Hello, World!')
     </script>
   </body>
 </html>
@@ -625,7 +625,7 @@ console.log(fruitsAndVegetables)
 
 ##### Getting array length
 
-Length:To know the size of the array
+length:To know the size of the array
 
 ```js
 const numbers = [1, 2, 3, 4, 5]
@@ -662,7 +662,7 @@ if (index != -1) {
 }
 // This fruit does exist in the array
 
-// we can use also ternary here
+// we can also use ternary operator here
 index != -1
   ? console.log('This fruit does exist in the array')
   : console.log('This fruit does not exist in the array')
@@ -750,10 +750,10 @@ console.log(numbers.join()) // 1,2,3,4,5
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
 
 console.log(names.join()) // Asabeneh,Mathias,Elias,Brook
-console.log(names.join('')) //AsabenehMathiasEliasBrook
-console.log(names.join(' ')) //Asabeneh Mathias Elias Brook
-console.log(names.join(', ')) //Asabeneh, Mathias, Elias, Brook
-console.log(names.join(' # ')) //Asabeneh # Mathias # Elias # Brook
+console.log(names.join('')) // AsabenehMathiasEliasBrook
+console.log(names.join(' ')) // Asabeneh Mathias Elias Brook
+console.log(names.join(', ')) // Asabeneh, Mathias, Elias, Brook
+console.log(names.join(' # ')) // Asabeneh # Mathias # Elias # Brook
 
 const webTechs = [
   'HTML',
@@ -765,8 +765,8 @@ const webTechs = [
   'MongoDB',
 ] // List of web technologies
 
-console.log(webTechs.join()) // "HTML,CSS,JavaScript,React,Redux,Node,MongoDB"
-console.log(webTechs.join(' # ')) // "HTML # CSS # JavaScript # React # Redux # Node # MongoDB"
+console.log(webTechs.join()) // HTML,CSS,JavaScript,React,Redux,Node,MongoDB
+console.log(webTechs.join(' # ')) // HTML # CSS # JavaScript # React # Redux # Node # MongoDB
 ```
 
 ##### Slice array elements
@@ -1264,7 +1264,7 @@ switch (true) {
 }
 ```
 
-#### Ternary Operators
+#### Ternary Operator
 
 Ternary operator is very common in _React_. It is a short way to write if else statement. In React we use ternary operator in many cases.
 
@@ -2368,7 +2368,7 @@ Arrow function does not have the function scoped arguments object. To implement 
 ​
 const sumAllNums = (...args) => {
  // console.log(arguments), arguments object not found in arrow function
- // instead we use an a parameter followed by spread operator
+ // instead we use spread operator followed by a parameter
  console.log(args)
 }
 
@@ -2389,8 +2389,8 @@ const sumAllNums = (...args) => {
 }
 
 console.log(sumAllNums(1, 2, 3, 4)) // 10
-console.log(sumAllNums(10, 20, 13, 40, 10))  // 93
-console.log(sumAllNums(15, 20, 30, 25, 10, 33, 40))  // 173
+console.log(sumAllNums(10, 20, 13, 40, 10)) // 93
+console.log(sumAllNums(15, 20, 30, 25, 10, 33, 40)) // 173
 ```
 
 #### Anonymous Function
@@ -2469,9 +2469,7 @@ const changeToUpperCase = (arr) => {
 }
 
 const countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
-console.log(changeToUpperCase(countries))
-
-// ["FINLAND", "SWEDEN", "NORWAY", "DENMARK", "ICELAND"]
+console.log(changeToUpperCase(countries)) // ["FINLAND", "SWEDEN", "NORWAY", "DENMARK", "ICELAND"]
 ```
 
 ```js
@@ -3065,7 +3063,7 @@ const rectangle = {
 }
 
 let { width, height } = rectangle
-console.log(width, height, perimeter) // 20, 10
+console.log(width, height) // 20, 10
 ```
 
 What will be the value of we try to access a key which not in the object.
@@ -3076,7 +3074,8 @@ const rectangle = {
   height: 10,
 }
 
-let { width, height, perimeter } = rectangleconsole.log(
+let { width, height, perimeter } = rectangle
+console.log(
   width,
   height,
   perimeter
@@ -3096,7 +3095,7 @@ const rectangle = {
 }
 
 let { width, height, perimeter = 200 } = rectangle
-console.log(width, height, perimeter) // 20, 10, undefined
+console.log(width, height, perimeter) // 20, 10, 200
 ```
 
 Renaming variable names
@@ -3108,6 +3107,7 @@ const rectangle = {
 }
 
 let { width: w, height: h } = rectangle
+console.log(w, h) // 20, 10
 ```
 
 Let's also destructure, nested objects. In the example below, we have nested objects and we can destructure it in two ways.
@@ -3116,19 +3116,17 @@ We can just destructure step by step
 
 ```js
 const props = {
-  user:{
-    firstName:'Asabeneh',
-    lastName:'Yetayeh',
-    age:250
+  user: {
+    firstName: 'Asabeneh',
+    lastName: 'Yetayeh',
+    age: 250
   },
-  post:{
-    title:'Destructuring and Spread',
-    subtitle:'ES6',
-    year:2020
-},
-skills:['JS', 'React', 'Redux', 'Node', 'Python']
-
-}
+  post: {
+    title: 'Destructuring and Spread',
+    subtitle: 'ES6',
+    year: 2020
+  },
+  skills: ['JS', 'React', 'Redux', 'Node', 'Python']
 }
 
 const {user, post, skills} = props
@@ -3141,24 +3139,24 @@ const [skillOne, skillTwo, skillThree, skillFour, skillFive] = skills
 
 ```js
 const props = {
-  user:{
-    firstName:'Asabeneh',
-    lastName:'Yetayeh',
-    age:250
+  user: {
+    firstName: 'Asabeneh',
+    lastName: 'Yetayeh',
+    age: 250
   },
-  post:{
-    title:'Destructuring and Spread',
-    subtitle:'ES6',
-    year:2020
-},
-skills:['JS', 'React', 'Redux', 'Node', 'Python']
-
+  post: {
+    title: 'Destructuring and Spread',
+    subtitle: 'ES6',
+    year: 2020
+  },
+  skills: ['JS', 'React', 'Redux', 'Node', 'Python']
 }
 
-}
-
-const {user:{firstName, lastName, age}, post:{title, subtitle, year}, skills:[skillOne, skillTwo, skillThree, skillFour, skillFive]} = props
-
+const {
+  user: {firstName, lastName, age},
+  post: {title, subtitle, year},
+  skills: [skillOne, skillTwo, skillThree, skillFour, skillFive]
+} = props
 ```
 
 Destructuring during loop through an array
@@ -3368,7 +3366,6 @@ console.log(sumAllNums(1, 2, 3, 4, 5))
 
 ```sh
 15
-
 ```
 
 ### 11. Functional Programming
@@ -3579,7 +3576,7 @@ const reduced = array.reduce(callback, optionalInitialValue)
 
 // or syntax in an arrow function
 
-const reduced =  callback(acc, cur) => {
+const reduced = callback(acc, cur) => {
     return // code goes here
 }
 const reduced = array.reduce(callback)
@@ -3635,15 +3632,15 @@ If we are interested in the first occurrence of a certain item or element in an 
 // syntax in a normal or a function declaration
 
 function callback(item) {
-return // code goes here
+  return // code goes here
 }
 
 const item = array.find(callback)
 
 // or syntax in an arrow function
 
-const reduced =  callback(item) => {
-return // code goes here
+const reduced = callback(item) => {
+  return // code goes here
 }
 const item = array.find(callback)
 ```
@@ -3679,7 +3676,7 @@ Let us find the first country in the array which has the letter 'o'
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const index = countries.find((country) => country.includes('o'))
-console.log(index // Estonia
+console.log(index) // Estonia
 ```
 
 #### 6. findIndex
@@ -3690,15 +3687,15 @@ The findIndex method works like find but findIndex returns the index of the item
 // syntax in a normal or a function declaration
 
 function callback(item) {
-return // code goes here
+  return // code goes here
 }
 
 const index = array.findIndex(callback)
 
 // or syntax in an arrow function
 
-const reduced =  callback(item) => {
-return // code goes here
+const reduced = callback(item) => {
+  return // code goes here
 }
 const index = array.findIndex(callback)
 ```
@@ -3718,7 +3715,7 @@ Let us find the index of the first country in the array which has exactly six ch
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const index = countries.findIndex((country) => country.length === 6)
-console.log(index //2
+console.log(index) // 2
 ```
 
 Let us find the index of the first country in the array which has the letter 'o'.
@@ -3726,7 +3723,7 @@ Let us find the index of the first country in the array which has the letter 'o'
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const index = countries.findIndex((country) => country.includes('o'))
-console.log(index // 1
+console.log(index) // 1
 ```
 
 Let us move on to the next functional programming, some.
@@ -3872,7 +3869,7 @@ Let use the class constructor to pass different properties for the class.
 
 The constructor is a builtin function which allows as to create a blueprint for our object. The constructor function starts with a keyword constructor followed by a parenthesis. Inside the parenthesis we pass the properties of the object as parameter. We use the _this_ keyword to attach the constructor parameters with the class.
 
-The following Person class constructor has firstName and lastName property. These properties are attached to the Person class using _this_ keyword. _This_ refers to the class itself.
+The following Person class constructor has firstName and lastName property. These properties are attached to the Person class using _this_ keyword. _this_ refers to the class itself.
 
 ```js
 class Person {
@@ -4021,7 +4018,7 @@ console.log(person2.getFullName())
 
 ```sh
 Asabeneh Yetayeh
-test.js:19 Lidiya Tekle
+Lidiya Tekle
 ```
 
 #### Properties with initial value
@@ -4334,7 +4331,7 @@ Using inheritance we can access all the properties and the methods of the parent
 ```js
 // syntax
 class ChildClassName extends {
- // code goes here
+  // code goes here
 }
 ```
 
