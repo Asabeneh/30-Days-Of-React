@@ -13,9 +13,8 @@
 </sub>
 
 </div>
-</div>
 
-[<< Day 1](../readMe.md) | [Day 3 >>](../03_Day_Setting_Up/03_day_setting_up.md)
+[<< Day 1](../01_Day_JavaScript_Refresher/01_javascript_refresher.md) | [Day 3 >>](../03_Day_Setting_Up/03_day_setting_up.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_2.jpg)
 
@@ -116,7 +115,7 @@ const welcome = <h1>Welcome to 30 Days of React Challenge</h1>
 const data = <small>Oct 2, 2020</small>
 ```
 
-The above strange looking code seems a JavaScrip but it is not JavaScript and it seems an HTML but not completely an HTML element. It is a mix of JavaScript and an HTML element. JSX can allow us to use HTML in JavaScript. The HTML element in the above JSX is _h1_ and _small_.
+The above strange looking code seems a JavaScript but it is not JavaScript and it seems an HTML but not completely an HTML element. It is a mix of JavaScript and an HTML element. JSX can allow us to use HTML in JavaScript. The HTML element in the above JSX is _h1_ and _small_.
 
 #### JSX Element
 
@@ -708,7 +707,6 @@ Instead of style object using regular styling method is more easier than the abo
 
       header {
         background-color: #61dbfb;
-        padding: 25;
         padding: 10px;
       }
 
@@ -857,8 +855,8 @@ In this section we only inject only strings
 const welcome = 'Welcome to 30 Days Of React'
 const title = 'Getting Started React'
 const subtitle = 'JavaScript Library'
-const authorFirstName = 'Asabeneh'
-const authorLastName = 'Yetayeh'
+const firstName = 'Asabeneh'
+const lastName = 'Yetayeh'
 const date = 'Oct 2, 2020'
 
 // JSX element, header
@@ -871,7 +869,7 @@ const header = (
       <h2>{title}</h2>
       <h3>{subtitle}</h3>
       <p>
-        Instructor: {authorFirstName} {authorLastName}
+        Instructor: {firstName} {lastName}
       </p>
       <small>Date: {date}</small>
     </div>
@@ -988,13 +986,11 @@ Now, let us put everything together. Here in the example below, the data is inje
 
       header {
         background-color: #61dbfb;
-        padding: 25;
         padding: 10px;
       }
 
       main {
-        padding: 10px;
-        padding-bottom: 60px;
+        padding: 10px 10px 60px;
         /* Height of the footer */
       }
 
@@ -1200,13 +1196,11 @@ In the following code example, the list is now containing list elements and form
 
       header {
         background-color: #61dbfb;
-        padding: 25;
         padding: 10px;
       }
 
       main {
-        padding: 10px;
-        padding-bottom: 60px;
+        padding: 10px 10px 60px;
         /* Height of the footer */
       }
 
@@ -1407,7 +1401,6 @@ As you can see above, now the lists are formatted properly but there is warning 
 
       header {
         background-color: #61dbfb;
-        padding: 25;
         padding: 10px;
       }
 
@@ -1607,4 +1600,4 @@ Now, you have a very good understanding of how to create JSX element and also ho
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 1](../readMe.md) | [Day 3 >>](../03_Day_Setting_Up/03_day_setting_up.md)
+[<< Day 1](../01_Day_JavaScript_Refresher/01_javascript_refresher.md) | [Day 3 >>](../03_Day_Setting_Up/03_day_setting_up.md)
