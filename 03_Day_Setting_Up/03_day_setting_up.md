@@ -15,7 +15,7 @@
 </div>
 </div>
 
-[<< Day 2](../02_Day_Introduction_to_React/02_introduction_to_react.md) | [Day 4 >>](./04_Day_Component/04_components.m)
+[<< Day 2](../02_Day_Introduction_to_React/02_introduction_to_react.md) | [Day 4 >>](./04_Day_Component/04_components.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_3.jpg)
 
