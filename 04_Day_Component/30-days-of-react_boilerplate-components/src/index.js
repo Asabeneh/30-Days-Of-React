@@ -14,7 +14,7 @@ const hexaColor = () => {
 }
 
 const HexaColor = () => {
-  let bgColor = hexaColor()
+  const bgColor = hexaColor()
   const styles = {
     height: '100px',
     display: 'flex',
@@ -62,7 +62,7 @@ const TechList = () => {
 }
 const buttonStyles = {
   padding: '10px 20px',
-  background: 'rgb(0, 255, 0',
+  background: 'rgb(0, 255, 0)',
   border: 'none',
   borderRadius: 5,
 }
@@ -79,6 +79,8 @@ const Main = () => (
       </ul>
       <UserCard />
       <div>
+        {/* Generate two different hexa colors every time */}
+        <HexaColor />
         <HexaColor />
       </div>
     </div>

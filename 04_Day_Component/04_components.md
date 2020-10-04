@@ -470,7 +470,7 @@ const hexaColor = () => {
   return '#' + color
 }
 
-const HexaColor = () => <div>{hexaColor()}</dv>
+const HexaColor = () => <div>{hexaColor()}</div>
 
 const rootElement = document.getElementById('root')
 // we render the JSX element using the ReactDOM package
