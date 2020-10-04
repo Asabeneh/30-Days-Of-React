@@ -13,7 +13,7 @@
 </sub>
 
 </div>
-</div>
+
 
 [<< Day 3](../30-Days-Of-React/03_Day_Setting_Up/03_day_setting_up.md) | [Day 5 >>]()
 
@@ -471,7 +471,7 @@ const hexaColor = () => {
   return '#' + color
 }
 
-const HexaColor = () => <div>{hexaColor()}</dv>
+const HexaColor = () => <div>{hexaColor()}</div>
 
 const rootElement = document.getElementById('root')
 // we render the JSX element using the ReactDOM package
