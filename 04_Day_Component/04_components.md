@@ -88,7 +88,7 @@ class Parent {
   }
 }
 
-const p1 = Parent('Asabeneh', 'Yetayeh', 'Finland', 'FullStack Developer')
+const p1 = new Parent('Asabeneh', 'Yetayeh', 'Finland', 'FullStack Developer')
 
 class Child extends Parent {
   constructor(firstName, lastName, country, title, skills) {
@@ -105,12 +105,14 @@ class Child extends Parent {
   }
 }
 
+const skills = ['HTML', 'CSS', 'JS', 'React']
+
 const child = new Child(
   'Asabeneh',
   'Yetayeh',
   'Finland',
   'FullStack Developer',
-  ['HTML', 'CSS', 'JS', 'React']
+  skills
 )
 ```
 

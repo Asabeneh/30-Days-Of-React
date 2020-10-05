@@ -70,7 +70,22 @@ const UserCard = ({ user: { firstName, lastName, image } }) => (
 
 // A button component
 
-const Button = ({ text, onClick }) => <button onClick={onClick}>{text}</button>
+const Button = ({ text, onClick, style }) => (
+  <button style={style} onClick={onClick}>
+    {text}
+  </button>
+)
+
+const buttonStyles = {
+  backgroundColor: '#61dbfb',
+  padding: 10,
+  border: 'none',
+  borderRadius: 5,
+  margin: 3,
+  cursor: 'pointer',
+  fontSize: 18,
+  color: 'white',
+}
 
 // Main Component
 const Main = ({ user, techs, greetPeople, handleTime }) => (
@@ -81,8 +96,8 @@ const Main = ({ user, techs, greetPeople, handleTime }) => (
         <TechList techs={techs} />
       </ul>
       <UserCard user={user} />
-      <Button text='Greet People' onClick={greetPeople} />
-      <Button text='Show Time' onClick={handleTime} />
+      <Button text='Greet People' onClick={greetPeople} style={buttonStyles} />
+      <Button text='Show Time' onClick={handleTime} style={buttonStyles} />
     </div>
   </main>
 )
