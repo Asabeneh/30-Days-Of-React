@@ -2769,7 +2769,7 @@ const sumArray = arr => {
   const callback = function(element) {
     sum += element
   }
-  numbers.forEach(callback)
+  arr.forEach(callback)
   return sum
 
 }
@@ -2777,7 +2777,7 @@ console.log(sumArray(numbers))
 ```
 
 ```sh
-15
+10
 ```
 
 The above example can be simplified as follows:
@@ -2787,7 +2787,7 @@ const numbers = [1, 2, 3, 4]
 ​
 const sumArray = arr => {
   let sum = 0
-  numbers.forEach(function(element) {
+  arr.forEach(function(element) {
     sum += element
   })
   return sum
@@ -2797,7 +2797,7 @@ console.log(sumArray(numbers))
 ```
 
 ```sh
-15
+10
 ```
 
 #### setting time
