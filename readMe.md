@@ -44,7 +44,7 @@
   - [Clone your Fork](#clone-your-fork)
   - [Create a New Branch](#create-a-new-branch)
   - [Structure Exercise Solutions](#structure-exercise-solutions)
-  - [Commit Excercise Solutions](#commit-excercise-solutions)
+  - [Commit Exercise Solutions](#commit-exercise-solutions)
   - [Update your Fork Daily](#update-your-fork-daily)
 - [Setup](#setup)
   - [Install Node.js](#install-nodejs)
@@ -119,7 +119,7 @@ mkdir -p solutions/day-01 # `-p` helps create nested directories
 touch solutions/day-01/level1.js # touch creates a file
 ```
 
-### Commit Excercise Solutions
+### Commit Exercise Solutions
 
 Commit your solutions to your Fork
 
@@ -267,7 +267,7 @@ This is a multiline comment
 
 ##### Syntax
 
-Programming languages are similar to human languages. English or many other language uses words, phrases, sentences,compound sentences and other more to convey a meaningful message. The English meaning of syntax is _the arrangement of words and phrases to create well-formed sentences in a language_. The technical definition of syntax is _the structure of statements in a computer language._ Programing languages have syntax. JavaScript is a programming language and like other programming languages it has its own syntax. If we do not write a syntax that JavaScript understands, it will raise different types of errors. We will explore different kinds of JavaScript errors later. For now, let us see syntax errors.
+Programming languages are similar to human languages. English or many other language uses words, phrases, sentences, compound sentences and other more to convey a meaningful message. The English meaning of syntax is _the arrangement of words and phrases to create well-formed sentences in a language_. The technical definition of syntax is _the structure of statements in a computer language._ Programing languages have syntax. JavaScript is a programming language and like other programming languages it has its own syntax. If we do not write a syntax that JavaScript understands, it will raise different types of errors. We will explore different kinds of JavaScript errors later. For now, let us see syntax errors.
 
 ![Error](images/raising_syntax_error.png)
 
