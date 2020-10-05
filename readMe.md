@@ -6,7 +6,7 @@
 
   <h1> 30 Days Of React</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
-  <img src="https://raw.githubusercontent.com/atisawd/boxicons/68c7b94e427cf554c204c72d11a0c4dbb136e601/svg/logos/bxl-linkedin-square.svg" width=30>
+  <img alt="linkedin" src="https://raw.githubusercontent.com/atisawd/boxicons/68c7b94e427cf554c204c72d11a0c4dbb136e601/svg/logos/bxl-linkedin-square.svg" width=33>
   </a>
   <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
   <img alt="Twitter Follow" src="https://raw.githubusercontent.com/ant-design/ant-design-icons/cdc8d1f8b736fd225c90daad48e2875775fb9358/packages/icons-svg/svg/filled/twitter-square.svg" width=30>
