@@ -4,7 +4,7 @@
 
 <div align="center">
 
-  <h1> 30 Days Of React</h1>
+  <br><h1> 30 Days Of React</h1></br>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img alt="linkedin" src="https://raw.githubusercontent.com/Remix-Design/RemixIcon/943f2e7c45ad81ff95bf444ed4c4ada90a46de5a/icons/Logos/linkedin-box-fill.svg" width=42>
   </a>
