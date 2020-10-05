@@ -91,7 +91,7 @@ const Main = ({ user, techs, greetPeople, handleTime }) => (
 const Footer = ({ copyRight }) => (
   <footer>
     <div className='footer-wrapper'>
-      <p>{copyRight.getFullYear()}</p>
+      <p>Copyright {copyRight.getFullYear()}</p>
     </div>
   </footer>
 )
