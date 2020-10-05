@@ -9,7 +9,7 @@
   <img alt="linkedin" src="https://raw.githubusercontent.com/Remix-Design/RemixIcon/943f2e7c45ad81ff95bf444ed4c4ada90a46de5a/icons/Logos/linkedin-box-fill.svg" width=42>
   </a>
   <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://raw.githubusercontent.com/ant-design/ant-design-icons/cdc8d1f8b736fd225c90daad48e2875775fb9358/packages/icons-svg/svg/filled/twitter-square.svg" width=40>
+  <img alt="Twitter Follow" src="https://raw.githubusercontent.com/ant-design/ant-design-icons/cdc8d1f8b736fd225c90daad48e2875775fb9358/packages/icons-svg/svg/filled/twitter-square.svsudog" width=40>
   </a>
 
 <sub>Author: <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
@@ -164,7 +164,7 @@ I believe you have the motivation and a strong desire to be a developer, a compu
 
 You may not need node.js right now but you may need it for later. Install [node.js](https://nodejs.org/en/).
 
-# Windows
+### Windows
 
 ![Node download](images/download_node.png)
 
@@ -179,7 +179,7 @@ asabeneh $ node -v
 v12.14.0
 ```
 
-# Linux(ubuntu)
+### Linux(ubuntu)
 
 Just type this is your terminal
 
@@ -321,7 +321,36 @@ We can write our codes on the browser console, but it won't do for bigger projec
 
 Visual studio code is a very popular open-source text editor. I would recommend to [download Visual Studio Code](https://code.visualstudio.com/), but if you are in favor of other editors, feel free to follow with what you have.
 
+#### Windows
+
+Go to this link and download it: https://code.visualstudio.com/
+
 ![Vscode](images/vscode.png)
+
+#### Linux(ubuntu)
+
+Just type this in your terminal
+
+As apt:
+
+```sh
+sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt install code
+```
+and update it with 
+```sh
+sudo apt update
+sudo apt upgrade
+```
+
+As snap:
+
+```sh
+sudo snap install --classic code
+```
 
 If you installed Visual Studio Code, let us start using it.
 
