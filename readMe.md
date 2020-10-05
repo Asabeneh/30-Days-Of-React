@@ -6,11 +6,11 @@
 
   <h1> 30 Days Of React</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
-  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
+  <img src="https://raw.githubusercontent.com/ant-design/ant-design-icons/cdc8d1f8b736fd225c90daad48e2875775fb9358/packages/icons-svg/svg/filled/linkedin.svg
+" width=30>
   </a>
-
   <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/svg/twitter-square.svghttps://img.shields.io/twitter/follow/asabeneh?style=social">
+  <img alt="Twitter Follow" src="https://raw.githubusercontent.com/ant-design/ant-design-icons/cdc8d1f8b736fd225c90daad48e2875775fb9358/packages/icons-svg/svg/filled/twitter-square.svg" width=30>
   </a>
 
 <sub>Author: <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
