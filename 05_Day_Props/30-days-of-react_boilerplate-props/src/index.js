@@ -1,0 +1,121 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
+import asabenehImage from './images/asabeneh.jpg'
+
+// Fuction to show month date year
+
+const showDate = (time) => {
+  const months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ]
+
+  const month = months[time.getMonth()].slice(0, 3)
+  const year = time.getFullYear()
+  const date = time.getDate()
+  return ` ${month} ${date}, ${year}`
+}
+
+// Header Component
+const Header = ({
+  data: {
+    welcome,
+    title,
+    subtitle,
+    author: { firstName, lastName },
+    date,
+  },
+}) => {
+  return (
+    <header>
+      <div className='header-wrapper'>
+        <h1>{welcome}</h1>
+        <h2>{title}</h2>
+        <h3>{subtitle}</h3>
+        <p>
+          {firstName} {lastName}
+        </p>
+        <small>{showDate(date)}</small>
+      </div>
+    </header>
+  )
+}
+
+// TechList Component
+const TechList = ({ techs }) => {
+  const techList = techs.map((tech) => <li key={tech}>{tech}</li>)
+  return techList
+}
+
+// User Card Component
+const UserCard = ({ user: { firstName, lastName, image } }) => (
+  <div className='user-card'>
+    <img src={image} alt={firstName} />
+    <h2>
+      {firstName}
+      {lastName}
+    </h2>
+  </div>
+)
+
+// Main Component
+const Main = ({ user, techs }) => (
+  <main>
+    <div className='main-wrapper'>
+      <p>Prerequisite to get started react.js:</p>
+      <ul>
+        <TechList techs={techs} />
+      </ul>
+      <UserCard user={user} />
+    </div>
+  </main>
+)
+
+// Footer Component
+const Footer = ({ copyRight }) => (
+  <footer>
+    <div className='footer-wrapper'>
+      <p>{copyRight.getFullYear()}</p>
+    </div>
+  </footer>
+)
+
+// The App, or the parent or the container component
+// Functional Component
+const App = () => {
+  const data = {
+    welcome: 'Welcome to 30 Days Of React',
+    title: 'Getting Started React',
+    subtitle: 'JavaScript Library',
+    author: {
+      firstName: 'Asabeneh',
+      lastName: 'Yetayeh',
+    },
+    date: new Date(),
+  }
+  const date = new Date()
+  const techs = ['HTML', 'CSS', 'JavaScript']
+  // copying the author from data object to user variable using spread operator
+  const user = { ...data.author, image: asabenehImage }
+
+  return (
+    <div className='app'>
+      <Header data={data} />
+      <Main user={user} techs={techs} />
+      <Footer copyRight={date} />
+    </div>
+  )
+}
+const rootElement = document.getElementById('root')
+// we render the JSX element using the ReactDOM package
+ReactDOM.render(<App />, rootElement)
