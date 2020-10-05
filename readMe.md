@@ -164,6 +164,8 @@ I believe you have the motivation and a strong desire to be a developer, a compu
 
 You may not need node.js right now but you may need it for later. Install [node.js](https://nodejs.org/en/).
 
+# Windows
+
 ![Node download](images/download_node.png)
 
 After downloading double click and install
@@ -175,6 +177,14 @@ We can check if node is installed on our local machine by opening our device ter
 ```sh
 asabeneh $ node -v
 v12.14.0
+```
+
+# Linux(ubuntu)
+
+Just type this is your terminal
+
+```sh
+sudo apt install nodejs
 ```
 
 When making this tutorial I was using node version 12.14.0, but now the recommended version of node.js for download is 12.17.0.
