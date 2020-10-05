@@ -903,7 +903,7 @@ ReactDOM.render(<App />, rootElement)
 ```
 
 Now, let's destructure all the components we had and assemble them together. We pass props from one component to another typically from parent to a child component.
-For instance in the Main component techs, user, greetPeople and handleTime  props have been passed from the parent component Main to child components TechList and UserCard. Below, you will get all the codes destructured and cleaned.
+For instance in the Main component techs, user, greetPeople and handleTime props have been passed from the parent component Main to child components TechList and UserCard. Below, you will get all the codes destructured and cleaned.
 
 ```js
 import React from 'react'
@@ -995,7 +995,7 @@ const Main = ({ user, techs, greetPeople, handleTime }) => (
 const Footer = ({ copyRight }) => (
   <footer>
     <div className='footer-wrapper'>
-      <p>{copyRight.getFullYear()}</p>
+      <p>Copyright {copyRight.getFullYear()}</p>
     </div>
   </footer>
 )
