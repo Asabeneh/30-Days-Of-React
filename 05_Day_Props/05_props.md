@@ -15,7 +15,7 @@
 </div>
 </div>
 
-[<< Day 4](../30-Days-Of-React/04_Day_Component/04_components.md) | [Day 6 >>]()
+[<< Day 4](../04_Day_Component/04_components.md) | [Day 6 >>]()
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_5.jpg)
 
@@ -1111,4 +1111,5 @@ We will cover propTypes in detail in other section.
 ![Hexadecimal colors](../images/hexadecimal_color_exercise.png)
 
 🎉 CONGRATULATIONS ! 🎉
-[<< Day 4](../30-Days-Of-React/04_Day_Component/04_components.md) | [Day 6 >>]()
+
+[<< Day 4](../04_Day_Component/04_components.md) | [Day 6 >>]()
