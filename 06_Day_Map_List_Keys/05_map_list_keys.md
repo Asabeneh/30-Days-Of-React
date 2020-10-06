@@ -262,10 +262,10 @@ ReactDOM.render(<App />, rootElement)
 
 ![Number Generator](../images/day_6_number_generater_exercise.png)
 
-1. Create the following hexadecimal colors
+2. Create the following hexadecimal colors
 
 ![Number Generator](../images/day_6_hexadecimal_colors_exercise.png)
 
-1. ![Ten most highest populations](../images/day_6_ten_highest_populations_exercise.png)
+3. ![Ten most highest populations](../images/day_6_ten_highest_populations_exercise.png)
 
 [<< Day 5](./../05_Day_Props/05_props.md) | [Day 7 >>]()
