@@ -97,7 +97,6 @@ Let's see how to map array of arrays
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const App = () => {
   const skills = [
     ['HTML', 10],
     ['CSS', 7],
@@ -267,5 +266,7 @@ ReactDOM.render(<App />, rootElement)
 ![Number Generator](../images/day_6_hexadecimal_colors_exercise.png)
 
 3. ![Ten most highest populations](../images/day_6_ten_highest_populations_exercise.png)
+
+🎉 CONGRATULATIONS ! 🎉
 
 [<< Day 5](./../05_Day_Props/05_props.md) | [Day 7 >>]()

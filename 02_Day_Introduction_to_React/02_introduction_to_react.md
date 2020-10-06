@@ -28,7 +28,7 @@
     - [Commenting a JSX element](#commenting-a-jsx-element)
     - [Rendering a JSX Element](#rendering-a-jsx-element)
     - [Style and className in JSX](#style-and-classname-in-jsx)
-    - [Injecting data to a JSX Element](#injecting-data-to-jsx-element)
+    - [Injecting data to a JSX Element](#injecting-data-to-a-jsx-element)
       - [Injecting a string to a JSX Element](#injecting-a-string-to-a-jsx-element)
       - [Injecting a number to a JSX Element](#injecting-a-number-to-a-jsx-element)
       - [Injecting an array to a JSX Element](#injecting-an-array-to-a-jsx-element)
@@ -115,7 +115,7 @@ const welcome = <h1>Welcome to 30 Days of React Challenge</h1>
 const data = <small>Oct 2, 2020</small>
 ```
 
-The strange looking code above looks like a JavaScript, but it is not JavaScript. It also looks like HTML, but not completely an HTML element. It is a mix of JavaScript and an HTML elements. JSX can allow us to use HTML in JavaScript. The HTML element in the JSX above is _h1_ and _small_.
+The above strange looking code seems like  JavaScript and it seems like , but it is not JavaScript and it seems like HTML but not completely an HTML element. It is a mix of JavaScript and an HTML elements. JSX can allow us to use HTML in JavaScript. The HTML element in the JSX above is _h1_ and _small_.
 
 #### JSX Element
 
