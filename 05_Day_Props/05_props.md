@@ -178,7 +178,7 @@ const App = () => {
 }
 
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
+
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -236,7 +236,6 @@ const App = () => (
 )
 
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -300,7 +299,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -334,7 +332,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -368,7 +365,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -524,7 +520,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -609,7 +604,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -667,7 +661,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -821,7 +814,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -898,7 +890,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -984,6 +975,7 @@ const Button = ({ text, onClick, style }) => (
   </button>
 )
 
+// CSS styles in JavaScript Object
 const buttonStyles = {
   backgroundColor: '#61dbfb',
   padding: 10,
@@ -1058,7 +1050,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 

@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 3](../30-Days-Of-React/03_Day_Setting_Up/03_day_setting_up.md) | [Day 5 >>](./05_Day_Props/05_props.md)
+[<< Day 3](../30-Days-Of-React/03_Day_Setting_Up/03_setting_up.md) | [Day 5 >>](./05_Day_Props/05_props.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_4.jpg)
 
@@ -282,7 +282,7 @@ const App = () => (
 )
 
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
+// we render the App component using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -322,7 +322,7 @@ const header = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
+// we render the App component using the ReactDOM package
 ReactDOM.render(<Header />, rootElement)
 ```
 
@@ -430,7 +430,7 @@ const app = () => (
   </div>
 )
 
-// we render the JSX element using the ReactDOM package
+// we render the App component using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -476,7 +476,7 @@ const hexaColor = () => {
 const HexaColor = () => <div>{hexaColor()}</div>
 
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
+// we render the App component using the ReactDOM package
 ReactDOM.render(<HexaColor />, rootElement)
 ```
 
@@ -499,4 +499,4 @@ ReactDOM.render(<HexaColor />, rootElement)
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 3](../30-Days-Of-React/03_Day_Setting_Up/03_day_setting_up.md) | [Day 5 >>](./05_Day_Props/05_props.md)
+[<< Day 3](../30-Days-Of-React/03_Day_Setting_Up/03_setting_up.md) | [Day 5 >>](./05_Day_Props/05_props.md)
