@@ -106,5 +106,5 @@ const App = () => (
 )
 
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
+// we render the App component using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
