@@ -258,6 +258,12 @@ ReactDOM.render(<App />, rootElement)
 
 # Exercises
 
-coming soon ...
+1. In the following design, evens are green, odds are yellow and prime numbers are red.
+
+![Number Generator](../images/day_6_number_generater_exercise.png)
+
+1. Create the following hexadecimal colors
+
+![Number Generator](../images/day_6_hexadecimal_colors_exercise.png)
 
 [<< Day 5](./../05_Day_Props/05_props.md) | [Day 7 >>]()
