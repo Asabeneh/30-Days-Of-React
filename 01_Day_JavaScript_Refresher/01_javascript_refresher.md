@@ -4083,7 +4083,7 @@ class Person {
     const fullName = this.firstName + ' ' + this.lastName
     return fullName
   }
-  get getscore() {
+  get getScore() {
     return this.score
   }
   get getSkills() {
