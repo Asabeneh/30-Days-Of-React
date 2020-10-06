@@ -15,7 +15,7 @@
 </div>
 </div>
 
-[<< Day 4](../04_Day_Component/04_components.md) | [Day 6 >>]()
+[<< Day 4](../04_Day_Component/04_components.md) | [Day 6 >>](../06_Day_Map_List_Keys/06_map_list_keys.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_5.jpg)
 
@@ -1094,4 +1094,4 @@ We will cover propTypes in detail in other section.
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 4](../04_Day_Component/04_components.md) | [ >>](../06_Day_Map_List_Keys/05_map_list_keys.md)
+[<< Day 4](../04_Day_Component/04_components.md) | [Day 6 >>](../06_Day_Map_List_Keys/06_map_list_keys.md)
