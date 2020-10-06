@@ -34,6 +34,8 @@
   - [Injecting data to JSX elements](#injecting-data-to-jsx-elements)
   - [Importing Media Objects in React](#importing-media-objects-in-react)
 - [Exercises](#exercises)
+  - [Exercises: Level 1](#exercises-level-1)
+  - [Exercises: Level 2](#exercises-level-2)
 
 # Setting Up
 
@@ -734,14 +736,29 @@ The boilerplate code can be found [here](../03/../03_Day_Setting_Up/30-days-of-r
 
 # Exercises
 
+## Exercises: Level 1
+
+1. What is module
+2. What is package ?
+3. What is the difference between a module and a package
+4. What is NPM ?
+5. What is Webpack ?
+6. How do you create a new React project ?
+7. What are these files and folders in a project(package.json, package-lock.json or yarn.lock, .gitignore,node_modules and public )
+8. What is your favorite code editor (I believe that it is Visual Studio Code) ?
+9. Add different Visual Studio Code extensions to imporve your productivity(eg. prettier, ESLint etc)
+10. 6. Try to make different module in a different file and import it to index.js.
+
+## Exercises: Level 2
+
 1. Import and render the following images
    ![Front end](../images/frontend_technologies.png)
 
-1.Design the following user card.
+2.Design the following user card.
 
 ![User Card](../images/user_card_design_jsx.png)
 
-1.  Use h1, p, input and button HTML element to create the following design using JSX
+3.  Use h1, p, input and button HTML element to create the following design using JSX
 
 ![News Letter](../images/news_letter_design.png)
 

@@ -34,6 +34,8 @@
   - [propTypes](#proptypes)
   - [defaultProps](#defaultprops)
 - [Exercises: Components and Props](#exercises-components-and-props)
+  - [Exercises: Level 1](#exercises-level-1)
+  - [Exercises: Level 2](#exercises-level-2)
 
 # Props
 
@@ -1065,8 +1067,18 @@ We will cover propTypes in detail in other section.
 
 # Exercises: Components and Props
 
-1.Create functional components and display the following images
-![Front end](../images/frontend_technologies.png)
+## Exercises: Level 1
+
+1. What is props in a React component ?
+2. How do you access props in React component ?
+3. What data types can we pass as a props to components ?
+4. What is a propTypes
+5. What is a default propTypes
+
+## Exercises: Level 2
+
+1. Create functional components and display the following images
+   ![Front end](../images/frontend_technologies.png)
 
 2.Use functional component to design the following user card.
 
