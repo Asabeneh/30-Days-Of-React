@@ -97,7 +97,7 @@ Let's see how to map array of arrays
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const App = () => {
+
   const skills = [
     ['HTML', 10],
     ['CSS', 7],
