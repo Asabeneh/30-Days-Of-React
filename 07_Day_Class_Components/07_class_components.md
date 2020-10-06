@@ -16,7 +16,7 @@
 
 [<< Day 6](../06_Day_Map_List_Keys/06_map_list_keys.md) | [Day 8 >>](../07_Day_Class_Components/07_class_components.md)
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_6.jpg)
+![30 Days of React banner](../images/30_days_of_react_banner_day_7.jpg)
 
 - [Class Components](#class-components)
   - [Accessing props in Class components](#accessing-props-in-class-components)
