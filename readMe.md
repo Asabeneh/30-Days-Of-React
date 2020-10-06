@@ -28,6 +28,7 @@
 | 03    |                                   [Setting Up](./03_Day_Setting_Up/03_day_setting_up.md)                                    |
 | 04    |                                      [Components](./04_Day_Component/04_components.md)                                      |
 | 05    |                                             [Props](./05_Day_Props/05_props.md)                                             |
+| 06   |                                             [List, Map and Keys](./06_Day_Map_List_Keys/05_map_list_keys.md)                                             |
 
 🧡🧡🧡 HAPPY CODING 🧡🧡🧡<div>
 <small>Support [**Asabeneh**](https://www.patreon.com/asabeneh?fan_landing=true) to create more educational materials</small>  
