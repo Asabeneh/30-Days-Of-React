@@ -1082,4 +1082,4 @@ We will cover propTypes in detail in other section.
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 4](../04_Day_Component/04_components.md) | [Day 6 >>]()
+[<< Day 4](../04_Day_Component/04_components.md) | [ >>](../06_Day_Map_List_Keys/05_map_list_keys.md)
