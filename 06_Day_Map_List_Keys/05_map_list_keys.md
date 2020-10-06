@@ -18,17 +18,17 @@
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_6.jpg)
 
-- [Mapping Arrays](#mapping-arrays)
+- [Mapping arrays](#mapping-arrays)
   - [Mapping and rendering arrays](#mapping-and-rendering-arrays)
-    - [Mapping Array of Numbers](#mapping-array-of-numbers)
+    - [Mapping array of numbers](#mapping-array-of-numbers)
     - [Mapping array of arrays](#mapping-array-of-arrays)
     - [Mapping array of objects](#mapping-array-of-objects)
-    - [Key in mapping array](#key-in-mapping-array)
+    - [Key in mapping arrays](#key-in-mapping-arrays)
 - [Exercises](#exercises)
 
-# Mapping Arrays
+# Mapping arrays
 
-Array is the most frequent used data structure to handle many kind of problems. In React, we we map an array and modify to list of JSX by adding a certain HTML elements to each element of the array.
+Array is the most frequently used data structure to handle many kind of problems. In React, we use map to modify an array to list of JSX by adding a certain HTML elements to each element of the array.
 
 ## Mapping and rendering arrays
 
@@ -54,9 +54,9 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-If you check the the browser, you will see the numbers are attached together in one line. To avoid this, we modify the array and change the array elements to JSX element. See the example below, the array has been modified to a list JSX elements.
+If you check the browser, you will see the numbers are attached together in one line. To avoid this, we modify the array and change the array elements to JSX element. See the example below, the array has been modified to a list JSX elements.
 
-### Mapping Array of Numbers
+### Mapping array of numbers
 
 ```js
 import React from 'react'
@@ -67,6 +67,8 @@ const Numbers = ({ numbers }) => {
   const list = numbers.map((number) => <li>{number}</li>)
   return list
 }
+
+// App component
 
 const App = () => {
   const numbers = [1, 2, 3, 4, 5]
@@ -104,7 +106,6 @@ const App = () => {
   ]
 
   // Skill Component
-
   const Skill = ({ skill: [tech, level] }) => (
     <li>
       {tech} {level}
@@ -118,7 +119,8 @@ const App = () => {
     return <ul>{skillsList}</ul>
   }
 
-  return (
+  const App = () => {
+      return (
     <div className='container'>
       <div>
         <h1>Skills Level</h1>
@@ -126,7 +128,7 @@ const App = () => {
       </div>
     </div>
   )
-}
+  }
 
 const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
@@ -163,6 +165,7 @@ const Countries = ({ countries }) => {
   const countryList = countries.map((country) => <Country country={country} />)
   return <div>{countryList}</div>
 }
+// App component
 const App = () => (
   <div className='container'>
     <div>
@@ -176,7 +179,7 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-### Key in mapping array
+### Key in mapping arrays
 
 Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity. Key should be unique. Mostly data has come with an id and we can use id as key. If we do not pass key react raise a warning on the browser. If the data does not have id we have to find a way to create a unique identifier for each elements when we map it. See the following example:
 
@@ -255,8 +258,6 @@ ReactDOM.render(<App />, rootElement)
 
 # Exercises
 
-coming
-
-![Rendering list](images/rendering_list.png)
+coming soon ...
 
 [<< Day 5](./../05_Day_Props/05_props.md) | [Day 7 >>]()
