@@ -13,8 +13,8 @@
 <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
 <small> October, 2020</small>
 </sub>
-</div>
 
+</div>
 
 [<< Day 0](../readMe.md) | [Day 2 >>](../02_Day_Introduction_to_React/02_introduction_to_react.md)
 
@@ -2763,13 +2763,12 @@ Let us see were we use call back functions.For instance the _forEach_ method use
 
 ```js
 const numbers = [1, 2, 3, 4]
-​
 const sumArray = arr => {
   let sum = 0
   const callback = function(element) {
     sum += element
   }
-  numbers.forEach(callback)
+  arr.forEach(callback)
   return sum
 
 }
@@ -2777,7 +2776,7 @@ console.log(sumArray(numbers))
 ```
 
 ```sh
-15
+10
 ```
 
 The above example can be simplified as follows:
@@ -2787,7 +2786,7 @@ const numbers = [1, 2, 3, 4]
 ​
 const sumArray = arr => {
   let sum = 0
-  numbers.forEach(function(element) {
+  arr.forEach(function(element) {
     sum += element
   })
   return sum
@@ -2797,7 +2796,7 @@ console.log(sumArray(numbers))
 ```
 
 ```sh
-15
+10
 ```
 
 #### setting time
@@ -4083,7 +4082,7 @@ class Person {
     const fullName = this.firstName + ' ' + this.lastName
     return fullName
   }
-  get getscore() {
+  get getScore() {
     return this.score
   }
   get getSkills() {
