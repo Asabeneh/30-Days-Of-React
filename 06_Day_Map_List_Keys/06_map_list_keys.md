@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 5](./../05_Day_Props/05_props.md) | [Day 7 >>]()
+[<< Day 5](./../05_Day_Props/05_props.md) | [Day 7 >>](../07_Day_Class_Components/07_class_components.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_6.jpg)
 
@@ -25,6 +25,9 @@
     - [Mapping array of objects](#mapping-array-of-objects)
     - [Key in mapping arrays](#key-in-mapping-arrays)
 - [Exercises](#exercises)
+  - [Exercises: Level 1](#exercises-level-1)
+  - [Exercises: Level 2](#exercises-level-2)
+  - [Exercises: Level 3](#exercises-level-3)
 
 # Mapping arrays
 
@@ -97,30 +100,29 @@ Let's see how to map array of arrays
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+const skills = [
+  ['HTML', 10],
+  ['CSS', 7],
+  ['JavaScript', 9],
+  ['React', 8],
+]
+
+// Skill Component
+const Skill = ({ skill: [tech, level] }) => (
+  <li>
+    {tech} {level}
+  </li>
+)
+
+// Skills Component
+const Skills = ({ skills }) => {
+  const skillsList = skills.map((skill) => <Skill skill={skill} />)
+  console.log(skillsList)
+  return <ul>{skillsList}</ul>
+}
+
 const App = () => {
-  const skills = [
-    ['HTML', 10],
-    ['CSS', 7],
-    ['JavaScript', 9],
-    ['React', 8],
-  ]
-
-  // Skill Component
-  const Skill = ({ skill: [tech, level] }) => (
-    <li>
-      {tech} {level}
-    </li>
-  )
-
-  // Skills Component
-  const Skills = ({ skills }) => {
-    const skillsList = skills.map((skill) => <Skill skill={skill} />)
-    console.log(skillsList)
-    return <ul>{skillsList}</ul>
-  }
-
-  const App = () => {
-      return (
+  return (
     <div className='container'>
       <div>
         <h1>Skills Level</h1>
@@ -128,7 +130,7 @@ const App = () => {
       </div>
     </div>
   )
-  }
+}
 
 const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
@@ -258,6 +260,29 @@ ReactDOM.render(<App />, rootElement)
 
 # Exercises
 
-coming soon ...
+## Exercises: Level 1
 
-[<< Day 5](./../05_Day_Props/05_props.md) | [Day 7 >>]()
+1. Why you need to map an array ?
+2. Why we need keys during mapping an array ?
+3. What is the importance of destructuring your code ?
+4. Does destructuring make your code clean and easy to read ?
+
+## Exercises: Level 2
+
+1. In the following design, evens are green, odds are yellow and prime numbers are red. Build the following colors using React component
+
+![Number Generator](../images/day_6_number_generater_exercise.png)
+
+2. Create the following hexadecimal colors using React component
+
+![Number Generator](../images/day_6_hexadecimal_colors_exercise.png)
+
+## Exercises: Level 3
+
+1.Make the following bar group using given [data](../06_Day_Map_List_Keys/06_map_list_keys_boilerplate/src/data/ten_most_highest_populations.js)
+
+![Ten most highest populations](../images/day_6_ten_highest_populations_exercise.png)
+
+🎉 CONGRATULATIONS ! 🎉
+
+[<< Day 5](./../05_Day_Props/05_props.md) | [Day 7 >>](../07_Day_Class_Components/07_class_components.md)

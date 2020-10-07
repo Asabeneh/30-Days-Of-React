@@ -28,6 +28,8 @@
     - [Injecting data to JSX in React Component](#injecting-data-to-jsx-in-react-component)
     - [Further on Functional components](#further-on-functional-components)
 - [Exercises: Components](#exercises-components)
+  - [Exercises: Level 1](#exercises-level-1)
+  - [Exercises: Level 2](#exercises-level-2)
 
 # Components
 
@@ -482,8 +484,21 @@ ReactDOM.render(<HexaColor />, rootElement)
 
 # Exercises: Components
 
-1.Create functional components and display the following images
-![Front end](../images/frontend_technologies.png)
+## Exercises: Level 1
+
+1. What is a React Component ?
+2. How do you make a React functional component ?
+3. What is the difference between a pure JavaScript function and a functional component ?
+4. How small is a React component ?
+5. Can we make a button or input field component ?
+6. Make a reusable Button component
+7. Make a reusable InputField component ?
+8. Make a reusable alert box component with one div parent element and one p child element of the div(warning alert box, success alert box)
+
+## Exercises: Level 2
+
+1. Create functional components and display the following images
+   ![Front end](../images/frontend_technologies.png)
 
 2.Use functional component to design the following user card.
 
