@@ -39,3 +39,66 @@ console.log('Number of web technologies:', webTechs.length)
 
 console.log('Countries:', countries)
 console.log('Number of countries:', countries.length)
+
+
+let js = 'JavaScript'
+const charsInJavaScript = js.split('')
+
+console.log(charsInJavaScript) // ["J", "a", "v", "a", "S", "c", "r", "i", "p", "t"]
+
+let companiesString = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+const companies = companiesString.split(',')
+
+console.log(companies) // ["Facebook", " Google", " Microsoft", " Apple", " IBM", " Oracle", " Amazon"]
+let txt =
+  'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+const words = txt.split(' ')
+
+console.log(words)
+// the text has special characters think how you can just get only the words
+// ["I", "love", "teaching", "and", "empowering", "people.", "I", "teach", "HTML,", "CSS,", "JS,", "React,", "Python"]
+
+const fruity = ['banana', 'orange', 'mango', 'lemon']
+let firstFruit = fruity[0] // we are accessing the first item using its index
+
+console.log(firstFruit) // banana
+
+secondFruit = fruity[1]
+console.log(secondFruit) // orange
+
+let lastFruit = fruity[3]
+console.log(lastFruit) // lemon
+// Last index can be calculated as follows
+
+let lastIndex = fruity.length - 1
+lastFruit = fruity[lastIndex]
+
+console.log(lastFruit) // lemon
+
+const numbersArr = [0, 3.14, 9.81, 37, 98.6, 100] // set of numbersArr
+
+console.log(numbersArr.length) // => to know the size of the array, which is 6
+console.log(numbersArr) // -> [0, 3.14, 9.81, 37, 98.6, 100]
+console.log(numbersArr[0]) //  -> 0
+console.log(numbersArr[5]) //  -> 100
+
+let lastInd = numbersArr.length - 1
+console.log(numbersArr[lastInd]) // -> 
+
+const webTechno = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Redux',
+    'Node',
+    'MongoDB',
+  ] // List of web technologies
+  
+console.log(webTechno) // all the array items
+console.log(webTechno.length) // => to know the size of the array, which is 7
+console.log(webTechno[0]) //  -> HTML
+console.log(webTechno[6]) //  -> MongoDB
+  
+let last = webTechno.length - 1
+console.log("last array element is " +webTechno[last])
