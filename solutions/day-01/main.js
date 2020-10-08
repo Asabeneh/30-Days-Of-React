@@ -211,3 +211,46 @@ console.log(names.join('')) //AsabenehMathiasEliasBrook
 console.log(names.join(' ')) //Asabeneh Mathias Elias Brook
 console.log(names.join(', ')) //Asabeneh, Mathias, Elias, Brook
 console.log(names.join(' # ')) //Asabeneh # Mathias # Elias # Brook
+
+
+console.log(numbers.slice()) // -> it copies all  item
+console.log(numbers.slice(0)) // -> it copies all  item
+console.log(numbers.slice(0, numbers.length)) // it copies all  item
+console.log(numbers.slice(1, 4)) // -> [2,3,4] // it doesn't include the ending position
+
+numbers.push(1000)
+console.log(numbers)
+
+fruits.push('pineapple')
+console.log(fruits)
+fruits.pop()
+console.log(fruits)
+
+fruits.shift()
+console.log(fruits)
+
+fruits.unshift('strawberry')
+console.log(fruits)
+
+console.log(fruits.reverse())
+fruits.unshift('marionberry')
+console.log(fruits)
+fruits.sort()
+console.log(fruits)
+
+const firstNums = [1, 2, 3]
+const secondNums = [1, 4, 9]
+
+const arrayOfArray = [
+  [1, 2, 3],
+  [1, 2, 3],
+]
+console.log(arrayOfArray[0]) // [1, 2, 3]
+
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node', 'Express', 'MongoDB']
+const fullStack = [frontEnd, backEnd]
+console.log(fullStack) // [["HTML", "CSS", "JS", "React", "Redux"], ["Node", "Express", "MongoDB"]]
+console.log(fullStack.length) // 2
+console.log(fullStack[0]) // ["HTML", "CSS", "JS", "React", "Redux"]
+console.log(fullStack[1]) // ["Node", "Express", "MongoDB"]
