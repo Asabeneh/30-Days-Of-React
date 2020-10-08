@@ -39,13 +39,13 @@
 
 # Setting Up
 
-In the previous section, we learned about JSX and we accessed the React and ReactDOM package using CDN. However, in real projects instead of CDN you will use the create-react-app package to generate a React project starter(boilerplate). The initial _create-react-app_ was released on Jul 22, 2016. Before this time, developers used to configure webpack which a JavaScript module bundler, babel and all the necessary packages manually and this used to take half an hour or may be more. Now, create-react-app will take care of everything and you will be in charge of developing the product only instead of spending too much time configuring and setting up projects. Before we start using different tools, let's have a brief introduction for all the tools we are going to use in this challenge. You do not have to understand everything but I will try to give a very short introduction about some of the tools and technologies which we use when we work with React.
+In the previous section, we learned about JSX and we accessed the React and ReactDOM package using CDN. However, in real projects instead of CDN you will use the create-react-app package to generate a React project starter(boilerplate). The initial _create-react-app_ was released on Jul 22, 2016. Before this time, developers used to configure webpack with a JavaScript module bundler, babel and all the necessary packages manually and this used to take half an hour or maybe more. Now, create-react-app will take care of everything and you will be in charge of only developing the product, instead of spending too much time configuring and setting up projects. Before we start using different tools, let's have a brief introduction to all the tools we are going to use in this challenge. You do not have to understand everything, but I will try to give a very short introduction to some of the tools and technologies that we use when we work with React.
 
 ## Node
 
-Node is a JavaScript runtime environment which allows JavaScript to run on the server. Node was created in 2009. Node has played a great role for the growth of JavaScript. The React application starts by default at localhost 3000. The create-react-app has configured a node server for the React Application. That is why we need node and node modules. We will see create-react-app soon.
+Node is a JavaScript runtime environment that allows JavaScript to run on the server. Node was created in 2009. Node has played a great role for the growth of JavaScript. The React application starts by default at localhost 3000. The create-react-app has configured a node server for the React Application. That is why we need node and node modules. We will see create-react-app soon.
 
-If you do have node, install node. Install [node.js](https://nodejs.org/en/).
+If you do not have node, install it. Install [node.js](https://nodejs.org/en/).
 
 ![Node download](../images/download_node.png)
 
@@ -53,7 +53,7 @@ After downloading double click and install
 
 ![Install node](../images/install_node.png)
 
-We can check if node is installed on our local machine by opening our device terminal or command prompt and writing the following command.
+We can check if node is installed on our local machine, by opening our device terminal or command prompt, and writing the following command:
 
 ```sh
 asabeneh $ node -v
@@ -62,8 +62,8 @@ v12.18.0
 
 ## Module
 
-A single or multiple functions which can be exported and imported when needed and can be included in a project.
-In react we do not use link to access modules or packages instead we import the module. Let's see how to import and export a module or modules
+A single or multiple functions, that can be exported and imported when needed, can be included in a project.
+In React we do not use link to access modules or packages, instead we import the module. Let's see how to import and export a module or modules:
 
 ```js
 // math.js
@@ -80,7 +80,7 @@ export default (function doSomeMath() {
 })()
 ```
 
-Now let's import the _math.js_ modules to a different file.
+Now let's import the _math.js_ modules to a different file:
 
 ```js
 // index.js
@@ -91,7 +91,7 @@ import doSomeMath from './math.js'
 // since these modules were not exported as default we have to desctructure
 import { addTwo, multiply, subtract } from './math.js'
 
-import * as everything from './math.js' // to import everything renaming
+import * as everything from './math.js' // to import everything remaining
 console.log(addTwo(5, 5))
 console.log(doSomeMath.addTwo(5, 5))
 console.log(everything)
@@ -105,17 +105,17 @@ A Package is a module or a collection of modules. For instance, React, ReactDOM 
 
 ## Node Package Manager(NPM)
 
-NPM was created in 2010. You do not need to install NPM separately when you install node you will have also NPM. NPM is a default package manager for Node.js. It allows users to consume and distribute JavaScript modules that are available in the registry. NPM allows to create packages, use packages and distribute packages. NMP has also play quite a big role in the growth of JavaScript. Currently, there is more than 350, 000 package on NPM registry. Let's see the create-react-app on NPM registry. The number of downloads show the popularity of the package.
+NPM was created in 2010. You do not need to install NPM separately - when you install node you will have also NPM. NPM is a default package manager for Node.js. It allows users to consume and distribute JavaScript modules that are available in the registry. NPM allows to create packages, use packages and distribute packages. NMP also played quite a big role in the growth of JavaScript. Currently, there is more than 350,000 packages in the NPM registry. Let's see the create-react-app on NPM registry. The number of downloads show the popularity of the package.
 
 ![NPM create-react-app](../images/npm_registry.png)
 
 ## Visual Studio Code
 
-We will use Visual Studio Code as a code editor and [download](https://code.visualstudio.com) and install it if you do not have one yet.
+We will use Visual Studio Code as a code editor. [Download](https://code.visualstudio.com) and install it if you do not have one yet.
 
 ## Browser
 
-We will use Google chrome
+We will use Google Chrome
 
 ## Visual Studio Extensions
 
@@ -128,7 +128,7 @@ You may need to install these extensions from Visual Studio Code
 
 ## Create React App
 
-To create a react project you can use one of the following ways. Let's assume you installed node. Open the command line interface , git bash or terminal on Mac or Linux. Then run the following command. I am using git bash.
+To create a react project you can use one of the following ways. Let's assume you installed node. Open the command line interface (CLI), git bash or terminal on Mac or Linux. Then run the following command. I am using git bash.
 
 ```sh
 Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop
@@ -142,7 +142,7 @@ Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop
 $ npm install -g create-react-app
 ```
 
-After you installed create-react app, you create a React application as follows:
+After you installed create-react-app, you create a React application as follows:
 
 ```sh
 Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop
@@ -171,51 +171,51 @@ Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/30-days-of-react (master)
 \$ npm start
 ```
 
-Now your react app should run at localhost 3000. Go to the App.js and modify the content by writing some text, you will see the latest change on the browsers.
-To stop the running server, press Ctr + C
+Now your React app should run at localhost 3000. Go to the App.js and modify the content by writing some text, you will see the latest changes on the browser.
+To stop the server, press Ctr + C in the CLI.
 
 ![React Starting](../images/react_app_starting.png)
 
 ## React Boilerplate
 
-Let's see the React boilerplate which has been created by create-react-app. Whenever you create a new project you run create-react-app and name of the project.
+Let's see the React boilerplate, which has been created by create-react-app. Whenever you create a new project, you run create-react-app and name of the project.
 
-In the following React boilerplate, there are three folders:node_modules, public and src. In addition, there are .gitignore, README.mde, package.json and yarn.lock. In some of you instead of yarn.lock, you may have package-lock.json.
+In the following React boilerplate, there are three folders: node_modules, public and src. In addition, there are .gitignore, README.md, package.json and yarn.lock. Some of you, instead of yarn.lock, you may have package-lock.json.
 
 It is good to know these folders and files.
 
-- node_modules - store all the necessary node packages of the react applications.
+- node_modules - stores all the necessary node packages of the React applications.
 
 - Public
-  -index.html - the only HTML file we have in the entire application
+  - index.html - the only HTML file we have in the entire application
 
-  - favicon.io - a favicon
-  - manifest.json - is use to make the application a progressive web app
-  - other images- which can be used for open graph image or for other purposes
-  - robots.txt - information if the website allow web scraping
+  - favicon.ico - an icon file
+  - manifest.json - is used to make the application a progressive web app
+  - other images - can be used to open a graph image or for other purposes
+  - robots.txt - information, if the website allows web scraping
 
 - src
 
   - App.css, index.css - are different CSS files
   - index.js - a file which allows to connect all the components with index.html
-  - App.js - A file which we import most the presentational components
-  - serviceWorker.js: is used to add progressive web app feature
+  - App.js - A file where we usually import most of the presentational components
+  - serviceWorker.js: is used to add progressive web app features
   - setupTests.js - to write testing cases
 
 - package.json- List of packages the applications uses
-- .gitignore - React boilerplate comes with git initiated, and the .gitingore allow files and folders not to be pushed to GitHub
+- .gitignore - React boilerplate comes with git initiated, and the .gitingore allows files and folders not to be pushed to GitHub
 - README.md - Markdown file to write documentation
 - yarn.lock or package-lock.json - a means to lock the version of the package
 
 ![React Boilerplate](../images/react_boilerplate.png)
 
-Now lets remove all the file which we do not need at the moment and leave only the file we need right now.
+Now lets remove all the files, which we do not need at the moment, and leave only the files we need right now.
 
-After removing most of the file, the structure of the boilerplate looks like this:
+After removing most of the files, the structure of the boilerplate looks like this:
 
 ![React Boilerplate Cleaned](../images/react_bolier_plate_cleaned.png)
 
-Now lets write code on index.js. First of we should import React and ReactDOM. React allows us to write JSX and ReactDOM to render the JSX on the DOM. ReactDOM has render method. Let's use all the JSX elements we created on Day 2. The ReactDOM render method takes two parameters a JSX or a component and the root.
+Now lets write code on index.js. First of, we should import React and ReactDOM. React allows us to write JSX and ReactDOM to render the JSX on the DOM. ReactDOM has a render method. Let's use all the JSX elements we created on Day 2. The ReactDOM render method takes two parameters, a JSX or a component and the root.
 
 ```js
 //index.js
@@ -261,7 +261,7 @@ Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/30-days-of-react (master)
 \$ npm start
 ```
 
-If you do not have any bugs your React app will be launched on the browser.
+If you do not have any bugs, your React app will be launched on the browser.
 
 ![JSX using create react app](../images/jsx_use_create_react_app.png)
 
@@ -271,7 +271,7 @@ Let's write more JSX elements and render them on the browser. This expression is
 const title = <h2>Getting Started React</h2>
 ```
 
-Let's add more content the previous JSX and change the name to header.
+Let's add more content to the previous JSX and change the name to header.
 
 ```js
 const header = (
@@ -283,7 +283,7 @@ const header = (
 )
 ```
 
-Let's render this to the browser, in order to render we need ReactDOM.
+Let's render this to the browser, in order to do so, we need ReactDOM.
 
 ```js
 //index.js
@@ -367,7 +367,7 @@ ReactDOM.render(app, rootElement)
 
 ## Styles in JSX
 
-Let's apply style to the JSX elements. We can style JSX either using inline, internal or external CSS styles. Now, let's apply an inline styles to each JSX elements.
+Let's apply style to the JSX elements. We can style JSX either using inline, internal or external CSS styles. Now, let's apply inline styles to each JSX element.
 
 ```js
 // index.js
@@ -435,7 +435,7 @@ ReactDOM.render(app, rootElement)
 
 ![Inline styling JSX](../images/styling_jsx_inline_create_react_app.png)
 
-Now, lets apply an internal style, we put all the CSS on the header of the index.html.
+Now, lets apply an internal style, we put all the CSS in the header of the index.html.
 
 ```js
 // index.js
@@ -602,8 +602,8 @@ ReactDOM.render(app, rootElement)
 
 ## Importing Media Objects in React
 
-How do we import images, video and audio in react? Let's see how we import image first.
-Create images folder in the src folder and save an image. For instance let's save asabeneh.jpg image and let's import this image to index.js. After importing we will inject it to a JSX expression, user. See the code below.
+How do we import images, video and audio in React? Let's see how we import images first.
+Create images folder in the src folder and save an image inside. For instance let's save asabeneh.jpg image and let's import this image to index.js. After importing we will inject it to a JSX expression, user. See the code below.
 
 ```js
 // index.js
@@ -624,7 +624,7 @@ ReactDOM.render(user, rootElement)
 
 ![Rendering image](../images/rendering_image.png)
 
-Let's inject the user inside the main JSX element and see the result
+Let's inject the user inside the main JSX element and see the result:
 
 ```js
 // index.js
@@ -738,27 +738,27 @@ The boilerplate code can be found [here](../03/../03_Day_Setting_Up/30-days-of-r
 
 ## Exercises: Level 1
 
-1. What is module
-2. What is package ?
-3. What is the difference between a module and a package
-4. What is NPM ?
-5. What is Webpack ?
-6. How do you create a new React project ?
-7. What are these files and folders in a project(package.json, package-lock.json or yarn.lock, .gitignore,node_modules and public )
-8. What is your favorite code editor (I believe that it is Visual Studio Code) ?
-9. Add different Visual Studio Code extensions to imporve your productivity(eg. prettier, ESLint etc)
-10. 6. Try to make different module in a different file and import it to index.js.
+1. What is a module?
+2. What is package?
+3. What is the difference between a module and a package.
+4. What is NPM?
+5. What is Webpack?
+6. How do you create a new React project?
+7. What are the files and folders inside a project folder(package.json, package-lock.json or yarn.lock, .gitignore,node_modules and public)?
+8. What is your favorite code editor (I believe that it is Visual Studio Code)?
+9. Add different Visual Studio Code extensions to imporve your productivity(eg. prettier, ESLint etc).
+10. Try to make a different module in a different file and import it to index.js.
 
 ## Exercises: Level 2
 
 1. Import and render the following images
-   ![Front end](../images/frontend_technologies.png)
+![Front end](../images/frontend_technologies.png)
 
-2.Design the following user card.
+2. Design the following user card.
 
 ![User Card](../images/user_card_design_jsx.png)
 
-3.  Use h1, p, input and button HTML element to create the following design using JSX
+3.  Use h1, p, input and button HTML elements to create the following design using JSX
 
 ![News Letter](../images/news_letter_design.png)
 
