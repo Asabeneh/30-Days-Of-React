@@ -28,9 +28,9 @@
 |03|[Setting Up](./03_Day_Setting_Up/03_day_setting_up.md)|
 |04|[Components](./04_Day_Component/04_components.md)|
 |05|[Props](./05_Day_Props/05_props.md)|
-|06|[List, Map and Keys](../06_Day_Map_List_Keys/06_map_list_keys.md)|
+|06|[List, Map and Keys](./06_Day_Map_List_Keys/06_map_list_keys.md)|
 |07|[Class Components](./07_Day_Class_Components/07_class_components.md)|
-|08|[States 😞](./08_Day_States/08_states.md)|
+|08|[States](./08_Day_States/08_states.md)|
 |09|[Conditional Rendering 😞]()|
 |10|[Events 😞]()|
 |11|[Forms 😞]()|
