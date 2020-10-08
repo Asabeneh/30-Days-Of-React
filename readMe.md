@@ -31,7 +31,7 @@
 |06|[List, Map and Keys](./06_Day_Map_List_Keys/06_map_list_keys.md)|
 |07|[Class Components](./07_Day_Class_Components/07_class_components.md)|
 |08|[States](./08_Day_States/08_states.md)|
-|09|[Conditional Rendering 😞]()|
+|09|[Conditional Rendering](./09_Day_Conditional_Rendering/09_conditional_rendering.md)|
 |10|[Events 😞]()|
 |11|[Forms 😞]()|
 |13|[Controlled and Uncondrolled Component 😞]()|
