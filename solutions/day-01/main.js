@@ -81,9 +81,8 @@ console.log(numbersArr.length) // => to know the size of the array, which is 6
 console.log(numbersArr) // -> [0, 3.14, 9.81, 37, 98.6, 100]
 console.log(numbersArr[0]) //  -> 0
 console.log(numbersArr[5]) //  -> 100
-
-let lastInd = numbersArr.length - 1
-console.log(numbersArr[lastInd]) // -> 
+lastIndex = numbersArr.length - 1
+console.log(numbersArr[lastIndex]) // -> 
 
 const webTechno = [
     'HTML',
@@ -101,4 +100,72 @@ console.log(webTechno[0]) //  -> HTML
 console.log(webTechno[6]) //  -> MongoDB
   
 let last = webTechno.length - 1
-console.log("last array element is " +webTechno[last])
+console.log("last array element is " + webTechno[last])
+
+const countries2 = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya',
+  ] // List of countries2
+  
+  console.log(countries2) // -> all countries2 in array
+  console.log(countries2[0]) //  -> Albania
+  console.log(countries2[10]) //  -> Kenya
+  
+  lastIndex = countries2.length - 1
+console.log(countries2[lastIndex]) //  -> Kenya
+  
+const shoppingCart = [
+    'Milk',
+    'Mango',
+    'Tomato',
+    'Potato',
+    'Avocado',
+    'Meat',
+    'Eggs',
+    'Sugar',
+  ] // List of food products
+  
+  console.log(shoppingCart) // -> all shoppingCart in array
+  console.log(shoppingCart[0]) //  -> Milk
+  console.log(shoppingCart[7]) //  -> Sugar
+  
+  lastIndex = shoppingCart.length - 1
+console.log(shoppingCart[lastIndex]) //  -> Sugar
+  
+
+const oneToFive = [1, 2, 3, 4, 5]
+oneToFive[0] = 100 // changing 1 at index 0 to 10
+oneToFive[1] = 200 // changing  2 at index 1 to 20
+
+console.log(oneToFive) // [10, 20, 3, 4, 5]
+
+
+const morecountries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya',
+  ]
+
+console.log(morecountries)
+morecountries[0] = 'Afghanistan'
+lastIndex = morecountries.length - 1
+morecountries[lastIndex] = 'Korea'
+console.log(morecountries)
+
