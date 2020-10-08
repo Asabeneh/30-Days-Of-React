@@ -19,17 +19,25 @@
 ![30 Days of React banner](../images/30_days_of_react_banner_day_8.jpg)
 
 - [State](#state)
+  - [What is State?](#what-is-state)
+  - [How to set a state](#how-to-set-a-state)
   - [Exercises](#exercises)
     - [Exercise: Level 1](#exercise-level-1)
     - [Exercise: Level 2](#exercise-level-2)
 
 # State
 
+## What is State?
+
 What is state ? The English meaning of state is _the particular condition that someone or something is in at a specific time_.
 
 Let us see some states being something - Are you happy or sad? - Is light on or off ? Is present or absent ? - Is full or empty ? For instance, I am happy because I am enjoying creating 30 Days Of React challenge. I believe that you are happy too.
 
-State is an object in react which let the component re-render when data changes. We do not directly change or mutate the state but we use the _setState()_ method. As you can see below in the state object we have count with initial value 0. We can access the state object using _this.state_ and the property name. See the example below.
+State is an object in react which let the component re-render when state data changes.
+
+## How to set a state
+
+We set an initial state inside the constructor or outside the constructor of a class based component. We do not directly change or mutate the state but we use the _setState()_ method to reset to a new state. . As you can see below in the state object we have count with initial value 0. We can access the state object using _this.state_ and the property name. See the example below.
 
 ```js
 // index.js
@@ -489,8 +497,8 @@ I believe now you have a very good understanding of state. After this, we will u
 
 ![Change Background](../images/08_day_changing_background_exercise.gif)
 
- 2. After long time of lock down you may think of travelling and you do not know where to go. Then make use of this random country selector to select your holiday destination.
-  
+2.  After long time of lock down you may think of travelling and you do not know where to go. Then make use of this random country selector to select your holiday destination.
+
 ![Change Background](../images/08_day_select_country_exercise.gif)
 
 🎉 CONGRATULATIONS ! 🎉

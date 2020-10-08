@@ -282,7 +282,7 @@ Programming languages are similar to human languages. English or many other lang
 I made a deliberate mistake. As a result, the console raises syntax errors. Actually, the syntax is very informative. It informs what type of mistake was made. By reading the error feedback guideline, we can correct the syntax and fix the problem. The process of identifying and removing errors from a program is called debugging. Let us fix the errors:
 
 ```js
-console.log('Hello, World!')
+console.log("Hello, World!")
 console.log('Hello, World!')
 ```
 

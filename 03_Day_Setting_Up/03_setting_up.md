@@ -187,11 +187,12 @@ It is good to know these folders and files.
 - node_modules - stores all the necessary node packages of the React applications.
 
 - Public
+
   - index.html - the only HTML file we have in the entire application
 
   - favicon.ico - an icon file
   - manifest.json - is used to make the application a progressive web app
-  - other images - can be used to open a graph image or for other purposes
+  - other images - open graph images(open graph images are images which are visible when a link share on social media)
   - robots.txt - information, if the website allows web scraping
 
 - src
@@ -752,7 +753,7 @@ The boilerplate code can be found [here](../03/../03_Day_Setting_Up/30-days-of-r
 ## Exercises: Level 2
 
 1. Import and render the following images
-![Front end](../images/frontend_technologies.png)
+   ![Front end](../images/frontend_technologies.png)
 
 2. Design the following user card.
 
