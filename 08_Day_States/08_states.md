@@ -21,9 +21,11 @@
 - [State](#state)
   - [What is State?](#what-is-state)
   - [How to set a state](#how-to-set-a-state)
+  - [Resetting a state using a JavaScript method](#resetting-a-state-using-a-javascript-method)
   - [Exercises](#exercises)
-    - [Exercise: Level 1](#exercise-level-1)
-    - [Exercise: Level 2](#exercise-level-2)
+    - [Exercises: Level 1](#exercises-level-1)
+    - [Exercises: Level 2](#exercises-level-2)
+    - [Exercises: Level 3](#exercises-level-3)
 
 # State
 
@@ -64,6 +66,8 @@ ReactDOM.render(<App />, rootElement)
 ```
 
 If you run the above code you will see zero on the browser. We can increase or decrease the value the state by changing the value of the state using JavaScript method.
+
+## Resetting a state using a JavaScript method
 
 Now, let's add some methods which increase or decrease the value of count by clicking a button. Let us add a button to increase and a button to decrease the value of count. To set the state we use react method _this.setState_. See the example below
 
@@ -132,7 +136,6 @@ ReactDOM.render(<App />, rootElement)
 ```
 
 Both button work well, but we need to re-structure the code well. Let us create separate methods in the component.
-If you want to see it live check it [here][https://codepen.io/asabeneh/full/jjdwyom]
 
 ```js
 // index.js
@@ -479,11 +482,11 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-I believe now you have a very good understanding of state. After this, we will use state in other sections too because state and props is the core of a react application.
+I believe that now you have a very good understanding of state. After this, we will use state in other sections too because state and props is the core of a react application.
 
 ## Exercises
 
-### Exercise: Level 1
+### Exercises: Level 1
 
 1. What was your state today? Are you happy? I hope so. If you manage to make it this far you should be happy.
 2. What is state in React ?
@@ -491,7 +494,7 @@ I believe now you have a very good understanding of state. After this, we will u
 4. How do you access state in a React component ?
 5. How do you set a set in a React component ?
 
-### Exercise: Level 2
+### Exercises: Level 2
 
 1. Use React state to change the background of the page. You can use this technique to apply a dark mode for your portfolio.
 
@@ -500,6 +503,10 @@ I believe now you have a very good understanding of state. After this, we will u
 2.  After long time of lock down you may think of travelling and you do not know where to go. Then make use of this random country selector to select your holiday destination.
 
 ![Change Background](../images/08_day_select_country_exercise.gif)
+
+### Exercises: Level 3
+
+Coming
 
 🎉 CONGRATULATIONS ! 🎉
 
