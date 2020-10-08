@@ -169,3 +169,45 @@ lastIndex = morecountries.length - 1
 morecountries[lastIndex] = 'Korea'
 console.log(morecountries)
 
+
+const arr2 = Array(4).fill('X')
+console.log(arr2)
+const arr3 = Array(2).fill('0')
+console.log(arr3)
+const combine = arr2.concat(arr3)
+console.log(combine)
+console.log(combine.length)
+console.log(combine.indexOf('0'))
+
+// let us check if a banana exist in the array
+
+
+let index = fruits.indexOf('banana') // 0
+
+if (index != -1) {
+  console.log('This fruit does exist in the array')
+} else {
+  console.log('This fruit does not exist in the array')
+}
+// This fruit does exist in the array
+
+// we can use also ternary here
+index != -1
+  ? console.log('This fruit does exist in the array')
+  : console.log('This fruit does not exist in the array')
+
+// let us check if a avocado exist in the array
+let indexOfAvocado = fruits.indexOf('avocado') // -1, if the element not found index is -1
+if (indexOfAvocado != -1) {
+  console.log('This fruit does exist in the array')
+} else {
+  console.log('This fruit does not exist in the array')
+}
+// This fruit does not exist in the array
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+
+console.log(names.join()) // Asabeneh,Mathias,Elias,Brook
+console.log(names.join('')) //AsabenehMathiasEliasBrook
+console.log(names.join(' ')) //Asabeneh Mathias Elias Brook
+console.log(names.join(', ')) //Asabeneh, Mathias, Elias, Brook
+console.log(names.join(' # ')) //Asabeneh # Mathias # Elias # Brook
