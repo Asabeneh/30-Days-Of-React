@@ -1,12 +1,17 @@
 let firstName = 'Derrek'
 firstName = 'Deek'
-console.log(firstName)
+console.log("first name is " + firstName)
 const PI = 3.14 // Not allowed to reassign PI to a new value
 // PI = 3.
 
-
-const arr = []
-console.log(arr)
+const arr = [
+    'Derrek',
+    250,
+    true,
+    { country: 'Finland', city: 'Helsinki' },
+    { skills: ['HTML', 'CSS', 'JS', 'React', 'Python'] },
+  ] // arr containing different data types
+  console.log(arr)
 
 const numbers = [0, 3.14, 9.81, 37, 98.6, 100] // array of numbers
 const fruits = ['banana', 'orange', 'mango', 'lemon'] // array of strings, fruits
