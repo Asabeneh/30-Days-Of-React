@@ -485,7 +485,13 @@ I believe now you have a very good understanding of state. After this, we will u
 
 ### Exercise: Level 2
 
+1. Use React state to change the background of the page. You can use this technique to apply a dark mode for your portfolio.
+
 ![Change Background](../images/08_day_changing_background_exercise.gif)
+
+ 2. After long time of lock down you may think of travelling and you do not know where to go. Then make use of this random country selector to select your holiday destination.
+  
+![Change Background](../images/08_day_select_country_exercise.gif)
 
 🎉 CONGRATULATIONS ! 🎉
 
