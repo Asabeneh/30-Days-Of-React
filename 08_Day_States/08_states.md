@@ -334,34 +334,36 @@ class Main extends React.Component {
     super(props)
   }
   render() {
+    const {
+      techs,
+      user,
+      greetPeople,
+      handleTime,
+      changeBackground,
+      count,
+      addOne,
+      minusOne,
+    } = this.props
     return (
       <main>
         <div className='main-wrapper'>
           <p>Prerequisite to get started react.js:</p>
           <ul>
-            <TechList techs={this.props.techs} />
+            <TechList techs={techs} />
           </ul>
-          <UserCard user={this.props.user} />
+          <UserCard user={user} />
           <Button
             text='Greet People'
-            onClick={this.props.greetPeople}
+            onClick={greetPeople}
             style={buttonStyles}
           />
-          <Button
-            text='Show Time'
-            onClick={this.props.handleTime}
-            style={buttonStyles}
-          />
+          <Button text='Show Time' onClick={handleTime} style={buttonStyles} />
           <Button
             text='Change Background'
-            onClick={this.props.changeBackground}
+            onClick={changeBackground}
             style={buttonStyles}
           />
-          <Count
-            count={this.props.count}
-            addOne={this.props.addOne}
-            minusOne={this.props.minusOne}
-          />
+          <Count count={count} addOne={addOne} minusOne={minusOne} />
         </div>
       </main>
     )
@@ -483,7 +485,7 @@ I believe now you have a very good understanding of state. After this, we will u
 
 ### Exercise: Level 2
 
-1[Change Background](../images/08_day_changing_background_exercise.gif)
+![Change Background](../images/08_day_changing_background_exercise.gif)
 
 🎉 CONGRATULATIONS ! 🎉
 
