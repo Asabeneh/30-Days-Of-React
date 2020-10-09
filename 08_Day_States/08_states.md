@@ -19,17 +19,27 @@
 ![30 Days of React banner](../images/30_days_of_react_banner_day_8.jpg)
 
 - [State](#state)
+  - [What is State?](#what-is-state)
+  - [How to set a state](#how-to-set-a-state)
+  - [Resetting a state using a JavaScript method](#resetting-a-state-using-a-javascript-method)
   - [Exercises](#exercises)
-    - [Exercise: Level 1](#exercise-level-1)
-    - [Exercise: Level 2](#exercise-level-2)
+    - [Exercises: Level 1](#exercises-level-1)
+    - [Exercises: Level 2](#exercises-level-2)
+    - [Exercises: Level 3](#exercises-level-3)
 
 # State
+
+## What is State?
 
 What is state ? The English meaning of state is _the particular condition that someone or something is in at a specific time_.
 
 Let us see some states being something - Are you happy or sad? - Is light on or off ? Is present or absent ? - Is full or empty ? For instance, I am happy because I am enjoying creating 30 Days Of React challenge. I believe that you are happy too.
 
-State is an object in react which let the component re-render when data changes. We do not directly change or mutate the state but we use the _setState()_ method. As you can see below in the state object we have count with initial value 0. We can access the state object using _this.state_ and the property name. See the example below.
+State is an object in react which let the component re-render when state data changes.
+
+## How to set a state
+
+We set an initial state inside the constructor or outside the constructor of a class based component. We do not directly change or mutate the state but we use the _setState()_ method to reset to a new state. . As you can see below in the state object we have count with initial value 0. We can access the state object using _this.state_ and the property name. See the example below.
 
 ```js
 // index.js
@@ -56,6 +66,8 @@ ReactDOM.render(<App />, rootElement)
 ```
 
 If you run the above code you will see zero on the browser. We can increase or decrease the value the state by changing the value of the state using JavaScript method.
+
+## Resetting a state using a JavaScript method
 
 Now, let's add some methods which increase or decrease the value of count by clicking a button. Let us add a button to increase and a button to decrease the value of count. To set the state we use react method _this.setState_. See the example below
 
@@ -124,7 +136,6 @@ ReactDOM.render(<App />, rootElement)
 ```
 
 Both button work well, but we need to re-structure the code well. Let us create separate methods in the component.
-If you want to see it live check it [here][https://codepen.io/asabeneh/full/jjdwyom]
 
 ```js
 // index.js
@@ -471,11 +482,11 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-I believe now you have a very good understanding of state. After this, we will use state in other sections too because state and props is the core of a react application.
+I believe that now you have a very good understanding of state. After this, we will use state in other sections too because state and props is the core of a react application.
 
 ## Exercises
 
-### Exercise: Level 1
+### Exercises: Level 1
 
 1. What was your state today? Are you happy? I hope so. If you manage to make it this far you should be happy.
 2. What is state in React ?
@@ -483,15 +494,19 @@ I believe now you have a very good understanding of state. After this, we will u
 4. How do you access state in a React component ?
 5. How do you set a set in a React component ?
 
-### Exercise: Level 2
+### Exercises: Level 2
 
 1. Use React state to change the background of the page. You can use this technique to apply a dark mode for your portfolio.
 
 ![Change Background](../images/08_day_changing_background_exercise.gif)
 
- 2. After long time of lock down you may think of travelling and you do not know where to go. Then make use of this random country selector to select your holiday destination.
-  
+2.  After long time of lock down you may think of travelling and you do not know where to go. Then make use of this random country selector to select your holiday destination.
+
 ![Change Background](../images/08_day_select_country_exercise.gif)
+
+### Exercises: Level 3
+
+Coming
 
 🎉 CONGRATULATIONS ! 🎉
 
