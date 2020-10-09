@@ -89,7 +89,6 @@ class App extends React.Component {
 
     return (
       <div className='app'>
-        {this.state.backgroundColor}
         <Header data={data} />
         {status}
       </div>
@@ -191,7 +190,6 @@ class App extends React.Component {
 
     return (
       <div className='app'>
-        {this.state.backgroundColor}
         <Header data={data} />
         {status}
         <Button text={text} style={buttonStyles} onClick={this.handleLogin} />
@@ -293,7 +291,6 @@ class App extends React.Component {
 
     return (
       <div className='app'>
-        {this.state.backgroundColor}
         <Header data={data} />
         {status}
         <Button
@@ -402,7 +399,6 @@ class App extends React.Component {
 
     return (
       <div className='app'>
-        {this.state.backgroundColor}
         <Header data={data} />
         {status}
         <Button
@@ -513,7 +509,6 @@ class App extends React.Component {
 
     return (
       <div className='app'>
-        {this.state.backgroundColor}
         <Header data={data} />
         {status}
         <Button
@@ -747,7 +742,6 @@ class App extends React.Component {
 
     return (
       <div className='app'>
-        {this.state.backgroundColor}
         <Header data={data} />
 
         <Main
@@ -779,7 +773,9 @@ ReactDOM.render(<App />, rootElement)
 
 ### Exercises: Level 2
 
-Coming
+1. Make a single page application which changes the body of the background based on the time of the day(Autumn, Winter, Spring, Summer)
+2. Make a single page application which change the body of the background based on the time of the day(Morning, Noon, Evening, Night)
+
 
 ### Exercises: Level 3
 
