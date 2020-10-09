@@ -71,7 +71,7 @@ console.log(
 
 ## JavaScript Class
 
-Class is a blue print of an object. We instantiate a class to create different objects. In addition, we can create children by inheriting all the methods and properties of the parent.
+A class is a blue print of an object. We instantiate a class to create different objects. In addition, we can create children by inheriting all the methods and properties of the parent.
 
 ```js
 class Parent {
@@ -118,7 +118,7 @@ const child = new Child(
 )
 ```
 
-We covered function and class in brief and React component is made of JavaScript functions or classes. Now, lets make React component.
+We covered function and class in brief and React component is made of JavaScript functions or classes. Now, let's make a React component.
 
 ## Creating React Component
 

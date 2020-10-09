@@ -106,7 +106,7 @@ const Header = () => (
 )
 ```
 
-Instead of injecting data we can also pass the data as a prop. React props are similar to parameters in functions.
+Instead of injecting data we can also pass the data as props. React props are similar to parameters in functions.
 
 ## Props object
 
@@ -192,7 +192,7 @@ Now, when you do console.log(props) you should get the following object, that me
 }
 ```
 
-As you can see in the above code, we passed only a single props to Header component, the welcome props. A component can have one or many props. Props could be different data types. It could be a string, number, boolean, array, object or a function. We will cover different kind of props in the next sections.
+As you can see in the above code, we passed only single props to Header component, the welcome props. A component can have one or many props. Props could be different data types. It could be a string, number, boolean, array, object or a function. We will cover different kind of props in the next sections.
 
 ### Different data type props
 
@@ -525,11 +525,11 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-When we use an object as "props" we usually destructure the data to access the values. Destructuring makes our code easy to read. We will soon see the destructuring of "props" but before that let's see function as "props" for a React component.
+When we use an object as props we usually destructure the data to access the values. Destructuring makes our code easy to read. We will soon see the destructuring of props but before that let's see function as props for a React component.
 
 ### Function prop types
 
-We can pass a function as "props" type to a React component. Let's see some examples
+We can pass a function as props type to a React component. Let's see some examples
 
 ```js
 import React from 'react'
@@ -581,7 +581,7 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-Now, lets implement different functions as "props"
+Now, lets implement different functions as props
 
 ```js
 import React from 'react'
@@ -609,9 +609,9 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-In the above example, onClick is a "props" to hold the greetPeople function. HTML has onclick, onmouseover, onhover, onkeypress and etc event handlers. In React, these handlers are in camelCase. For instance onClick, onMouseOver, onKeyPress etc. We will cover events in React in detail in other section.
+In the above example, onClick is a props to hold the greetPeople function. HTML has onclick, onmouseover, onhover, onkeypress and etc event handlers. In React, these handlers are in camelCase. For instance onClick, onMouseOver, onKeyPress etc. We will cover events in React in detail in other section.
 
-Let's see some more functions as props to give a clear understanding how to handle function as "props" in a React component.
+Let's see some more functions as props to give a clear understanding how to handle function as props in a React component.
 
 This component shows month, date and year as an alert box.
 
@@ -668,7 +668,7 @@ ReactDOM.render(<App />, rootElement)
 
 ## Destructuring props
 
-By now, I believe you are a JavaScript ninja and you know about destructing arrays and objects. Destructuring code to some extent makes easy to read. Let us destructure the props in Header component. Everything we passed as  props is stored in props object. Therefore, "props" is an object and we can destructure the properties. Let's destructure some of the props we wrote in object props example. We can destructure in many ways:
+By now, I believe you are a JavaScript ninja and you know about destructing arrays and objects. Destructuring code to some extent makes easy to read. Let us destructure the props in Header component. Everything we passed as  props is stored in props object. Therefore, props is an object and we can destructure the properties. Let's destructure some of the props we wrote in object props example. We can destructure in many ways:
 
 1. Step by step destructuring
 
@@ -1063,7 +1063,7 @@ The propTypes package helps us to assign the data types of the props we passed t
 
 The defaultProps can be used when we want to have some default prop types for a component.
 
-We will cover propTypes in detail in other section.
+We will cover propTypes in detail in other sections.
 
 # Exercises: Components and Props
 
@@ -1077,7 +1077,7 @@ We will cover propTypes in detail in other section.
 
 ## Exercises: Level 2
 
-1. Create functional component and display the following images
+1. Create a functional component and display the following images
    ![Front end](../images/frontend_technologies.png)
 
 2.Use functional component to design the following user card.
