@@ -359,6 +359,17 @@ class Header extends React.Component {
   }
 }
 
+const Login = () => (
+  <div>
+    <h3>Please Login</h3>
+  </div>
+)
+const Welcome = (props) => (
+  <div>
+    <h1>Welcome to 30 Days Of React</h1>
+  </div>
+)
+
 class App extends React.Component {
   state = {
     loggedIn: false,
@@ -380,17 +391,6 @@ class App extends React.Component {
       },
       date: 'Oct 9, 2020',
     }
-
-    const Login = () => (
-      <div>
-        <h3>Please Login</h3>
-      </div>
-    )
-    const Welcome = (props) => (
-      <div>
-        <h1>Welcome to 30 Days Of React</h1>
-      </div>
-    )
 
     const status = this.state.loggedIn ? <Welcome /> : <Login />
 
