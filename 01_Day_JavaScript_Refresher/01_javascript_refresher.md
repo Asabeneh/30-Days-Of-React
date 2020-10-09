@@ -313,13 +313,13 @@ const PI = 3.14 // Not allowed to reassign PI to a new value
 
 ### 2. Data types
 
-If you do not feel comfortable with data types check the following [link](https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/02_Day_Data_types/02_day_data_types.md)
+If you do not feel comfortable with data types check the following [link](https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/02_Day_Data_types/02_day_data_types.md).
 
 ### 3. Arrays
 
 In contrast to variables, an array can store _multiple values_. Each value in an array has an _index_, and each index has _a reference in a memory address_. Each value can be accessed by using their _indexes_. The index of an array starts from _zero_, and the index of the last element is less by one from the length of the array.
 
-An array is a collection of different data types which are ordered and changeable(modifiable). An array allows storing duplicate elements and different data types. An array can be empty, or it may have different data type values.
+An array is a collection of different data types which are ordered and changeable(mutable). An array allows storing duplicate elements and different data types. An array can be empty, or it may have different data type values.
 
 #### How to create an empty array
 
@@ -2821,7 +2821,7 @@ setInterval(callback, duration)
 function sayHello() {
   console.log('Hello')
 }
-setInterval(sayHello, 2000) // it prints hello in every 2 seconds
+setInterval(sayHello, 2000) // it prints 'Hello' in every 2 seconds
 ```
 
 ##### setTimeout
@@ -2840,7 +2840,7 @@ setTimeout(callback, duration) // duration in milliseconds
 function sayHello() {
   console.log('Hello')
 }
-setTimeout(sayHello, 2000) // it prints hello after it waits for 2 seconds.
+setTimeout(sayHello, 2000) // it prints 'Hello' after it waits for 2 seconds
 ```
 
 ### 10. Destructuring and Spreading
@@ -2893,7 +2893,7 @@ let nor = countries[2]
 console.log(fin, swe, nor) // Finland, Sweden, Norway
 ```
 
-Most of the time the size of an array is big and we use a loop to iterate through each item of the arrays. Sometimes, we may have short arrays. If the array size is very short it is ok to access the items manually as shown above but today we will see a better way to access the array item which is destructuring.
+Most of the time the size of an array is big and we use a loop to iterate through each item of the arrays. Sometimes, we may have short arrays. If the array size is very short it is ok to access the items manually as shown above but today we will see a better way to access the array items which is destructuring.
 
 Accessing array items using destructuring
 
@@ -2904,14 +2904,13 @@ console.log(num1, num2, num3) // 1, 2, 3,
 
 const constants = [2.72, 3.14, 9.81,37, 100]
 const [e, pi, gravity, bodyTemp, boilingTemp] = constants
-console.log(e, pi, gravity, bodyTemp, boilingTemp]
-// 2.72, 3.14, 9.81, 37,100
+console.log(e, pi, gravity, bodyTemp, boilingTemp] // 2.72, 3.14, 9.81, 37, 100
 const countries = ['Finland', 'Sweden', 'Norway']
 const [fin, swe, nor] = countries
 console.log(fin, swe, nor) // Finland, Sweden, Norway
 ```
 
-During destructuring each variable should match with the index of the desired item in the array. For instance, the variable fin matches to index 0 and the variable nor matches to index 2. What would be the value of den if you have a variable den next nor?
+During destructuring each variable should match with the index of the desired item in the array. For instance, the variable `fin` matches to index 0 and the variable `nor` matches to index 2. What would be the value of `den` if you have a variable `den` next `nor`?
 
 ```js
 const [fin, swe, nor, den] = countries
@@ -3004,7 +3003,7 @@ const fullStack = [
 ]
 
 for (const [first, second, third, fourth] of fullStack) {
-  console.log(first, second, third, fourt)
+  console.log(first, second, third, fourth)
 }
 ```
 
@@ -3044,12 +3043,10 @@ const rectangle = {
 }
 
 let width = rectangle.width
-let height = recangle.height
-
+let height = rectangle.height
 // or
-
 let width = rectangle[width]
-let height = recangle[height]
+let height = rectangle[height]
 ```
 
 But today, we will see how to access the value of an object using destructuring.
@@ -3082,7 +3079,7 @@ console.log(
 ) // 20, 10, undefined
 ```
 
-The value of the perimeter in the above example is undefined.
+The value of the perimeter in the above example is `undefined`.
 
 Default value during object destructuring
 
@@ -3186,7 +3183,7 @@ Destructuring function parameter
 ```js
 const rectangle = { width: 20, height: 10 }
 const calcualteArea = ({ width, height }) => width * height
-const calculatePerimeter = ({ width, height } = 2 * (width + height))
+const calculatePerimeter = ({ width, height }) => 2 * (width + height)
 ```
 
 #### Exercises
@@ -3260,7 +3257,7 @@ console.log(nordicCountries)
 ```sh
 Germany
 France
-["Finland", "Sweden", "Norway", "Denmark", "Iceland"]
+["Belgium", "Finland", "Sweden", "Norway", "Denmark", "Iceland"]
 ```
 
 ##### Spread operator to copy array
@@ -3349,7 +3346,6 @@ sumAllNums(1, 2, 3, 4, 5)
 
 ```sh
 [1, 2, 3, 4, 5]
-
 ```
 
 ```js
@@ -3370,7 +3366,7 @@ console.log(sumAllNums(1, 2, 3, 4, 5))
 
 ### 11. Functional Programming
 
-In this article, I will try to help you to have a very good understanding of the most common feature of JavaScript, _functional programming_.
+In this article, I will try to help you to have a very good understanding of the most common feature of JavaScript, _Functional programming_.
 
 _Functional programming_ allows you to write shorter code, clean code, and also to solve complicated problems which might be difficult to solve in a traditional way.
 
@@ -3391,7 +3387,6 @@ We use forEach when we like to iterate through an array of items. The forEach is
 
 ```js
 // syntax in a normal or a function declaration
-
 function callback(item, index, arr) {}
 array.forEach(callback)
 
@@ -3453,7 +3448,6 @@ We use the map method whenever we like to modify an array. We use the map method
 
 ```js
 // syntax in a normal or a function declaration
-
 function callback(item, i) {
   return // code goes here
 }
@@ -3461,7 +3455,6 @@ function callback(item, i) {
 const modifiedArray = array.map(callback)
 
 // or syntax in an arrow function
-
 const callback = (item, i) => {
   return // code goes here
 }
@@ -3472,20 +3465,16 @@ Now, let us modify the countries array using the map method. The index is an opt
 
 ```js
 // Using function declaration
-
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
 
 const newCountries = countries.map(function (country) {
   return country.toUpperCase()
 })
-
 console.log(newCountries)
 
 // map using an arrow function call back
-
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
 const newCountries = countries.map((country) => country.toUpperCase())
-
 console.log(newCountries) // ["FINLAND", "ESTONIA", "SWEDEN", "NORWAY"]
 ```
 
@@ -3494,7 +3483,6 @@ As you can see that map is very handy to modify an array and to get an array bac
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
 const countriesLength = countries.map((country) => country.length)
-
 console.log(countriesLength) // [7, 7, 6, 6]
 ```
 
@@ -3503,7 +3491,6 @@ Let us see another more example
 ```js
 const numbers = [1, 2, 3, 4, 5]
 const squares = numbers.map((n) => n ** 2)
-
 console.log(squares) // [1, 4, 9, 16, 25]
 ```
 
@@ -3522,7 +3509,6 @@ function callback(item) {
 const filteredArray = array.filter(callback)
 
 // or syntax in an arrow function
-
 const callback = (item) => {
   return // boolean
 }
@@ -3567,16 +3553,13 @@ We use the reduce method to sum all numbers in an array together, or to multiply
 
 ```js
 // syntax in a normal or a function declaration
-
 function callback(acc, cur) {
     return // code goes here
 }
-
 const reduced = array.reduce(callback, optionalInitialValue)
 
 // or syntax in an arrow function
-
-const reduced = callback(acc, cur) => {
+const callback = (acc, cur) => {
     return // code goes here
 }
 const reduced = array.reduce(callback)
@@ -3630,16 +3613,13 @@ If we are interested in the first occurrence of a certain item or element in an 
 
 ```js
 // syntax in a normal or a function declaration
-
 function callback(item) {
   return // code goes here
 }
-
 const item = array.find(callback)
 
 // or syntax in an arrow function
-
-const reduced = callback(item) => {
+const callback = (item) => {
   return // code goes here
 }
 const item = array.find(callback)
@@ -3660,7 +3640,7 @@ Let us find the first country which contains a substring way
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const countryWithWay = countries.find((country) => country.includes('way'))
-console.log(countriesWithWay) // Norway
+console.log(countryWithWay) // Norway
 ```
 
 Let us find the first country which has only six characters
@@ -3685,7 +3665,6 @@ The findIndex method works like find but findIndex returns the index of the item
 
 ```js
 // syntax in a normal or a function declaration
-
 function callback(item) {
   return // code goes here
 }
@@ -3693,8 +3672,7 @@ function callback(item) {
 const index = array.findIndex(callback)
 
 // or syntax in an arrow function
-
-const reduced = callback(item) => {
+const callback = (item) => {
   return // code goes here
 }
 const index = array.findIndex(callback)
@@ -3762,17 +3740,17 @@ The method every is somehow similar to some but every item must satisfy the crit
 
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const allAreEvens = numbers.every((n) => n % 2 === 0)
-const allAreOdd s= numbers.every((n) => n % 2 !== 0)
+const allAreOdds= numbers.every((n) => n % 2 !== 0)
 
-console.log(allAreEven) // false
-console.log(allAreOdd)  // false
+console.log(allAreEvens) // false
+console.log(allAreOdds) // false
 
 const evens = [0, 2, 4, 6, 8, 10]
-const someAreEvens = evens.some((n) => n % 2 === 0)
-const someAreOdds = evens.some((n) => n % 2 !== 0)
+const allAreEvens = evens.every((n) => n % 2 === 0)
+const allAreOdds = evens.every((n) => n % 2 !== 0)
 
-console.log(someAreEvens) // true
-console.log(someAreOdds)  // false
+console.log(allAreEvens) // true
+console.log(allAreOdds) // false
 ```
 
 #### Exercises
@@ -4512,7 +4490,7 @@ So do not directly manipulate the DOM if you are using react. The only place we 
 </html>
 ```
 
-Check out there result on [codepen](https://codepen.io/Asabeneh/full/vYGqQxP)
+Check out there result on [codepen](https://codepen.io/Asabeneh/full/vYGqQxP).
 
 🌕 You are amazing! You have just completed day 1 challenge and you are on your way to greatness. Now you are a JavaScript Ninja and ready to dive into React.
 
