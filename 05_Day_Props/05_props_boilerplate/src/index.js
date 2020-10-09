@@ -68,8 +68,27 @@ const UserCard = ({ user: { firstName, lastName, image } }) => (
   </div>
 )
 
+// A button component
+
+const Button = ({ text, onClick, style }) => (
+  <button style={style} onClick={onClick}>
+    {text}
+  </button>
+)
+
+const buttonStyles = {
+  backgroundColor: '#61dbfb',
+  padding: 10,
+  border: 'none',
+  borderRadius: 5,
+  margin: 3,
+  cursor: 'pointer',
+  fontSize: 18,
+  color: 'white',
+}
+
 // Main Component
-const Main = ({ user, techs }) => (
+const Main = ({ user, techs, greetPeople, handleTime }) => (
   <main>
     <div className='main-wrapper'>
       <p>Prerequisite to get started react.js:</p>
@@ -77,6 +96,8 @@ const Main = ({ user, techs }) => (
         <TechList techs={techs} />
       </ul>
       <UserCard user={user} />
+      <Button text='Greet People' onClick={greetPeople} style={buttonStyles} />
+      <Button text='Show Time' onClick={handleTime} style={buttonStyles} />
     </div>
   </main>
 )
@@ -85,7 +106,7 @@ const Main = ({ user, techs }) => (
 const Footer = ({ copyRight }) => (
   <footer>
     <div className='footer-wrapper'>
-      <p>{copyRight.getFullYear()}</p>
+      <p>Copyright {copyRight.getFullYear()}</p>
     </div>
   </footer>
 )
@@ -101,21 +122,32 @@ const App = () => {
       firstName: 'Asabeneh',
       lastName: 'Yetayeh',
     },
-    date: new Date(),
+    date: new Date(), // date needs to be formatted to a human readable format
   }
   const date = new Date()
   const techs = ['HTML', 'CSS', 'JavaScript']
   // copying the author from data object to user variable using spread operator
   const user = { ...data.author, image: asabenehImage }
 
+  const handleTime = () => {
+    alert(showDate(new Date()))
+  }
+  const greetPeople = () => {
+    alert('Welcome to 30 Days Of React Challenge, 2020')
+  }
+
   return (
     <div className='app'>
       <Header data={data} />
-      <Main user={user} techs={techs} />
+      <Main
+        user={user}
+        techs={techs}
+        handleTime={handleTime}
+        greetPeople={greetPeople}
+      />
       <Footer copyRight={date} />
     </div>
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
