@@ -28,3 +28,5 @@ console.log(emptyArr)
 const moreThan5 = Array(6)
 console.log(moreThan5)
 console.log(moreThan5.length)
+
+// day-02
