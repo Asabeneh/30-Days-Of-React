@@ -34,7 +34,6 @@ import ReactDOM from 'react-dom'
 // class based component
 class Header extends React.Component {
   render() {
-    console.log(this.props.data)
     const {
       welcome,
       title,
@@ -44,7 +43,7 @@ class Header extends React.Component {
     } = this.props.data
 
     return (
-      <header style={this.props.styles}>
+      <header>
         <div className='header-wrapper'>
           <h1>{welcome}</h1>
           <h2>{title}</h2>
@@ -74,7 +73,7 @@ class App extends React.Component {
         firstName: 'Asabeneh',
         lastName: 'Yetayeh',
       },
-      date: 'Oct 7, 2020',
+      date: 'Oct 9, 2020',
     }
 
     // conditional rendering using if and else statement
@@ -89,7 +88,6 @@ class App extends React.Component {
 
     return (
       <div className='app'>
-        {this.state.backgroundColor}
         <Header data={data} />
         {status}
       </div>
@@ -141,7 +139,7 @@ class Header extends React.Component {
     } = this.props.data
 
     return (
-      <header style={this.props.styles}>
+      <header>
         <div className='header-wrapper'>
           <h1>{welcome}</h1>
           <h2>{title}</h2>
@@ -191,7 +189,6 @@ class App extends React.Component {
 
     return (
       <div className='app'>
-        {this.state.backgroundColor}
         <Header data={data} />
         {status}
         <Button text={text} style={buttonStyles} onClick={this.handleLogin} />
@@ -238,7 +235,6 @@ const buttonStyles = {
 // class based component
 class Header extends React.Component {
   render() {
-    console.log(this.props.data)
     const {
       welcome,
       title,
@@ -248,7 +244,7 @@ class Header extends React.Component {
     } = this.props.data
 
     return (
-      <header style={this.props.styles}>
+      <header>
         <div className='header-wrapper'>
           <h1>{welcome}</h1>
           <h2>{title}</h2>
@@ -293,7 +289,6 @@ class App extends React.Component {
 
     return (
       <div className='app'>
-        {this.state.backgroundColor}
         <Header data={data} />
         {status}
         <Button
@@ -340,7 +335,6 @@ const buttonStyles = {
 // class based component
 class Header extends React.Component {
   render() {
-    console.log(this.props.data)
     const {
       welcome,
       title,
@@ -350,7 +344,7 @@ class Header extends React.Component {
     } = this.props.data
 
     return (
-      <header style={this.props.styles}>
+      <header>
         <div className='header-wrapper'>
           <h1>{welcome}</h1>
           <h2>{title}</h2>
@@ -364,6 +358,17 @@ class Header extends React.Component {
     )
   }
 }
+
+const Login = () => (
+  <div>
+    <h3>Please Login</h3>
+  </div>
+)
+const Welcome = (props) => (
+  <div>
+    <h1>Welcome to 30 Days Of React</h1>
+  </div>
+)
 
 class App extends React.Component {
   state = {
@@ -387,22 +392,10 @@ class App extends React.Component {
       date: 'Oct 9, 2020',
     }
 
-    const Login = () => (
-      <div>
-        <h3>Please Login</h3>
-      </div>
-    )
-    const Welcome = (props) => (
-      <div>
-        <h1>Welcome to 30 Days Of React</h1>
-      </div>
-    )
-
     const status = this.state.loggedIn ? <Welcome /> : <Login />
 
     return (
       <div className='app'>
-        {this.state.backgroundColor}
         <Header data={data} />
         {status}
         <Button
@@ -509,22 +502,25 @@ class App extends React.Component {
       date: 'Oct 9, 2020',
     }
 
-    const status = this.state.loggedIn ? <Welcome /> : <Login />
+    // We can destructure state
+
+    const { loggedIn, techs } = this.state
+
+    const status = loggedIn ? <Welcome /> : <Login />
 
     return (
       <div className='app'>
-        {this.state.backgroundColor}
         <Header data={data} />
         {status}
         <Button
-          text={this.state.loggedIn ? 'Logout' : 'Login'}
+          text={loggedIn ? 'Logout' : 'Login'}
           style={buttonStyles}
           onClick={this.handleLogin}
         />
-        {this.state.techs.length === 3 && (
+        {techs.length === 3 && (
           <p>You have all the prerequisite courses to get started React</p>
         )}
-        {!this.state.loggedIn && (
+        {!loggedIn && (
           <p>
             Please login to access more information about 30 Days Of React
             challenge
@@ -743,11 +739,9 @@ class App extends React.Component {
       },
       date: 'Oct 9, 2020',
     }
-    const techs = ['HTML', 'CSS', 'JavaScript']
 
     return (
       <div className='app'>
-        {this.state.backgroundColor}
         <Header data={data} />
 
         <Main
@@ -779,7 +773,8 @@ ReactDOM.render(<App />, rootElement)
 
 ### Exercises: Level 2
 
-Coming
+1. Make a single page application which changes the body of the background based on the time of the day(Autumn, Winter, Spring, Summer)
+2. Make a single page application which change the body of the background based on the time of the day(Morning, Noon, Evening, Night)
 
 ### Exercises: Level 3
 
