@@ -25,7 +25,7 @@
 |00|[Introduction](#introduction)<br> [How to Use Repo](#how-to-use-repo)<br> [Requirements](#requirements)<br> [Setup](#setup)|
 |01|[JavaScript Refresher](./01_Day_JavaScript_Refresher/01_javascript_refresher.md)|
 |02|[Getting Started React](./02_Day_Introduction_to_React/02_introduction_to_react.md)|
-|03|[Setting Up](./03_Day_Setting_Up/03_day_setting_up.md)|
+|03|[Setting Up](./03_Day_Setting_Up/03_setting_up.md)|
 |04|[Components](./04_Day_Component/04_components.md)|
 |05|[Props](./05_Day_Props/05_props.md)|
 |06|[List, Map and Keys](./06_Day_Map_List_Keys/06_map_list_keys.md)|
