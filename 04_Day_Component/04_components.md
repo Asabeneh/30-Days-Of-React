@@ -514,4 +514,4 @@ ReactDOM.render(<HexaColor />, rootElement)
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 3](../30-Days-Of-React/03_Day_Setting_Up/03_setting_up.md) | [Day 5 >>](./05_Day_Props/05_props.md)
+[<< Day 3](../30-Days-Of-React/03_Day_Setting_Up/03_setting_up.md) | [Day 5 >>](https://github.com/Asabeneh/30-Days-Of-React/blob/master/05_Day_Props/05_props.md)
