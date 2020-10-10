@@ -119,11 +119,10 @@ const buttonStyles = {
   padding: 10,
   border: 'none',
   borderRadius: 5,
-  margin: 3,
+  margin: '3px auto',
   cursor: 'pointer',
   fontSize: 22,
   color: 'white',
-  margin: '0 auto',
 }
 
 // class based component
@@ -225,11 +224,10 @@ const buttonStyles = {
   padding: 10,
   border: 'none',
   borderRadius: 5,
-  margin: 3,
+  margin: '3px auto',
   cursor: 'pointer',
   fontSize: 22,
   color: 'white',
-  margin: '0 auto',
 }
 
 // class based component
@@ -325,11 +323,10 @@ const buttonStyles = {
   padding: 10,
   border: 'none',
   borderRadius: 5,
-  margin: 3,
+  margin: '3px auto',
   cursor: 'pointer',
   fontSize: 22,
   color: 'white',
-  margin: '0 auto',
 }
 
 // class based component
@@ -434,11 +431,10 @@ const buttonStyles = {
   padding: 10,
   border: 'none',
   borderRadius: 5,
-  margin: 3,
+  margin: '3px auto',
   cursor: 'pointer',
   fontSize: 22,
   color: 'white',
-  margin: '0 auto',
 }
 
 // class based component
@@ -663,11 +659,10 @@ const buttonStyles = {
   padding: 10,
   border: 'none',
   borderRadius: 5,
-  margin: 3,
+  margin: '3px auto',
   cursor: 'pointer',
   fontSize: 22,
   color: 'white',
-  margin: '0 auto',
 }
 
 // Footer Component
