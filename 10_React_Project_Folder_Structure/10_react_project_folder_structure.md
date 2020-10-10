@@ -18,6 +18,15 @@
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_10.jpg)
 
+- [React Project Folder Structure and File Naming](#react-project-folder-structure-and-file-naming)
+  - [File Naming](#file-naming)
+  - [Folder](#folder)
+  - [Components Folder](#components-folder)
+  - [Fragments](#fragments)
+- [Exercises](#exercises)
+  - [Exercises:Level 1](#exerciseslevel-1)
+  - [Exercises:Level 2](#exerciseslevel-2)
+
 # React Project Folder Structure and File Naming
 
 There is no strict way to use a single folder structure or file naming in React project. Most of the time, these kind of choice can be made by a team. Sometimes a company may have a developed guidelines about what code conventions to follow, folder structure and file naming. There is no right or wrong way of structuring a React project but some structures are better than the others for scalability,maintainability, ease of working on files and easy to understand structure. If you like to learn further about folder structure you may check the following articles.
@@ -116,6 +125,7 @@ export default function App () {
 
 ```js
 // src/App.js
+// Recommended for most of the cases
 import React from 'react
 const App = () => <h1>Welcome to 30 Days Of React</h1>
 export default App
@@ -487,6 +497,107 @@ export default Header
 Similar to the Header let's move all the components to their respective files.
 All the CSS files on index.html will moved into styles folder and after that each part has been split its respective file, try to check the styles folder.
 
+## Fragments
+
+Fragments are a way to avoid unnecessary parent element in JSX. Let's implement a fragment. We import fragment from react module. As you can see below, we imported React and fragment together by use a comma separation.
+
+```js
+import React, { fragment } from 'react'
+
+const Skills = () => {
+  return (
+    <Fragment>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </Fragment>
+  )
+}
+const RequiredSkills = () => {
+  return (
+    <ul>
+      <Skills />
+    </ul>
+  )
+}
+```
+
+It is also possible to just extract it from react as follows.
+
+```js
+import React from 'react'
+
+const Skills = () => {
+  return (
+    <React.Fragment>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </React.Fragment>
+  )
+}
+
+const RequiredSkills = () => {
+  return (
+    <ul>
+      <Skills />
+    </ul>
+  )
+}
+```
+
+In latest version of Reacts it also possible to write without extracting or importing using this signs(<> </>)
+
+```js
+import React from 'react'
+
+// Recommended
+const Skills = () => {
+  return (
+    <>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </>
+  )
+}
+
+const RequiredSkills = () => {
+  return (
+    <ul>
+      <Skills />
+    </ul>
+  )
+}
+```
+
+When we make a class-based component we have been using React.Component instead we can just import the component and the code will look more clean. Let's see an example.
+
+```js
+import React from 'react'
+
+// without importing the Component
+// Not recommended
+class App extends React.Component {
+  render() {
+    return <h1> 30 Days of React </h1>
+  }
+}
+```
+
+```js
+import React, { Component } from 'react'
+
+// This is recommended
+class App extends Component {
+  render() {
+    return <h1> 30 Days of React </h1>
+  }
+}
+```
+
+Well done. Time to do some exercises for your brain and muscles.
+
 # Exercises
 
 ## Exercises:Level 1
@@ -505,7 +616,3 @@ All the CSS files on index.html will moved into styles folder and after that eac
 🎉 CONGRATULATIONS ! 🎉
 
 [<< Day 9](../09_Day_Conditional_Rendering/09_conditional_rendering.md) | [Day 11 >>](../11_Day_Events/10_events.md)
-
-```
-
-```
