@@ -3,19 +3,9 @@ import Button from '../shared/Button'
 import HexaColr from '../color/HexaColor'
 import Country from '../country/Country'
 import UserCard from '../user/UserCard'
+import { buttonStyles } from '../../styles/button-styles'
 
-// CSS styles in JavaScript Object
-const buttonStyles = {
-  backgroundColor: '#61dbfb',
-  padding: 10,
-  border: 'none',
-  borderRadius: 5,
-  margin: 3,
-  cursor: 'pointer',
-  fontSize: 22,
-  color: 'white',
-  margin: '0 auto',
-}
+
 // TechList Component
 // class base component
 class TechList extends React.Component {
