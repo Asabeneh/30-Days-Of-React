@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1.5;
+  font-family: 'Roboto';
+  font-weight: 300;
+  color: black;
+  overflow-x: hidden;
+  font-size: 110%;
+}
+#root {
+  min-height: 100%;
+  position: relative;
+  letter-spacing: 1.25px;
+}
+
+.header-wrapper,
+.main-wrapper,
+.footer-wrapper {
+  width: 85%;
+  margin: auto;
+}
+
+.header-wrapper,
+.main-wrapper {
+  padding: 10px;
+  margin: 2px auto;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 300;
+}
+
+h2,
+h3 {
+  font-weight: 300;
+}
+
+main {
+  padding: 10px;
+  padding-bottom: 60px;
+}
+
+ul {
+  margin-left: 15px;
+}
+
+ul li {
+  list-style: none;
+}
