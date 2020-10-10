@@ -611,7 +611,7 @@ Well done. Time to do some exercises for your brain and muscles.
 
 ## Exercises:Level 2
 
-1. Using the components we created so far make a simple portfolio.
+1. Make a simple a simple portfolio using the components we have created so far.
 
 🎉 CONGRATULATIONS ! 🎉
 
