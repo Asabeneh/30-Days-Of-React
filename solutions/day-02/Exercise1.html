@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="uft-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>30 Days Of React Challenge</title>
+  </head>
+  <body>
+    <div class="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      const rootElement = document.querySelector('.root');
+
+      const myName = <p>Abiodun</p>;
+
+      const citizenDetails = (
+        <div>
+          <h1>Alao Abiodun AbdulRahman</h1>
+          <p>Nigerian</p>
+          <p>Software Engineer</p>
+          <p>Male</p>
+          <p>abiodundev@gmail.com</p>
+          <p>09025244070, 08118172913</p>
+        </div>
+      );
+
+      const mainStyles = {
+        background: '#23deff',
+        lineHeight: 1.5,
+      };
+
+      const main = (
+        <main style={mainStyles}>
+          <h3>This is main page of website</h3>
+        </main>
+      );
+
+      const footerStyles = {
+        background: '#fe6722',
+        textAlign: 'center',
+      };
+
+      const footer = (
+        <footer style={footerStyles}>
+          <p>Copyright &copy; 2020</p>
+        </footer>
+      );
+
+      const appStyles = {
+        width: '100%',
+        height: '100%',
+      };
+
+      const app = (
+        <div style={appStyles}>
+        {main}
+          {myName}
+          {citizenDetails}
+          {footer}
+        </div>
+      );
+
+      ReactDOM.render(app, rootElement);
+    </script>
+  </body>
+</html>
