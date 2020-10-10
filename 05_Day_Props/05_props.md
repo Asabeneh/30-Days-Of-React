@@ -13,7 +13,6 @@
 </sub>
 
 </div>
-</div>
 
 [<< Day 4](../04_Day_Component/04_components.md) | [Day 6 >>](../06_Day_Map_List_Keys/06_map_list_keys.md)
 
