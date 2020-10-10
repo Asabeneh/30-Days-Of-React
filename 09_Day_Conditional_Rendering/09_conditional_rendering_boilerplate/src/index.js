@@ -5,7 +5,6 @@ import ReactDOM from 'react-dom'
 // class based component
 class Header extends React.Component {
   render() {
-    console.log(this.props.data)
     const {
       welcome,
       title,
@@ -15,7 +14,7 @@ class Header extends React.Component {
     } = this.props.data
 
     return (
-      <header style={this.props.styles}>
+      <header>
         <div className='header-wrapper'>
           <h1>{welcome}</h1>
           <h2>{title}</h2>
@@ -208,7 +207,6 @@ class App extends React.Component {
 
     return (
       <div className='app'>
-        {this.state.backgroundColor}
         <Header data={data} />
 
         <Main

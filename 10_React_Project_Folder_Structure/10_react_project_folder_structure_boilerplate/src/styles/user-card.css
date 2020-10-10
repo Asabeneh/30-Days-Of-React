@@ -1,0 +1,7 @@
+.user-card {
+  margin-top: 10px;
+}
+.user-card > img {
+  border-radius: 50%;
+  width: 14%;
+}
