@@ -502,7 +502,7 @@ All the CSS files on index.html will moved into styles folder and after that eac
 Fragments are a way to avoid unnecessary parent element in JSX. Let's implement a fragment. We import fragment from react module. As you can see below, we imported React and fragment together by use a comma separation.
 
 ```js
-import React, { fragment } from 'react'
+import React, { Fragment } from 'react'
 
 const Skills = () => {
   return (
@@ -522,7 +522,7 @@ const RequiredSkills = () => {
 }
 ```
 
-It is also possible to just extract it from react as follows.
+It is also possible to just extract the fragment module from React as shown below.
 
 ```js
 import React from 'react'
