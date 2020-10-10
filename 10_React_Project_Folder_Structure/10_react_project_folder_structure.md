@@ -20,7 +20,7 @@
 
 # React Project Folder Structure and File Naming
 
-There is no strictly to use a single folder structure or file naming in React project. Most of the time, these kind of choice can be made by a team or a company may have a guideline. There is no right or wrong way of structuring a React project but some structures are better than the others for scalability, ease of working on files and easy to understand structure. If you like to learn further about folder structure you may check the following articles.
+There is no strict way to use a single folder structure or file naming in React project. Most of the time, these kind of choice can be made by a team. Sometimes a company may have a developed guidelines about what code conventions to follow, folder structure and file naming. There is no right or wrong way of structuring a React project but some structures are better than the others for scalability,maintainability, ease of working on files and easy to understand structure. If you like to learn further about folder structure you may check the following articles.
 
 - [React Folder Structure by https://www.devaradise.com ](https://www.devaradise.com/react-project-folder-structure)
 - [React Folder Structure by www.robinwieruch.de ](https://www.robinwieruch.de/react-folder-structure)
@@ -35,9 +35,9 @@ In all my React project, I will use CamelCase file name for all components. I pr
 
 ## Folder
 
-I found it easy to put all images, icons and fonts in an asset and all CSS style sheets in styles folder. All components will be in a component folder.
+I found it easy to put all images, icons and fonts in the assets folder and all CSS style sheets in styles folder. All components will be in the components folder.
 
-So far, we have been working on index.js file. We have lots of component on index.js. Today we will move every component to a single file. We import all the file to App.js. In the process, you will see my folder structure. We are in src directory. All the folder structure will be inside the src directory. Let's start from the index.js file. In addition to index.js file, let's create an App.js file and move most of the components we had to App.js for the time being.
+So far, we have been working on index.js file. We have lots of component on index.js. Today we will move every component to a single file and we will import all the files to App.js. In the process, you will see my folder structure. Currently, we are at src directory. All the folder structure will be inside the src directory. Let's start from the index.js file. In addition to index.js file, let's create an App.js file and move most of the components we had to App.js for the time being.
 The index.js is your getaway to connect the component with index.html.
 
 ```js
@@ -55,7 +55,7 @@ ReactDOM.render(<App />, rootElement)
 In the above snippet of code, we have the App component. Let's create the App component to its own file, App.js
 
 ```js
-//src/App.js
+// src/App.js
 import React from 'react
 const App = () => <h1>Welcome to 30 Days Of React</h1>
 ```
@@ -65,10 +65,22 @@ We have to export the component to import it in another file. We can export it a
 We just add the keyword export before _let_ or _const_ to make a named export.
 
 ```js
-//src/App.js
+// src/App.js
 import React from 'react
-export const App = () => <h1>Welcome to 30 Days Of React</h1>
 
+// named export in arrow function
+export const App = () => <h1>Welcome to 30 Days Of React</h1>
+```
+
+Exporting in a function declaration, a regular function
+
+```js
+// src/App.js
+import React from 'react
+// named export in regular function, function declaration
+export function App () {
+return <h1>Welcome to 30 Days Of React</h1>
+}
 ```
 
 Now, let's import the App component from the App.js file to index.js.
@@ -79,8 +91,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { App } from './App'
 
-// class based component
-
 const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
@@ -88,28 +98,36 @@ ReactDOM.render(<App />, rootElement)
 We saw a named export and now let's implement it with default export. We can do it in two ways but it is recommended to use the second way if we are exporting components because sometimes we may bind a component with another higher order component.
 
 ```js
-//src/App.js
+// src/App.js
 import React from 'react
+// export default in arrow function
 export default const App = () => <h1>Welcome to 30 Days Of React</h1>
 
 ```
 
 ```js
-//src/App.js
+// src/App.js
 import React from 'react
- const App = () => <h1>Welcome to 30 Days Of React</h1>
+// export default in arrow function
+export default function App () {
+  return <h1>Welcome to 30 Days Of React</h1>
+}
+```
+
+```js
+// src/App.js
+import React from 'react
+const App = () => <h1>Welcome to 30 Days Of React</h1>
 export default App
 ```
 
-If a component is exported as default we do not need curly bracket during import.
+If a component is exported as default we do not need curly bracket during importing.
 
 ```js
 // index.js
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-
-// class based component
 
 const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
@@ -124,7 +142,7 @@ import ReactDOM from 'react-dom'
 import asabenehImage from './images'
 import { countriesData } from './data/countries'
 
-// class based component
+// Header component
 class Header extends React.Component {
   render() {
     console.log(this.props.data)
@@ -197,6 +215,7 @@ const UserCard = () => (
     <h2>Asabeneh Yetayeh</h2>
   </div>
 )
+
 // Hexadecimal color generator
 const hexaColor = () => {
   let str = '0123456789abcdef'
@@ -426,10 +445,10 @@ src
   assets
    -images
    -icnons
-  - fonts
+   - fonts
   styles
    -button.js
-  -button.scss
+   -button.scss
  utils
   -random-id.js
   -display-time.js
@@ -470,7 +489,7 @@ All the CSS files on index.html will moved into styles folder and after that eac
 
 # Exercises
 
-## Exercises
+## Exercises:Level 1
 
 1. What is the importance of React Folder Structure and File Naming
 2. How do we export file
@@ -478,6 +497,10 @@ All the CSS files on index.html will moved into styles folder and after that eac
 4. Make a component of module and export it as named or default export
 5. Make a component or module and import it
 6. Change all the components you have to different folder structure
+
+## Exercises:Level 2
+
+1. Using the components we created so far make a simple portfolio.
 
 🎉 CONGRATULATIONS ! 🎉
 
