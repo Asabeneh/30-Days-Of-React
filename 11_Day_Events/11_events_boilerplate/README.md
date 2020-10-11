@@ -1,4 +1,4 @@
-# 30 Days of React App: Day 8
+# 30 Days of React App: Day 3
 
 In the project directory, you can run to start the project
 
