@@ -560,7 +560,7 @@ const selectOptions = options.map(({ value, label }) => (
   <option value={value}> {label}</option>
 ))
 
-class App extends React.Component {
+class App extends Component {
   // declaring state
   state = {
     firstName: '',
@@ -628,6 +628,10 @@ class App extends React.Component {
       email,
       country,
       gender,
+      tel,
+      dateOfBirth,
+      favoriteColor,
+      weight,
       bio,
       file,
       skills,
@@ -646,6 +650,10 @@ class App extends React.Component {
       email,
       country,
       gender,
+      tel,
+      dateOfBirth,
+      favoriteColor,
+      weight,
       bio,
       file,
       skills: formattedSkills,
@@ -662,7 +670,7 @@ class App extends React.Component {
         <h3>Add Student</h3>
         <form onSubmit={this.handleSubmit}>
           <fieldset>
-            <legend>React Form</legend>
+            <legend>React Form and Form Validation</legend>
             <div className='row'>
               <div className='form-group'>
                 <label htmlFor='firstName'>First Name </label>
@@ -842,7 +850,6 @@ class App extends React.Component {
 }
 
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -866,8 +873,6 @@ ReactDOM.render(<App />, rootElement)
 1. Validate the form given above (a gif image or a video will be provided later)
 
 ## Exercises: Level 3
-
-
 
 🎉 CONGRATULATIONS ! 🎉
 

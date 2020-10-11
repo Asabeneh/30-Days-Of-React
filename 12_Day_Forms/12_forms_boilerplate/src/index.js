@@ -31,7 +31,7 @@ const selectOptions = options.map(({ value, label }) => (
   <option value={value}> {label}</option>
 ))
 
-class App extends React.Component {
+class App extends Component {
   // declaring state
   state = {
     firstName: '',
@@ -99,6 +99,10 @@ class App extends React.Component {
       email,
       country,
       gender,
+      tel,
+      dateOfBirth,
+      favoriteColor,
+      weight,
       bio,
       file,
       skills,
@@ -117,6 +121,10 @@ class App extends React.Component {
       email,
       country,
       gender,
+      tel,
+      dateOfBirth,
+      favoriteColor,
+      weight,
       bio,
       file,
       skills: formattedSkills,
@@ -314,5 +322,4 @@ class App extends React.Component {
 }
 
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
