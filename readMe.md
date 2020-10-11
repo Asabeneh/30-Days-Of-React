@@ -34,7 +34,7 @@
 |09|[Conditional Rendering](./09_Day_Conditional_Rendering/09_conditional_rendering.md)|
 |10|[React Project Folder Structure](./10_React_Project_Folder_Structure/10_react_project_folder_structure.md)|
 |11|[Events](./11_Day_Events/11_events.md)|
-|12|[Forms](./12_Day_Forms/11_forms.md)|
+|12|[Forms](./12_Day_Forms/12_forms.md)|
 |13|[Controlled and Uncondrolled Component 😞]()|
 |13|[Component Life Cycles😞]()|
 
