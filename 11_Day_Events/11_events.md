@@ -17,6 +17,7 @@
 [<< Day 10](../10_React_Project_Folder_Structure/10_react_project_folder_structure.md) | [Day 12 >>]()
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_8.jpg)
+
 - [Events](#events)
   - [What is an event?](#what-is-an-event)
 - [Exercises](#exercises)
@@ -217,6 +218,10 @@ ReactDOM.render(<App />, rootElement)
 ## Exercises: Level 1
 
 ## Exercises: Level 2
+
+Implement the following using onMouseEnter event
+
+![On mouse enter event](../images/react_event_on_mouse_enter.gif)
 
 ## Exercises: Level 3
 
