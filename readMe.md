@@ -25,21 +25,30 @@
 |00|[Introduction](#introduction)<br> [How to Use Repo](#how-to-use-repo)<br> [Requirements](#requirements)<br> [Setup](#setup)|
 |01|[JavaScript Refresher](./01_Day_JavaScript_Refresher/01_javascript_refresher.md)|
 |02|[Getting Started React](./02_Day_Introduction_to_React/02_introduction_to_react.md)|
-|03|[Setting Up](./03_Day_Setting_Up/03_day_setting_up.md)|
+|03|[Setting Up](./03_Day_Setting_Up/03_setting_up.md)|
 |04|[Components](./04_Day_Component/04_components.md)|
 |05|[Props](./05_Day_Props/05_props.md)|
 |06|[List, Map and Keys](./06_Day_Map_List_Keys/06_map_list_keys.md)|
 |07|[Class Components](./07_Day_Class_Components/07_class_components.md)|
 |08|[States](./08_Day_States/08_states.md)|
-|09|[Conditional Rendering 😞]()|
-|10|[Events 😞]()|
-|11|[Forms 😞]()|
+|09|[Conditional Rendering](./09_Day_Conditional_Rendering/09_conditional_rendering.md)|
+|10|[React Project Folder Structure](./10_React_Project_Folder_Structure/10_react_project_folder_structure.md)|
+|11|[Events](./11_Day_Events/11_events.md)|
+|12|[Forms](./12_Day_Forms/12_forms.md)|
 |13|[Controlled and Uncondrolled Component 😞]()|
+|13|[Component Life Cycles😞]()|
+
+🧡🧡🧡 HAPPY CODING 🧡🧡🧡
+<div>
 
 
-🧡🧡🧡 HAPPY CODING 🧡🧡🧡<div>
-<small>Support [**Asabeneh**](https://www.patreon.com/asabeneh?fan_landing=true) to create more educational materials</small>  
-[<img src = './images/become_patreon.png' alt='become-asabeneh-patreon' title='click' />](https://www.patreon.com/asabeneh?fan_landing=true)
+<small>
+
+Support [*Asabeneh*](https://www.patreon.com/asabeneh?fan_landing=true) to create more educational materials</small> 
+
+[<img src = './images/become_patreon.png' alt='become-asabeneh-patreon' title='click' />](https://www.patreon.com/asabeneh?fan_landing=true)  
+
+
 
 </div>
 
@@ -82,6 +91,8 @@ I believe you will learn quite a lot in the next 30 days and your programming an
 
 I will use conversational English and less jargons to write this challenge. The content will be continuously updated. If you find a typo or grammar mistakes don't be surprised because I don't do any proof read before I publish it. I would recommend you to focus on the main message of the challenge instead of the English and some minor mistakes. I really appreciate if you send me pull requests for improvement and remember to pull first from master before you send pull requests. Most of the images I have used in this challenge came from 30DaysOfJavaScript challenge therefore you may need to rename file names and folders 30DaysOfReact.
 If you are good at arrays, loops, functions, objects, functional programming, destructuring and spreading and class then you will be able to follow the challenge properly. Otherwise, I strongly recommend you to check [30DaysOfJavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript).
+
+Before you dive into this course, you may check the [review](https://t.me/thirtydaysofreact/992) of 30 Days Of React. 
 
 ## Requirements
 
@@ -282,7 +293,7 @@ Programming languages are similar to human languages. English or many other lang
 I made a deliberate mistake. As a result, the console raises syntax errors. Actually, the syntax is very informative. It informs what type of mistake was made. By reading the error feedback guideline, we can correct the syntax and fix the problem. The process of identifying and removing errors from a program is called debugging. Let us fix the errors:
 
 ```js
-console.log('Hello, World!')
+console.log("Hello, World!")
 console.log('Hello, World!')
 ```
 

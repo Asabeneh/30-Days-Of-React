@@ -33,20 +33,20 @@
 
 # Components
 
-A React component is small reusable code which is responsible for one part of the application UI. A React application is an aggregation of components. React can help us to build reusable components. The following diagram shows different components. All the components have different border colors. In react we assemble different components together to create an application. We use a JavaScript function or class to make components. If we use a function the component will be a functional component but if we use class the function will be a class based component.
+A React component is a small reusable code which is responsible for one part of the application UI. A React application is an aggregation of components. React can help us to build reusable components. The following diagram shows different components. All the components have different border colors. In React we assemble different components together to create an application. We use JavaScript functions or classes to make components. If we use a function the component will be a functional component but if we use a class the component will be a class-based component.
 
 Components can be:
 
-- Functional Component / Presentational Component / stateless component / Dumb components
-- Class Component / Container Component/ State full component / smart components
+- Functional Component / Presentational Component / stateless component / Dumb component
+- Class Component / Container Component/ State full component / smart component
 
 The above classifications of components does not work for the latest version of react but it is good to know the former definition and how the previous versions work.
 
-So, let us change all the JSX to components. Components in React are JavaScript functions or class which return a JSX. Component name must start with an uppercase and if the name is two word should be CamelCase, camel with two humps.
+So, let us change all the JSX to components. Components in React are JavaScript functions or class which return a JSX. Component name must start with an uppercase and if the name is two words should be CamelCase, camel with two humps.
 
 ## Big picture of components
 
-In the previous section, we agree that a website or an application is made of buttons, forms, texts, media objects, header, section, article and footer. If we have a million dollar button we can use this button all the time instead of creating all over again whenever we need a button the same goes for input fields, forms, header or footer. That is where the power of component comes. In the following diagram, the header, main and footer are components. Inside the main also there is a user card component and a text section component. All the different colors represent different components. How many colors do you see? We have five components in this diagram.
+In the previous section, we agree that a website or an application is made of buttons, forms, texts, media objects, header, section, article and footer. If we have a million-dollar button we can use this button all the time instead of creating all over again whenever we need a button the same goes for input fields, forms, header or footer. That is where the power of the component comes. In the following diagram, the header, main and footer are components. Inside the main also there is a user card component and a text section component. All the different colors represent different components. How many colors do you see? We have five components in this diagram.
 
 ![Components](../images/components_example.png)
 
@@ -54,11 +54,11 @@ Before we jump into React components let's do some functions and class refresher
 
 ## JavaScript function
 
-A JavaScript function could be either a regular function or an arrow function. There is a slight difference between an regular function and an arrow functions.
+A JavaScript function could be either a regular function or an arrow function. There is a slight difference between a regular function and an arrow function.
 
 ```js
 const getUserInfo = (firstName, lastName, country, title, skills) => {
-  return `${firstName} ${lastName},  a ${title} developer base in ${country}. He knows ${skills.join(
+  return `${firstName} ${lastName},  a ${title} developer based in ${country}. He knows ${skills.join(
     ' '
   )} `
 }
@@ -71,7 +71,7 @@ console.log(
 
 ## JavaScript Class
 
-Class is a blue print of an object. We instantiate a class to create different objects. In addition, we can create children by inheriting all the methods and properties of the parent.
+A class is a blue print of an object. We instantiate a class to create different objects. In addition, we can create children by inheriting all the methods and properties of the parent.
 
 ```js
 class Parent {
@@ -118,13 +118,13 @@ const child = new Child(
 )
 ```
 
-We covered function and class in brief and React component is made from JavaScript functions or class. Now, lets make React component.
+We covered function and class in brief and React component is made of JavaScript functions or classes. Now, let's make a React component.
 
 ## Creating React Component
 
 ### Functional Component
 
-Using a JavaScript function we can make a functional React component.
+Using a JavaScript function, we can make a functional React component.
 
 ```js
 // React component syntax
@@ -189,7 +189,7 @@ const Header = () => (
 
 ### Rendering components
 
-Now, lets change all the JSX elements we had to components. When we call JSX element we use curly brackets and when we call components we do as follows <ComponentName />. If we pass an attribute when we call the component name, we call it props(<ComponentName propsName = {'data type'} />). We will talk about props in its section.[Live on code pen](https://codepen.io/Asabeneh/full/wvaKKEM)
+Now, lets change all the JSX elements we had to components. When we call JSX element we use curly brackets and when we call components we do as follows <ComponentName />. If we pass an attribute, when we call the component name, we call it props(<ComponentName propsName = {'data-type'} />). We will talk about props in its section.[Live on code pen](https://codepen.io/Asabeneh/full/wvaKKEM)
 
 Let's render first the _Header_ component.
 
@@ -292,9 +292,9 @@ ReactDOM.render(<App />, rootElement)
 
 ### Injecting data to JSX in React Component
 
-So far, we used static data on the JSX elements now let's pass different data types as a dynamic data. The dynamic data could be string, number, boolean, array or object. Let us see each of the data types step by step. To inject data to a JSX we use the {} bracket.
+So far, we used static data on the JSX elements now let's pass different data types as dynamic data. The dynamic data could be string, number, boolean, array or object. Let us see each of the data types step by step. To inject data to a JSX we use the {} bracket.
 
-In this section we only inject only strings
+In this section we inject only strings
 
 ```js
 import React from 'react'
@@ -458,7 +458,7 @@ const buttonStyles = {
 const Button = () => <button style={buttonStyles}> action </button>
 ```
 
-The Button component is a dumb component because it does not take any parameter and we can not change the action text dynamically. We need to pass a props to the button to change the value dynamically. We will see props in the next section. Before we close today's lesson let's make another more functional component which displays a random hexadecimal number.
+The Button component is a dumb component because it does not take any parameter and we can not change the action text dynamically. We need to pass props to the button to change the value dynamically. We will see props in the next section. Before we close today's lesson let's make another more functional component which displays a random hexadecimal number.
 
 ```js
 import React from 'react'
