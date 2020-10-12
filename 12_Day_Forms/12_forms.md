@@ -122,6 +122,9 @@ class App extends Component {
     )
   }
 }
+
+const rootElement = document.getElementById('root')
+ReactDOM.render(<App />, rootElement)
 ```
 
 We usually use form to handle use information. Let us move to form section and make use the form element.
@@ -207,6 +210,9 @@ class App extends React.Component {
     )
   }
 }
+
+const rootElement = document.getElementById('root')
+ReactDOM.render(<App />, rootElement)
 ```
 
 The above form handles only text types but do have different input field types. Let's do another form which handle all the different input field types.
@@ -887,7 +893,7 @@ ReactDOM.render(<App />, rootElement)
 
 ## Exercises: Level 2
 
-1. Validate the form given above (a gif image or a video will be provided later)
+1. Validate the form given above (a gif image or a video will be provided later). First try to validate without using any library then try it with validator.js.
 
 ## Exercises: Level 3
 
