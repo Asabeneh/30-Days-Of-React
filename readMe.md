@@ -36,7 +36,7 @@
 |11|[Events](./11_Day_Events/11_events.md)|
 |12|[Forms](./12_Day_Forms/12_forms.md)|
 |13|[Controlled and Uncondrolled Component 😞]()|
-|13|[Component Life Cycles😞]()|
+|14|[Component Life Cycles😞]()|
 
 🧡🧡🧡 HAPPY CODING 🧡🧡🧡
 <div>
