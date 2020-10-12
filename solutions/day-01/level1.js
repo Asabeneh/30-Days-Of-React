@@ -1,4 +1,4 @@
-// Exercise - Level 1
+// Array Exercise - Level 1
 
 const arr = Array();
 console.log(arr);
