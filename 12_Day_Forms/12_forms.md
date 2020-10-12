@@ -19,7 +19,7 @@
 ![30 Days of React banner](../images/30_days_of_react_banner_day_12.jpg)
 
 - [Forms](#forms)
-  - [Getting data from input field](#getting-data-from-input-field)
+  - [Getting data from an input field](#getting-data-from-an-input-field)
   - [Getting multiple input data from form](#getting-multiple-input-data-from-form)
   - [Get data from different input field types](#get-data-from-different-input-field-types)
   - [Form Validation](#form-validation)
@@ -33,7 +33,7 @@
 
 # Forms
 
-Form is used to collect data from user. Once in a while we use form to fill our information on a paper or on a website. Either to sign up, sign in or to apply for a job we fill different form fields to submit data to remote database. We encounter different form fields when we fill a form such as simple text, email, password, telephone, date, checkbox, radio button, option selection and text area field. Currently, HTML5 has provide quite a lot of field types. You may have
+Form is used to collect data from a user. Once in a while we use form to fill our information on a paper or on a website. Either to sign up, sign in or to apply for a job we fill different form fields to submit our data to remote database. We encounter different form fields when we fill a form such as simple text, email, password, telephone, date, checkbox, radio button, option selection and text area field. Currently, HTML5 has provide quite a lot of field types. You may have a look at the following available HTML5 input types.
 
 ```html
 <input type="text" />
@@ -67,7 +67,7 @@ Form is used to collect data from user. Once in a while we use form to fill our 
 <input type="button" />
 ```
 
-Another HTML fields to get data from form are textarea and options.
+Another HTML fields to get data from a form are textarea and select with options elements.
 
 ```html
 <textarea>Please write your comment ...</textarea>
@@ -82,9 +82,9 @@ Another HTML fields to get data from form are textarea and options.
 </select>
 ```
 
-Now, you know most of fields we need to get data from a form. Let's start with an input of type text field. In the previous day, we saw different types of events and today we will focus on more of _onChange_ event type which triggers whenever an input field data changes. Input field has by default a memory to store input data but in this section we control that using state and we implement a controlled input. Today we will implement a controlled input. We will cover uncontrolled input in a separate section.
+Now, you know most of the fields we need to get data from a form. Let's start with an input with type text field. In the previous day, we saw different types of events and today we will focus on more of _onChange_ event type which triggers whenever an input field data changes. Input field has by default a memory to store input data but in this section we control that using state and we implement a controlled input. Today we will implement a controlled input. We will cover uncontrolled input in a separate section.
 
-## Getting data from input field
+## Getting data from an input field
 
 So far we did not get any data from input field. Now, it is time to learn how to get data from an input field. We need on input field, event listener (onChange) and state to get data from a controlled input. See the example below. The h1 element below the input tag display what we write on the input. Check live [demo](https://codepen.io/Asabeneh/full/OJVpyqm).
 
@@ -208,7 +208,7 @@ class App extends React.Component {
 }
 ```
 
-The above form handles only text types but can handle different input field types. Let's do another form which handle all the different input field types.
+The above form handles only text types but do have different input field types. Let's do another form which handle all the different input field types.
 
 ## Get data from different input field types
 
@@ -289,11 +289,14 @@ class App extends React.Component {
   handleSubmit = (e) => {
     // stops the default behavior of form element specifically refreshing of page
     e.preventDefault()
-    e.preventDefault()
     const {
       firstName,
       lastName,
       email,
+      tel,
+      dateOfBirth,
+      favoriteColor,
+      weight,
       country,
       gender,
       bio,
@@ -312,6 +315,10 @@ class App extends React.Component {
       firstName,
       lastName,
       email,
+      tel,
+      dateOfBirth,
+      favoriteColor,
+      weight,
       country,
       gender,
       bio,
@@ -323,183 +330,191 @@ class App extends React.Component {
 
   render() {
     // accessing the state value by destrutcturing the state
-    const { firstName, lastName, title, country } = this.state
+    const {
+      firstName,
+      lastName,
+      email,
+      tel,
+      dateOfBirth,
+      favoriteColor,
+      weight,
+      country,
+      gender,
+      bio,
+    } = this.state
     return (
       <div className='App'>
         <h3>Add Student</h3>
         <form onSubmit={this.handleSubmit}>
-          <fieldset>
-            <legend>React Form and Form Validation</legend>
-            <div className='row'>
-              <div className='form-group'>
-                <label htmlFor='firstName'>First Name </label>
-                <input
-                  type='text'
-                  name='firstName'
-                  value={this.state.firstName}
-                  onChange={this.handleChange}
-                  placeholder='First Name'
-                />
-              </div>
-              <div className='form-group'>
-                <label htmlFor='lastName'>Last Name </label>
-                <input
-                  type='text'
-                  name='lastName'
-                  value={this.state.lastName}
-                  onChange={this.handleChange}
-                  placeholder='Last Name'
-                />
-              </div>
-              <div className='form-group'>
-                <label htmlFor='email'>Email </label>
-                <input
-                  type='email'
-                  name='email'
-                  value={this.state.email}
-                  onChange={this.handleChange}
-                  placeholder='Email'
-                />
-              </div>
-            </div>
-
+          <div className='row'>
             <div className='form-group'>
-              <label htmlFor='tel'>Telephone </label>
+              <label htmlFor='firstName'>First Name </label>
               <input
-                type='tel'
-                name='tel'
-                value={this.state.tel}
+                type='text'
+                name='firstName'
+                value={firstName}
                 onChange={this.handleChange}
-                placeholder='Tel'
-              />
-            </div>
-
-            <div className='form-group'>
-              <label htmlFor='dateOfBirth'>Date of birth </label>
-              <input
-                type='date'
-                name='dateOfBirth'
-                value={this.state.dateOfBirth}
-                onChange={this.handleChange}
-                placeholder='Date of Birth'
+                placeholder='First Name'
               />
             </div>
             <div className='form-group'>
-              <label htmlFor='favoriteColor'>Favorite Color</label>
+              <label htmlFor='lastName'>Last Name </label>
               <input
-                type='color'
-                id='color'
-                name='color'
-                value={this.state.color}
+                type='text'
+                name='lastName'
+                value={this.state.lastName}
                 onChange={this.handleChange}
-                placeholder='Favorite Color'
+                placeholder='Last Name'
               />
             </div>
             <div className='form-group'>
-              <label htmlFor='dateOfBirth'>Weight </label>
+              <label htmlFor='email'>Email </label>
               <input
-                type='number'
-                id='weight'
-                name='weight'
-                value={this.state.weight}
+                type='email'
+                name='email'
+                value={email}
                 onChange={this.handleChange}
-                placeholder='Weight in Kg'
+                placeholder='Email'
               />
             </div>
-            <div>
-              <label htmlFor='country'>Country</label> <br />
-              <select name='country' onChange={this.handleChange} id='country'>
-                {selectOptions}
-              </select>
-            </div>
+          </div>
 
-            <div>
-              <p>Gender</p>
-              <div>
-                <input
-                  type='radio'
-                  id='female'
-                  name='gender'
-                  value='Female'
-                  onChange={this.handleChange}
-                  checked={this.state.gender === 'Female'}
-                />
-                <label htmlFor='female'>Female</label>
-              </div>
-              <div>
-                <input
-                  id='male'
-                  type='radio'
-                  name='gender'
-                  value='Male'
-                  onChange={this.handleChange}
-                  checked={this.state.gender === 'Male'}
-                />
-                <label htmlFor='male'>Male</label>
-              </div>
-              <div>
-                <input
-                  id='other'
-                  type='radio'
-                  name='gender'
-                  value='Other'
-                  onChange={this.handleChange}
-                  checked={this.state.gender === 'Other'}
-                />
-                <label htmlFor='other'>Other</label>
-              </div>
-            </div>
+          <div className='form-group'>
+            <label htmlFor='tel'>Telephone </label>
+            <input
+              type='tel'
+              name='tel'
+              value={tel}
+              onChange={this.handleChange}
+              placeholder='Tel'
+            />
+          </div>
 
+          <div className='form-group'>
+            <label htmlFor='dateOfBirth'>Date of birth </label>
+            <input
+              type='date'
+              name='dateOfBirth'
+              value={dateOfBirth}
+              onChange={this.handleChange}
+              placeholder='Date of Birth'
+            />
+          </div>
+          <div className='form-group'>
+            <label htmlFor='favoriteColor'>Favorite Color</label>
+            <input
+              type='color'
+              id='color'
+              name='color'
+              value={color}
+              onChange={this.handleChange}
+              placeholder='Favorite Color'
+            />
+          </div>
+          <div className='form-group'>
+            <label htmlFor='weight'>Weight </label>
+            <input
+              type='number'
+              id='weight'
+              name='weight'
+              value={weight}
+              onChange={this.handleChange}
+              placeholder='Weight in Kg'
+            />
+          </div>
+          <div>
+            <label htmlFor='country'>Country</label> <br />
+            <select name='country' onChange={this.handleChange} id='country'>
+              {selectOptions}
+            </select>
+          </div>
+
+          <div>
+            <p>Gender</p>
             <div>
-              <p>Select your skills</p>
-              <div>
-                <input
-                  type='checkbox'
-                  id='html'
-                  name='html'
-                  onChange={this.handleChange}
-                />
-                <label htmlFor='html'>HTML</label>
-              </div>
-              <div>
-                <input
-                  type='checkbox'
-                  id='css'
-                  name='css'
-                  onChange={this.handleChange}
-                />
-                <label htmlFor='css'>CSS</label>
-              </div>
-              <div>
-                <input
-                  type='checkbox'
-                  id='javascript'
-                  name='javascript'
-                  onChange={this.handleChange}
-                />
-                <label htmlFor='javascript'>JavaScript</label>
-              </div>
-            </div>
-            <div>
-              <label htmlFor='bio'>Bio</label> <br />
-              <textarea
-                id='bio'
-                name='bio'
-                value={this.state.bio}
+              <input
+                type='radio'
+                id='female'
+                name='gender'
+                value='Female'
                 onChange={this.handleChange}
-                cols='120'
-                rows='10'
-                placeholder='Write about yourself ...'
+                checked={gender === 'Female'}
               />
+              <label htmlFor='female'>Female</label>
             </div>
+            <div>
+              <input
+                id='male'
+                type='radio'
+                name='gender'
+                value='Male'
+                onChange={this.handleChange}
+                checked={gender === 'Male'}
+              />
+              <label htmlFor='male'>Male</label>
+            </div>
+            <div>
+              <input
+                id='other'
+                type='radio'
+                name='gender'
+                value='Other'
+                onChange={this.handleChange}
+                checked={gender === 'Other'}
+              />
+              <label htmlFor='other'>Other</label>
+            </div>
+          </div>
 
+          <div>
+            <p>Select your skills</p>
             <div>
-              <input type='file' name='file' onChange={this.handleChange} />
+              <input
+                type='checkbox'
+                id='html'
+                name='html'
+                onChange={this.handleChange}
+              />
+              <label htmlFor='html'>HTML</label>
             </div>
             <div>
-              <button>Submit</button>
+              <input
+                type='checkbox'
+                id='css'
+                name='css'
+                onChange={this.handleChange}
+              />
+              <label htmlFor='css'>CSS</label>
             </div>
-          </fieldset>
+            <div>
+              <input
+                type='checkbox'
+                id='javascript'
+                name='javascript'
+                onChange={this.handleChange}
+              />
+              <label htmlFor='javascript'>JavaScript</label>
+            </div>
+          </div>
+          <div>
+            <label htmlFor='bio'>Bio</label> <br />
+            <textarea
+              id='bio'
+              name='bio'
+              value={bio}
+              onChange={this.handleChange}
+              cols='120'
+              rows='10'
+              placeholder='Write about yourself ...'
+            />
+          </div>
+
+          <div>
+            <input type='file' name='file' onChange={this.handleChange} />
+          </div>
+          <div>
+            <button>Submit</button>
+          </div>
         </form>
       </div>
     )
@@ -598,7 +613,6 @@ class App extends Component {
         skills: { ...this.state.skills, [name]: checked },
       })
     } else if (type === 'file') {
-      console.log(type, 'cehck here')
       this.setState({ [name]: e.target.files[0] })
     } else {
       this.setState({ [name]: value })
@@ -609,7 +623,11 @@ class App extends Component {
     this.setState({ touched: { ...this.state.touched, [name]: true } })
   }
   validate = () => {
-    const errors = {}
+    // Object to collect error feedback and to display on the form
+    const errors = {
+      firstName: '',
+    }
+
     if (
       (this.state.touched.firstName && this.state.firstName.length < 3) ||
       (this.state.touched.firstName && this.state.firstName.length > 12)
@@ -663,186 +681,184 @@ class App extends Component {
 
   render() {
     // accessing the state value by destrutcturing the state
+    // the noValidate attribute on the form is to stop the HTML5 built-in validation
 
     const { firstName } = this.validate()
     return (
       <div className='App'>
         <h3>Add Student</h3>
-        <form onSubmit={this.handleSubmit}>
-          <fieldset>
-            <legend>React Form and Form Validation</legend>
-            <div className='row'>
-              <div className='form-group'>
-                <label htmlFor='firstName'>First Name </label>
-                <input
-                  type='text'
-                  name='firstName'
-                  value={this.state.firstName}
-                  onChange={this.handleChange}
-                  onBlur={this.handleBlur}
-                  placeholder='First Name'
-                /> <br />
-                <small>{firstName}</small>
-              </div>
-              <div className='form-group'>
-                <label htmlFor='lastName'>Last Name </label>
-                <input
-                  type='text'
-                  name='lastName'
-                  value={this.state.lastName}
-                  onChange={this.handleChange}
-                  placeholder='Last Name'
-                />
-              </div>
-              <div className='form-group'>
-                <label htmlFor='email'>Email </label>
-                <input
-                  type='email'
-                  name='email'
-                  value={this.state.email}
-                  onChange={this.handleChange}
-                  placeholder='Email'
-                />
-              </div>
-            </div>
-
+        <form onSubmit={this.handleSubmit} noValidate>
+          <div className='row'>
             <div className='form-group'>
-              <label htmlFor='tel'>Telephone </label>
+              <label htmlFor='firstName'>First Name </label>
               <input
-                type='tel'
-                name='tel'
-                value={this.state.tel}
+                type='text'
+                name='firstName'
+                value={this.state.firstName}
                 onChange={this.handleChange}
-                placeholder='Tel'
-              />
+                onBlur={this.handleBlur}
+                placeholder='First Name'
+              /> <br />
+              <small>{firstName}</small>
             </div>
-
             <div className='form-group'>
-              <label htmlFor='dateOfBirth'>Date of birth </label>
+              <label htmlFor='lastName'>Last Name </label>
               <input
-                type='date'
-                name='dateOfBirth'
-                value={this.state.dateOfBirth}
+                type='text'
+                name='lastName'
+                value={this.state.lastName}
                 onChange={this.handleChange}
-                placeholder='Date of Birth'
+                placeholder='Last Name'
               />
             </div>
             <div className='form-group'>
-              <label htmlFor='favoriteColor'>Favorite Color</label>
+              <label htmlFor='email'>Email </label>
               <input
-                type='color'
-                id='color'
-                name='color'
-                value={this.state.color}
+                type='email'
+                name='email'
+                value={this.state.email}
                 onChange={this.handleChange}
-                placeholder='Favorite Color'
+                placeholder='Email'
               />
             </div>
-            <div className='form-group'>
-              <label htmlFor='dateOfBirth'>Weight </label>
+          </div>
+
+          <div className='form-group'>
+            <label htmlFor='tel'>Telephone </label>
+            <input
+              type='tel'
+              name='tel'
+              value={this.state.tel}
+              onChange={this.handleChange}
+              placeholder='Tel'
+            />
+          </div>
+
+          <div className='form-group'>
+            <label htmlFor='dateOfBirth'>Date of birth </label>
+            <input
+              type='date'
+              name='dateOfBirth'
+              value={this.state.dateOfBirth}
+              onChange={this.handleChange}
+              placeholder='Date of Birth'
+            />
+          </div>
+          <div className='form-group'>
+            <label htmlFor='favoriteColor'>Favorite Color</label>
+            <input
+              type='color'
+              id='favoriteColor'
+              name='favoriteColor'
+              value={this.state.favoriteColor}
+              onChange={this.handleChange}
+              placeholder='Favorite Color'
+            />
+          </div>
+          <div className='form-group'>
+            <label htmlFor='weight'>Weight </label>
+            <input
+              type='number'
+              id='weight'
+              name='weight'
+              value={this.state.weight}
+              onChange={this.handleChange}
+              placeholder='Weight in Kg'
+            />
+          </div>
+          <div>
+            <label htmlFor='country'>Country</label> <br />
+            <select name='country' onChange={this.handleChange} id='country'>
+              {selectOptions}
+            </select>
+          </div>
+
+          <div>
+            <p>Gender</p>
+            <div>
               <input
-                type='number'
-                id='weight'
-                name='weight'
-                value={this.state.weight}
+                type='radio'
+                id='female'
+                name='gender'
+                value='Female'
                 onChange={this.handleChange}
-                placeholder='Weight in Kg'
+                checked={this.state.gender === 'Female'}
               />
+              <label htmlFor='female'>Female</label>
             </div>
             <div>
-              <label htmlFor='country'>Country</label> <br />
-              <select name='country' onChange={this.handleChange} id='country'>
-                {selectOptions}
-              </select>
-            </div>
-
-            <div>
-              <p>Gender</p>
-              <div>
-                <input
-                  type='radio'
-                  id='female'
-                  name='gender'
-                  value='Female'
-                  onChange={this.handleChange}
-                  checked={this.state.gender === 'Female'}
-                />
-                <label htmlFor='female'>Female</label>
-              </div>
-              <div>
-                <input
-                  id='male'
-                  type='radio'
-                  name='gender'
-                  value='Male'
-                  onChange={this.handleChange}
-                  checked={this.state.gender === 'Male'}
-                />
-                <label htmlFor='male'>Male</label>
-              </div>
-              <div>
-                <input
-                  id='other'
-                  type='radio'
-                  name='gender'
-                  value='Other'
-                  onChange={this.handleChange}
-                  checked={this.state.gender === 'Other'}
-                />
-                <label htmlFor='other'>Other</label>
-              </div>
-            </div>
-
-            <div>
-              <p>Select your skills</p>
-              <div>
-                <input
-                  type='checkbox'
-                  id='html'
-                  name='html'
-                  onChange={this.handleChange}
-                />
-                <label htmlFor='html'>HTML</label>
-              </div>
-              <div>
-                <input
-                  type='checkbox'
-                  id='css'
-                  name='css'
-                  onChange={this.handleChange}
-                />
-                <label htmlFor='css'>CSS</label>
-              </div>
-              <div>
-                <input
-                  type='checkbox'
-                  id='javascript'
-                  name='javascript'
-                  onChange={this.handleChange}
-                />
-                <label htmlFor='javascript'>JavaScript</label>
-              </div>
-            </div>
-            <div>
-              <label htmlFor='bio'>Bio</label> <br />
-              <textarea
-                id='bio'
-                name='bio'
-                value={this.state.bio}
+              <input
+                id='male'
+                type='radio'
+                name='gender'
+                value='Male'
                 onChange={this.handleChange}
-                cols='120'
-                rows='10'
-                placeholder='Write about yourself ...'
+                checked={this.state.gender === 'Male'}
               />
+              <label htmlFor='male'>Male</label>
             </div>
+            <div>
+              <input
+                id='other'
+                type='radio'
+                name='gender'
+                value='Other'
+                onChange={this.handleChange}
+                checked={this.state.gender === 'Other'}
+              />
+              <label htmlFor='other'>Other</label>
+            </div>
+          </div>
 
+          <div>
+            <p>Select your skills</p>
             <div>
-              <input type='file' name='file' onChange={this.handleChange} />
+              <input
+                type='checkbox'
+                id='html'
+                name='html'
+                onChange={this.handleChange}
+              />
+              <label htmlFor='html'>HTML</label>
             </div>
             <div>
-              <button>Submit</button>
+              <input
+                type='checkbox'
+                id='css'
+                name='css'
+                onChange={this.handleChange}
+              />
+              <label htmlFor='css'>CSS</label>
             </div>
-          </fieldset>
+            <div>
+              <input
+                type='checkbox'
+                id='javascript'
+                name='javascript'
+                onChange={this.handleChange}
+              />
+              <label htmlFor='javascript'>JavaScript</label>
+            </div>
+          </div>
+          <div>
+            <label htmlFor='bio'>Bio</label> <br />
+            <textarea
+              id='bio'
+              name='bio'
+              value={this.state.bio}
+              onChange={this.handleChange}
+              cols='120'
+              rows='10'
+              placeholder='Write about yourself ...'
+            />
+          </div>
+
+          <div>
+            <input type='file' name='file' onChange={this.handleChange} />
+          </div>
+          <div>
+            <button>Submit</button>
+          </div>
         </form>
       </div>
     )
