@@ -31,7 +31,7 @@
 
 # Mapping arrays
 
-An array is the most frequently used data structure to handle many kinds of problems. In React, we use map to modify an array to list of JSX by adding a certain HTML elements to each element of the array.
+An array is the most frequently used data structure to handle many kinds of problems. In React, we use a map to modify an array to a list of JSX by adding certain HTML elements to each element of an array.
 
 ## Mapping and rendering arrays
 
@@ -57,7 +57,7 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-If you check the browser, you will see the numbers are attached together in one line. To avoid this, we modify the array and change the array elements to JSX element. See the example below, the array has been modified to a list JSX elements.
+If you check the browser, you will see the numbers are attached together in one line. To avoid this, we modify the array and change the array elements to a JSX element. See the example below, the array has been modified to a list of JSX elements.
 
 ### Mapping array of numbers
 
@@ -183,7 +183,7 @@ ReactDOM.render(<App />, rootElement)
 
 ### Key in mapping arrays
 
-Keys help React to identify which items have changed, added, or removed. Keys should be given to the elements inside the array to give the elements a stable identity. Key should be unique. Mostly data will come with an id and we can use id as a key. If we do not pass a key react raises a warning on the browser. If the data does not have an id, we have to find a way to create a unique identifier for each element when we map it. See the following example:
+Keys help React to identify which items have changed, added, or removed. Keys should be given to the elements inside the array to give the elements a stable identity. The key should be unique. Mostly data will come with an id and we can use id as a key. If we do not pass a key react raises a warning on the browser. If the data does not have an id, we have to find a way to create a unique identifier for each element when we map it. See the following example:
 
 ```js
 import React from 'react'
