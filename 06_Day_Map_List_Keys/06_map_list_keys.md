@@ -31,13 +31,13 @@
 
 # Mapping arrays
 
-Array is the most frequently used data structure to handle many kind of problems. In React, we use map to modify an array to list of JSX by adding a certain HTML elements to each element of the array.
+An array is the most frequently used data structure to handle many kinds of problems. In React, we use map to modify an array to list of JSX by adding a certain HTML elements to each element of the array.
 
 ## Mapping and rendering arrays
 
-Most of the time data is in the form of array or array of objects. To render this array or array of objects most of the time we modify the data using _map_. In the previous section, we have rendered the techs list using map. In this section also we will also see more examples.
+Most of the time data is in the form of an array or an array of objects. To render this array or array of objects most of the time we modify the data using _map_. In the previous section, we have rendered the techs list using a map. In this section, we will see more examples.
 
-In the following examples, you will see how we render a number array, a string array, a countries array and skills array on the browser.
+In the following examples, you will see how we render an array of numbers, an array of strings, an array of countries and skills on the browser.
 
 ```js
 import React from 'react'
@@ -94,7 +94,7 @@ ReactDOM.render(<App />, rootElement)
 
 ### Mapping array of arrays
 
-Let's see how to map array of arrays
+Let's see how to map an array of arrays
 
 ```js
 import React from 'react'
@@ -138,7 +138,7 @@ ReactDOM.render(<App />, rootElement)
 
 ### Mapping array of objects
 
-Rendering array of objects
+Rendering an array of objects
 
 ```js
 import React from 'react'
@@ -183,7 +183,7 @@ ReactDOM.render(<App />, rootElement)
 
 ### Key in mapping arrays
 
-Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity. Key should be unique. Mostly data has come with an id and we can use id as key. If we do not pass key react raise a warning on the browser. If the data does not have id we have to find a way to create a unique identifier for each elements when we map it. See the following example:
+Keys help React to identify which items have changed, added, or removed. Keys should be given to the elements inside the array to give the elements a stable identity. Key should be unique. Mostly data will come with an id and we can use id as a key. If we do not pass a key react raises a warning on the browser. If the data does not have an id, we have to find a way to create a unique identifier for each element when we map it. See the following example:
 
 ```js
 import React from 'react'
@@ -214,7 +214,7 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-Let's also add in key in countries mapping example.
+Let's also add a key in countries mapping example.
 
 ```js
 import React from 'react'
