@@ -14,11 +14,11 @@
 
 </div>
 
-[<< Day 11](../11_Day_Events/11_events.md) | [Day 13 >>]()
+[<< Day 12](../12_Day_Forms/12_forms.md) | [Day 14 >>]()
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_12.jpg)
+![30 Days of React banner](../images/30_days_of_react_banner_day_13.jpg)
 
-- [Forms](#forms)
+- [Uncotrolled Inputs](#uncotrolled-inputs)
   - [Getting data from an input field](#getting-data-from-an-input-field)
   - [Getting multiple input data from form](#getting-multiple-input-data-from-form)
   - [Get data from different input field types](#get-data-from-different-input-field-types)
@@ -31,9 +31,9 @@
   - [Exercises: Level 2](#exercises-level-2)
   - [Exercises: Level 3](#exercises-level-3)
 
-# Forms
+# Uncotrolled Inputs
 
-Form is used to collect data from a user. Once in a while we use form to fill our information on a paper or on a website. Either to sign up, sign in or to apply for a job we fill different form fields to submit our data to remote database. We encounter different form fields when we fill a form such as simple text, email, password, telephone, date, checkbox, radio button, option selection and text area field. Currently, HTML5 has provide quite a lot of field types. You may have a look at the following available HTML5 input types.
+In the previous day challenge we have covered controlled inputs. In react most of the time we use controlled inputs as recommended on the official [documentation of React](https://reactjs.org/docs/uncontrolled-components.html). To write un
 
 ```html
 <input type="text" />
@@ -91,8 +91,7 @@ So far we did not get any data from input field. Now, it is time to learn how to
 The input element has many attributes such as value, name, id, placeholder, type and event handler. In addition, we can link a label and an input field using an id of input field and htmlFor of the label.If label and input are linked it will focus the input when we click on label. Look at the example give below.
 
 ```js
-import React, { Component } from 'react'
-class App extends Component {
+class App extends React.Component {
   // declaring state
   // initial state
   state = {
@@ -108,7 +107,7 @@ class App extends Component {
     const firstName = this.state.firstName
     return (
       <div className='App'>
-        <label htmlFor='firstName'>First Name: </label>
+        <label htmlFor='firstName'>First Name: </l>
         <input
           type='text'
           id='firstName'
@@ -893,4 +892,4 @@ ReactDOM.render(<App />, rootElement)
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 11](../11_Day_Events/11_events.md) | [Day 13 >>]()
+[<< Day 12](../12_Day_Forms/12_forms.md) | [Day 14 >>]()
