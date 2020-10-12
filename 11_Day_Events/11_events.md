@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 10](../10_React_Project_Folder_Structure/10_react_project_folder_structure.md) | [Day 12 >>]()
+[<< Day 10](../10_React_Project_Folder_Structure/10_react_project_folder_structure.md) | [Day 12 >>](../12_Day_Forms/12_forms.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_8.jpg)
 
@@ -227,4 +227,4 @@ Implement the following using onMouseEnter event
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 10](../10_React_Project_Folder_Structure/10_react_project_folder_structure.md) | [Day 12 >>]()
+[<< Day 10](../10_React_Project_Folder_Structure/10_react_project_folder_structure.md) | [Day 12 >>](../12_Day_Forms/12_forms.md)
