@@ -90,3 +90,5 @@ itCompanies.pop();
 
 //22. Remove all IT companies
 itCompanies.splice();
+
+//by bagaski
