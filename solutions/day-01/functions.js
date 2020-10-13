@@ -33,3 +33,7 @@ function sum(arr) {
     }
     return sum
 }
+
+function sumAllNums() {
+    console.log(arguments)
+}
