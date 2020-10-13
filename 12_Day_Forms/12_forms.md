@@ -92,6 +92,8 @@ The input element has many attributes such as value, name, id, placeholder, type
 
 ```js
 import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+
 class App extends Component {
   // declaring state
   // initial state
@@ -134,7 +136,9 @@ We usually use form to handle use information. Let us move to form section and m
 In this section we will develop a small form which collect user information. Our user is a student. We use a parent form element and certain number of input elements to collect user information. In addition to that we will have event listener for the form (onSubmit) and for the inputs (onChange). See the following example try to see the commonts too. You can also check the live [demo](https://codepen.io/Asabeneh/full/eYNvJda).
 
 ```js
-class App extends React.Component {
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+class App extends Component {
   // declaring state
   state = {
     firstName: '',
@@ -202,9 +206,7 @@ class App extends React.Component {
             />
           </div>
 
-          <button onClick={this.changeAnimal} class='btn btn-success'>
-            Submit
-          </button>
+          <button class='btn btn-success'>Submit</button>
         </form>
       </div>
     )
@@ -683,6 +685,7 @@ class App extends Component {
       file,
       skills: formattedSkills,
     }
+    // the is the place we connect backend api to send the data to the database
     console.log(data)
   }
 
