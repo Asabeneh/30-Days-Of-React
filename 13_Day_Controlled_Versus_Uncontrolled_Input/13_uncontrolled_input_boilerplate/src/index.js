@@ -68,7 +68,7 @@ class App extends Component {
             />
           </div>
 
-          <button class='btn btn-success'>Submit</button>
+          <button className='btn btn-success'>Submit</button>
         </form>
       </div>
     )
