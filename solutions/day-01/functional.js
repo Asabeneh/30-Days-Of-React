@@ -37,3 +37,20 @@ const evens = newNumbers.filter((n) => n % 2 === 0)
 const odds = newNumbers.filter((n) => n % 2 !== 0)
 console.log(odds)
 console.log(evens)
+
+// You can associate reduce with a blender. You put different fruits to a blend and you get a mix of fruit juice. 
+// The juice is the output from the reduction process.
+// We use the reduce method to sum all numbers in an array together, or 
+// to multiply items in an array or to concatenate items in an array.
+
+const sumReduce = numbers.reduce((acc, cur) => acc + cur, 5)
+console.log(sumReduce)
+
+const strs = ['Hello', 'World', '!']
+const helloWorldReduce = strs.reduce((acc, cur) => acc + ' ' + cur)
+console.log(helloWorldReduce)
+
+// multReduce has an initial value of 1 (default param), then multiplying the current array value against the accumulated value
+const multReduce = odds.reduce((acc, cur) => acc * cur, 1)
+console.log(multReduce)
+
