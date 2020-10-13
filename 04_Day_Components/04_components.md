@@ -483,14 +483,15 @@ ReactDOM.render(<HexaColor />, rootElement)
 
 # Exercises: Components
 
-1. What is a React Component?
-2. How do you make a React functional component?
-3. What is the difference between a pure JavaScript function and a functional component?
-4. How small is a React component?
-5. Can we make a button or input field component?
-6. Make a reusable Button component.
-7. Make a reusable InputField component.
-8. Make a reusable alert box component with one div parent element and one p child element of the div(warning alert box, success alert box).
+1. What is the difference between a regular function and an arrow function? 
+2. What is a React Component?
+3. How do you make a React functional component?
+4. What is the difference between a pure JavaScript function and a functional component?
+5. How small is a React component?
+6. Can we make a button or input field component?
+7. Make a reusable Button component.
+8. Make a reusable InputField component.
+9. Make a reusable alert box component with one div parent element and one p child element of the div(warning alert box, success alert box).
 
 ## Exercises: Level 2
 
@@ -503,11 +504,13 @@ ReactDOM.render(<HexaColor />, rootElement)
 
 ## Exercises: Level 3
 
-2.Use functional component to design the following user card.
+1.  Use the given hexadecimal color generator in the example to create these random colors
 
 ![Hexadecimal colors](../images/hexadecimal_color_exercise.png)
 
-![User Card](../images/user_card_design_jsx.png) 4. Use the given hexadecimal color generator in the example to create these random colors
+2. Use functional component to design the following user card.
+
+   ![User Card](../images/user_card_design_jsx.png)
 
 🎉 CONGRATULATIONS ! 🎉
 

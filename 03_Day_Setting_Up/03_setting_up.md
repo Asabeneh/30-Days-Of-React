@@ -762,7 +762,7 @@ The boilerplate code can be found [here](../03/../03_Day_Setting_Up/30-days-of-r
 
 ## Exercises: Level 3
 
-2. Design the following user card.
+1. Design the following user card.
 
 ![User Card](../images/user_card_design_jsx.png)
 

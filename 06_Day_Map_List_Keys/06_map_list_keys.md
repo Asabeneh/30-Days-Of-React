@@ -279,7 +279,7 @@ ReactDOM.render(<App />, rootElement)
 
 ## Exercises: Level 3
 
-1.Make the following bar group using given [data](../06_Day_Map_List_Keys/06_map_list_keys_boilerplate/src/data/ten_most_highest_populations.js)
+1.Make the following bar group using the given [data](../06_Day_Map_List_Keys/06_map_list_keys_boilerplate/src/data/ten_most_highest_populations.js)
 
 ![Ten most highest populations](../images/day_6_ten_highest_populations_exercise.png)
 
