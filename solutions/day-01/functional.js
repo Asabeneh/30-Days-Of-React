@@ -54,3 +54,27 @@ console.log(helloWorldReduce)
 const multReduce = odds.reduce((acc, cur) => acc * cur, 1)
 console.log(multReduce)
 
+// find returns the first found item
+const firstEven = newNumbers.find((n) => n % 2 === 0)
+const firstOdd = newNumbers.find((n) => n % 2 !== 0)
+console.log(firstEven)
+console.log(firstOdd)
+
+const firstCountryWithWay = countries.find((country) => country.includes('many'))
+console.log(firstCountryWithWay)
+
+//countries with 6 characters
+const sixCharCountry = countries.find((country) => country.length === 6)
+console.log(sixCharCountry)
+// find index of first six char country
+const firstSixIndex = countries.findIndex((country) => country.length === 6)
+console.log(firstSixIndex)
+console.log(countries)
+
+// some returns true if the array contains one or more matching elements
+const someEvens = newNumbers.some((n) => n % 2 === 0)
+console.log(someEvens)
+
+// every is similar to some, but all elements need to match the criteria
+const everythingEven = newNumbers.every((n) => n % 2 === 0)
+console.log(everythingEven)
