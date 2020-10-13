@@ -1,0 +1,8 @@
+/* == General style === */
+/* This CSS has to be broken into small files */
+
+@import './common.css';
+@import './header.css';
+@import './footer.css';
+@import './user-card.css';
+@import './country.css';
