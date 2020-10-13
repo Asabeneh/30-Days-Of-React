@@ -108,3 +108,109 @@ const greetings = (name = 'Derrek') => {
 }
 console.log(greetings())
 console.log(greetings('Ivy'))
+
+const sumCallback = arr => {
+    let sum = 0
+    const callback = function (element) {
+        sum += element
+    }
+    arr.forEach(callback)
+    return sum
+}
+console.log(sumCallback(numbers))
+
+// further simplifying callback function usage
+const sumCallback2 = arr => {
+    let sum = 0
+    arr.forEach(function (element) {
+        sum+=element
+    })
+    return sum
+}
+console.log('simplified callback sum: ', sumCallback2(numbers))
+
+// prints hello every two seconds
+function sayHello() {
+    console.log('Hello')
+}
+// setInterval(sayHello, 2000)
+
+// wait 10 seconds then say hello bruh
+function waitHello() {
+    console.log('Hello Bruh')
+}
+setTimeout(waitHello, 10000)
+
+// destructuring is a way to unpack arrays, objects... assigning to a distinct variable. 
+//Good for writing reusable and clean code.
+
+for (const num of numbers) {
+    console.log(num)
+}
+for (const place of countries) {
+    console.log(place)
+}
+
+const [one, two, three, four, five] = numbers
+console.log(one, two, three, four, five)
+
+const [...numage] = numbers
+console.log(...numage)
+
+const [alb, bol, ...rest] = countries
+console.log(alb, bol, rest)
+console.log(rest)
+
+
+const rectangle = {
+    width: 20,
+    height: 10
+}
+// access width like...
+// let width = rectangle.width
+// or
+// let width = rectangle[width]
+
+// but with destructuring... and renaming variable names
+let { width:w, height:h, perimiter = 2*w + 2*h, area =w*h} = rectangle
+console.log(w, h, perimiter, area)
+
+const props = {
+    user: {
+        firstName: 'Derrek',
+        lastName: 'Gass',
+        age: 30
+    },
+    post: {
+        title: 'Destructuring and Spread',
+        subtitle: 'ES6',
+        year:  2020
+    },
+    skills: [
+        'JS',
+        'React',
+        'Redux',
+        'Node',
+        'Python',
+        'Java'
+    ]
+}
+// can deconstruct one at a time like this: 
+// const {user, post, skills} = props
+// const {firstName, lastName, age} = user
+// const {title, subtitle, year} = post
+// const [skillOne, skillTwo, skillThree, skillFour, skillFive] = skills
+
+// or all at the same time
+const {
+    user: { firstName, lastName, age },
+    post: { title, subtitle, year },
+    skills:[...skill]
+} = props
+
+const personDest = {
+    ...props
+}
+// testing to see if we can drill down to user's first name
+console.log(personDest.user.firstName)
+console.log(personDest)
