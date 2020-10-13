@@ -148,18 +148,30 @@ class App extends Component {
   }
   handleChange = (e) => {
     /*
-    // we can get the name and value like this but we can also destructure it from e.target
+    we can get the name and value like this: e.target.name, e.target.value
+    but we can also destructure  name and value from e.target
     const name = e.target.name
     const value = e.target.value
     */
     const { name, value } = e.target
-    // [variablename] this we can make a value stored in a certain variable could be a key for an object, in this case a key for the state
+    // [variablename] to use a variable name as a key in an object
+    // name refers to the name attribute of the input elements
     this.setState({ [name]: value })
   }
   handleSubmit = (e) => {
-    // stops the default behavior of form element specifically refreshing of page
+    
+    /* 
+     e.preventDefault()
+      stops the default behavior of form element
+     specifically refreshing of page
+     */
     e.preventDefault()
-    // the is the place where we connect backend api to send the data to the database
+
+    /*
+     the is the place where we connect backend api 
+     to send the data to the database
+     */
+
     console.log(this.state)
   }
 
