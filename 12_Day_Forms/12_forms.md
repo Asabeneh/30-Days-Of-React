@@ -106,7 +106,11 @@ class App extends Component {
   }
 
   render() {
-    // accessing the state value and this value will injected to the input in the value attribute
+    /*
+     accessing the state value and 
+     this value will injected to the input in the value attribute
+     */
+
     const firstName = this.state.firstName
     return (
       <div className='App'>
@@ -139,7 +143,7 @@ In this section we will develop a small form which collect user information. Our
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 class App extends Component {
-  // declaring state
+  // declaring initial state
   state = {
     firstName: '',
     lastName: '',
@@ -159,7 +163,6 @@ class App extends Component {
     this.setState({ [name]: value })
   }
   handleSubmit = (e) => {
-    
     /* 
      e.preventDefault()
       stops the default behavior of form element
@@ -290,12 +293,15 @@ class App extends React.Component {
   }
   handleChange = (e) => {
     /*
-    // we can get the name and value like this but we can also destructure it from e.target
+     we can get the name and value like: e.target.name, e.target.value
+    Wwe can also destructure name and value from e.target
     const name = e.target.name
     const value = e.target.value
     */
     const { name, value, type, checked } = e.target
-    // [variablename] this we can make a value stored in a certain variable could be a key for an object, in this case a key for the state
+    /*
+    [variablename] we can make a value stored in a certain variable could be a key for an object, in this case a key for the state
+    */
 
     if (type === 'checkbox') {
       this.setState({
@@ -309,7 +315,11 @@ class App extends React.Component {
     }
   }
   handleSubmit = (e) => {
-    // stops the default behavior of form element specifically refreshing of page
+    /*
+     e.preventDefault()
+     stops the default behavior of form element
+     specifically refreshing of page
+    */
     e.preventDefault()
     const {
       firstName,
@@ -347,7 +357,10 @@ class App extends React.Component {
       file,
       skills: formattedSkills,
     }
-    // the is the place where we connect backend api to send the data to the database
+    /*
+     the is the place where we connect backend api 
+     to send the data to the database
+     */
     console.log(data)
   }
 
@@ -624,12 +637,15 @@ class App extends Component {
   }
   handleChange = (e) => {
     /*
-    // we can get the name and value like this but we can also destructure it from e.target
+     we can get the name and value like: e.target.name, e.target.value
+    Wwe can also destructure name and value from e.target
     const name = e.target.name
     const value = e.target.value
     */
     const { name, value, type, checked } = e.target
-    // [variablename] this we can make a value stored in a certain variable could be a key for an object, in this case a key for the state
+    /*
+    [variablename] we can make a value stored in a certain variable could be a key for an object, in this case a key for the state
+    */
 
     if (type === 'checkbox') {
       this.setState({
@@ -660,7 +676,11 @@ class App extends Component {
     return errors
   }
   handleSubmit = (e) => {
-    // stops the default behavior of form element specifically refreshing of page
+    /*
+      e.preventDefault()
+      stops the default behavior of form element 
+      specifically refreshing of page
+      */
     e.preventDefault()
 
     const {
@@ -699,7 +719,10 @@ class App extends Component {
       file,
       skills: formattedSkills,
     }
-    // the is the place where we connect backend api to send the data to the database
+    /*
+     the is the place where we connect backend api
+      to send the data to the database
+      */
     console.log(data)
   }
 
