@@ -35,6 +35,7 @@
 - [Exercises: Components and Props](#exercises-components-and-props)
   - [Exercises: Level 1](#exercises-level-1)
   - [Exercises: Level 2](#exercises-level-2)
+  - [Exercises: Level 3](#exercises-level-3)
 
 # Props
 
@@ -667,7 +668,7 @@ ReactDOM.render(<App />, rootElement)
 
 ## Destructuring props
 
-By now, I believe you are a JavaScript ninja and you know about destructing arrays and objects. Destructuring code to some extent makes easy to read. Let us destructure the props in Header component. Everything we passed as  props is stored in props object. Therefore, props is an object and we can destructure the properties. Let's destructure some of the props we wrote in object props example. We can destructure in many ways:
+By now, I believe you are a JavaScript ninja and you know about destructing arrays and objects. Destructuring code to some extent makes easy to read. Let us destructure the props in Header component. Everything we passed as props is stored in props object. Therefore, props is an object and we can destructure the properties. Let's destructure some of the props we wrote in object props example. We can destructure in many ways:
 
 1. Step by step destructuring
 
@@ -1070,7 +1071,7 @@ We will cover propTypes in detail in other sections.
 
 1. What is props in a React component ?
 2. How do you access props in a React component ?
-3. What data types can we pass as props to  components ?
+3. What data types can we pass as props to components ?
 4. What is a propTypes?
 5. What is a default propTypes?
 
@@ -1079,17 +1080,19 @@ We will cover propTypes in detail in other sections.
 1. Create a functional component and display the following images
    ![Front end](../images/frontend_technologies.png)
 
-2.Use functional component to design the following user card.
-
-![User Card](../images/user_card_design_jsx.png)
-
-3. Use functional component to create the following design
+2. Use functional component to create the following design
 
 ![News Letter](../images/news_letter_design.png)
 
-4.  Use the given hexadecimal color generator in the example to create these random colors
+## Exercises: Level 3
+
+1.  Use the given hexadecimal color generator in the example to create these random colors
 
 ![Hexadecimal colors](../images/hexadecimal_color_exercise.png)
+
+2. Use functional component to design the following user card.
+
+![User Card](../images/user_card_design_jsx.png)
 
 🎉 CONGRATULATIONS ! 🎉
 

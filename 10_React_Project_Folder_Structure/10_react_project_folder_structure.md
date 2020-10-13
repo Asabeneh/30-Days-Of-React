@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of React: Statet</h1>
+  <h1> 30 Days Of React: React Project Folder Structure</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 9](../09_Day_Conditional_Rendering/09_conditional_rendering.md) | [Day 11 >>](../11_Day_Events/10_events.md)
+[<< Day 9](../09_Day_Conditional_Rendering/09_conditional_rendering.md) | [Day 11 >>](../11_Day_Events/11_events.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_10.jpg)
 
@@ -26,6 +26,7 @@
 - [Exercises](#exercises)
   - [Exercises:Level 1](#exerciseslevel-1)
   - [Exercises:Level 2](#exerciseslevel-2)
+  - [Exercises: Level 3](#exercises-level-3)
 
 # React Project Folder Structure and File Naming
 
@@ -611,8 +612,12 @@ Well done. Time to do some exercises for your brain and muscles.
 
 ## Exercises:Level 2
 
-1. Make a simple a simple portfolio using the components we have created so far.
+1. Make a simple portfolio using the components we have created so far. Implement a dark mode by using the function we wrote on day 8 challenge.
+
+## Exercises: Level 3
+
+Coming
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 9](../09_Day_Conditional_Rendering/09_conditional_rendering.md) | [Day 11 >>](../11_Day_Events/10_events.md)
+[<< Day 9](../09_Day_Conditional_Rendering/09_conditional_rendering.md) | [Day 11 >>](../11_Day_Events/11_events.md)
