@@ -1886,9 +1886,9 @@ person.isMarried = true
 
 person.getPersonInfo = function () {
   let skillsWithoutLastSkill = this.skills
-    .splice(0, this.skills.length - 1)
+    .slice(0, this.skills.length - 1)
     .join(', ')
-  let lastSkill = this.skills.splice(this.skills.length - 1)[0]
+  let lastSkill = this.skills.slice(this.skills.length - 1)[0]
 
   let skills = `${skillsWithoutLastSkill}, and ${lastSkill}`
   let fullName = this.getFullName()
