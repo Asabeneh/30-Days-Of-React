@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 6](../06_Day_Map_List_Keys/06_map_list_keys.md) | [Day 8 >>](../07_Day_Class_Components/07_class_components.md)
+[<< Day 6](../06_Day_Map_List_Keys/06_map_list_keys.md) | [Day 8 >>](../08_Day_States/08_states.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_7.jpg)
 
@@ -24,6 +24,7 @@
 - [Exercises](#exercises)
   - [Exercises: Level 1](#exercises-level-1)
   - [Exercises: Level 2](#exercises-level-2)
+  - [Exercises: Level 3](#exercises-level-3)
 
 # Class Components
 
@@ -833,6 +834,8 @@ In next section, we will cover state which is the heart of React. State allows R
 
 Learn more about class based component by changing previous days exercises to class based components
 
+## Exercises: Level 3
+
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 6](../06_Day_Map_List_Keys/06_map_list_keys.md) | [Day 8 >>](../07_Day_Class_Components/07_class_components.md)
+[<< Day 6](../06_Day_Map_List_Keys/06_map_list_keys.md) | [Day 8 >>](../08_Day_States/08_states.md)

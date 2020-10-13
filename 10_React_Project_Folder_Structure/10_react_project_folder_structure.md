@@ -26,6 +26,7 @@
 - [Exercises](#exercises)
   - [Exercises:Level 1](#exerciseslevel-1)
   - [Exercises:Level 2](#exerciseslevel-2)
+  - [Exercises: Level 3](#exercises-level-3)
 
 # React Project Folder Structure and File Naming
 
@@ -611,7 +612,11 @@ Well done. Time to do some exercises for your brain and muscles.
 
 ## Exercises:Level 2
 
-1. Make a simple a simple portfolio using the components we have created so far.
+1. Make a simple portfolio using the components we have created so far. Implement a dark mode by using the function we wrote on day 8 challenge.
+
+## Exercises: Level 3
+
+Coming
 
 🎉 CONGRATULATIONS ! 🎉
 

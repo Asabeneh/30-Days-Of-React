@@ -159,6 +159,7 @@ class App extends Component {
   handleSubmit = (e) => {
     // stops the default behavior of form element specifically refreshing of page
     e.preventDefault()
+    // the is the place where we connect backend api to send the data to the database
     console.log(this.state)
   }
 
@@ -334,6 +335,7 @@ class App extends React.Component {
       file,
       skills: formattedSkills,
     }
+    // the is the place where we connect backend api to send the data to the database
     console.log(data)
   }
 
@@ -685,7 +687,7 @@ class App extends Component {
       file,
       skills: formattedSkills,
     }
-    // the is the place we connect backend api to send the data to the database
+    // the is the place where we connect backend api to send the data to the database
     console.log(data)
   }
 
@@ -889,16 +891,23 @@ ReactDOM.render(<App />, rootElement)
 4. What is the importance of htmlFor?
 5. Write an input type which is not given in the example if there is?
 6. What is a controlled input?
-7. How do you bind data in React? The first input field example is data binding in React.
-8. What is validation?
-9. What is the event type we use to listen when an input changes?
-10. What are event types we use to validate an input?
+7. What do you need to write a controlled input?
+8. What event type do you use to listen changes on an input field?
+9. What is the value of a checked checkbox?
+10. When do you use onChange, onBlur, onSubmit?
+11. What is the purpose of write e.preventDefault() inside the submit handler method?
+12. How do you bind data in React? The first input field example is data binding in React.
+13. What is validation?
+14. What is the event type we use to listen when an input changes?
+15. What are event types we use to validate an input?
 
 ## Exercises: Level 2
 
 1. Validate the form given above (a gif image or a video will be provided later). First try to validate without using any library then try it with validator.js.
 
 ## Exercises: Level 3
+
+Coming
 
 🎉 CONGRATULATIONS ! 🎉
 

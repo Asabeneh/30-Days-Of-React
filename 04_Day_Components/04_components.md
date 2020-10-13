@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 3](../30-Days-Of-React/03_Day_Setting_Up/03_setting_up.md) | [Day 5 >>](./05_Day_Props/05_props.md)
+[<< Day 3](../30-Days-Of-React/03_Day_Setting_Up/03_setting_up.md) | [Day 5 >>](../05_Day_Props/05_props.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_4.jpg)
 
@@ -28,33 +28,33 @@
     - [Injecting data to JSX in React Component](#injecting-data-to-jsx-in-react-component)
     - [Further on Functional components](#further-on-functional-components)
 - [Exercises: Components](#exercises-components)
-  - [Exercises: Level 1](#exercises-level-1)
   - [Exercises: Level 2](#exercises-level-2)
+  - [Exercises: Level 3](#exercises-level-3)
 
 # Components
 
-A React component is a small reusable code which is responsible for one part of the application UI. A React application is an aggregation of components. React can help us to build reusable components. The following diagram shows different components. All the components have different border colors. In React we assemble different components together to create an application. We use JavaScript functions or classes to make components. If we use a function the component will be a functional component but if we use a class the component will be a class-based component.
+A React component is a small, reusable code, which is responsible for one part of the application UI. A React application is an aggregation of components. React can help us to build reusable components. The following diagram shows different components. All the components have different border colors. In React we assemble different components together to create an application. We use JavaScript functions or classes to make components. If we use a function, the component will be a functional component, but if we use a class, the component will be a class-based component.
 
 Components can be:
 
-- Functional Component / Presentational Component / stateless component / Dumb component
-- Class Component / Container Component/ State full component / smart component
+- Functional Component / Presentational Component / Stateless Component / Dumb Component
+- Class Component / Container Component/ Statefull Component / Smart Component
 
-The above classifications of components does not work for the latest version of react but it is good to know the former definition and how the previous versions work.
+The classification of components above does not work for the latest version of React, but it is good to know the former definition and how the previous versions work.
 
-So, let us change all the JSX to components. Components in React are JavaScript functions or class which return a JSX. Component name must start with an uppercase and if the name is two words should be CamelCase, camel with two humps.
+So, let us change all the JSX to components. Components in React are JavaScript functions or classes, that return a JSX. Component name must start with an uppercase, and if the name is two words, it should be CamelCase - a camel with two humps.
 
 ## Big picture of components
 
-In the previous section, we agree that a website or an application is made of buttons, forms, texts, media objects, header, section, article and footer. If we have a million-dollar button we can use this button all the time instead of creating all over again whenever we need a button the same goes for input fields, forms, header or footer. That is where the power of the component comes. In the following diagram, the header, main and footer are components. Inside the main also there is a user card component and a text section component. All the different colors represent different components. How many colors do you see? We have five components in this diagram.
+In the previous section we agreed, that a website or an application is made of buttons, forms, texts, media objects, header, section, article and footer. If we have a million-dollar button, we can use this button all the time, instead of recreating it all over again, whenever we need a button. The same goes for input fields, forms, header or footer. That is where the power of the component comes. In the following diagram, the header, main and footer are components. Inside the main there is also a user card component and a text section component. All the different colors represent different components. How many colors do you see? Each color represent a single component. We have five components in this diagram.
 
 ![Components](../images/components_example.png)
 
-Before we jump into React components let's do some functions and class refreshers.
+Before we jump into React components, let's do some functions and class refreshers.
 
 ## JavaScript function
 
-A JavaScript function could be either a regular function or an arrow function. There is a slight difference between a regular function and an arrow function.
+A JavaScript function could be either a regular function or an arrow function. These functions are not exactly the same there is a slight difference between them.
 
 ```js
 const getUserInfo = (firstName, lastName, country, title, skills) => {
@@ -71,7 +71,7 @@ console.log(
 
 ## JavaScript Class
 
-A class is a blue print of an object. We instantiate a class to create different objects. In addition, we can create children by inheriting all the methods and properties of the parent.
+A class is a blueprint of an object. We instantiate a class to create different objects. In addition, we can create children, by inheriting all the methods and properties of the parent.
 
 ```js
 class Parent {
@@ -118,7 +118,7 @@ const child = new Child(
 )
 ```
 
-We covered function and class in brief and React component is made of JavaScript functions or classes. Now, let's make a React component.
+We just briefly covered function and class. React component is made of JavaScript functions or classes, so let's make a React component now.
 
 ## Creating React Component
 
@@ -189,7 +189,7 @@ const Header = () => (
 
 ### Rendering components
 
-Now, lets change all the JSX elements we had to components. When we call JSX element we use curly brackets and when we call components we do as follows <ComponentName />. If we pass an attribute, when we call the component name, we call it props(<ComponentName propsName = {'data-type'} />). We will talk about props in its section.[Live on code pen](https://codepen.io/Asabeneh/full/wvaKKEM)
+Now, lets change all the JSX elements we had to components. When we call JSX element we use curly brackets and when we call components we do as follows <ComponentName />. If we pass an attribute, when we call the component name, we call it props(<ComponentName propsName = {'data-type'} />). We will talk about props in another section.[Live on code pen](https://codepen.io/Asabeneh/full/wvaKKEM)
 
 Let's render first the _Header_ component.
 
@@ -216,7 +216,7 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<Header />, rootElement)
 ```
 
-Now, let's create an App component which hold the Header, Main and Footer. Then the App component will be render on the DOM.
+Now, let's create an App component , that will wrap the Header, Main and Footer. Then the App component will be render on the DOM.
 
 ```js
 // index.js
@@ -292,7 +292,7 @@ ReactDOM.render(<App />, rootElement)
 
 ### Injecting data to JSX in React Component
 
-So far, we used static data on the JSX elements now let's pass different data types as dynamic data. The dynamic data could be string, number, boolean, array or object. Let us see each of the data types step by step. To inject data to a JSX we use the {} bracket.
+So far, we used static data on the JSX elements. Now let's pass different data types as dynamic data. The dynamic data could be strings, numbers, booleans, arrays or objects. Let us see each of the data types step by step. To inject data to a JSX we use the {} bracket.
 
 In this section we inject only strings
 
@@ -438,15 +438,14 @@ ReactDOM.render(<App />, rootElement)
 
 ### Further on Functional components
 
-We have transformed all the JSX elements of Day 2 to functional components and by now you are very familiar with components. Let's create more components. What is the smallest size of a component ? A component that
-returns only a single HTML as JSX is considered as a small component. A button component or an alert box component or just an input field component.
+We have transformed all the JSX elements of Day 2 to functional components, and by now you are very familiar with components. Let's create more components. What is the smallest size of a component? A component that returns only a single HTML as JSX is considered as a small component. A button component or an alert box component, or just an input field component.
 
 ```js
 const Button = () => <button>action</button>
 ```
 
 The _Button_ component is made of a single HTML button element.
-Let's style this button using JavaScript style object. All CSS properties should be camelCase to make a JavaScript CSS object. If we pass number without unit as CSS value is considered as px. See the example below.
+Let's style this button using JavaScript style object. All CSS properties should be camelCase to make a JavaScript CSS object. If we pass a number without unit as CSS value, it is considered as px. See the example below.
 
 ```js
 const buttonStyles = {
@@ -458,7 +457,7 @@ const buttonStyles = {
 const Button = () => <button style={buttonStyles}> action </button>
 ```
 
-The Button component is a dumb component because it does not take any parameter and we can not change the action text dynamically. We need to pass props to the button to change the value dynamically. We will see props in the next section. Before we close today's lesson let's make another more functional component which displays a random hexadecimal number.
+The Button component is a dumb component, because it does not take any parameters and we cannot change the action text dynamically. We need to pass props to the button, to change the value dynamically. We will see props in the next section. Before we close today's lesson let's make another, more functional component, which displays a random hexadecimal number.
 
 ```js
 import React from 'react'
@@ -484,34 +483,32 @@ ReactDOM.render(<HexaColor />, rootElement)
 
 # Exercises: Components
 
-## Exercises: Level 1
-
-1. What is a React Component ?
-2. How do you make a React functional component ?
-3. What is the difference between a pure JavaScript function and a functional component ?
-4. How small is a React component ?
-5. Can we make a button or input field component ?
-6. Make a reusable Button component
-7. Make a reusable InputField component ?
-8. Make a reusable alert box component with one div parent element and one p child element of the div(warning alert box, success alert box)
+1. What is a React Component?
+2. How do you make a React functional component?
+3. What is the difference between a pure JavaScript function and a functional component?
+4. How small is a React component?
+5. Can we make a button or input field component?
+6. Make a reusable Button component.
+7. Make a reusable InputField component.
+8. Make a reusable alert box component with one div parent element and one p child element of the div(warning alert box, success alert box).
 
 ## Exercises: Level 2
 
 1. Create functional components and display the following images
    ![Front end](../images/frontend_technologies.png)
 
-2.Use functional component to design the following user card.
-
-![User Card](../images/user_card_design_jsx.png)
-
-3. Use functional component to create the following design
+2. Use functional component to create the following design
 
 ![News Letter](../images/news_letter_design.png)
 
-4.  Use the given hexadecimal color generator in the example to create these random colors
+## Exercises: Level 3
+
+2.Use functional component to design the following user card.
 
 ![Hexadecimal colors](../images/hexadecimal_color_exercise.png)
 
+![User Card](../images/user_card_design_jsx.png) 4. Use the given hexadecimal color generator in the example to create these random colors
+
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 3](../30-Days-Of-React/03_Day_Setting_Up/03_setting_up.md) | [Day 5 >>](./05_Day_Props/05_props.md)
+[<< Day 3](../30-Days-Of-React/03_Day_Setting_Up/03_setting_up.md) | [Day 5 >>](../05_Day_Props/05_props.md)

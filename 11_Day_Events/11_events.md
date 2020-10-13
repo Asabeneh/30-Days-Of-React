@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of React: Statet</h1>
+  <h1> 30 Days Of React: Events</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -122,10 +122,6 @@ Let's implement some more mouse and keyboard events.
 // index.js
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-/*
-_onMouseMove, onMouseEnter, onMouseLeave, onMouseOut, onClick, onKeyDown, onKeyPress, onKeyUp, onCopy, onCut, onDrag, onChange,onBlur,onInput, onSubmit_
-
-*/
 
 class App extends Component {
   state = {
@@ -217,6 +213,17 @@ ReactDOM.render(<App />, rootElement)
 
 ## Exercises: Level 1
 
+1. What is an event?
+2. What is the different between an HTML element event and React event?
+3. Write at least 4 keyboard events?
+4. Write at least 8 mouse events?
+5. What are the most common mouse and keyboard events?
+6. Write an event specific to input element?
+7. Write an event specific to form element?
+8. Display the coordinate of the view port when a mouse is moving on the body?
+9. What is the difference between onInput, onChange and onBlur?
+10. Where do we put the onSubmit event ?
+
 ## Exercises: Level 2
 
 Implement the following using onMouseEnter event
@@ -224,6 +231,8 @@ Implement the following using onMouseEnter event
 ![On mouse enter event](../images/react_event_on_mouse_enter.gif)
 
 ## Exercises: Level 3
+
+Coming
 
 🎉 CONGRATULATIONS ! 🎉
 
