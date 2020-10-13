@@ -904,10 +904,11 @@ ReactDOM.render(<App />, rootElement)
 ## Exercises: Level 2
 
 1. Validate the form given above (a gif image or a video will be provided later). First try to validate without using any library then try it with validator.js.
+2. Coming ..
 
 ## Exercises: Level 3
 
-Coming
+Coming ..
 
 🎉 CONGRATULATIONS ! 🎉
 
