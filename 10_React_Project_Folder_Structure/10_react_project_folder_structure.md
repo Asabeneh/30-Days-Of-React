@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 9](../09_Day_Conditional_Rendering/09_conditional_rendering.md) | [Day 11 >>](../11_Day_Events/10_events.md)
+[<< Day 9](../09_Day_Conditional_Rendering/09_conditional_rendering.md) | [Day 11 >>](../11_Day_Events/11_events.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_10.jpg)
 
@@ -620,4 +620,4 @@ Coming
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 9](../09_Day_Conditional_Rendering/09_conditional_rendering.md) | [Day 11 >>](../11_Day_Events/10_events.md)
+[<< Day 9](../09_Day_Conditional_Rendering/09_conditional_rendering.md) | [Day 11 >>](../11_Day_Events/11_events.md)
