@@ -2,74 +2,67 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
 class App extends Component {
-  firstName = React.createRef()
-  lastName = React.createRef()
-  country = React.createRef()
-  title = React.createRef()
-
-  handleSubmit = (e) => {
-    // stops the default behavior of form element specifically refreshing of page
-    e.preventDefault()
-
-    console.log(this.firstName.current.value)
-    console.log(this.lastName.current.value)
-    console.log(this.title.current.value)
-    console.log(this.country.current.value)
-
-    const data = {
-      firstName: this.firstName.current.value,
-      lastName: this.lastName.current.value,
-      title: this.title.current.value,
-      country: this.country.current.value,
+  constructor(props) {
+    super(props)
+    console.log('I am  the constructor and  I will be the first to run.')
+    this.state = {
+      firstName: 'John',
+      data: [],
     }
-    // the is the place we connect backend api to send the data to the database
-    console.log(data)
+  }
+
+  componentDidMount() {
+    console.log('I am componentDidMount and I will be last to run.')
+    const API_URL = 'https://restcountries.eu/rest/v2/all'
+    fetch(API_URL)
+      .then((response) => {
+        return response.json()
+      })
+      .then((data) => {
+        console.log(data)
+        this.setState({
+          data,
+        })
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  }
+  renderCountries = () => {
+    return this.state.data.map((country) => {
+      const languageOrLanguages =
+        country.languages.length > 1 ? 'Langauges' : 'Language'
+      const formatLanguages = country.languages
+        .map(({ name }) => name)
+        .join(', ')
+      return (
+        <div>
+          <div>
+            {' '}
+            <img src={country.flag} alt={country.name} />{' '}
+          </div>
+          <div>
+            <h1>{country.name}</h1>
+            <p>Capital: {country.capital}</p>
+            <p>
+              {languageOrLanguages}: {formatLanguages}
+            </p>
+            <p>Population: {country.population}</p>
+          </div>
+        </div>
+      )
+    })
   }
 
   render() {
     return (
       <div className='App'>
-        <h3>Add Student</h3>
-        <form onSubmit={this.handleSubmit}>
-          <div>
-            <input
-              type='text'
-              name='firstName'
-              placeholder='First Name'
-              ref={this.firstName}
-              onChange={this.handleChange}
-            />
-          </div>
-          <div>
-            <input
-              type='text'
-              name='lastName'
-              placeholder='Last Name'
-              ref={this.lastName}
-              onChange={this.handleChange}
-            />
-          </div>
-          <div>
-            <input
-              type='text'
-              name='country'
-              placeholder='Country'
-              ref={this.country}
-              onChange={this.handleChange}
-            />
-          </div>
-          <div>
-            <input
-              type='text'
-              name='title'
-              placeholder='Title'
-              ref={this.title}
-              onChange={this.handleChange}
-            />
-          </div>
-
-          <button className='btn btn-success'>Submit</button>
-        </form>
+        <h1>React Component Life Cycle</h1>
+        <h1>Calling API</h1>
+        <div>
+          <p>There are {this.state.data.length} countries in the api</p>
+          <div className='countries-wrapper'>{this.renderCountries()}</div>
+        </div>
       </div>
     )
   }
