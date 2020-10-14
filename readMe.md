@@ -36,7 +36,7 @@
 |11|[Events](./11_Day_Events/11_events.md)|
 |12|[Forms](./12_Day_Forms/12_forms.md)|
 |13|[Controlled and Uncontrolled Component](./13_Day_Controlled_Versus_Uncontrolled_Input/13_uncontrolled_input.md)|
-|14|[Component Life Cycles😞]()|
+|14|[Component Life Cycles😞](./14_Day_Component_Life_Cycles/14_component_life_cycles.md)|
 |15|[Styles in React😞]()|
 
 
