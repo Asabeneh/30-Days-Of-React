@@ -30,3 +30,4 @@ console.log(moreThan5)
 console.log(moreThan5.length)
 
 // day-02
+
