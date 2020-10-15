@@ -125,7 +125,7 @@
 
     const techs = ['HTML', 'CSS', 'JavaScript']
     // format before injection
-    const techsFormatted = techs.map((tech) => <li>{tech}</li>)
+    const techsFormatted = techs.map((tech) => <li key={tech}>{tech}</li>)
     
     const header = (
         <header>
