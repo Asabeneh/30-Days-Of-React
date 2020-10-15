@@ -99,7 +99,7 @@ const Button = ({ onClick, text, style }) => {
   )
 }
 
-const buttonWithStyles = (CompParam, bgColor = 'default') => {
+const buttonWithStyles = (CompParam, name = 'default') => {
   const colors = [
     {
       name: 'default',
@@ -132,7 +132,7 @@ const buttonWithStyles = (CompParam, bgColor = 'default') => {
       color: '#ffffff',
     },
   ]
-  const { backgroundColor, color } = colors.find((c) => c.name === bgColor)
+  const { backgroundColor, color } = colors.find((c) => c.name === name)
 
   const buttonStyles = {
     backgroundColor,
@@ -170,7 +170,7 @@ class App extends Component {
           text='Info'
           onClick={() => alert('I am styled with info color')}
         />
-        <SuccessButton text='Success' onClick={() => alert('I am succesful')} />
+        <SuccessButton text='Success' onClick={() => alert('I am successful')} />
         <WarningButton
           text='Warning'
           onClick={() => alert('I warn you many times')}
