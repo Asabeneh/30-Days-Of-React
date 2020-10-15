@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 8](../08_Day_States/08_states.md) | [Day 10 >>](../10_Day_Events/10_events.md)
+[<< Day 8](../08_Day_States/08_states.md) | [Day 10 >>](../10_React_Project_Folder_Structure/10_react_project_folder_structure.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_9.jpg)
 
@@ -777,4 +777,4 @@ Coming
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 8](../08_Day_States/08_states.md) | [Day 10 >>](../10_Day_Events/10_events.md)
+[<< Day 8](../08_Day_States/08_states.md) | [Day 10 >>](../10_React_Project_Folder_Structure/10_react_project_folder_structure.md)

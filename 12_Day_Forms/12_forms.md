@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 11](../11_Day_Events/11_events.md) | [Day 13 >>]()
+[<< Day 11](../11_Day_Events/11_events.md) | [Day 13 >>](../13_Day_Controlled_Versus_Uncontrolled_Input/13_uncontrolled_input.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_12.jpg)
 
@@ -106,7 +106,11 @@ class App extends Component {
   }
 
   render() {
-    // accessing the state value and this value will injected to the input in the value attribute
+    /*
+     accessing the state value and 
+     this value will injected to the input in the value attribute
+     */
+
     const firstName = this.state.firstName
     return (
       <div className='App'>
@@ -139,7 +143,7 @@ In this section we will develop a small form which collect user information. Our
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 class App extends Component {
-  // declaring state
+  // declaring initial state
   state = {
     firstName: '',
     lastName: '',
@@ -148,17 +152,29 @@ class App extends Component {
   }
   handleChange = (e) => {
     /*
-    // we can get the name and value like this but we can also destructure it from e.target
+    we can get the name and value like this: e.target.name, e.target.value
+    but we can also destructure  name and value from e.target
     const name = e.target.name
     const value = e.target.value
     */
     const { name, value } = e.target
-    // [variablename] this we can make a value stored in a certain variable could be a key for an object, in this case a key for the state
+    // [variablename] to use a variable name as a key in an object
+    // name refers to the name attribute of the input elements
     this.setState({ [name]: value })
   }
   handleSubmit = (e) => {
-    // stops the default behavior of form element specifically refreshing of page
+    /* 
+     e.preventDefault()
+      stops the default behavior of form element
+     specifically refreshing of page
+     */
     e.preventDefault()
+
+    /*
+     the is the place where we connect backend api 
+     to send the data to the database
+     */
+
     console.log(this.state)
   }
 
@@ -277,12 +293,15 @@ class App extends React.Component {
   }
   handleChange = (e) => {
     /*
-    // we can get the name and value like this but we can also destructure it from e.target
+     we can get the name and value like: e.target.name, e.target.value
+    Wwe can also destructure name and value from e.target
     const name = e.target.name
     const value = e.target.value
     */
     const { name, value, type, checked } = e.target
-    // [variablename] this we can make a value stored in a certain variable could be a key for an object, in this case a key for the state
+    /*
+    [variablename] we can make a value stored in a certain variable could be a key for an object, in this case a key for the state
+    */
 
     if (type === 'checkbox') {
       this.setState({
@@ -296,7 +315,11 @@ class App extends React.Component {
     }
   }
   handleSubmit = (e) => {
-    // stops the default behavior of form element specifically refreshing of page
+    /*
+     e.preventDefault()
+     stops the default behavior of form element
+     specifically refreshing of page
+    */
     e.preventDefault()
     const {
       firstName,
@@ -334,6 +357,10 @@ class App extends React.Component {
       file,
       skills: formattedSkills,
     }
+    /*
+     the is the place where we connect backend api 
+     to send the data to the database
+     */
     console.log(data)
   }
 
@@ -610,12 +637,15 @@ class App extends Component {
   }
   handleChange = (e) => {
     /*
-    // we can get the name and value like this but we can also destructure it from e.target
+     we can get the name and value like: e.target.name, e.target.value
+    Wwe can also destructure name and value from e.target
     const name = e.target.name
     const value = e.target.value
     */
     const { name, value, type, checked } = e.target
-    // [variablename] this we can make a value stored in a certain variable could be a key for an object, in this case a key for the state
+    /*
+    [variablename] we can make a value stored in a certain variable could be a key for an object, in this case a key for the state
+    */
 
     if (type === 'checkbox') {
       this.setState({
@@ -646,7 +676,11 @@ class App extends Component {
     return errors
   }
   handleSubmit = (e) => {
-    // stops the default behavior of form element specifically refreshing of page
+    /*
+      e.preventDefault()
+      stops the default behavior of form element 
+      specifically refreshing of page
+      */
     e.preventDefault()
 
     const {
@@ -685,7 +719,10 @@ class App extends Component {
       file,
       skills: formattedSkills,
     }
-    // the is the place we connect backend api to send the data to the database
+    /*
+     the is the place where we connect backend api
+      to send the data to the database
+      */
     console.log(data)
   }
 
@@ -889,17 +926,25 @@ ReactDOM.render(<App />, rootElement)
 4. What is the importance of htmlFor?
 5. Write an input type which is not given in the example if there is?
 6. What is a controlled input?
-7. How do you bind data in React? The first input field example is data binding in React.
-8. What is validation?
-9. What is the event type we use to listen when an input changes?
-10. What are event types we use to validate an input?
+7. What do you need to write a controlled input?
+8. What event type do you use to listen changes on an input field?
+9. What is the value of a checked checkbox?
+10. When do you use onChange, onBlur, onSubmit?
+11. What is the purpose of write e.preventDefault() inside the submit handler method?
+12. How do you bind data in React? The first input field example is data binding in React.
+13. What is validation?
+14. What is the event type we use to listen when an input changes?
+15. What are event types we use to validate an input?
 
 ## Exercises: Level 2
 
 1. Validate the form given above (a gif image or a video will be provided later). First try to validate without using any library then try it with validator.js.
+2. Coming ..
 
 ## Exercises: Level 3
 
+Coming ..
+
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 11](../11_Day_Events/11_events.md) | [Day 13 >>]()
+[<< Day 11](../11_Day_Events/11_events.md) | [Day 13 >>](../13_Day_Controlled_Versus_Uncontrolled_Input/13_uncontrolled_input.md)
