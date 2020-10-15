@@ -4,6 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>30 Days Of React Challenge</title>
+        <style>
+      /* == General style === */
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        line-height: 1.5;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        color: black;
+      }
+
+      .root {
+        min-height: 100%;
+        position: relative;
+      }
+
+      .header-wrapper,
+      .main-wrapper,
+      .footer-wrapper {
+        width: 85%;
+        margin: auto;
+      }
+
+      .header-wrapper,
+      .main-wrapper {
+        padding: 10px;
+        margin: 2px auto;
+      }
+
+      h1 {
+        font-size: 70px;
+        font-weight: 300;
+      }
+
+      h2,
+      h3 {
+        font-weight: 300;
+      }
+
+      header {
+        background-color: #61dbfb;
+        padding: 10px;
+      }
+
+      main {
+        padding: 10px;
+        padding-bottom: 60px;
+        /* Height of the footer */
+      }
+
+      ul {
+        margin-left: 15px;
+      }
+
+      ul li {
+        list-style: none;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        /* Height of the footer */
+        background: #6cf;
+      }
+
+      .footer-wrapper {
+        font-weight: 400;
+        text-align: center;
+        line-height: 60px;
+      }
+    </style>
   </head>
 
   <body>
@@ -22,15 +101,10 @@
 
             // JSX element
              
-    const headerStyles = {
-        backgroundColor: '#61DBFB',
-        fontFamily: 'Helvetica Neue',
-        padding: 25,
-        lineHeight: 1.5,
-    }
+
            
     const header = (
-        <header style={headerStyles}>
+        <header>
             <div className = 'header-wrapper'>
                 <h1>Welcome to 30 Days Of React</h1>
                 <h2>Getting Started React</h2>
@@ -40,51 +114,40 @@
             </div>
         </header>
     )
-    const mainStyles = {
-        backgroundColor: '#F3F0F5',
-    }
-            
+ 
     const main = (
-        <main style = {mainStyles}>
-            <p>Prerequisite to get started react.js:</p>
-            <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            </ul>
+        <main>
+            <div className='main-wrapper'>
+                <p>Prerequisite to get started react.js:</p>
+                <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                </ul>
+            </div>
         </main>
     )         
 
-    const footerStyles = {
-        backgroundColor: '#61DBFB',
-    }
-
-    const footer = (
-        <footer style={footerStyles}>
+      // JSX element, footer
+      const footer = (
+        <footer>
+          <div className='footer-wrapper'>
             <p>Copyright 2020</p>
+          </div>
         </footer>
-    )
-            
-    const app = (
-        <div>
-            {header}
-            {main}
-            {footer}
+      )
+
+      // JSX element, app
+      const app = (
+        <div className='app'>
+          {header}
+          {main}
+          {footer}
         </div>
-    )
+      )
 
-    const title = <h1 className='title'>Getting Started React</h1>
-    const inputField = (
-        <div>
-            <label htmlFor='firstname'>First Name</label>
-            <input type='text' id='firstname' placeholder='First Name' />
-        </div>
-    )
-
-    // we render the JSX element using the ReactDOM package
-    // ReactDOM has the render method and the render method takes two arguments
-    ReactDOM.render(app, rootElement)
-
+      // we render the JSX element using the ReactDOM package
+      ReactDOM.render(app, rootElement)
     </script>
   </body>
 </html>
