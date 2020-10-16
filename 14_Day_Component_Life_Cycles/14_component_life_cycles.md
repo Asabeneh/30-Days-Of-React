@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 13](../13_Day_Controlled_Versus_Uncontrolled_Input/13_uncontrolled_input.md) | [Day 15 >>]()
+[<< Day 13](../13_Day_Controlled_Versus_Uncontrolled_Input/13_uncontrolled_input.md) | [Day 15 >>](../15_Third_Party_Packages/15_third_party_packages.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_14.jpg)
 
@@ -453,6 +453,54 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
+For instance, if we want to stop doing challenge after 30 days we can increment the day from 1 to 30 and we can block the application at day 30.
+Look the example.
+
+```js
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+
+class App extends Component {
+  constructor(props) {
+    super(props)
+    console.log('I am  the constructor and  I will be the first to run.')
+    this.state = {
+      firstName: 'John',
+      day: 1,
+    }
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log(nextProps, nextState)
+    console.log(nextState.day)
+    if (nextState.day > 31) {
+      return false
+    } else {
+      return true
+    }
+  }
+  // the doChallenge increment the day by one
+  doChallenge = () => {
+    this.setState({
+      day: this.state.day + 1,
+    })
+  }
+  render() {
+    return (
+      <div className='App'>
+        <h1>React Component Life Cycle</h1>
+        <button onClick={this.doChallenge}>Do Challenge</button>
+        <p>Challenge: Day {this.state.day}</p>
+        {this.state.congratulate && <h2>{this.state.congratulate}</h2>}
+      </div>
+    )
+  }
+}
+
+const rootElement = document.getElementById('root')
+ReactDOM.render(<App />, rootElement)
+```
+
 ### render
 
 As we have mentioned it on the mounting phase of the component, the render() method is called when a component gets updated. It has to re-render the HTML to the DOM, with the new changes.
@@ -489,6 +537,63 @@ class App extends Component {
 const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
+Let's use the above two life cycle methods together.
+
+```js
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+
+class App extends Component {
+  constructor(props) {
+    super(props)
+    console.log('I am  the constructor and  I will be the first to run.')
+    this.state = {
+      day: 1,
+      congratulate: '',
+    }
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log(nextProps, nextState)
+    console.log(nextState.day)
+    if (nextState.day > 31) {
+      return false
+    } else {
+      return true
+    }
+  }
+
+  doChallenge = () => {
+    this.setState({
+      day: this.state.day + 1,
+    })
+  }
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.day == 30) {
+      this.setState({
+        congratulate: 'Congratulations,Challenge has been completed',
+      })
+    }
+    console.log(prevState, prevProps)
+  }
+
+  render() {
+    return (
+      <div className='App'>
+        <h1>React Component Life Cycle</h1>
+        <h1>Calling API</h1>
+        <button onClick={this.doChallenge}>Do Challenge</button>
+        <p>Challenge: Day {this.state.day}</p>
+        {this.state.congratulate && <h2>{this.state.congratulate}</h2>}
+      </div>
+    )
+  }
+}
+
+const rootElement = document.getElementById('root')
+ReactDOM.render(<App />, rootElement)
+
+```
 
 ## Unmounting
 
@@ -514,6 +619,4 @@ The componentWillUnmount method is the only built-in method that gets called whe
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 13](../13_Day_Controlled_Versus_Uncontrolled_Input/13_uncontrolled_input.md) | [Day 15 >>]()
-
-
+[<< Day 13](../13_Day_Controlled_Versus_Uncontrolled_Input/13_uncontrolled_input.md) | [Day 15 >>](../15_Third_Party_Packages/15_third_party_packages.md)
