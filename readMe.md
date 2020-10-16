@@ -37,7 +37,8 @@
 |12|[Forms](./12_Day_Forms/12_forms.md)|
 |13|[Controlled and Uncontrolled Component](./13_Day_Controlled_Versus_Uncontrolled_Input/13_uncontrolled_input.md)|
 |14|[Component Life Cycles](./14_Day_Component_Life_Cycles/14_component_life_cycles.md)|
-|15|[Styles in React](./15_Third_Party_Packages/15_third_party_packages.md)|
+|15|[Third Party Packages](./15_Third_Party_Packages/15_third_party_packages.md)|
+|16|[Higher Order Components](./16_Higher_Order_Component/16_higher_order_component.md)|
 
 
 CONGRATULATIONS FOR MAKING TO THIS FAR

@@ -21,6 +21,7 @@
 - [Third Party Packages](#third-party-packages)
   - [NPM or Yarn](#npm-or-yarn)
     - [node-sass](#node-sass)
+    - [CSS modules](#css-modules)
     - [axios](#axios)
     - [react-icons](#react-icons)
     - [moment](#moment)
@@ -34,11 +35,11 @@
 
 # Third Party Packages
 
-There are more than 1.4M JavaScript on npm registry. By now there is a package for every kind of problem. We do not have to create the wheel instead we have to know how to use the wheel. In this section, we will learn how to use npm packages and also we will implement most common package for React applications. As of October 10, 2020, the npm registry popular packages, total number of packages, downloads per week and downloads per month.
+There are more than 1.4M JavaScript packages on npm registry. By now there is a package almost for every kind of problem. We do not have to create the wheel instead we have to know how to use the wheel. In this section, we will learn how to use npm packages and also we will implement most common package for React applications. As of October 10, 2020, the npm registry popular packages, total number of packages, downloads per week and downloads per month seems as shown below.
 
 ![NPM packages](../images/npm_package_day_15.png)
 
-In one way or the other you many need the following packages in your React applications.
+In one way or the other you many need the following packages in your React applications. Specially node-sass, moment and axios are important for some projects.
 
 - [node-sass](https://www.npmjs.com/package/node-sass)
 - [moment](https://www.npmjs.com/package/moment)
@@ -47,18 +48,19 @@ In one way or the other you many need the following packages in your React appli
 - [styled-components](https://styled-components.com/)
 - [reactstrap](https://reactstrap.github.io/)
 - [lodash](https://www.npmjs.com/package/lodash)
-
 - [uuid](https://www.npmjs.com/package/uuid)
 
 ## NPM or Yarn
 
 You can use either npm or yarn to install packages. If you want to use [yarn](https://yarnpkg.com) you have install it separately. I would recommend you to stick in one of the package. Don't use both package management tools in one application at the same time.
 
-Let's how to install packages to an application. First we go to the project directory and write the following command.
+Let's see how to install packages to an application. First, we go to the project directory and write the following command.
 
 ```sh
 // syntax, we can use i or install
 npm i package-name
+// or
+yarn add package-name
 ```
 
 ### node-sass
@@ -79,9 +81,122 @@ Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/30-days-of-react$ yarn add node-sass
 
 After installing node-sass you can start using Sass in React. Create a styles folder and inside this folder create test.scss. Import this file to the component you are working or index.js. You don't need import the node-sass to the component.
 
+```css
+/* ./styles/header.scss */
+header {
+  background-color: #61dbfb;
+  padding: 25;
+  padding: 10px;
+  margin: 0;
+}
+```
+
 ```js
-// index.js
-import './styles/test.scss
+// Header.js
+import React from 'react'
+import './styles/header.scss
+const Header = () = (
+   <header>
+          <div className='header-wrapper'>
+            <h1>30 Days Of React</h1>
+            <h2>Getting Started React</h2>
+            <h3>JavaScript Library</h3>
+            <p>Instructor: Asabeneh Yetayeh</p>
+            <small>Oct 15, 2020</small>
+          </div>
+        </header>
+)
+
+export default Header
+```
+
+```js
+// App.js
+
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+import './styles/header.scss
+
+class App extends Component {
+  render() {
+    return (
+      <div className='App'>
+       <Header />
+      </div>
+    )
+  }
+}
+
+const rootElement = document.getElementById('root')
+ReactDOM.render(<App />, rootElement)
+```
+
+### CSS modules
+
+In addition to Sass, it is good to know how to use CSS modules in React. We do not have to install a separate package for a CSS module to use CSS module in React applications. CSS module can be used with Pure CSS or with Sass. The naming convention for CSS module is a specific name followed by dot and module(test.module.css or test.module.scss)
+
+Naming:
+
+```js
+// naming for Sass
+// naming for CSS
+;[name].module.scss[name].module.css
+```
+
+```css
+/* ./styles/header.module.scss */
+.header {
+  background-color: #61dbfb;
+  padding: 25;
+  padding: 10px;
+  margin: 0;
+}
+.header-wrapper {
+  font-weight:500
+  border: 5px solid orange;
+}
+```
+
+```js
+// Header.js
+import React from 'react'
+import headerStyles from  './styles/header.module.scss
+// We can all destructure the class name
+const {header, headerWrapper} = headerStyles
+const Header = () = (
+   <header className = {headerStyles.header}>
+          <div className={headerStyles.headerWrapper}>
+            <h1>30 Days Of React</h1>
+            <h2>Getting Started React</h2>
+            <h3>JavaScript Library</h3>
+            <p>Instructor: Asabeneh Yetayeh</p>
+            <small>Oct 15, 2020</small>
+          </div>
+        </header>
+)
+
+export default Header
+```
+
+```js
+// App.js
+
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+import './styles/header.scss
+
+class App extends Component {
+  render() {
+    return (
+      <div className='App'>
+       <Header />
+      </div>
+    )
+  }
+}
+
+const rootElement = document.getElementById('root')
+ReactDOM.render(<App />, rootElement)
 ```
 
 ### axios
@@ -166,6 +281,8 @@ class App extends Component {
 const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
+
+We can use axios with await and async functions. In order to implement await and async we need to have separate function outside the componentDidMount. If we implement await and async the error has to be handled by try and catch.
 
 ### react-icons
 
@@ -277,11 +394,13 @@ class App extends Component {
     return (
       <div className='App'>
         <Header>
-          <Title>30 Days Of React</Title>
-          <h2>Getting Started React</h2>
-          <h3>JavaScript Library</h3>
-          <p>Instructor: Asabeneh Yetayeh</p>
-          <small>Oct 15, 2020</small>
+          <div>
+            <Title>30 Days Of React</Title>
+            <h2>Getting Started React</h2>
+            <h3>JavaScript Library</h3>
+            <p>Instructor: Asabeneh Yetayeh</p>
+            <small>Oct 15, 2020</small>
+          </div>
         </Header>
       </div>
     )
