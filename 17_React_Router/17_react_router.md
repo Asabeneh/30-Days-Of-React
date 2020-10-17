@@ -16,7 +16,7 @@
 
 [<< Day 16](../16_Higher_Order_Component/16_higher_order_component.md) | [Day 18 >>]()
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_16.jpg)
+![30 Days of React banner](../images/30_days_of_react_banner_day_17.jpg)
 
 - [React Router](#react-router)
   - [What is React Router ?](#what-is-react-router-)
@@ -488,11 +488,11 @@ class App extends Component {
           </ul>
 
           <Switch>
-            <Route path='*' exact component={NotFound} />
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
             <Route path='/challenge' component={Challenges} />
             <Route path='/' component={Home} />
+            <Route component={NotFound} />
           </Switch>
         </div>
       </Router>
