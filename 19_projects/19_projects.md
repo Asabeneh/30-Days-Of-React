@@ -14,32 +14,22 @@
 
 </div>
 
-[<< Day 17](../17_React_Router/17_react_router.md) | [Day 19>>]()
+[<< Day 18](../18_Fetch_And_Axios/18_fetch_axios.md) | [Day 20>>]()
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_18.jpg)
+![30 Days of React banner](../images/30_days_of_react_banner_day_19.jpg)
 
 - [Projects](#projects)
 - [Exercises](#exercises)
   - [Exercises: Level 1](#exercises-level-1)
-  - [Exercises: Level 2](#exercises-level-2)
-  - [Exercises: Level 3](#exercises-level-3)
 
 # Projects
 
-Congratulations for making it to this far. Now, you have a solid understanding of React. I believe we have cover most of the feature of React and your are ready to work on projects. What we have cover so far is the old version of React. Starting from Day 20 we will learn React Hooks. In the next three days you will work on projects only.
+Congratulations for making it to this far. Now, you have a solid understanding of React. I believe we have covered most important features of React and your are ready to work on projects. What we have covered so far is the old version of React. Starting from Day 20, we will learn React Hooks. In the next three days you will work on projects only.
 
 # Exercises
 
 ## Exercises: Level 1
 
-## Exercises: Level 2
-
-coming
-
-## Exercises: Level 3
-
-coming
-
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 17](../17_React_Router/17_react_router.md) | [Day 19>>]()
+[<< Day 18](../18_Fetch_And_Axios/18_fetch_axios.md) | [Day 20>>]()
