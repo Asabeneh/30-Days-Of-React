@@ -26,7 +26,7 @@
 
 # Projects
 
-Congratulations for making it to this far. Now, you have a solid understanding of React. I believe we have cover most of the feature of React and your are ready to work on projects. What we have cover so far is the old version of React. Starting from Day 20 we will learn React Hooks. In the next three days you will work on only projects.
+Congratulations for making it to this far. Now, you have a solid understanding of React. I believe we have cover most of the feature of React and your are ready to work on projects. What we have cover so far is the old version of React. Starting from Day 20 we will learn React Hooks. In the next three days you will work on projects only.
 
 # Exercises
 

@@ -537,6 +537,7 @@ class App extends Component {
 const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
+
 Let's use the above two life cycle methods together.
 
 ```js
@@ -592,7 +593,6 @@ class App extends Component {
 
 const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
-
 ```
 
 ## Unmounting
@@ -610,12 +610,18 @@ The componentWillUnmount method is the only built-in method that gets called whe
 4. What does mounting means?
 5. What does updating means
 6. What does unmounting means?
-7. What is the most common built-in mounting life cycle method
-8.
+7. What is the most common built-in mounting life cycle method?
+8. What are the mounting life cycle methods?
+9. What are the updating life cycle methods?
+10. What is the unmounting life cycle method?
 
 ## Exercises: Level 2
 
+Coming
+
 ## Exercises: Level 3
+
+Coming
 
 🎉 CONGRATULATIONS ! 🎉
 

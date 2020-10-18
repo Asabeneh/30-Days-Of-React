@@ -604,8 +604,8 @@ Well done. Time to do some exercises for your brain and muscles.
 ## Exercises:Level 1
 
 1. What is the importance of React Folder Structure and File Naming
-2. How do we export file
-3. How do we import file
+2. How do you export file
+3. How do you  import file
 4. Make a component of module and export it as named or default export
 5. Make a component or module and import it
 6. Change all the components you have to different folder structure
