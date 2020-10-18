@@ -26,6 +26,7 @@
   - [NavLink](#navlink)
   - [Nested Routing](#nested-routing)
   - [Redirect](#redirect)
+  - [Prompt](#prompt)
 - [Exercises](#exercises)
   - [Exercises: Level 1](#exercises-level-1)
   - [Exercises: Level 2](#exercises-level-2)
@@ -1102,6 +1103,8 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
+## Prompt
+
 Sometimes when a user try to leave a page we may like to inform that he has unfinished task. In order to do that we can use the Prompt component. The Prompt component takes two props which are when and message(<Prompt when = {true ? 'Happy':'Sad'} message = 'When even I am happy' />). Let's implement this in the previous code.
 
 In the following code a Prompt has been implemented without when therefore it will check all the routes.
@@ -1404,7 +1407,7 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-Instead of without condition, let's inform the user if he really wants to log out.
+Instead of without condition, let's inform the user if he really wants to log out by adding checking some condition using a call back function inside the message.
 
 ```js
 import React, { Component } from 'react'
