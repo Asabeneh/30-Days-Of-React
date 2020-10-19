@@ -489,7 +489,9 @@ As you have seen, there is no much difference between fetch and axios. But I rec
 
 ## Exercises: Level 1
 
-1. Find the average metric weight and life span of cats in the following [API](https://api.thecatapi.com/v1/breeds). There are 67 breeds of cats in API.
+1. Find the average metric weight and life span of cats in the following [API](https://api.thecatapi.com/v1/breeds). There are 67 breeds of cats in the API.
+  
+  ![Average cat weight and age](../images/average_cat_weight_and_age.png)
 
 🎉 CONGRATULATIONS ! 🎉
 
