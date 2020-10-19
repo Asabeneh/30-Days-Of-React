@@ -23,8 +23,6 @@
   - [Getting multiple input data from form](#getting-multiple-input-data-from-form)
 - [Exercises](#exercises)
   - [Exercises: Level 1](#exercises-level-1)
-  - [Exercises: Level 2](#exercises-level-2)
-  - [Exercises: Level 3](#exercises-level-3)
 
 # Uncotrolled Components
 
@@ -173,14 +171,6 @@ Most of the time we use controlled input instead of uncontrolled input. In case 
 8. When do you use uncontrolled input?
 9. When do you use controlled input?
 10. Do you use a controlled or uncontrolled input to validate form input fields?
-
-## Exercises: Level 2
-
-coming
-
-## Exercises: Level 3
-
-Coming
 
 🎉 CONGRATULATIONS ! 🎉
 
