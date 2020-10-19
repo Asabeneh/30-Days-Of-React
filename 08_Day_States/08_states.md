@@ -500,7 +500,7 @@ I believe that now you have a very good understanding of state. After this, we w
 
 ![Change Background](../images/08_day_changing_background_exercise.gif)
 
-2.  After long time of lock down you may think of travelling and you do not know where to go. Then make use of this random country selector to select your holiday destination.
+2.  After long time of lock down, you may think of travelling and you do not know where to go. You may be interested to develop a random country selector that selects your holiday destination.
 
 ![Change Background](../images/08_day_select_country_exercise.gif)
 

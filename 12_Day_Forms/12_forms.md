@@ -930,16 +930,15 @@ ReactDOM.render(<App />, rootElement)
 8. What event type do you use to listen changes on an input field?
 9. What is the value of a checked checkbox?
 10. When do you use onChange, onBlur, onSubmit?
-11. What is the purpose of write e.preventDefault() inside the submit handler method?
+11. What is the purpose of writing  e.preventDefault() inside the submit handler method?
 12. How do you bind data in React? The first input field example is data binding in React.
 13. What is validation?
-14. What is the event type we use to listen when an input changes?
-15. What are event types we use to validate an input?
+14. What is the event type you use to listen when an input changes?
+15. What are event types do you use to validate an input?
 
 ## Exercises: Level 2
 
-1. Validate the form given above (a gif image or a video will be provided later). First try to validate without using any library then try it with validator.js.
-2. Coming ..
+1. Validate the form given above (a gif image or a video will be provided later). First try to validate without using any library then try it with [validator.js](https://www.npmjs.com/package/validator).
 
 ## Exercises: Level 3
 
