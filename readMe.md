@@ -40,7 +40,10 @@
 |15|[Third Party Packages](./15_Third_Party_Packages/15_third_party_packages.md)|
 |16|[Higher Order Components](./16_Higher_Order_Component/16_higher_order_component.md)|
 |17|[React Router](./17_React_Router/17_react_router.md)|
-|17|[Projects](./18_projects/18_projects.md)|
+|18|[Fetch versus Axios](./18_Fetch_And_Axios/18_fetch_axios.md)|
+|19|[Projects](./19_projects/19_projects.md)|
+|20|[Projects]()|
+|21|[Hooks]()|
 
 
 

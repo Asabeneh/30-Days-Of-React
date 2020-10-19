@@ -764,16 +764,16 @@ ReactDOM.render(<App />, rootElement)
 
 1. What is conditional rendering?
 2. How do you implement conditional rendering?
-3. Which method of conditional rendering do you prefer?
+3. Which method of conditional rendering do you prefer to use?
 
 ### Exercises: Level 2
 
-1. Make a single page application which changes the body of the background based on the time of the day(Autumn, Winter, Spring, Summer)
+1. Make a single page application which changes the body of the background based on the season of the year(Autumn, Winter, Spring, Summer)
 2. Make a single page application which change the body of the background based on the time of the day(Morning, Noon, Evening, Night)
 
 ### Exercises: Level 3
 
-Coming
+1. Fetching data takes some amount of time. A user has to wait until the data get loaded. Implement a loading functionality of a data is not fetched yet. You can simulate the delay using setTimeout.
 
 🎉 CONGRATULATIONS ! 🎉
 

@@ -1719,11 +1719,13 @@ ReactDOM.render(<App />, rootElement)
 
 ## Exercises: Level 1
 
-Now,you know about React router. Implement your portfolio with react router
+1. What package do you use to implement routing in react?
+2. What is the default export in react-router-dom?
+3. What is the use of the following Components(Route, NavLink, Switch, Redirect, Prompt)
 
 ## Exercises: Level 2
 
-coming
+Now, you know about React router. Build your portfolio with React and implement React router for navigation.
 
 ## Exercises: Level 3
 
