@@ -23,7 +23,8 @@
   - [Axios](#axios)
 - [Exercises](#exercises)
   - [Exercises: Level 1](#exercises-level-1)
-  - [Exercises: Level 1](#exercises-level-1-1)
+  - [Exercises: Level 2](#exercises-level-2)
+  - [Exercises: Level 3](#exercises-level-3)
 
 # Fetch and Axios
 
@@ -487,11 +488,17 @@ As you have seen, there is no much difference between fetch and axios. But I rec
 5. What is the difference between fetch and axios?
 6. Do you prefer fetch to axios for make HTTP requests?
 
-## Exercises: Level 1
+## Exercises: Level 2
 
 1. Find the average metric weight and life span of cats in the following [API](https://api.thecatapi.com/v1/breeds). There are 67 breeds of cats in the API.
-  
-  ![Average cat weight and age](../images/average_cat_weight_and_age.png)
+
+![Average cat weight and age](../images/average_cat_weight_and_age.png)
+
+## Exercises: Level 3
+
+1. How many countries do have cat breeds?
+2. Which country has the highest number of cat breeds?
+3. Arrange countries in ascending order based on the number of cat breeds they have?
 
 🎉 CONGRATULATIONS ! 🎉
 
