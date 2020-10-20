@@ -14,9 +14,9 @@
 
 </div>
 
-[<< Day 18](../18_Fetch_And_Axios/18_fetch_axios.md) | [Day 20>>]()
+[<< Day 19](../19_projects/19_projects.md) | [Day 21>>]()
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_19.jpg)
+![30 Days of React banner](../images/30_days_of_react_banner_day_20.jpg)
 
 - [Projects](#projects)
 - [Exercises](#exercises)
@@ -31,8 +31,8 @@ Congratulations for making it to this far. Now, you have a solid understanding o
 ## Exercises: Level 1
 
 Use the following two APIs, [all cats](https://api.thecatapi.com/v1/breeds) and [a single cat][https://api.thecatapi.com/v1/images/search?breed_id=abys]. In the single cat API, you can get url property which is the image of the cat.
-Your result should look like this [demo](https://thirty-days-of-react-cat.herokuapp.com).
+Your result should look like this [demo](https://thirty-days-of-react-cat.herokuapp.com/day-20).
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 18](../18_Fetch_And_Axios/18_fetch_axios.md) | [Day 20>>]()
+[<< Day 19](../19_projects/19_projects.md) | [Day 21>>]()
