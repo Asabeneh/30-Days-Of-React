@@ -86,7 +86,7 @@ Now, you know most of the fields we need to get data from a form. Let's start wi
 
 ## Getting data from an input field
 
-So far we did not get any data from input field. Now, it is time to learn how to get data from an input field. We need on input field, event listener (onChange) and state to get data from a controlled input. See the example below. The h1 element below the input tag display what we write on the input. Check live [demo](https://codepen.io/Asabeneh/full/OJVpyqm).
+So far we did not get any data from input field. Now, it is time to learn how to get data from an input field. We need an input field, event listener (onChange) and state to get data from a controlled input. See the example below. The h1 element below the input tag display what we write on the input. Check live [demo](https://codepen.io/Asabeneh/full/OJVpyqm).
 
 The input element has many attributes such as value, name, id, placeholder, type and event handler. In addition, we can link a label and an input field using an id of input field and htmlFor of the label.If label and input are linked it will focus the input when we click on label. Look at the example give below.
 
@@ -133,7 +133,7 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-We usually use form to handle use information. Let us move to form section and make use the form element.
+We usually use form to handle user information. Let us move to form section and make use the form element.
 
 ## Getting multiple input data from form
 
@@ -442,7 +442,7 @@ class App extends React.Component {
               type='color'
               id='color'
               name='color'
-              value={color}
+              value={favoriteColor}
               onChange={this.handleChange}
               placeholder='Favorite Color'
             />
@@ -930,7 +930,7 @@ ReactDOM.render(<App />, rootElement)
 8. What event type do you use to listen changes on an input field?
 9. What is the value of a checked checkbox?
 10. When do you use onChange, onBlur, onSubmit?
-11. What is the purpose of writing  e.preventDefault() inside the submit handler method?
+11. What is the purpose of writing e.preventDefault() inside the submit handler method?
 12. How do you bind data in React? The first input field example is data binding in React.
 13. What is validation?
 14. What is the event type you use to listen when an input changes?

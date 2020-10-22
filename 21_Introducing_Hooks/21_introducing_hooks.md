@@ -31,7 +31,7 @@
 
 In the previous, section you have learned how to use React with hooks which is the older version. Currently, hooks has been introduced to React.
 
-Hooks are a new addition in React 16.8. They allow you use state and other React features without writing a class component. If we are using hooks we can have only a functional component in the entire application. For more detail explanation you check [React documentation](https://reactjs.org/docs/hooks-reference.html).
+Hooks are a new addition in React 16.8. They allow you use state, life cycle methods and other React features without writing a class component. If we are using hooks we can have only a functional component in the entire application. For more detail explanation you check [React documentation](https://reactjs.org/docs/hooks-reference.html).
 
 Different hooks have been introduced to React:Basic hooks and additional hooks
 
@@ -405,6 +405,3 @@ Convert everything you wrote to React hooks.
 
 🎉 CONGRATULATIONS ! 🎉
 [<< Day 20](../20_projects/20_projects.md) | [Day 22>>]()
-
-
-
