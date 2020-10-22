@@ -45,6 +45,7 @@
 |20|[Projects](./20_projects/20_projects.md)|
 |21|[Hooks](./21_Introducing_Hooks/21_introducing_hooks.md)|
 |22|[Forms Using Hook](./22_Form_Using_Hooks/22_form_using_hooks.md)|
+|23|[Fetching Data Using Hooks](./23_Fetching_Data_Using_Hooks/23_fetching_data_using_hooks.md)|
 
 
 
