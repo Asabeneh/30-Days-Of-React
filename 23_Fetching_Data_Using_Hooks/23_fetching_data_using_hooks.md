@@ -36,20 +36,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import ReactDOM, { findDOMNode } from 'react-dom'
 
-const Country = ({
-  country: { name, capital, flag, languages, population, currency },
-}) => {
-  const formattedCapital =
-    capital.length > 0 ? (
-      <>
-        <span>Capital: </span>
-        {capital}
-      </>
-    ) : (
-      ''
-    )
-  const formattedLanguage = languages.length > 1 ? `Languages` : `Language`
-
+const Country = ({ country: { name, flag, population } }) => {
   return (
     <div className='country'>
       <div className='country_flag'>
@@ -57,18 +44,9 @@ const Country = ({
       </div>
       <h3 className='country_name'>{name.toUpperCase()}</h3>
       <div class='country_text'>
-        <p>{formattedCapital}</p>
-        <p>
-          <span>{formattedLanguage}: </span>
-          {languages.map((language) => language.name).join(', ')}
-        </p>
         <p>
           <span>Population: </span>
-          {population.toLocaleString()}
-        </p>
-        <p>
-          <span>Currency: </span>
-          {currency}
+          {population}
         </p>
       </div>
     </div>
@@ -117,6 +95,5 @@ ReactDOM.render(<App />, rootElement)
 # Exercises
 
 🎉 CONGRATULATIONS ! 🎉
-
 
 [<< Day 22](../22_Form_Using_Hooks/22_form_using_hooks.md) | [Day 24>>]()

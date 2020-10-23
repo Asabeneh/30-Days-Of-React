@@ -30,11 +30,6 @@ class App extends Component {
   }
   renderCountries = () => {
     return this.state.data.map((country) => {
-      const languageOrLanguages =
-        country.languages.length > 1 ? 'Langauges' : 'Language'
-      const formatLanguages = country.languages
-        .map(({ name }) => name)
-        .join(', ')
       return (
         <div>
           <div>
@@ -43,10 +38,6 @@ class App extends Component {
           </div>
           <div>
             <h1>{country.name}</h1>
-            <p>Capital: {country.capital}</p>
-            <p>
-              {languageOrLanguages}: {formatLanguages}
-            </p>
             <p>Population: {country.population}</p>
           </div>
         </div>
