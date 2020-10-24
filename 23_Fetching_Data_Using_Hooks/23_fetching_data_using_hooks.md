@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 22](../22_Form_Using_Hooks/22_form_using_hooks.md) | [Day 24>>]()
+[<< Day 22](../22_Form_Using_Hooks/22_form_using_hooks.md) | [Day 24>>](../24_projects/24_projects.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_23.jpg)
 
@@ -96,4 +96,4 @@ ReactDOM.render(<App />, rootElement)
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 22](../22_Form_Using_Hooks/22_form_using_hooks.md) | [Day 24>>]()
+[<< Day 22](../22_Form_Using_Hooks/22_form_using_hooks.md) | [Day 24>>](../24_projects/24_projects.md)
