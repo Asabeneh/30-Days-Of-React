@@ -47,6 +47,7 @@
 |22|[Forms Using Hook](./22_Form_Using_Hooks/22_form_using_hooks.md)|
 |23|[Fetching Data Using Hooks](./23_Fetching_Data_Using_Hooks/23_fetching_data_using_hooks.md)|
 |24|[Project using Hooks](./24_projects/24_projects.md)|
+|25|[Custom Hooks](./25_Custom_Hooks/25_custom_hooks.md)|
 
 
 
