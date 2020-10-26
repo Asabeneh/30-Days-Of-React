@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 25](../25_Custom_Hooks/25_custom_hooks.md) | [Day 27>>]()
+[<< Day 25](../25_Custom_Hooks/25_custom_hooks.md) | [Day 27>>](../27_Ref/27_ref.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_26.jpg)
 
@@ -35,5 +35,4 @@ It seems the react documentation has pretty good information about context, you 
 # Exercises
 
 🎉 CONGRATULATIONS ! 🎉
-
-[<< Day 25](../25_Custom_Hooks/25_custom_hooks.md) | [Day 27>>]()
+[<< Day 25](../25_Custom_Hooks/25_custom_hooks.md) | [Day 27>>](../27_Ref/27_ref.md)
