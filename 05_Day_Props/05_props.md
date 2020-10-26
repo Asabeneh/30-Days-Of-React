@@ -1086,7 +1086,7 @@ We will cover propTypes in detail in other sections.
 
 ## Exercises: Level 3
 
-1.  Use the given hexadecimal color generator in the example to create these random colors
+1.  Use the given hexadecimal color generator in the example to create these random colors. If you don't know how to generate the hexadecimal color you can use [dummy data generator](https://www.30daysofreact.com/dummy-data)
 
 ![Hexadecimal colors](../images/hexadecimal_color_exercise.png)
 

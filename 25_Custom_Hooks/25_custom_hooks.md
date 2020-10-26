@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 24](../24_projects/24_projects.md) | [Day 26>>]()
+[<< Day 24](../24_projects/24_projects.md) | [Day 26>>](../26_Context/26_context.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_25.jpg)
 
@@ -216,9 +216,11 @@ ReactDOM.render(<App />, rootElement)
 
 # Exercises
 
+Note: Continue building the countries application
+
 1 Build the following application using [countries API](https://restcountries.eu/rest/v2/all).
 [DEMO](https://www.30daysofreact.com/day-23/countries-data)
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 24](../24_projects/24_projects.md) | [Day 26>>]()
+[<< Day 24](../24_projects/24_projects.md) | [Day 26>>](../26_Context/26_context.md)
