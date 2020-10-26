@@ -210,20 +210,7 @@ If we use async and await we handle the error using try and catch. Let's apply a
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
-const Country = ({
-  country: { name, capital, flag, languages, population, currency },
-}) => {
-  const formatedCapital =
-    capital.length > 0 ? (
-      <>
-        <span>Capital: </span>
-        {capital}
-      </>
-    ) : (
-      ''
-    )
-  const formatLanguage = languages.length > 1 ? `Languages` : `Language`
-  console.log(languages)
+const Country = ({ country: { name, flag, population } }) => {
   return (
     <div className='country'>
       <div className='country_flag'>
@@ -231,14 +218,9 @@ const Country = ({
       </div>
       <h3 className='country_name'>{name.toUpperCase()}</h3>
       <div class='country_text'>
-        <p>{formatedCapital}</p>
-        <p>
-          <span>{formatLanguage}: </span>
-          {languages.map((language) => language.name).join(', ')}
-        </p>
         <p>
           <span>Population: </span>
-          {population.toLocaleString()}
+          {population}
         </p>
         <p>
           <span>Currency: </span>
@@ -309,17 +291,6 @@ import axios from 'axios'
 const Country = ({
   country: { name, capital, flag, languages, population, currency },
 }) => {
-  const formatedCapital =
-    capital.length > 0 ? (
-      <>
-        <span>Capital: </span>
-        {capital}
-      </>
-    ) : (
-      ''
-    )
-  const formatLanguage = languages.length > 1 ? `Languages` : `Language`
-  console.log(languages)
   return (
     <div className='country'>
       <div className='country_flag'>
@@ -327,19 +298,11 @@ const Country = ({
       </div>
       <h3 className='country_name'>{name.toUpperCase()}</h3>
       <div class='country_text'>
-        <p>{formatedCapital}</p>
-        <p>
-          <span>{formatLanguage}: </span>
-          {languages.map((language) => language.name).join(', ')}
-        </p>
         <p>
           <span>Population: </span>
-          {population.toLocaleString()}
+          {population}
         </p>
-        <p>
-          <span>Currency: </span>
-          {currency}
-        </p>
+        >
       </div>
     </div>
   )
@@ -393,20 +356,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import axios from 'axios'
 
-const Country = ({
-  country: { name, capital, flag, languages, population, currency },
-}) => {
-  const formatedCapital =
-    capital.length > 0 ? (
-      <>
-        <span>Capital: </span>
-        {capital}
-      </>
-    ) : (
-      ''
-    )
-  const formatLanguage = languages.length > 1 ? `Languages` : `Language`
-  console.log(languages)
+const Country = ({ country: { name, flag, population } }) => {
   return (
     <div className='country'>
       <div className='country_flag'>
@@ -414,18 +364,9 @@ const Country = ({
       </div>
       <h3 className='country_name'>{name.toUpperCase()}</h3>
       <div class='country_text'>
-        <p>{formatedCapital}</p>
-        <p>
-          <span>{formatLanguage}: </span>
-          {languages.map((language) => language.name).join(', ')}
-        </p>
         <p>
           <span>Population: </span>
-          {population.toLocaleString()}
-        </p>
-        <p>
-          <span>Currency: </span>
-          {currency}
+          {population}
         </p>
       </div>
     </div>
