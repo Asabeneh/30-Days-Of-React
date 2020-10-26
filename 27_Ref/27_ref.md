@@ -137,7 +137,7 @@ ReactDOM.render(<App />, rootElement
 
 # Exercises
 
-1. Coming...
+1. Develop the following [application](https://www.30daysofreact.com/day-27/hexadecimal-colors). The application generates 27 hexadecimal colors by default. If the generate button get clicked it will generate another new 27 hexadecimal colors.
 
 🎉 CONGRATULATIONS ! 🎉
 
