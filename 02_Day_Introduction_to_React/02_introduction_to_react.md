@@ -52,6 +52,7 @@ This section covers prerequisites to get started with React. You should have a g
 
 If you have the skills mentioned above, you will enjoy doing React. The 30 Days Of React challenge contains everything you need to know about react. In every section, it has some exercises and mini-projects, and it is recommended to work on them. This 30 Days Of React challenge will help you learn the latest version of React and the old version, step by step. The topics are broken down into 30 days, where each day contains several topics with easy-to-understand explanations, real-world examples and many hands-on exercises.
 This challenge is designed for beginners and professionals who want to build a web application using React and JavaScript.
+Once in a while you may need different dummy data to work with React. You can use the following [dummy data generator](https://www.30daysofreact.com/dummy-data) to generate different data.
 
 ### 1. What is React?
 
@@ -115,7 +116,7 @@ const welcome = <h1>Welcome to 30 Days of React Challenge</h1>
 const data = <small>Oct 2, 2020</small>
 ```
 
-The above strange looking code seems like  JavaScript and it seems like , but it is not JavaScript and it seems like HTML but not completely an HTML element. It is a mix of JavaScript and an HTML elements. JSX can allow us to use HTML in JavaScript. The HTML element in the JSX above is _h1_ and _small_.
+The above strange looking code seems like JavaScript and it seems like , but it is not JavaScript and it seems like HTML but not completely an HTML element. It is a mix of JavaScript and an HTML elements. JSX can allow us to use HTML in JavaScript. The HTML element in the JSX above is _h1_ and _small_.
 
 #### JSX Element
 
