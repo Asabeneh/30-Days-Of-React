@@ -29,6 +29,8 @@ In this section, you and I will develop an old version of twitter post.
 
 # Exercises
 
+1. Develop the following application, [twitter tweets](https://www.30daysofreact.com/day-28/twitter-clone). The application has all the CRUD operations. 
+
 🎉 CONGRATULATIONS ! 🎉
 
 [<< Day 27](../27_Ref/27_ref.md) | [Day 29>>]()
