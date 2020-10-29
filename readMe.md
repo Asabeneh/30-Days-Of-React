@@ -52,7 +52,7 @@
 |27|[Ref](./27_Ref/27_ref.md)|
 |28|[project](./28_project/28_project.md)|
 |29|[Explore](./29_explore/29_explore.md)|
-|30|[Conclusions]()|
+|30|[Conclusions](./30_conclusions/30_conclusions.md)|
 
 
 
