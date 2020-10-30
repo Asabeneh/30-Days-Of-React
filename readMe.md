@@ -49,10 +49,10 @@
 |24|[Project using Hooks](./24_projects/24_projects.md)|
 |25|[Custom Hooks](./25_Custom_Hooks/25_custom_hooks.md)|
 |26|[Context](./26_Context/26_context.md)|
-|27|[Ref](./26_Ref/26_ref.md)|
-|28|[project]()|
-|29|[project]()|
-|30|[Conclusions]()|
+|27|[Ref](./27_Ref/27_ref.md)|
+|28|[project](./28_project/28_project.md)|
+|29|[Explore](./29_explore/29_explore.md)|
+|30|[Conclusions](./30_conclusions/30_conclusions.md)|
 
 
 
