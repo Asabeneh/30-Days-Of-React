@@ -28,6 +28,7 @@
     - [Injecting data to JSX in React Component](#injecting-data-to-jsx-in-react-component)
     - [Further on Functional components](#further-on-functional-components)
 - [Exercises: Components](#exercises-components)
+  - [Exercises: Level 1](#exercises-level-1)
   - [Exercises: Level 2](#exercises-level-2)
   - [Exercises: Level 3](#exercises-level-3)
 
@@ -483,7 +484,9 @@ ReactDOM.render(<HexaColor />, rootElement)
 
 # Exercises: Components
 
-1. What is the difference between a regular function and an arrow function? 
+## Exercises: Level 1
+
+1. What is the difference between a regular function and an arrow function?
 2. What is a React Component?
 3. How do you make a React functional component?
 4. What is the difference between a pure JavaScript function and a functional component?
