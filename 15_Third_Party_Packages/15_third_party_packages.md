@@ -85,7 +85,6 @@ After installing node-sass you can start using Sass in React. Create a styles fo
 /* ./styles/header.scss */
 header {
   background-color: #61dbfb;
-  padding: 25;
   padding: 10px;
   margin: 0;
 }
@@ -147,7 +146,6 @@ Naming:
 /* ./styles/header.module.scss */
 .header {
   background-color: #61dbfb;
-  padding: 25;
   padding: 10px;
   margin: 0;
 }
@@ -384,7 +382,6 @@ const Title = styled.h1`
 `
 const Header = styled.header`
   background-color: #61dbfb;
-  padding: 25;
   padding: 10px;
   margin: 0;
 `
