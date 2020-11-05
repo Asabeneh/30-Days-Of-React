@@ -726,8 +726,6 @@ Instead of style object using regular styling method is more easy than the one a
       }
 
       footer {
-        position: absolute;
-        bottom: 0;
         width: 100%;
         height: 60px;
         /* Height of the footer */
@@ -1004,8 +1002,6 @@ Now, let us put everything together. Here, in the example below, the data is inj
       }
 
       footer {
-        position: absolute;
-        bottom: 0;
         width: 100%;
         height: 60px;
         /* Height of the footer */
@@ -1214,8 +1210,6 @@ In the following code example, the list is now containing list elements and it i
       }
 
       footer {
-        position: absolute;
-        bottom: 0;
         width: 100%;
         height: 60px;
         /* Height of the footer */
@@ -1420,8 +1414,6 @@ As you can see above, now the lists are formatted properly, but there is a warni
       }
 
       footer {
-        position: absolute;
-        bottom: 0;
         width: 100%;
         height: 60px;
         /* Height of the footer */
