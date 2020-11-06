@@ -31,7 +31,7 @@ Congratulations for making it to this far. Now, you have a solid understanding o
 ## Exercises: Level 1
 
 Use the following two APIs, [all cats](https://api.thecatapi.com/v1/breeds) and [a single cat][https://api.thecatapi.com/v1/images/search?breed_id=abys]. In the single cat API, you can get url property which is the image of the cat.
-Your result should look like this [demo](https://thirty-days-of-react-cat.herokuapp.com/day-20).
+Your result should look like this [demo](https://www.30daysofreact.com/day-20/cats).
 
 🎉 CONGRATULATIONS ! 🎉
 
