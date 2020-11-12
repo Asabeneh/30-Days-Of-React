@@ -555,7 +555,7 @@ const personAge = (
 
 // JSX element, main
 const techs = ['HTML', 'CSS', 'JavaScript']
-const techsFormatted = techs.map((tech) => <li>{tech}</li>)
+const techsFormatted = techs.map((tech) => <li key={tech}>{tech}</li>)
 
 // JSX element, main
 const main = (
