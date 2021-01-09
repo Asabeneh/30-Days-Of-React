@@ -3045,12 +3045,12 @@ const rectangle = {
 }
 
 let width = rectangle.width
-let height = recangle.height
+let height = rectangle.height
 
 // or
 
 let width = rectangle[width]
-let height = recangle[height]
+let height = rectangle[height]
 ```
 
 But today, we will see how to access the value of an object using destructuring.
@@ -3064,7 +3064,7 @@ const rectangle = {
 }
 
 let { width, height } = rectangle
-console.log(width, height, perimeter) // 20, 10
+console.log(width, height, perimeter) // 20, 10, undefined
 ```
 
 What will be the value of we try to access a key which not in the object.
@@ -3075,7 +3075,8 @@ const rectangle = {
   height: 10,
 }
 
-let { width, height, perimeter } = rectangleconsole.log(
+let { width, height, perimeter } = rectangle
+  console.log(
   width,
   height,
   perimeter
@@ -3095,7 +3096,7 @@ const rectangle = {
 }
 
 let { width, height, perimeter = 200 } = rectangle
-console.log(width, height, perimeter) // 20, 10, undefined
+console.log(width, height, perimeter) // 20, 10, 200
 ```
 
 Renaming variable names
