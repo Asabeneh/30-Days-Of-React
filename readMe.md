@@ -22,43 +22,42 @@
 
 | # Day |                                                           Topics                                                            |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------: |
-|00|[Introduction](#introduction)<br> [How to Use Repo](#how-to-use-repo)<br> [Requirements](#requirements)<br> [Setup](#setup)|
-|01|[JavaScript Refresher](./01_Day_JavaScript_Refresher/01_javascript_refresher.md)|
-|02|[Getting Started React](./02_Day_Introduction_to_React/02_introduction_to_react.md)|
-|03|[Setting Up](./03_Day_Setting_Up/03_setting_up.md)|
-|04|[Components](./04_Day_Components/04_components.md)|
-|05|[Props](./05_Day_Props/05_props.md)|
-|06|[List, Map and Keys](./06_Day_Map_List_Keys/06_map_list_keys.md)|
-|07|[Class Components](./07_Day_Class_Components/07_class_components.md)|
-|08|[States](./08_Day_States/08_states.md)|
-|09|[Conditional Rendering](./09_Day_Conditional_Rendering/09_conditional_rendering.md)|
-|10|[React Project Folder Structure](./10_React_Project_Folder_Structure/10_react_project_folder_structure.md)|
-|11|[Events](./11_Day_Events/11_events.md)|
-|12|[Forms](./12_Day_Forms/12_forms.md)|
-|13|[Controlled and Uncontrolled Component](./13_Day_Controlled_Versus_Uncontrolled_Input/13_uncontrolled_input.md)|
-|14|[Component Life Cycles](./14_Day_Component_Life_Cycles/14_component_life_cycles.md)|
-|15|[Third Party Packages](./15_Third_Party_Packages/15_third_party_packages.md)|
-|16|[Higher Order Components](./16_Higher_Order_Component/16_higher_order_component.md)|
-|17|[React Router](./17_React_Router/17_react_router.md)|
-|18|[Fetch versus Axios](./18_Fetch_And_Axios/18_fetch_axios.md)|
-|19|[Projects](./19_projects/19_projects.md)|
-|20|[Projects](./20_projects/20_projects.md)|
-|21|[Hooks](./21_Introducing_Hooks/21_introducing_hooks.md)|
-|22|[Forms Using Hook](./22_Form_Using_Hooks/22_form_using_hooks.md)|
-|23|[Fetching Data Using Hooks](./23_Fetching_Data_Using_Hooks/23_fetching_data_using_hooks.md)|
-|24|[Project using Hooks](./24_projects/24_projects.md)|
-|25|[Custom Hooks](./25_Custom_Hooks/25_custom_hooks.md)|
-|26|[Context](./26_Context/26_context.md)|
-|27|[Ref](./27_Ref/27_ref.md)|
-|28|[project](./28_project/28_project.md)|
-|29|[Explore](./29_explore/29_explore.md)|
-|30|[Conclusions](./30_conclusions/30_conclusions.md)|
-
-
+| 00    | [Introduction](#introduction)<br> [How to Use Repo](#how-to-use-repo)<br> [Requirements](#requirements)<br> [Setup](#setup) |
+| 01    |                      [JavaScript Refresher](./01_Day_JavaScript_Refresher/01_javascript_refresher.md)                       |
+| 02    |                     [Getting Started React](./02_Day_Introduction_to_React/02_introduction_to_react.md)                     |
+| 03    |                                     [Setting Up](./03_Day_Setting_Up/03_setting_up.md)                                      |
+| 04    |                                     [Components](./04_Day_Components/04_components.md)                                      |
+| 05    |                                             [Props](./05_Day_Props/05_props.md)                                             |
+| 06    |                              [List, Map and Keys](./06_Day_Map_List_Keys/06_map_list_keys.md)                               |
+| 07    |                            [Class Components](./07_Day_Class_Components/07_class_components.md)                             |
+| 08    |                                           [States](./08_Day_States/08_states.md)                                            |
+| 09    |                     [Conditional Rendering](./09_Day_Conditional_Rendering/09_conditional_rendering.md)                     |
+| 10    |         [React Project Folder Structure](./10_React_Project_Folder_Structure/10_react_project_folder_structure.md)          |
+| 11    |                                           [Events](./11_Day_Events/11_events.md)                                            |
+| 12    |                                             [Forms](./12_Day_Forms/12_forms.md)                                             |
+| 13    |       [Controlled and Uncontrolled Component](./13_Day_Controlled_Versus_Uncontrolled_Input/13_uncontrolled_input.md)       |
+| 14    |                     [Component Life Cycles](./14_Day_Component_Life_Cycles/14_component_life_cycles.md)                     |
+| 15    |                        [Third Party Packages](./15_Third_Party_Packages/15_third_party_packages.md)                         |
+| 16    |                     [Higher Order Components](./16_Higher_Order_Component/16_higher_order_component.md)                     |
+| 17    |                                    [React Router](./17_React_Router/17_react_router.md)                                     |
+| 18    |                                [Fetch versus Axios](./18_Fetch_And_Axios/18_fetch_axios.md)                                 |
+| 19    |                                          [Projects](./19_projects/19_projects.md)                                           |
+| 20    |                                          [Projects](./20_projects/20_projects.md)                                           |
+| 21    |                                   [Hooks](./21_Introducing_Hooks/21_introducing_hooks.md)                                   |
+| 22    |                              [Forms Using Hook](./22_Form_Using_Hooks/22_form_using_hooks.md)                               |
+| 23    |                 [Fetching Data Using Hooks](./23_Fetching_Data_Using_Hooks/23_fetching_data_using_hooks.md)                 |
+| 24    |                                     [Project using Hooks](./24_projects/24_projects.md)                                     |
+| 25    |                                    [Custom Hooks](./25_Custom_Hooks/25_custom_hooks.md)                                     |
+| 26    |                                            [Context](./26_Context/26_context.md)                                            |
+| 27    |                                                  [Ref](./27_Ref/27_ref.md)                                                  |
+| 28    |                                            [project](./28_project/28_project.md)                                            |
+| 29    |                                            [Explore](./29_explore/29_explore.md)                                            |
+| 30    |                                      [Conclusions](./30_conclusions/30_conclusions.md)                                      |
 
 🧡🧡🧡 HAPPY CODING 🧡🧡🧡
-<small>Support the **author** to create more educational materials</small>  
+<small>Support the **author** to create more educational materials</small> <br />  
 <a href = "https://www.paypal.me/asabeneh"><img src='./images/paypal_lg.png' alt='Paypal Logo' style="width:10%"/></a>
+
 </div>
 
 ---
@@ -101,7 +100,7 @@ I believe you will learn quite a lot in the next 30 days and your programming an
 I will use conversational English and less jargons to write this challenge. The content will be continuously updated. If you find a typo or grammar mistakes don't be surprised because I don't do any proof read before I publish it. I would recommend you to focus on the main message of the challenge instead of the English and some minor mistakes. I really appreciate if you send me pull requests for improvement and remember to pull first from master before you send pull requests. Most of the images I have used in this challenge came from 30DaysOfJavaScript challenge therefore you may need to rename file names and folders 30DaysOfReact.
 If you are good at arrays, loops, functions, objects, functional programming, destructuring and spreading and class then you will be able to follow the challenge properly. Otherwise, I strongly recommend you to check [30DaysOfJavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript).
 
-Before you dive into this course, you may check the [review](https://t.me/thirtydaysofreact/992) of 30 Days Of React. 
+Before you dive into this course, you may check the [review](https://t.me/thirtydaysofreact/992) of 30 Days Of React.
 
 ## Requirements
 
@@ -302,7 +301,7 @@ Programming languages are similar to human languages. English or many other lang
 I made a deliberate mistake. As a result, the console raises syntax errors. Actually, the syntax is very informative. It informs what type of mistake was made. By reading the error feedback guideline, we can correct the syntax and fix the problem. The process of identifying and removing errors from a program is called debugging. Let us fix the errors:
 
 ```js
-console.log("Hello, World!")
+console.log('Hello, World!')
 console.log('Hello, World!')
 ```
 
