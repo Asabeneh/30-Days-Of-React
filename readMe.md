@@ -60,9 +60,9 @@
 <small>Support the **author** to create more educational materials</small>  
 <a href = "https://www.paypal.me/asabeneh"><img src='./images/paypal_lg.png' alt='Paypal Logo' style="width:10%"/></a>
 </div>
+
 ---
 
-- [</div>](#div)
 - [Introduction](#introduction)
 - [Requirements](#requirements)
 - [How to Use Repo](#how-to-use-repo)
