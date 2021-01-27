@@ -29,9 +29,9 @@ class App extends Component {
       })
   }
   renderCountries = () => {
-    return this.state.data.map((country) => {
+    return this.state.data.map((country, i) => {
       return (
-        <div>
+        <div key={i}>
           <div>
             {' '}
             <img src={country.flag} alt={country.name} />{' '}
