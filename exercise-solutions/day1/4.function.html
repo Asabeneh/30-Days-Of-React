@@ -12,3 +12,70 @@
 </body>
 
 </html>
+<script>
+  function makeid(length) {
+    var result = '';
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for (var i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+  }
+
+
+  function userIdGeneratedByUser() {
+    let numOfCha = window.prompt("Number of characters?: ");
+    let numOfId = window.prompt("Number of id to be generate?: ");
+    let arrOfId = [];
+    for (let i = 0; i < numOfId; i++) {
+      arrOfId[i] = makeid(numOfCha);
+    }
+    return arrOfId;
+  }
+
+  function generateColors(type, quantity) {
+    let arrOfColor = [];
+    if (type === 'hexa') {
+      for (let i = 0; i < quantity; i++) {
+        var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        arrOfColor[i] = '#' + randomColor;
+      }
+    } else if (type === 'rgb') {
+      for (let i = 0; i < quantity; i++) {
+        const randomBetween = (min, max) => min + Math.floor(Math.random() * (max - min + 1));
+        const r = randomBetween(0, 255);
+        const g = randomBetween(0, 255);
+        const b = randomBetween(0, 255);
+        arrOfColor[i] = `rgb(${r},${g},${b})`;
+      }
+    }
+    return arrOfColor;
+  }
+
+  function average(arr) {
+    let avg = 0;
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+      const element = arr[i];
+      if (typeof (element) === "number") {
+        sum += element;
+      } else {
+        return 'The array contains non-number element!';
+      }
+    }
+    return avg = sum / arr.length;
+  }
+
+  function shuffleArray(arr) {
+    let i = arr.length;
+    let j = 0;
+    while (i--) {
+      j = Math.floor(Math.random() * (i + 1));
+      temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
+    }
+    return arr;
+  }
+</script>
