@@ -1,0 +1,173 @@
+<!--! INLINE SCRIPT -->
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>30DaysOfScript:Inline Script</title>
+  </head>
+  <body>
+    <button onclick="alert('Welcome to 30DaysOfJavaScript!')">Click Me</button>
+  </body>
+</html> -->
+<!-- INLINE SCRIPT -->
+
+<!--! INTERNAL SCRIPT -->
+<!--? Open the browser console to see the output from the console.log()  -->
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>30DaysOfScript:Internal Script</title>
+    <script>
+      console.log('Welcome to 30DaysOfJavaScript')
+    </script>
+  </head>
+  <body></body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>30DaysOfScript:Internal Script</title>
+  </head>
+  <body>
+    <button onclick="alert('Welcome to 30DaysOfJavaScript!');">Click Me</button>
+    <script>
+      console.log('Welcome to 30DaysOfJavaScript')
+    </script>
+  </body>
+</html> -->
+<!--! INTERNAL SCRIPT  -->
+
+<!--! EXTERNAL SCRIPT -->
+<!-- HEAD -->
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>30DaysOfJavaScript:External script</title>
+    <script src="introduction.js"></script>
+  </head>
+  <body></body>
+</html> -->
+
+<!-- BODY -->
+<!--? it could be in the header or in the body // Here is the recommended place -->
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>30DaysOfJavaScript:External script</title>
+  </head>
+  <body>
+    <script src="introduction.js"></script>
+  </body>
+</html> -->
+<!--! EXTERNAL SCRIPT  -->
+
+<!--! MULTIPLE EXTERNAL SCRIPT -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiple External Scripts</title>
+  </head>
+  <body>
+    <!-- <script src="./introduction.js"></script>
+    <script src="./helloworld.js"></script> -->
+    <h1>halo semua</h1>
+  </body>
+</html>
+<!--! MULTIPLE EXTERNAL SCRIPT -->
+
+<!-- !VARIABLE -->
+<!-- ADA 3 -->
+<!-- VAR, LET, CONST -->
+<!-- KITA MENGGUNAKAN ES6 YAITU LET DAN CONST KARENA LET CONST ADALAH BLOCK SCOPE -->
+<!--! VARIABLE  -->
+
+<!--! ARRAY -->
+<!-- array dapat menyimpan multiple value, dan setiap value memilki index -->
+<!-- array itu paling cocok dipakek buat list -->
+<script>
+  // syntax
+  //   const arr = Array();
+  // or
+  // let arr = new Array()
+  //   console.log(arr);  // []
+
+  //   Umumnya seperti ini
+  const arr = [];
+  //   console.log(arr);
+
+  //   SEKARANG MENCARI LENGTH
+  //  LENGTH ITU PANJANG dari suatu array
+  //  kalau binggung sih sebenarnya bisa diitung aja berapa banyak elements dari variable arraynya
+
+  const numbers = [0, 3.14, 9.81, 37, 98.6, 100]; // array of numbers
+  const fruits = ["banana", "orange", "mango", "lemon"]; // array of strings, fruits
+  const vegetables = ["Tomato", "Potato", "Cabbage", "Onion", "Carrot"]; // array of strings, vegetables
+  const animalProducts = ["milk", "meat", "butter", "yoghurt"]; // array of strings, products
+  const webTechs = ["HTML", "CSS", "JS", "React", "Redux", "Node", "MongDB"]; // array of web technologies
+  const countries = ["Finland", "Denmark", "Sweden", "Norway", "Iceland"]; // array of strings, countries
+
+  // Print the array and its length
+  //   console.log("Numbers:", numbers);
+  //   console.log("Number of numbers:", numbers.length);
+  //   console.log("banyak length fruits: ", fruits.length); // lengthnya ada 4, indexnya ada 3 (karena dihitung dari nol)
+
+  // array juga dapat memilki elements/ items dengan tipe data yang berbeda beda
+  //   const arr = [
+  //     1,
+  //     "aku sayang ibu",
+  //     true,
+  //     { ibu: "billie elish", bapak: "khalid" },
+  //     { profesi: ["tukang cukur", "penyanyi", "pengembala"] },
+  //   ];
+
+  // membuat array dengan split
+  let js = "sekarang review ulang javascript";
+  const jadiArr = js.split("");
+  //console.log(jadiArr); // ["s", "e", "k", "a", "r", "a", "n", "g",.....]
+
+  //   Acces array
+  const accArr = ["bayu", "ini", "senin", "oke", "?"];
+  //   console.log(accArr[2]); // senin
+
+  //   Modify array
+  accArr[0] = "toyib";
+  //   console.log(accArr); // ["toyib", "ini", "senin", "oke", "?"]
+
+  //   METHOD ARRAY
+  // fill
+  const fillArr = Array(5).fill(9);
+  // console.log(fillArr); // [9,9,9,9,9]
+
+  // concat
+  const conArr1 = [1, 2, 3];
+  const conArr2 = [1, 2, 3];
+  const conArr3 = conArr1.concat(conArr2);
+  // console.log(conArr3);// [1, 2, 3, 1, 2, 3]
+
+  // length
+  const lengthArr = [1, 2, 3];
+  // console.log(lengthArr.length); // 3
+
+  // indexOf
+  // console.log(lengthArr.indexOf(3)); // 3 =>mencari index dengan parameter udah ditentukan
+  // console.log(lengthArr.indexOf(4)); // -1 => nilai default karena tidak ada di dalam list array
+
+  // toString
+  console.log(lengthArr.toString()); // 1,2,3 => menjadi string
+
+  // join
+  const webTechs = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Redux",
+    "Node",
+    "MongoDB",
+  ]; // List of web technologies
+
+  console.log(webTechs.join()); // "HTML,CSS,JavaScript,React,Redux,Node,MongoDB"
+  console.log(webTechs.join(" # ")); // "HTML # CSS # JavaScript # React # Redux # Node # MongoDB"
+</script>
+<!--! ARRAY -->
