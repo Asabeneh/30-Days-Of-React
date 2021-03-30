@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class
+
+  </title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+  ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26];
+
+  class Statistic {
+
+    constructor(sample) {
+      this.sample = sample;
+      this.count = 0;
+      this.sum = 0;
+      this.min = 0;
+      this.max = 0;
+      this.range = 0;
+      this.mean = 0;
+      this.median = 0;
+      this.mode = {};
+      this.variance = 0;
+      this.standardDeviation = 0;
+      this.frequenDist = [];
+    }
+
+    getcount() {
+      return this.count = this.sample.length;
+    }
+
+    getsum() {
+      return this.sum = this.sample.reduce((acc, cur) => acc + cur);
+    }
+
+    getmin() {
+      return this.min = Math.min(...this.sample);
+    }
+
+    getmax() {
+      return this.max = Math.max(...this.sample);
+    }
+    getrange() {
+      return this.max - this.min;
+    }
+    getmean() {
+      return this.mean = this.sum / this.count;
+    }
+
+    getmedian() {
+      const arrSort = this.sample.sort();
+      const mid = Math.ceil(arrSort.length / 2);
+      return this.median = arrSort.length % 2 == 0 ? (arrSort[mid] + arrSort[mid - 1]) / 2 : arrSort[mid - 1];
+    }
+
+    getmode() {
+      const a = this.sample.sort();
+      const count = {};
+
+      a.forEach(e => {
+        if (!(e in count)) {
+          count[e] = 0;
+        }
+        count[e]++;
+      });
+
+      let bestElement;
+      let bestCount = 0;
+
+      Object.entries(count).forEach(([k, v]) => {
+        if (v > bestCount) {
+          bestElement = k;
+          bestCount = v;
+        }
+      });
+
+      return this.mode = { bestElement, bestCount };
+    }
+
+    getvar() {
+      const a = this.sample.sort();
+      const SS = a.reduce((acc, cur) => acc + Math.pow((cur - this.mean), 2));
+      return this.variance = SS / (this.count - 1);
+    }
+
+    getstd() {
+      return this.standardDeviation = Math.sqrt(this.variance);
+    }
+
+    getfreqDist() {
+
+      const a = this.sample.sort();
+      const count = {};
+      a.forEach(e => {
+        if (!(e in count)) {
+          count[e] = 0;
+        }
+        count[e]++;
+      });
+      let i = 0;
+      let fre = [];
+      Object.entries(count).forEach(([k, v]) => {
+        fre[i] = { num: k, freq: ((v / (a.length)) * 100).toPrecision(2) };
+        i++;
+      });
+
+      return this.frequenDist = fre;
+    }
+
+    describe() {
+      console.log(`
+      Count: ${this.count},
+      Sum:  ${this.sum},
+      Min:  ${this.min},
+      Max:  ${this.max},
+      Range:  ${this.range},
+      Mean:  ${this.mean},
+      Median:  ${this.median},
+      Mode:  ${this.mode},
+      Variance:  ${this.variance},
+      Standard Deviation: ${this.standardDeviation},
+      Frequency Distribution: ${this.frequenDist}
+      `);
+    }
+  }
+
+
+  let stat = new Statistic(ages);
+  console.log('Count:', stat.getcount()); // 25
+  console.log('Sum: ', stat.getsum()); // 744
+  console.log('Min: ', stat.getmin()); // 24
+  console.log('Max: ', stat.getmax());// 38
+  console.log('Range: ', stat.getrange());// 14
+  console.log('Mean: ', stat.getmean());// 30
+  console.log('Median: ', stat.getmedian());// 29
+  console.log('Mode: ', stat.getmode()); // {'mode': 26, 'count': 5}
+  console.log('Variance: ', stat.getvar()); // 17.5
+  console.log('Standard Deviation: ', stat.getstd()); // 4.2
+  console.log('Variance: ', stat.getvar()); // 17.5
+  console.log('Frequency Distribution: ', stat.getfreqDist()); // [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
+  stat.describe();
+</script>

@@ -1,0 +1,2 @@
+.vscode
+.DS_Store

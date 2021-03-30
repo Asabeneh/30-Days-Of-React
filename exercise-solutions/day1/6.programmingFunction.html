@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming function</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+  const products = [
+    { product: 'banana', price: 3 },
+    { product: 'mango', price: 6 },
+    { product: 'potato', price: ' ' },
+    { product: 'avocado', price: 8 },
+    { product: 'coffee', price: 10 },
+    { product: 'tea', price: '' },
+  ]
+
+  products.forEach(({ product: pro, price }) => {
+    console.log(`The price of ${pro} is ${price} euros.`)
+  });
+
+  let sum = 0;
+  products.forEach(({ product: pro, price }) => {
+    if (typeof (price) === "number") {
+      sum += price;
+    }
+  });
+  console.log('Sum by forEach: ' + sum);
+
+  let prices = products.map(({ product: pro, price }) => price);
+  console.log(prices);
+
+  let proWithPrice = products.filter(({ product: pro, price }) => {
+    if (typeof (price) === "number") {
+      return pro;
+    }
+  });
+  console.log(proWithPrice);
+
+
+  let sumOfPrices = products.map(({ product: pro, price }) => price).filter(price =>
+    typeof (price) === "number" ? price : 0
+  ).reduce((acc, cur) => acc + cur);
+
+  console.log('Sum by chainning: ' + sumOfPrices);
+
+
+  let sumOfPrices2 = products.reduce((acc, { product: pro, price }) => {
+    return acc += (typeof (price) === "number") ? price : 0;
+  }, 0);
+
+  console.log('Sum by only reduce: ' + sumOfPrices2);
+
+  let proWithoutPrice = products.find(({ product: pro, price }) => {
+    if (!(typeof (price) === "number")) {
+      return pro;
+    }
+  });
+  console.log(proWithoutPrice);
+
+  let proWithoutPrice2 = products.findIndex(({ product: pro, price }) => {
+    if (!(typeof (price) === "number")) {
+      return pro;
+    }
+  });
+  console.log(proWithoutPrice2);
+
+  let proWithoutPrice3 = products.some(({ product: pro, price }) => !(typeof (price) === "number"));
+  console.log(proWithoutPrice3);
+
+  let proWithPrice2 = products.every(({ product: pro, price }) => typeof (price) === "number");
+  console.log(proWithPrice2);
+
+    //forEach doesn't require to be returned
+    //map, filter return an array
+    //reduce return a value of sum/multiply
+    //filter returns all the item matches condition, find only returns 1st item matches, findIndex returns the index whose item matches
+    //some returns true if any item matches the condition, every returns true if all items matches the condition
+</script>
