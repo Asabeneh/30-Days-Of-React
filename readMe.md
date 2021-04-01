@@ -338,7 +338,7 @@ We can write our codes on the browser console, but it won't do for bigger projec
 
 #### Installing Visual Studio Code
 
-Visual studio code is a very popular open-source text editor. I would recommend to [download Visual Studio Code](https://code.visualstudio.com/), but if you are in favor of other editors, feel free to follow with what you have.
+Visual Studio Code is a very popular open-source text editor. I would recommend to [download Visual Studio Code](https://code.visualstudio.com/), but if you are in favor of other editors, feel free to follow with what you have.
 
 ![Vscode](images/vscode.png)
 
