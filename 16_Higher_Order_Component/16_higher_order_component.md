@@ -54,7 +54,7 @@ const Button = ({ onClick, text, style }) => {
   )
 }
 
-const buttonWithStyle = (CompParam) => {
+const buttonWithSuperPower = (CompParam) => {
   const buttonStyles = {
     backgroundColor: '#61dbfb',
     padding: '10px 25px',
@@ -99,7 +99,7 @@ const Button = ({ onClick, text, style }) => {
   )
 }
 
-const buttonWithStyles = (CompParam, name = 'default') => {
+const buttonWithSuperPower = (CompParam, name = 'default') => {
   const colors = [
     {
       name: 'default',
