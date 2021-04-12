@@ -1,28 +1,4 @@
-// Exercise: Level 1
-
-const countries = [
-    'Albania',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan',
-    'Kenya',
-  ]
-  
-  const webTechs = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Redux',
-    'Node',
-    'MongoDB',
-  ]
+// Exercise: Level 1 - Arrays
 
 // Declare an empty array;
 const emptyArray = [];
@@ -72,8 +48,13 @@ for (let i = 0; i < itCompanies.length; i++) {
 console.log(companies);
 
 // Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
+console.log(`${itCompanies[0]}, ${itCompanies[1]},  ${itCompanies[2]},  ${itCompanies[3]},  ${itCompanies[4]},  ${itCompanies[5]}, and  ${itCompanies[6]} are big IT companies.`)
+
 
 // Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
+
+let companyIndex = itCompanies.indexOf(company);
+companyIndex === -1 ? console.log(`${company} is not found.`) : console.log(`${company}`)
 
 // Filter out companies which have more than one 'o' without the filter method
 
