@@ -56,17 +56,41 @@ const firstCompany = itCompanies[0];
 const middleCompany = itCompanies[Math.floor(itCompanies.length / 2)];
 const lastCompany = itCompanies[Math.floor(itCompanies.length - 1)]
 
+console.log('firstCompany: ', firstCompany, '; middleCompany: ', middleCompany, ';  lastCompany: ', lastCompany);
+
 // Print out each company
+for (let i = 0; i < itCompanies.length; i++) {
+    console.log(itCompanies[i]);
+}
+
 // Change each company name to uppercase one by one and print them out
+let companies = [];
+for (let i = 0; i < itCompanies.length; i++) {
+    let uppercaseCompany = itCompanies[i].toUpperCase();
+    companies.push(uppercaseCompany)
+}
+console.log(companies);
+
 // Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
+
 // Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
+
 // Filter out companies which have more than one 'o' without the filter method
+
 // Sort the array using sort() method
+
 // Reverse the array using reverse() method
+
 // Slice out the first 3 companies from the array
+
 // Slice out the last 3 companies from the array
+
 // Slice out the middle IT company or companies from the array
+
 // Remove the first IT company from the array
+
 // Remove the middle IT company or companies from the array
+
 // Remove the last IT company from the array
+
 // Remove all IT companies
