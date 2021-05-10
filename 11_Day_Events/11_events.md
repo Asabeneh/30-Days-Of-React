@@ -48,7 +48,7 @@ Event handling in HTML
     <title>30 Days Of React App</title>
   </head>
   <body>
-    <button>onclick="greetPeople()">Greet People</button>
+    <button onclick="greetPeople()">Greet People</button>
     <script>
       const greetPeople = () => {
         alert('Welcome to 30 Days Of React Challenge')
