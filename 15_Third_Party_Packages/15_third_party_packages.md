@@ -95,7 +95,7 @@ header {
 // Header.js
 import React from 'react'
 import './styles/header.scss
-const Header = () = (
+const Header = () => (
    <header>
           <div className='header-wrapper'>
             <h1>30 Days Of React</h1>
