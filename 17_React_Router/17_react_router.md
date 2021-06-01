@@ -63,9 +63,9 @@ import {
 
 We may not all these components in every project but it is good to know that it exists.
 
-## BroswerRouter
+## BrowserRouter
 
-BrowerRouter is a parent component which allows to wrap the application route. Using the BrowserRouter we can access the browser history. Sometimes it can renames as router.
+BrowserRouter is a parent component which allows to wrap the application route. Using the BrowserRouter we can access the browser history. Sometimes it can renames as router.
 
 ```js
 import React from 'react'
