@@ -1006,9 +1006,9 @@ const webTechs = [
    ```
 
    - add 'Meat' in the beginning of your shopping cart if it has not been already added
-   - add Sugar at the end of you shopping cart if it has not been already added
+   - add 'Sugar' at the end of you shopping cart if it has not been already added
    - remove 'Honey' if you are allergic to honey
-   - modify Tea to 'Green Tea'
+   - modify 'Tea' to 'Green Tea'
 
 1. In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
 1. In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
@@ -1989,7 +1989,7 @@ console.log(copyPerson.hasOwnProperty('score'))
 ##### Exercises: Level 2
 
 1. Find the person who has many skills in the users object.
-1. Count logged in users,count users having greater than equal to 50 points from the following object.
+1. Count logged in users, count users having greater than equal to 50 points from the following object.
 
    ````js
    const users = {
@@ -2042,7 +2042,7 @@ console.log(copyPerson.hasOwnProperty('score'))
        isLoggedIn: false,
        points: 40
      }
-   }```
+   }
 
    ````
 
@@ -2054,7 +2054,7 @@ console.log(copyPerson.hasOwnProperty('score'))
 
 ##### Exercises: Level 3
 
-1. Create an object literal called _personAccount_. It has _firstName, lastName, incomes, expenses_ properties and it has _totalIncome, totalExpense, accountInfo,addIncome, addExpense_ and _accountBalance_ methods. Incomes is a set of incomes and its description and expenses is a set of incomes and its description.
+1. Create an object literal called _personAccount_. It has _firstName, lastName, incomes, expenses_ properties and it has _totalIncome, totalExpense, accountInfo,addIncome, addExpense_ and _accountBalance_ methods. Incomes and expenses are a set of its amount and description.
 2. \*\*\*\* Questions:2, 3 and 4 are based on the following two arrays:users and products ()
 
 ```js
@@ -3075,7 +3075,8 @@ const rectangle = {
   height: 10,
 }
 
-let { width, height, perimeter } = rectangleconsole.log(
+let { width, height, perimeter } = rectangle
+console.log(
   width,
   height,
   perimeter
@@ -3717,7 +3718,7 @@ Let us find the index of the first country in the array which has exactly six ch
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const index = countries.findIndex((country) => country.length === 6)
-console.log(index //2
+console.log(index) //2
 ```
 
 Let us find the index of the first country in the array which has the letter 'o'.
@@ -3725,7 +3726,7 @@ Let us find the index of the first country in the array which has the letter 'o'
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const index = countries.findIndex((country) => country.includes('o'))
-console.log(index // 1
+console.log(index) // 1
 ```
 
 Let us move on to the next functional programming, some.
