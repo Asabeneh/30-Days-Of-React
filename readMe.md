@@ -334,7 +334,7 @@ console.log(3 ** 2) // Exponentiation 3 ** 2 == 3 * 3
 
 ### Code Editor
 
-We can write our codes on the browser console, but it won't do for bigger projects. In a real working environment, developers use different code editors to write their codes. In this 30 days JavaScript challenge, we will be using Visual Studio Code.
+We can write our codes on the browser console, but it won't do for bigger projects. In a real working environment, developers use different code editors to write their codes. In this 30 days React challenge, we will be using Visual Studio Code.
 
 #### Installing Visual Studio Code
 
