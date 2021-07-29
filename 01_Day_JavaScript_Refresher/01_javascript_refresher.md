@@ -3543,7 +3543,7 @@ How about if we want to filter out countries not containing the substring land. 
 
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
-const countriesWithLand = countries.filter(
+const countriesWithoutLand = countries.filter(
   (country) => !country.includes('land')
 )
 console.log(countriesWithLand) // ["Estonia", "Sweden", "Norway"]
