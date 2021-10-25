@@ -3546,7 +3546,7 @@ const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const countriesWithoutLand = countries.filter(
   (country) => !country.includes('land')
 )
-console.log(countriesWithLand) // ["Estonia", "Sweden", "Norway"]
+console.log(countriesWithoutLand) // ["Estonia", "Sweden", "Norway"]
 ```
 
 Let's see an additional example about the filter, let us filter even or odd numbers from an array of numbers
