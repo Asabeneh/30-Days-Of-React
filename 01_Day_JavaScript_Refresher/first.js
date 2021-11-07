@@ -22,3 +22,22 @@ function table(){
         document.getElementById("tableHere").innerHTML += `${num} * ${i} = ${num*i} <br>`;
     }
 }
+
+const  MANGA = ["Meta", "Apple", "Netflix", "Google", "Amazon"];
+
+function checkFAANG(){
+    let input = document.getElementById("company").value;
+    let check = false;
+    for(let i = 0; i < MANGA.length; i++){
+        if(input.toUpperCase() === MANGA[i].toUpperCase()){
+            console.log(input.toUpperCase());
+            console.log(MANGA[i].toUpperCase());
+            check = true;
+            break;
+        }
+    }
+    if(check){
+        document.getElementById("result").innerHTML = "Yes this is in FAANG";
+    }
+    else document.getElementById("result").innerHTML = "No this is not in FAANG";
+}
