@@ -486,7 +486,7 @@ ReactDOM.render(<HexaColor />, rootElement)
 
 ## Exercises: Level 1
 
-1. What is the difference between a regular function and an arrow function?
+1. What is the difference between a regular function and an arrow function? ... Didnt Got time today .. Will do this on weekend
 2. What is a React Component?
 3. How do you make a React functional component?
 4. What is the difference between a pure JavaScript function and a functional component?
