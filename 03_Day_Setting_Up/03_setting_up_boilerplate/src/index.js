@@ -1,116 +1,51 @@
 // index.js
-import React from 'react'
-import ReactDOM from 'react-dom'
-// To get the root element from the HTML document
-import asabenehImage from './images/asabeneh.jpg'
-
-// to import the doSomeMath from the math.js with or without extension
-import doSomeMath from './math.js'
-
-// to import the other modules
-// since these modules were not exported as default we have to desctructure
-import { addTwo, multiply, subtract } from './math.js'
-
-import * as everything from './math.js'
-console.log(addTwo(5, 5))
-console.log(doSomeMath.addTwo(5, 5))
-console.log(everything)
-// JSX element, header
-
-
-// JSX element, header
-const welcome = 'Welcome to 30 Days Of React'
-const title = 'Getting Started React'
-const subtitle = 'JavaScript Library'
-const author = {
-  firstName: 'Asabeneh',
-  lastName: 'Yetayeh',
-}
-const date = 'Oct 2, 2020'
+//index.js
+// importing the react and react-dom package
+import React from "react";
+import ReactDOM from "react-dom";
 
 // JSX element, header
 const header = (
   <header>
-    <div className='header-wrapper'>
-      <h1>{welcome}</h1>
-      <h2>{title}</h2>
-      <h3>{subtitle}</h3>
-      <p>
-        Instructor: {author.firstName} {author.lastName}
-      </p>
-      <small>Date: {date}</small>
-    </div>
+    <h1>Welcome to 30 Days Of React</h1>
+    <h2>Getting Started React</h2>
+    <h3>JavaScript Library</h3>
+    <p>Ananth Vankipuram</p>
+    <small>Nov 14, 2021</small>
   </header>
-)
-
-const numOne = 3
-const numTwo = 2
-
-const result = (
-  <p>
-    {numOne} + {numTwo} = {numOne + numTwo}
-  </p>
-)
-
-const yearBorn = 1820
-const currentYear = new Date().getFullYear()
-const age = currentYear - yearBorn
-const personAge = (
-  <p>
-    {' '}
-    {author.firstName} {author.lastName} is {age} years old
-  </p>
-)
-
-// JSX element, main
-const techs = ['HTML', 'CSS', 'JavaScript']
-const techsFormatted = techs.map((tech) => <li>{tech}</li>)
-
-const user = (
-  <div>
-    <img src={asabenehImage} alt='asabeneh image' />
-  </div>
-)
+);
 
 // JSX element, main
 const main = (
   <main>
-    <div className='main-wrapper'>
-      <p>
-        Prerequisite to get started{' '}
-        <strong>
-          <em>react.js</em>
-        </strong>
-        :
-      </p>
-      <ul>{techsFormatted}</ul>
-      {result}
-      {personAge}
-      {user}
-    </div>
+    <p>Prerequisite to get started react.js:</p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
   </main>
-)
-
-const copyRight = 'Copyright 2020'
+);
 
 // JSX element, footer
 const footer = (
   <footer>
-    <div className='footer-wrapper'>
-      <p>{copyRight}</p>
-    </div>
+    <p>Copyright 2020</p>
   </footer>
-)
+);
 
-// JSX element, app
+// JSX element, app, a container or a parent
 const app = (
-  <div className='app'>
+  <div>
     {header}
     {main}
     {footer}
   </div>
-)
+);
 
-const rootElement = document.getElementById('root')
+const rootElement = document.getElementById("root");
 // we render the JSX element using the ReactDOM package
-ReactDOM.render(app, rootElement)
+// ReactDOM has the render method and the render method takes two argument
+ReactDOM.render(app, rootElement);
+// or
+//  ReactDOM.render([header, main, footer], rootElement)
