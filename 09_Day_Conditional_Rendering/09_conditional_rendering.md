@@ -757,6 +757,8 @@ class App extends React.Component {
 const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
+## Testimony
+Now it is time to express your thoughts about the Author and 30DaysOfReact. You can leave your testimonial on this [link](https://testimonify.herokuapp.com/)
 
 ## Exercises
 
