@@ -311,7 +311,7 @@ const PI = 3.14 // Not allowed to reassign PI to a new value
 // PI = 3.
 ```
 
-```
+```js
 const x = 10;
 
 if (x > 10) {
