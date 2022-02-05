@@ -311,6 +311,18 @@ const PI = 3.14 // Not allowed to reassign PI to a new value
 // PI = 3.
 ```
 
+```
+const x = 10;
+
+if (x > 10) {
+  const y = 15; 
+} else {
+  const y = 20;
+}
+
+console.log(y); // y is not accessible because const and let are block scoped. 
+```
+
 ### 2. Data types
 
 If you do not feel comfortable with data types check the following [link](https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/02_Day_Data_types/02_day_data_types.md)
