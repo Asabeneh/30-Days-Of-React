@@ -149,12 +149,12 @@ const buttonWithStyles = (CompParam, name = 'default') => {
   }
 }
 
-const NewButton = buttonWithSuperPower(Button)
-const ReactButton = buttonWithSuperPower(Button, 'react')
-const InfoButton = buttonWithSuperPower(Button, 'info')
-const SuccessButton = buttonWithSuperPower(Button, 'success')
-const WarningButton = buttonWithSuperPower(Button, 'warning')
-const DangerButton = buttonWithSuperPower(Button, 'danger')
+const NewButton = buttonWithStyles(Button)
+const ReactButton = buttonWithStyles(Button, 'react')
+const InfoButton = buttonWithStyles(Button, 'info')
+const SuccessButton = buttonWithStyles(Button, 'success')
+const WarningButton = buttonWithStyles(Button, 'warning')
+const DangerButton = buttonWithStyles(Button, 'danger')
 
 class App extends Component {
   render() {
