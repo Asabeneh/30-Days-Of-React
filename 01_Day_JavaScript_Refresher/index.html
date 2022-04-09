@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <script>
+    const countries = [
+      'Albania',
+      'Bolivia',
+      'Canada',
+      'Denmark',
+      'Ethiopia',
+      'Finland',
+      'Germany',
+      'Hungary',
+      'Ireland',
+      'Japan',
+      'Kenya',
+    ]
+
+    const webTechs = [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'React',
+      'Redux',
+      'Node',
+      'MongoDB',
+    ]
+
+    const arda = Array();
+    const moreThanFive = [ 1,2,3,4,5 ];
+    console.log(arda);
+    console.log( moreThanFive[0],moreThanFive[ Math.floor(moreThanFive.length / 2 + 1) ] );
+    const mixedDataTypes = [
+      3,
+      'horme kanyonu',
+      ['seks','alkol','weed'],
+      {
+        arda: 'seks machine',
+        leblebi: this.arda
+      },
+      true,
+      function alex(){
+      console.log('alex de souza')
+      }
+    ]
+
+    // middle, first and last
+    const itCompanies = [ 'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
+    console.log(itCompanies[0],itCompanies[itCompanies.length - 1], itCompanies[Math.floor(itCompanies.length / 2)])
+    itCompanies.forEach( company => {
+      console.log(company.toUpperCase());
+    })
+
+    // more than o
+    itCompanies.filter( item => {if( item.split(/o/gi).length - 1 > 1){ console.log(item) }})
+    itCompanies.splice(0,itCompanies.length)
+    console.log( itCompanies )
+  </script>
+</body>
+</html>
