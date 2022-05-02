@@ -51,4 +51,21 @@ countries.length % 2 === 0  ?
 
 console.log(countries.slice( 0,6 ),countries.slice( 6,12 ));
 
+function printFullName() {
+  let firstName = 'Asabeneh'
+  let lastName = 'Yetayehahuha'
+  let space = ' '
+  let fullName = firstName + space + lastName
+}
 
+console.log(printFullName());
+
+function sumAllNums() {
+  let sum = 0;
+  for( let i = 0; i < arguments.length; i++ ){
+    sum += arguments[i];
+  }
+  return sum;
+}
+
+console.log(sumAllNums( 1,2,3,4,5,10,7,8,9,10 ))
