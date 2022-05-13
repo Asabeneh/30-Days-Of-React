@@ -1,5 +1,5 @@
 <div>
-<img align="right" width="100%"  src="./images/30_days_of_react.jpg" />
+<img align="right" width="100%"  src="./exercises/images/30_days_of_react.jpg" />
 </div>
 
 <div align="center">
@@ -18,47 +18,47 @@
 
 </div>
 
-[Day 1 >>](./01_Day_JavaScript_Refresher/01_javascript_refresher.md)
+[Day 1 >>](./exercises/01_Day_JavaScript_Refresher/01_javascript_refresher.md)
 
 | # Day |                                                           Topics                                                            |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------: |
 | 00    | [Introduction](#introduction)<br> [How to Use Repo](#how-to-use-repo)<br> [Requirements](#requirements)<br> [Setup](#setup) |
-| 01    |                      [JavaScript Refresher](./01_Day_JavaScript_Refresher/01_javascript_refresher.md)                       |
-| 02    |                     [Getting Started React](./02_Day_Introduction_to_React/02_introduction_to_react.md)                     |
-| 03    |                                     [Setting Up](./03_Day_Setting_Up/03_setting_up.md)                                      |
-| 04    |                                     [Components](./04_Day_Components/04_components.md)                                      |
-| 05    |                                             [Props](./05_Day_Props/05_props.md)                                             |
-| 06    |                              [List, Map and Keys](./06_Day_Map_List_Keys/06_map_list_keys.md)                               |
-| 07    |                            [Class Components](./07_Day_Class_Components/07_class_components.md)                             |
-| 08    |                                           [States](./08_Day_States/08_states.md)                                            |
-| 09    |                     [Conditional Rendering](./09_Day_Conditional_Rendering/09_conditional_rendering.md)                     |
-| 10    |         [React Project Folder Structure](./10_React_Project_Folder_Structure/10_react_project_folder_structure.md)          |
-| 11    |                                           [Events](./11_Day_Events/11_events.md)                                            |
-| 12    |                                             [Forms](./12_Day_Forms/12_forms.md)                                             |
-| 13    |       [Controlled and Uncontrolled Component](./13_Day_Controlled_Versus_Uncontrolled_Input/13_uncontrolled_input.md)       |
-| 14    |                     [Component Life Cycles](./14_Day_Component_Life_Cycles/14_component_life_cycles.md)                     |
-| 15    |                        [Third Party Packages](./15_Third_Party_Packages/15_third_party_packages.md)                         |
-| 16    |                     [Higher Order Components](./16_Higher_Order_Component/16_higher_order_component.md)                     |
-| 17    |                                    [React Router](./17_React_Router/17_react_router.md)                                     |
-| 18    |                                [Fetch versus Axios](./18_Fetch_And_Axios/18_fetch_axios.md)                                 |
-| 19    |                                          [Projects](./19_projects/19_projects.md)                                           |
-| 20    |                                          [Projects](./20_projects/20_projects.md)                                           |
-| 21    |                                   [Hooks](./21_Introducing_Hooks/21_introducing_hooks.md)                                   |
-| 22    |                              [Forms Using Hook](./22_Form_Using_Hooks/22_form_using_hooks.md)                               |
-| 23    |                 [Fetching Data Using Hooks](./23_Fetching_Data_Using_Hooks/23_fetching_data_using_hooks.md)                 |
-| 24    |                                     [Project using Hooks](./24_projects/24_projects.md)                                     |
-| 25    |                                    [Custom Hooks](./25_Custom_Hooks/25_custom_hooks.md)                                     |
-| 26    |                                            [Context](./26_Context/26_context.md)                                            |
-| 27    |                                                  [Ref](./27_Ref/27_ref.md)                                                  |
-| 28    |                                            [project](./28_project/28_project.md)                                            |
-| 29    |                                            [Explore](./29_explore/29_explore.md)                                            |
-| 30    |                                      [Conclusions](./30_conclusions/30_conclusions.md)                                      |
+| 01    |                      [JavaScript Refresher](./exercises/01_Day_JavaScript_Refresher/01_javascript_refresher.md)                       |
+| 02    |                     [Getting Started React](./exercises/02_Day_Introduction_to_React/02_introduction_to_react.md)                     |
+| 03    |                                     [Setting Up](./exercises/03_Day_Setting_Up/03_setting_up.md)                                      |
+| 04    |                                     [Components](./exercises/04_Day_Components/04_components.md)                                      |
+| 05    |                                             [Props](./exercises/05_Day_Props/05_props.md)                                             |
+| 06    |                              [List, Map and Keys](./exercises/06_Day_Map_List_Keys/06_map_list_keys.md)                               |
+| 07    |                            [Class Components](./exercises/07_Day_Class_Components/07_class_components.md)                             |
+| 08    |                                           [States](./exercises/08_Day_States/08_states.md)                                            |
+| 09    |                     [Conditional Rendering](./exercises/09_Day_Conditional_Rendering/09_conditional_rendering.md)                     |
+| 10    |         [React Project Folder Structure](./exercises/10_React_Project_Folder_Structure/10_react_project_folder_structure.md)          |
+| 11    |                                           [Events](./exercises/11_Day_Events/11_events.md)                                            |
+| 12    |                                             [Forms](./exercises/12_Day_Forms/12_forms.md)                                             |
+| 13    |       [Controlled and Uncontrolled Component](./exercises/13_Day_Controlled_Versus_Uncontrolled_Input/13_uncontrolled_input.md)       |
+| 14    |                     [Component Life Cycles](./exercises/14_Day_Component_Life_Cycles/14_component_life_cycles.md)                     |
+| 15    |                        [Third Party Packages](./exercises/15_Third_Party_Packages/15_third_party_packages.md)                         |
+| 16    |                     [Higher Order Components](./exercises/16_Higher_Order_Component/16_higher_order_component.md)                     |
+| 17    |                                    [React Router](./exercises/17_React_Router/17_react_router.md)                                     |
+| 18    |                                [Fetch versus Axios](./exercises/18_Fetch_And_Axios/18_fetch_axios.md)                                 |
+| 19    |                                          [Projects](./exercises/19_projects/19_projects.md)                                           |
+| 20    |                                          [Projects](./exercises/20_projects/20_projects.md)                                           |
+| 21    |                                   [Hooks](./exercises/21_Introducing_Hooks/21_introducing_hooks.md)                                   |
+| 22    |                              [Forms Using Hook](./exercises/22_Form_Using_Hooks/22_form_using_hooks.md)                               |
+| 23    |                 [Fetching Data Using Hooks](./exercises/23_Fetching_Data_Using_Hooks/23_fetching_data_using_hooks.md)                 |
+| 24    |                                     [Project using Hooks](./exercises/24_projects/24_projects.md)                                     |
+| 25    |                                    [Custom Hooks](./exercises/25_Custom_Hooks/25_custom_hooks.md)                                     |
+| 26    |                                            [Context](./exercises/26_Context/26_context.md)                                            |
+| 27    |                                                  [Ref](./exercises/27_Ref/27_ref.md)                                                  |
+| 28    |                                            [project](./exercises/28_project/28_project.md)                                            |
+| 29    |                                            [Explore](./exercises/29_explore/29_explore.md)                                            |
+| 30    |                                      [Conclusions](./exercises/30_conclusions/30_conclusions.md)                                      |
 
 🧡🧡🧡 HAPPY CODING 🧡🧡🧡
 
 <div>
 <small>Support the <strong>author</strong> to create more educational materials</small> <br />  
-<a href = "https://www.paypal.me/asabeneh"><img src='./images/paypal_lg.png' alt='Paypal Logo' style="width:10%"/></a>
+<a href = "https://www.paypal.me/asabeneh"><img src='./exercises/images/paypal_lg.png' alt='Paypal Logo' style="width:10%"/></a>
 </div>
 
 ---
@@ -239,7 +239,7 @@ Ctl+Shift+J
 After you open the Google Chrome console, try to explore the marked buttons. We will spend most of the time on the Console. The Console is the place where your JavaScript code goes. The Google Console V8 engine changes your JavaScript code to machine code.
 Let us write a JavaScript code on the Google Chrome console:
 
-![write code on console](./images/js_code_on_chrome_console.png)
+![write code on console](./exercises/images/js_code_on_chrome_console.png)
 
 #### Writing Code on Browser Console
 
@@ -265,7 +265,7 @@ console.log('Hello, World!')
 
 The **console.log()** function can take multiple parameters separated by comma. The syntax looks like as follows:**console.log(param1, param2, param3)**
 
-![console log multiple arguments](./images/console_log_multipl_arguments.png)
+![console log multiple arguments](./exercises/images/console_log_multipl_arguments.png)
 
 ```js
 console.log('Hello', 'World', '!')
@@ -348,22 +348,22 @@ If you installed Visual Studio Code, let us start using it.
 
 Open the Visual Studio Code by double-clicking its icon. When you open it, you will get this kind of interface. Try to interact with the labeled icons.
 
-![Vscode ui](./images/vscode_ui.png)
+![Vscode ui](./exercises/images/vscode_ui.png)
 
-![Vscode add project](./images/adding_project_to_vscode.png)
+![Vscode add project](./exercises/images/adding_project_to_vscode.png)
 
-![Vscode open project](./images/opening_project_on_vscode.png)
+![Vscode open project](./exercises/images/opening_project_on_vscode.png)
 
 ![script file](images/scripts_on_vscode.png)
 
 ![Installing Live Server](images/vsc_live_server.png)
 
-![running script](./images/running_script.png)
+![running script](./exercises/images/running_script.png)
 
-![coding running](./images/launched_on_new_tab.png)
+![coding running](./exercises/images/launched_on_new_tab.png)
 
-Congratulations! You have completed the setup you need to get started with React, but before we dive into React let's do a JavaScript refresher. If you are very comfortable with JavaScript you may skip day 1 JavaScript refresher. The JavaScript refresher section is vast and it may take more than one day. From my experience people usually get stuck in React because their JavaScript knowledge is very shallow therefore to fill that gap all the necessary JavaScript features which can be used in React are covered in the JavaScript refresher section. There are many exercises but you are not required to solve them. Click [here](../30-Days-Of-React/02_Day_Introduction_to_React/02_introduction_to_react.md) if you want skip JavaScript and jump directly into React.
+Congratulations! You have completed the setup you need to get started with React, but before we dive into React let's do a JavaScript refresher. If you are very comfortable with JavaScript you may skip day 1 JavaScript refresher. The JavaScript refresher section is vast and it may take more than one day. From my experience people usually get stuck in React because their JavaScript knowledge is very shallow therefore to fill that gap all the necessary JavaScript features which can be used in React are covered in the JavaScript refresher section. There are many exercises but you are not required to solve them. Click [here](../exercises/30-Days-Of-React/02_Day_Introduction_to_React/02_introduction_to_react.md) if you want skip JavaScript and jump directly into React.
 
 🎉 CONGRATULATIONS ! 🎉
 
-[Day 1 >>](./01_Day_JavaScript_Refresher/01_javascript_refresher.md)
+[Day 1 >>](./exercises/01_Day_JavaScript_Refresher/01_javascript_refresher.md)
