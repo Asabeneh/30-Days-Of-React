@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1</title>
+
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            min-height: 60vh;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="bodydiv">
+        <button onclick="alert('Welcome to Day 1 of 30DaysOfReact (inline)')"> Click Me!</button>
+
+        <script>
+            const button = document.createElement("button");
+            const text = document.createTextNode("Click me 2");
+            button.setAttribute("onclick", "alert('Welcome to Day 1 of 30DaysOfReact (internal)')");
+            button.appendChild(text);
+
+            const body = document.getElementById("bodydiv");
+            body.appendChild(button);
+        </script>
+
+        <script src="external1.js"></script>
+        <script src="external2.js"></script>
+
+        <script src="level1.js"></script>
+        <script type="module" src="level2.js"></script>
+        <script type="module" src="level3.js"></script>
+    </div>
+    
+</body>
+</html>

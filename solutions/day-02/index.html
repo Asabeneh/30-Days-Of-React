@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2</title>
+
+    <style>
+        /* == General style === */
+        * {
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+        }
+  
+        html,
+        body {
+          height: 100%;
+          line-height: 1.5;
+          font-family: 'Montserrat';
+          font-weight: 300;
+          color: black;
+        }
+  
+        .root {
+          min-height: 100%;
+          position: relative;
+        }
+  
+        .header-wrapper,
+        .main-wrapper,
+        .footer-wrapper {
+          width: 85%;
+          margin: auto;
+        }
+  
+        .header-wrapper,
+        .main-wrapper {
+          padding: 10px;
+          margin: 2px auto;
+        }
+  
+        h1 {
+          font-size: 70px;
+          font-weight: 300;
+        }
+  
+        h2,
+        h3 {
+          font-weight: 300;
+        }
+  
+        header {
+          background-color: #61dbfb;
+          padding: 10px;
+        }
+  
+        main {
+          padding: 10px 10px 60px;
+          /* Height of the footer */
+        }
+  
+        ul {
+          margin-left: 15px;
+        }
+  
+        ul li {
+          list-style: none;
+        }
+  
+        footer {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 60px;
+          /* Height of the footer */
+          background: #6cf;
+        }
+  
+        .footer-wrapper {
+          font-weight: 400;
+          text-align: center;
+          line-height: 60px;
+        }
+      </style>
+</head>
+<body>
+    <div class ="root"></div>
+    
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const root = document.querySelector(".root")
+
+        const author = {
+            firstName : "Runar",
+            lastName : "Fosse"
+        }
+        const date = {
+            day : 14,
+            month : "May",
+            year : 2022
+        }
+        
+        const techs = ["HTML", "CSS", "JavaScript"]
+        const techsFormatted = techs.map(e => <li> {e} </li>)
+
+        const header = (
+            <header className="header-wrapper">
+                <h1>Welcome to 30 Days of React, Day 2</h1>
+                <h2>Getting Started with React</h2>
+                <h3>The JavaScript Library</h3>
+                <p>{author.firstName} {author.lastName}</p>
+                <small>{date.month} {date.day}, {date.year}</small>
+            </header>
+        )
+
+        const mathStyle = {width : "50px", color: "Red"}
+        let mathAnswer = 0
+
+        function doMaths() {
+            let a = Number.parseInt(document.querySelector('[name="a"]').value)
+            let b = Number.parseInt(document.querySelector('[name="b"]').value)
+            if (isNaN(a)) a = 0
+            if (isNaN(b)) b = 0
+            mathAnswer = a + b
+            document.getElementById("sum").innerHTML = ` = ${mathAnswer}`
+        }
+        
+        const maths = (
+            <div>
+                <label htmlFor="a">Do some math: </label>
+                <input type="number" name="a" style={mathStyle} onChange={e => doMaths()}/>
+                <label htmlFor="b"> + </label>
+                <input type="number" name="b" style={mathStyle} onChange={e => doMaths()}/>
+                <label id="sum"> = {mathAnswer}</label>
+            </div>
+        )
+
+        const main = (
+            <main className="main-wrapper">
+                <p>Prerequisite to get started react.js:</p>
+                <strong>
+                    <em>react.js</em>
+                </strong>
+                <ul>{techsFormatted}</ul>
+                {maths}
+            </main>
+        )
+
+        const copyRight = `Copyright ${date.year}, ${author.firstName} ${author.lastName}`
+
+        const footer = (
+            <footer className="footer-wrapper">
+                <p> {copyRight} </p>
+            </footer>
+        )
+
+        const app = (
+            <div className="app">
+                {header}    
+                {main}    
+                {footer}    
+            </div>
+        )
+
+        ReactDOM.render(app, root)
+    </script>
+</body>
+</html>
