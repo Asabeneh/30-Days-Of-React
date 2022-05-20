@@ -8,6 +8,7 @@
 
 body {
     display: flex;
-    justify-content: center;
-    margin: 80px auto;
+    justify-content: start;
+    margin: 30px auto;
+    padding: 0 80px;
 }
