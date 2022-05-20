@@ -1,0 +1,17 @@
+button {
+    width: 300px;
+    height: 40px;
+
+    display: flex;
+    margin: 0 auto;
+    margin-top: 25px;
+
+    background-color: #e56b6f;
+    border: none;
+    border-radius: 8px;
+
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
