@@ -50,5 +50,3 @@ countries.length % 2 === 0  ?
 
 
 console.log(countries.slice( 0,6 ),countries.slice( 6,12 ));
-
-
