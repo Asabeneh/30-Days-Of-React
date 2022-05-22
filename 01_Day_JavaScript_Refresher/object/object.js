@@ -1,12 +1,3 @@
-console.log('OBJECT LİTERALS');
-
-const dog = {
-  name:'Lessie',
-  color:'Brown',
-  legs: '4',
-  age: 3,
-  bark: 'wooof wooof'
-}
 
 console.log(dog.name,dog['color'])
 
