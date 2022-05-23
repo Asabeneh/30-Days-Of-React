@@ -1,10 +1,5 @@
 import React from "react";
-
-const Numbers = ({ numbers }) => {
-  // modifying array to array of li JSX
-  const list = numbers.map((num) => <li key={num}>{num}</li>);
-  return list;
-};
+import "./App.css";
 
 const App = () => {
   const numbers = [
@@ -14,10 +9,25 @@ const App = () => {
 
   return (
     <div className="container">
-      <div>
-        <h1>Numbers List</h1>
+      <h1>30 Day os React</h1>
+      <h3>Number Generator</h3>
+      <div className="numbersContainer">
         <ul>
-          <Numbers numbers={numbers} />
+          {/* <Numbers numbers={numbers} /> */}
+          {numbers.map((number) =>
+            number % 2 === 0 ? (
+              <li
+                className="box"
+                style={{ backgroundColor: "rgb(83, 187, 158)" }}
+              >
+                {number}
+              </li>
+            ) : (
+              <li className="box" style={{ backgroundColor: "tomato" }}>
+                {number}
+              </li>
+            )
+          )}
         </ul>
       </div>
     </div>
