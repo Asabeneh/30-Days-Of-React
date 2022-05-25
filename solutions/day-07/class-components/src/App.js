@@ -8,6 +8,7 @@ class Header extends React.Component {
   greetPeople = () => {
     alert('Welcome to 30 Days Of React Challenge, 2020')
   }
+  
   render() {
     return (
       <header>
