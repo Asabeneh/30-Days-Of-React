@@ -28,10 +28,10 @@ const WorldList = () => {
                             <p style={{width:220}}>{country.country}</p>
                             <div style={{width:500,height:20}}>
                                 <div style={{width:`${percentPop(country.population)}%`, height:'100%',backgroundColor:'orange',textAlign:'center'}}>
-                                    {Math.round(percentPop(country.population))}
+                                    {percentPop(country.population).toFixed(2)}
                                 </div>
                             </div>
-                            <p style={{width:120}}>{country.population}</p>
+                            <p style={{width:120}}>{country.population.toLocaleString('de-DE')}</p>
                         </li>
                     );
                 })}
