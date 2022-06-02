@@ -1,6 +1,7 @@
 // index.js
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Mine from './mine'
 import asabenehImage from './images/asabeneh.jpg'
 
 // Fuction to show month date year
@@ -246,6 +247,7 @@ class App extends React.Component {
           minusOne={this.minusOne}
           count={this.state.count}
         />
+        <Mine/>
         <Footer date={new Date()} />
       </div>
     )
