@@ -177,8 +177,8 @@ class App extends React.Component {
   state = {
     count: 0,
     styles: {
-      backgroundColor: '',
-      color: '',
+      backgroundColor: 'black',
+      color: 'white',
     },
   }
   showDate = (time) => {
@@ -216,7 +216,20 @@ class App extends React.Component {
   greetPeople = () => {
     alert('Welcome to 30 Days Of React Challenge, 2020')
   }
-  changeBackground = () => {}
+  changeBackground = () => {
+    let styles = {...this.state.styles};
+
+      if( this.state.styles.backgroundColor === 'black' && this.state.styles.color === 'white' ){
+        styles.backgroundColor = 'white'
+        styles.color = 'black'
+        this.setState({ styles });
+      } else {
+        styles.backgroundColor = 'black'
+        styles.color = 'white'
+        this.setState({ styles });
+      }
+  }
+
   render() {
     const data = {
       welcome: 'Welcome to 30 Days Of React',
@@ -234,8 +247,7 @@ class App extends React.Component {
     const user = { ...data.author, image: asabenehImage }
 
     return (
-      <div className='app'>
-        {this.state.backgroundColor}
+      <div className='app' style={{backgroundColor:this.state.styles.backgroundColor,color:this.state.styles.color}}>
         <Header data={data} />
         <Main
           user={user}
@@ -248,7 +260,6 @@ class App extends React.Component {
           count={this.state.count}
         />
         <Mine/>
-        <Footer date={new Date()} />
       </div>
     )
   }
