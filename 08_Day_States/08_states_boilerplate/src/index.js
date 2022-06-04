@@ -3,6 +3,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Mine from './mine'
 import asabenehImage from './images/asabeneh.jpg'
+import {Country} from "./country";
 
 // Fuction to show month date year
 
@@ -210,24 +211,13 @@ class App extends React.Component {
   minusOne = () => {
     this.setState({ count: this.state.count - 1 })
   }
+
   handleTime = () => {
     alert(this.showDate(new Date()))
   }
+
   greetPeople = () => {
     alert('Welcome to 30 Days Of React Challenge, 2020')
-  }
-  changeBackground = () => {
-    let styles = {...this.state.styles};
-
-      if( this.state.styles.backgroundColor === 'black' && this.state.styles.color === 'white' ){
-        styles.backgroundColor = 'white'
-        styles.color = 'black'
-        this.setState({ styles });
-      } else {
-        styles.backgroundColor = 'black'
-        styles.color = 'white'
-        this.setState({ styles });
-      }
   }
 
   render() {
@@ -247,19 +237,8 @@ class App extends React.Component {
     const user = { ...data.author, image: asabenehImage }
 
     return (
-      <div className='app' style={{backgroundColor:this.state.styles.backgroundColor,color:this.state.styles.color}}>
-        <Header data={data} />
-        <Main
-          user={user}
-          techs={techs}
-          handleTime={this.handleTime}
-          greetPeople={this.greetPeople}
-          changeBackground={this.changeBackground}
-          addOne={this.addOne}
-          minusOne={this.minusOne}
-          count={this.state.count}
-        />
-        <Mine/>
+      <div className='app'>
+        <Country/>
       </div>
     )
   }

@@ -6,6 +6,12 @@ const cat = 'https://www.smithsstationah.com/imagebank/eVetSites/Feline/01.jpg';
 
 export default class Mine extends React.Component {
 
+    // declaring state
+    state = {
+        count: 0,
+        imgLink: cat
+    }
+
     changeUrl = () => {
         if( this.state.imgLink === dog ){
             this.setState({ imgLink : cat })
@@ -14,14 +20,10 @@ export default class Mine extends React.Component {
         } 
     }
 
-  // declaring state
-  state = {
-    count: 0,
-    imgLink: cat
-  }
   render() {
     // accessing the state value
     const count = this.state.count
+
     return (
       <div className='App'>
         <img src={ this.state.imgLink } alt='cat' />
