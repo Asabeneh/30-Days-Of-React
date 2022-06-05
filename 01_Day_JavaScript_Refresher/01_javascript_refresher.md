@@ -3432,7 +3432,7 @@ For example if we like to change each country to uppercase and store it back to 
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
 const newCountries = []
-countries.forEach((country) => newCountries.push(country))
+countries.forEach((country) => newCountries.push(country.toUpperCase()))
 
 console.log(newCountries) // ["Finland", "Estonia", "Sweden", "Norway"]
 ```
