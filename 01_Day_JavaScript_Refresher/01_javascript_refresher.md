@@ -3408,7 +3408,7 @@ Let see different examples
 
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
-countries.forEach(function (country, index, arr) {
+countries.forEach(function (country, i, arr) {
   console.log(i, country.toUpperCase())
 })
 ```
