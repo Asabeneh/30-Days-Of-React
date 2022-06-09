@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 3](../30-Days-Of-React/03_Day_Setting_Up/03_setting_up.md) | [Day 5 >>](../05_Day_Props/05_props.md)
+[<< Day 3](../03_Day_Setting_Up/03_setting_up.md) | [Day 5 >>](../05_Day_Props/05_props.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_4.jpg)
 
@@ -517,4 +517,4 @@ ReactDOM.render(<HexaColor />, rootElement)
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 3](../30-Days-Of-React/03_Day_Setting_Up/03_setting_up.md) | [Day 5 >>](../05_Day_Props/05_props.md)
+[<< Day 3](../03_Day_Setting_Up/03_setting_up.md) | [Day 5 >>](../05_Day_Props/05_props.md)
