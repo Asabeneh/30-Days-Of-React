@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30 Days Of React Challenge</title>
+  </head>
+
+  <body>
+    <div class="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // Aqui se indicará el codigo React.
+
+        // Para obtener el elemento raiz del documento HTML
+        const rootElement = document.querySelector('.root');
+
+        // JSX elemento
+        /* const jsxElemento = <h1> Bienvendidos al Curso de React </h1> */
+        // Creamos el encabezado, cuerpo de la pagina y pie de la página.
+        // Para unirlos y poder mostrarlos podemos crear un elemento JSX que los envuelva a los tres o colocandolos en una matriz.
+        // Para envolverlos en un JSX usaremos los corchetes ({}) y llamaremos el elemento JSX dentro del mismo.
+        // Styles
+        const headerStyles = {
+            backgroundColor: 'red',
+            color: 'black',
+           
+
+        }
+        // Información
+        const header = (
+            <header
+                style={headerStyles}
+            >
+                <h1> Bienvenido a 30 dias de react</h1>
+                <h2> Empezemos con React</h2>
+                <h3> JavaScript libreria</h3>
+                <p> Sergio García Pérez</p>
+                <small> Jun 23, 2022</small>
+            </header>
+        )
+        const main = (
+            <main>
+                <p> Prerequisitos para empezar con React</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </main>
+        )
+        const footer = (
+            <footer>
+                <p>Copyright 2022</p>
+            </footer>
+        )
+        const app = (
+            <div> 
+                {header}
+                {main}
+                {footer}
+            </div>
+        )
+        // Renderizamos el elemento JSX usando el paquete ReactDOM
+        // ReactDOM tiene el método render y el método render toma dos argumentos.
+        ReactDOM.render(app, rootElement)
+    </script>
+  </body>
+</html>

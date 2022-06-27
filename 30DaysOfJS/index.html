@@ -1,17 +1,33 @@
-//Formas de agregar javascript a una web
-/* 
-    - Guión en linea
-    - Guión interno
+<!-- 
+    Formas de agregar javascript a una web
+
+    - Guión en linea (EL Script va "en linea" con un elemento del html sin especificar que es un script)
+    - Guión interno (Aquí el script lo podemon incluir en la cabecera(head) o en el cuerpo(body). Tenemos que indicar que es un script con "<script></script>")
     - Guión externo
     - Múltiples scripts externos
-*/
-// Guión en linea
+-->
+<!-- Guión en linea --> 
 <!DOCTYPE HTML>
 <html>
     <head>
         <title>30DaysOfScripts:Inline Scripts</title>
+        <script>
+            console.log("Guión interno prueba");// Lo hemos localizado en el head del codigo 
+        </script>
+        <script src="pruebas.js">
+            // Aqui traemos el script de un fichero externo y lo llamamos para que se ejecute.
+        </script>
     </head>
     <body>
+        <!-- Con la función  alert() crearemos una alerta que aparecerá en pantalla, en este ejemplo se ejecutará al hacer click en el boton -->
         <button onclick="alert('Bienvenido a 30 days of script!')">Click Aqui</button>
+        <script>
+            console.log("Guión interno prueba 2");// En este caso hemos introducido el script dentro del body
+        </script>
+        <div>
+            <script>
+                const PI = Math.PI
+            </script>
+        </div>
     </body>
 </html>
