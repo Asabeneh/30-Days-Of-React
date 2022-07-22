@@ -152,11 +152,20 @@ h2 {
   padding: 4px 8px;
   color: #fff;
 }
-.colorGen{
+.colorGen {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #f37575;
+  width: 100%;
+}
+
+.color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 80%;
+  color: #fff;
 }
 .colorGen button{
     background-color: #f37575;
