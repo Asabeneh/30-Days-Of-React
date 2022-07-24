@@ -39,7 +39,7 @@ State is an object in react which let the component re-render when state data ch
 
 ## How to set a state
 
-We set an initial state inside the constructor or outside the constructor of a class based component. We do not directly change or mutate the state but we use the _setState()_ method to reset to a new state. . As you can see below in the state object we have count with initial value 0. We can access the state object using _this.state_ and the property name. See the example below.
+We set an initial state inside the constructor or outside the constructor of a class based component. We do not directly change or mutate the state but we use the _setState()_ method to reset to a new state. As you can see below in the state object we have count with initial value 0. We can access the state object using _this.state_ and the property name. See the example below.
 
 ```js
 // index.js
