@@ -411,7 +411,7 @@ ReactDOM.render(<App />, rootElement)
 
 ## Conditional Rendering using && Operator
 
-The && operator render the right JSX operand if the left operand(expression) is true.
+The && operator renders the right JSX operand if the left operand(expression) is true.
 
 ```js
 // index.js
