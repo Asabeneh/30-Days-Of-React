@@ -167,7 +167,7 @@
 
 ### 0. Adding JavaScript to a Web Page
 
-JavaScript can be added to a web page in three different ways:
+JavaScript can be added to a web page in four different ways:
 
 - **_Inline script_**
 - **_Internal script_**
