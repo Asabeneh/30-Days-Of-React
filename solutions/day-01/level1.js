@@ -37,3 +37,41 @@ console.log(itCompanies.includes('Oracle'))
 
 
 //level2
+//1
+let text =
+  'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+
+let words = text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").split(' ')
+console.log(words)
+console.log(words.length)
+
+//2
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+shoppingCart.unshift('Meat')
+console.log(shoppingCart)
+
+shoppingCart.shift('Sugar')
+console.log(shoppingCart)
+
+shoppingCart.pop('Honey')
+console.log(shoppingCart)
+
+shoppingCart[2] = 'Milk Tea'
+console.log(shoppingCart)
+
+//3
+countries.includes('Ethiopia')
+
+//4
+if(webTechs.includes('Sass')){
+  console.log('Sass is a CSS preprocess')
+}else{
+  console.log(webTechs)
+}
+
+//5
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node', 'Express', 'MongoDB']
+const fullStack = frontEnd.concat(backEnd)
+
+console.log(fullStack)
