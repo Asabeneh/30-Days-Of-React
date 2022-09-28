@@ -75,3 +75,32 @@ const backEnd = ['Node', 'Express', 'MongoDB']
 const fullStack = frontEnd.concat(backEnd)
 
 console.log(fullStack)
+
+//level3
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+ages.sort();
+
+let min = ages[0];
+let max = 0;
+let total = 0;
+ages.map((i) => {
+  if(min > i) min = i;
+  if(max < i) max = i;
+  total += i;
+})
+let average = total/ages.length
+console.log(average)
+console.log(max)
+console.log(min)
+
+let median = (ages[ages.length/ 2] + ages[ages.length / 2 + 1])/2
+console.log(median)
+
+//2
+countries.slice(0,10)
+
+//3
+let mid  = (countries.length % 2 == 0) ? countries.length/2 : (countries.length + 1)/2;
+// console.log(mid)
+console.log(countries[mid]);
