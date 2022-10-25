@@ -1733,4 +1733,4 @@ coming
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 16](../16_Higher_Order_Component/16_higher_order_component.md) | [Day 18 >>](../18_projects/18_projects.md)
+[<< Day 16](../16_Higher_Order_Component/16_higher_order_component.md) | [Day 18 >>](../18_Fetch_And_Axios/18_fetch_axios.md)
