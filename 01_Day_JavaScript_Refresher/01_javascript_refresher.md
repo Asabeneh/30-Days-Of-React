@@ -304,8 +304,8 @@ _Your main.js file should be below all other scripts_. It is very important to r
 We use _var_, _let_ and _const_ to declare a variable. The _var_ is functions scope, however _let_ and _const_ are block scope. In this challenge we use ES6 and above features of JavaScript. Avoid using _var_.
 
 ```js
-let firstName = 'Asabeneh'
-firstName = 'Eyob'
+let firstName = 'Pierre Celestin'
+lastName = 'Moussa'
 
 const PI = 3.14 // Not allowed to reassign PI to a new value
 // PI = 3.
@@ -397,7 +397,7 @@ Number of countries: 5
 
 ```js
 const arr = [
-  'Asabeneh',
+  'Pierre',
   250,
   true,
   { country: 'Finland', city: 'Helsinki' },
@@ -574,7 +574,7 @@ There are different methods to manipulate an array. These are some of the availa
 Array:To create an array.
 
 ```js
-const arr = Array() // creates an an empty array
+const arr = Array() // creates  an empty array
 console.log(arr)
 
 const eightEmptyValues = Array(8) // it creates eight empty values
