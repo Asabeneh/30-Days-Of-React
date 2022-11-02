@@ -1,0 +1,41 @@
+<!--
+  Internal Styles
+
+  1. Apply different styles to your JSX elements
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .app {
+        height: 100%;
+        line-height: 1.5;
+        font-family: "Montserrat";
+        font-weight: 300;
+        color: red;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@latest/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      const app = (
+        <div className="app">This is a sample of internal styling.</div>
+      );
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(app);
+    </script>
+  </body>
+</html>

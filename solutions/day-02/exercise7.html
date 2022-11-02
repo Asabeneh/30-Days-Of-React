@@ -1,0 +1,71 @@
+<!--
+    Inject data to JSX
+
+    1. Practice how to make JSX element and injecting dynamic data(string, number, boolean, array, object)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div id="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@latest/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      const stringExample = () => {
+        const name = prompt("Enter your name:");
+        return <h1>{name}</h1>;
+      };
+
+      const numberExample = () => {
+        const age = prompt("Enter your age:");
+        return <p>{parseInt(age)}</p>;
+      };
+
+      const booleanConditionExample = () => {
+        const isFilipino = true;
+        return (
+          <p>{isFilipino ? "Filipino Citizen" : "Not a Filipino Citizen"}</p>
+        );
+      };
+
+      const arrayExample = () => {
+        const skills = ["cooking", "dancing", "singing"];
+        return <p>{`Skills: ${skills.join(", ")}`}</p>;
+      };
+
+      const objectExample = () => {
+        const pet = {
+          name: "Malou",
+          breed: "Breedwinner",
+          age: 1,
+        };
+        return (
+          <div>
+            <p>{`Pet name: ${pet.name}`}</p>
+            <p>{`Pet breed: ${pet.breed}`}</p>
+          </div>
+        );
+      };
+
+      const app = (
+        <div>
+          {stringExample()}
+          {numberExample()}
+          {booleanConditionExample()}
+          {arrayExample()}
+          {objectExample()}
+        </div>
+      );
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(app);
+    </script>
+  </body>
+</html>
