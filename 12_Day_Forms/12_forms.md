@@ -308,7 +308,7 @@ class App extends React.Component {
         skills: { ...this.state.skills, [name]: checked },
       })
     } else if (type === 'file') {
-      console.log(type, 'cehck here')
+      console.log(type, 'check here')
       this.setState({ [name]: e.target.files[0] })
     } else {
       this.setState({ [name]: value })

@@ -86,7 +86,7 @@ Exporting in a function declaration, a regular function
 
 ```js
 // src/App.js
-import React from 'react
+import React from 'react'
 // named export in regular function, function declaration
 export function App () {
 return <h1>Welcome to 30 Days Of React</h1>
@@ -109,7 +109,7 @@ We saw a named export and now let's implement it with default export. We can do 
 
 ```js
 // src/App.js
-import React from 'react
+import React from 'react'
 // export default in arrow function
 export default const App = () => <h1>Welcome to 30 Days Of React</h1>
 
@@ -117,7 +117,7 @@ export default const App = () => <h1>Welcome to 30 Days Of React</h1>
 
 ```js
 // src/App.js
-import React from 'react
+import React from 'react'
 // export default in arrow function
 export default function App () {
   return <h1>Welcome to 30 Days Of React</h1>
@@ -127,7 +127,7 @@ export default function App () {
 ```js
 // src/App.js
 // Recommended for most of the cases
-import React from 'react
+import React from 'react'
 const App = () => <h1>Welcome to 30 Days Of React</h1>
 export default App
 ```
@@ -605,7 +605,7 @@ Well done. Time to do some exercises for your brain and muscles.
 
 1. What is the importance of React Folder Structure and File Naming
 2. How do you export file
-3. How do you  import file
+3. How do you import file
 4. Make a component of module and export it as named or default export
 5. Make a component or module and import it
 6. Change all the components you have to different folder structure

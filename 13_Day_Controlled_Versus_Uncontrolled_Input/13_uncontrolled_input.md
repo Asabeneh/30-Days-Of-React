@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 12](../12_Day_Forms/12_forms.md) | [Day 14 >>]()
+[<< Day 12](../12_Day_Forms/12_forms.md) | [Day 14 >>](../14_Day_Component_Life_Cycles/14_component_life_cycles.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_13.jpg)
 

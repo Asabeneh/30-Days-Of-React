@@ -94,17 +94,17 @@ header {
 ```js
 // Header.js
 import React from 'react'
-import './styles/header.scss
-const Header = () = (
-   <header>
-          <div className='header-wrapper'>
-            <h1>30 Days Of React</h1>
-            <h2>Getting Started React</h2>
-            <h3>JavaScript Library</h3>
-            <p>Instructor: Asabeneh Yetayeh</p>
-            <small>Oct 15, 2020</small>
-          </div>
-        </header>
+import './styles/header.scss'
+const Header = () => (
+  <header>
+    <div className='header-wrapper'>
+      <h1>30 Days Of React</h1>
+      <h2>Getting Started React</h2>
+      <h3>JavaScript Library</h3>
+      <p>Instructor: Asabeneh Yetayeh</p>
+      <small>Oct 15, 2020</small>
+    </div>
+  </header>
 )
 
 export default Header
@@ -160,19 +160,19 @@ Naming:
 ```js
 // Header.js
 import React from 'react'
-import headerStyles from  './styles/header.module.scss
+import headerStyles from './styles/header.module.scss'
 // We can all destructure the class name
-const {header, headerWrapper} = headerStyles
-const Header = () = (
-   <header className = {headerStyles.header}>
-          <div className={headerStyles.headerWrapper}>
-            <h1>30 Days Of React</h1>
-            <h2>Getting Started React</h2>
-            <h3>JavaScript Library</h3>
-            <p>Instructor: Asabeneh Yetayeh</p>
-            <small>Oct 15, 2020</small>
-          </div>
-        </header>
+const { header, headerWrapper } = headerStyles
+const Header = () => (
+  <header className={headerStyles.header}>
+    <div className={headerStyles.headerWrapper}>
+      <h1>30 Days Of React</h1>
+      <h2>Getting Started React</h2>
+      <h3>JavaScript Library</h3>
+      <p>Instructor: Asabeneh Yetayeh</p>
+      <small>Oct 15, 2020</small>
+    </div>
+  </header>
 )
 
 export default Header
@@ -183,13 +183,13 @@ export default Header
 
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import './styles/header.scss
+import './styles/header.scss'
 
 class App extends Component {
   render() {
     return (
       <div className='App'>
-       <Header />
+        <Header />
       </div>
     )
   }
