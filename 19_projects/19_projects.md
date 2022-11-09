@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 18](../18_Fetch_And_Axios/18_fetch_axios.md) | [Day 20>>]()
+[<< Day 18](../18_Fetch_And_Axios/18_fetch_axios.md) | [Day 20>>](../20_projects/20_projects.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_19.jpg)
 
