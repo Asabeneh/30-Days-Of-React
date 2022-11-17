@@ -2,6 +2,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import asabenehImage from './images/asabeneh.jpg'
+import { countriesData } from './data/countries'
 
 // Fuction to show month date year
 
@@ -74,7 +75,7 @@ class Header extends React.Component {
     } = this.props.data
 
     return (
-      <header style={this.props.styles}>
+      <header style={this.props.data.styles}>
         <div className='header-wrapper'>
           <h1>{welcome}</h1>
           <h2>{title}</h2>
@@ -130,7 +131,7 @@ class Main extends React.Component {
       minusOne,
     } = this.props
     return (
-      <main>
+      <main style={this.props.styles}>
         <div className='main-wrapper'>
           <p>Prerequisite to get started react.js:</p>
           <ul>
@@ -163,7 +164,7 @@ class Footer extends React.Component {
   }
   render() {
     return (
-      <footer>
+      <footer style={this.props.styles}>
         <div className='footer-wrapper'>
           <p>Copyright {this.props.date.getFullYear()}</p>
         </div>
@@ -179,6 +180,11 @@ class App extends React.Component {
       backgroundColor: '',
       color: '',
     },
+    headerFooterStyles: {
+      backgroundColor: '',
+      color: '',
+    },
+    isDarkMode: false
   }
   showDate = (time) => {
     const months = [
@@ -215,7 +221,35 @@ class App extends React.Component {
   greetPeople = () => {
     alert('Welcome to 30 Days Of React Challenge, 2020')
   }
-  changeBackground = () => {}
+  changeBackground = () => {
+    if (this.state.isDarkMode) {
+      // set to light mode
+      this.setState({
+        styles: {
+          backgroundColor: '#FFFFFF',
+          color: '#000000',
+        },
+        headerFooterStyles: {
+          backgroundColor: '#61dbfb',
+          color: '#000000',
+        },
+        isDarkMode: false
+      });
+    } else {
+      // set to dark mode
+      this.setState({
+        styles: {
+          backgroundColor: '#121212',
+          color: '#FFFFFF',
+        },
+        headerFooterStyles: {
+          backgroundColor: '#121212',
+          color: '#FFFFFF',
+        },
+        isDarkMode: true
+      });
+    }
+  }
   render() {
     const data = {
       welcome: 'Welcome to 30 Days Of React',
@@ -226,6 +260,7 @@ class App extends React.Component {
         lastName: 'Yetayeh',
       },
       date: 'Oct 7, 2020',
+      styles: this.state.headerFooterStyles
     }
     const techs = ['HTML', 'CSS', 'JavaScript']
     const date = new Date()
@@ -245,8 +280,9 @@ class App extends React.Component {
           addOne={this.addOne}
           minusOne={this.minusOne}
           count={this.state.count}
+          styles={this.state.styles}
         />
-        <Footer date={new Date()} />
+        <Footer date={new Date()} styles={this.state.headerFooterStyles} />
       </div>
     )
   }
