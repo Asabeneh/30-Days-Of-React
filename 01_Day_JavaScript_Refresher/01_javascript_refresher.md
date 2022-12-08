@@ -54,9 +54,9 @@
       - [Sorting elements in array](#sorting-elements-in-array)
     - [Array of arrays](#array-of-arrays)
   - [💻 Exercise](#-exercise)
-      - [Exercise: Level 1](#exercise-level-1)
-      - [Exercise: Level 2](#exercise-level-2)
-      - [Exercise: Level 3](#exercise-level-3)
+    - [Exercise: Level 1](#exercise-level-1)
+    - [Exercise: Level 2](#exercise-level-2)
+    - [Exercise: Level 3](#exercise-level-3)
   - [4. Conditionals](#4-conditionals)
     - [If](#if)
     - [If Else](#if-else)
@@ -64,9 +64,9 @@
     - [Switch](#switch)
     - [Ternary Operators](#ternary-operators)
   - [💻 Exercises](#-exercises)
-      - [Exercises: Level 1](#exercises-level-1)
-      - [Exercises: Level 2](#exercises-level-2)
-      - [Exercises: Level 3](#exercises-level-3)
+    - [Exercises: Level 1](#exercises-level-1)
+    - [Exercises: Level 2](#exercises-level-2)
+    - [Exercises: Level 3](#exercises-level-3)
   - [5. Loops](#5-loops)
     - [Types of Loops](#types-of-loops)
       - [1. for](#1-for)
@@ -95,9 +95,9 @@
       - [Getting object keys and values using Object.entries()](#getting-object-keys-and-values-using-objectentries)
       - [Checking properties using hasOwnProperty()](#checking-properties-using-hasownproperty)
   - [💻 Exercises](#-exercises-1)
-      - [Exercises: Level 1](#exercises-level-1-1)
-      - [Exercises: Level 2](#exercises-level-2-1)
-      - [Exercises: Level 3](#exercises-level-3-1)
+    - [Exercises: Level 1](#exercises-level-1-1)
+    - [Exercises: Level 2](#exercises-level-2-1)
+    - [Exercises: Level 3](#exercises-level-3-1)
   - [8. Functions](#8-functions)
     - [Function Declaration](#function-declaration)
     - [Function without a parameter and return](#function-without-a-parameter-and-return)
@@ -115,9 +115,9 @@
     - [Function with default parameters](#function-with-default-parameters)
     - [Function declaration versus Arrow function](#function-declaration-versus-arrow-function)
   - [💻 Exercises](#-exercises-2)
-      - [Exercises: Level 1](#exercises-level-1-2)
-      - [Exercises: Level 2](#exercises-level-2-2)
-      - [Exercises: Level 3](#exercises-level-3-2)
+    - [Exercises: Level 1](#exercises-level-1-2)
+    - [Exercises: Level 2](#exercises-level-2-2)
+    - [Exercises: Level 3](#exercises-level-3-2)
   - [9. Higher Order Function](#9-higher-order-function)
     - [Callback](#callback)
     - [Returning function](#returning-function)
@@ -205,7 +205,7 @@ First, let us write on the head part of the page.
   <head>
     <title>30DaysOfScript:Internal Script</title>
     <script>
-      console.log('Welcome to 30DaysOfJavaScript')
+      console.log("Welcome to 30DaysOfJavaScript");
     </script>
   </head>
   <body></body>
@@ -223,7 +223,7 @@ This is how we write an internal script most of the time. Writing the JavaScript
   <body>
     <button onclick="alert('Welcome to 30DaysOfJavaScript!');">Click Me</button>
     <script>
-      console.log('Welcome to 30DaysOfJavaScript')
+      console.log("Welcome to 30DaysOfJavaScript");
     </script>
   </body>
 </html>
@@ -239,7 +239,7 @@ Similar to the internal script, the external script link can be on the header or
 First, we should create an external JavaScript file with .js extension. All files ending with .js extension. All files ending with .js extension are JavaScript files. Create a file named introduction.js inside your project directory and write the following code and link this .js file at the bottom of the body.
 
 ```js
-console.log('Welcome to 30DaysOfJavaScript')
+console.log("Welcome to 30DaysOfJavaScript");
 ```
 
 External scripts in the _head_:
@@ -279,7 +279,7 @@ We can also link multiple external JavaScript files to a web page.
 Create a helloworld.js file inside the 30DaysOfJS folder and write the following code.
 
 ```js
-console.log('Hello, World!')
+console.log("Hello, World!");
 ```
 
 ```html
@@ -304,10 +304,10 @@ _Your main.js file should be below all other scripts_. It is very important to r
 We use _var_, _let_ and _const_ to declare a variable. The _var_ is functions scope, however _let_ and _const_ are block scope. In this challenge we use ES6 and above features of JavaScript. Avoid using _var_.
 
 ```js
-let firstName = 'Pierre Celestin'
-lastName = 'Moussa'
+let firstName = "Pierre Celestin";
+lastName = "Moussa";
 
-const PI = 3.14 // Not allowed to reassign PI to a new value
+const PI = 3.14; // Not allowed to reassign PI to a new value
 // PI = 3.
 ```
 
@@ -330,10 +330,10 @@ It is very common to use _const_ instead of _let_ to declare an array variable. 
 
 ```js
 // syntax
-const arr = Array()
+const arr = Array();
 // or
 // let arr = new Array()
-console.log(arr) // []
+console.log(arr); // []
 ```
 
 - Using square brackets([])
@@ -341,8 +341,8 @@ console.log(arr) // []
 ```js
 // syntax
 // This the most recommended way to create an empty list
-const arr = []
-console.log(arr)
+const arr = [];
+console.log(arr);
 ```
 
 #### How to create an array with values
@@ -350,32 +350,32 @@ console.log(arr)
 Array with initial values. We use _length_ property to find the length of an array.
 
 ```js
-const numbers = [0, 3.14, 9.81, 37, 98.6, 100] // array of numbers
-const fruits = ['banana', 'orange', 'mango', 'lemon'] // array of strings, fruits
-const vegetables = ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot'] // array of strings, vegetables
-const animalProducts = ['milk', 'meat', 'butter', 'yoghurt'] // array of strings, products
-const webTechs = ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Node', 'MongDB'] // array of web technologies
-const countries = ['Finland', 'Denmark', 'Sweden', 'Norway', 'Iceland'] // array of strings, countries
+const numbers = [0, 3.14, 9.81, 37, 98.6, 100]; // array of numbers
+const fruits = ["banana", "orange", "mango", "lemon"]; // array of strings, fruits
+const vegetables = ["Tomato", "Potato", "Cabbage", "Onion", "Carrot"]; // array of strings, vegetables
+const animalProducts = ["milk", "meat", "butter", "yoghurt"]; // array of strings, products
+const webTechs = ["HTML", "CSS", "JS", "React", "Redux", "Node", "MongDB"]; // array of web technologies
+const countries = ["Finland", "Denmark", "Sweden", "Norway", "Iceland"]; // array of strings, countries
 
 // Print the array and its length
 
-console.log('Numbers:', numbers)
-console.log('Number of numbers:', numbers.length)
+console.log("Numbers:", numbers);
+console.log("Number of numbers:", numbers.length);
 
-console.log('Fruits:', fruits)
-console.log('Number of fruits:', fruits.length)
+console.log("Fruits:", fruits);
+console.log("Number of fruits:", fruits.length);
 
-console.log('Vegetables:', vegetables)
-console.log('Number of vegetables:', vegetables.length)
+console.log("Vegetables:", vegetables);
+console.log("Number of vegetables:", vegetables.length);
 
-console.log('Animal products:', animalProducts)
-console.log('Number of animal products:', animalProducts.length)
+console.log("Animal products:", animalProducts);
+console.log("Number of animal products:", animalProducts.length);
 
-console.log('Web technologies:', webTechs)
-console.log('Number of web technologies:', webTechs.length)
+console.log("Web technologies:", webTechs);
+console.log("Number of web technologies:", webTechs.length);
 
-console.log('Countries:', countries)
-console.log('Number of countries:', countries.length)
+console.log("Countries:", countries);
+console.log("Number of countries:", countries.length);
 ```
 
 ```sh
@@ -397,13 +397,13 @@ Number of countries: 5
 
 ```js
 const arr = [
-  'Pierre',
+  "Pierre",
   250,
   true,
-  { country: 'Finland', city: 'Helsinki' },
-  { skills: ['HTML', 'CSS', 'JS', 'React', 'Python'] },
-] // arr containing different data types
-console.log(arr)
+  { country: "Finland", city: "Helsinki" },
+  { skills: ["HTML", "CSS", "JS", "React", "Python"] },
+]; // arr containing different data types
+console.log(arr);
 ```
 
 #### Creating an array using split
@@ -411,20 +411,20 @@ console.log(arr)
 As we have seen in the earlier section, we can split a string at different positions, and we can change to an array. Let us see the examples below.
 
 ```js
-let js = 'JavaScript'
-const charsInJavaScript = js.split('')
+let js = "JavaScript";
+const charsInJavaScript = js.split("");
 
-console.log(charsInJavaScript) // ["J", "a", "v", "a", "S", "c", "r", "i", "p", "t"]
+console.log(charsInJavaScript); // ["J", "a", "v", "a", "S", "c", "r", "i", "p", "t"]
 
-let companiesString = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
-const companies = companiesString.split(',')
+let companiesString = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon";
+const companies = companiesString.split(",");
 
-console.log(companies) // ["Facebook", " Google", " Microsoft", " Apple", " IBM", " Oracle", " Amazon"]
+console.log(companies); // ["Facebook", " Google", " Microsoft", " Apple", " IBM", " Oracle", " Amazon"]
 let txt =
-  'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
-const words = txt.split(' ')
+  "I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.";
+const words = txt.split(" ");
 
-console.log(words)
+console.log(words);
 // the text has special characters think how you can just get only the words
 // ["I", "love", "teaching", "and", "empowering", "people.", "I", "teach", "HTML,", "CSS,", "JS,", "React,", "Python"]
 ```
@@ -436,97 +436,97 @@ We access each element in an array using their index. An array index starts from
 ![arr index](../images/array_index.png)
 
 ```js
-const fruits = ['banana', 'orange', 'mango', 'lemon']
-let firstFruit = fruits[0] // we are accessing the first item using its index
+const fruits = ["banana", "orange", "mango", "lemon"];
+let firstFruit = fruits[0]; // we are accessing the first item using its index
 
-console.log(firstFruit) // banana
+console.log(firstFruit); // banana
 
-secondFruit = fruits[1]
-console.log(secondFruit) // orange
+secondFruit = fruits[1];
+console.log(secondFruit); // orange
 
-let lastFruit = fruits[3]
-console.log(lastFruit) // lemon
+let lastFruit = fruits[3];
+console.log(lastFruit); // lemon
 // Last index can be calculated as follows
 
-let lastIndex = fruits.length - 1
-lastFruit = fruits[lastIndex]
+let lastIndex = fruits.length - 1;
+lastFruit = fruits[lastIndex];
 
-console.log(lastFruit) // lemon
+console.log(lastFruit); // lemon
 ```
 
 ```js
-const numbers = [0, 3.14, 9.81, 37, 98.6, 100] // set of numbers
+const numbers = [0, 3.14, 9.81, 37, 98.6, 100]; // set of numbers
 
-console.log(numbers.length) // => to know the size of the array, which is 6
-console.log(numbers) // -> [0, 3.14, 9.81, 37, 98.6, 100]
-console.log(numbers[0]) //  -> 0
-console.log(numbers[5]) //  -> 100
+console.log(numbers.length); // => to know the size of the array, which is 6
+console.log(numbers); // -> [0, 3.14, 9.81, 37, 98.6, 100]
+console.log(numbers[0]); //  -> 0
+console.log(numbers[5]); //  -> 100
 
-let lastIndex = numbers.length - 1
-console.log(numbers[lastIndex]) // -> 100
+let lastIndex = numbers.length - 1;
+console.log(numbers[lastIndex]); // -> 100
 ```
 
 ```js
 const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB',
-] // List of web technologies
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Redux",
+  "Node",
+  "MongoDB",
+]; // List of web technologies
 
-console.log(webTechs) // all the array items
-console.log(webTechs.length) // => to know the size of the array, which is 7
-console.log(webTechs[0]) //  -> HTML
-console.log(webTechs[6]) //  -> MongoDB
+console.log(webTechs); // all the array items
+console.log(webTechs.length); // => to know the size of the array, which is 7
+console.log(webTechs[0]); //  -> HTML
+console.log(webTechs[6]); //  -> MongoDB
 
-let lastIndex = webTechs.length - 1
-console.log(webTechs[lastIndex]) // -> MongoDB
+let lastIndex = webTechs.length - 1;
+console.log(webTechs[lastIndex]); // -> MongoDB
 ```
 
 ```js
 const countries = [
-  'Albania',
-  'Bolivia',
-  'Canada',
-  'Denmark',
-  'Ethiopia',
-  'Finland',
-  'Germany',
-  'Hungary',
-  'Ireland',
-  'Japan',
-  'Kenya',
-] // List of countries
+  "Albania",
+  "Bolivia",
+  "Canada",
+  "Denmark",
+  "Ethiopia",
+  "Finland",
+  "Germany",
+  "Hungary",
+  "Ireland",
+  "Japan",
+  "Kenya",
+]; // List of countries
 
-console.log(countries) // -> all countries in array
-console.log(countries[0]) //  -> Albania
-console.log(countries[10]) //  -> Kenya
+console.log(countries); // -> all countries in array
+console.log(countries[0]); //  -> Albania
+console.log(countries[10]); //  -> Kenya
 
-let lastIndex = countries.length - 1
-console.log(countries[lastIndex]) //  -> Kenya
+let lastIndex = countries.length - 1;
+console.log(countries[lastIndex]); //  -> Kenya
 ```
 
 ```js
 const shoppingCart = [
-  'Milk',
-  'Mango',
-  'Tomato',
-  'Potato',
-  'Avocado',
-  'Meat',
-  'Eggs',
-  'Sugar',
-] // List of food products
+  "Milk",
+  "Mango",
+  "Tomato",
+  "Potato",
+  "Avocado",
+  "Meat",
+  "Eggs",
+  "Sugar",
+]; // List of food products
 
-console.log(shoppingCart) // -> all shoppingCart in array
-console.log(shoppingCart[0]) //  -> Milk
-console.log(shoppingCart[7]) //  -> Sugar
+console.log(shoppingCart); // -> all shoppingCart in array
+console.log(shoppingCart[0]); //  -> Milk
+console.log(shoppingCart[7]); //  -> Sugar
 
-let lastIndex = shoppingCart.length - 1
-console.log(shoppingCart[lastIndex]) //  -> Sugar
+let lastIndex = shoppingCart.length - 1;
+console.log(shoppingCart[lastIndex]); //  -> Sugar
 ```
 
 #### Modifying array element
@@ -534,31 +534,31 @@ console.log(shoppingCart[lastIndex]) //  -> Sugar
 An array is mutable(modifiable). Once an array is created, we can modify the contents of the array elements.
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-numbers[0] = 10 // changing 1 at index 0 to 10
-numbers[1] = 20 // changing  2 at index 1 to 20
+const numbers = [1, 2, 3, 4, 5];
+numbers[0] = 10; // changing 1 at index 0 to 10
+numbers[1] = 20; // changing  2 at index 1 to 20
 
-console.log(numbers) // [10, 20, 3, 4, 5]
+console.log(numbers); // [10, 20, 3, 4, 5]
 
 const countries = [
-  'Albania',
-  'Bolivia',
-  'Canada',
-  'Denmark',
-  'Ethiopia',
-  'Finland',
-  'Germany',
-  'Hungary',
-  'Ireland',
-  'Japan',
-  'Kenya',
-]
+  "Albania",
+  "Bolivia",
+  "Canada",
+  "Denmark",
+  "Ethiopia",
+  "Finland",
+  "Germany",
+  "Hungary",
+  "Ireland",
+  "Japan",
+  "Kenya",
+];
 
-countries[0] = 'Afghanistan' // Replacing Albania by Afghanistan
-let lastIndex = countries.length - 1
-countries[lastIndex] = 'Korea' // Replacing Kenya by Korea
+countries[0] = "Afghanistan"; // Replacing Albania by Afghanistan
+let lastIndex = countries.length - 1;
+countries[lastIndex] = "Korea"; // Replacing Kenya by Korea
 
-console.log(countries)
+console.log(countries);
 ```
 
 ```sh
@@ -574,11 +574,11 @@ There are different methods to manipulate an array. These are some of the availa
 Array:To create an array.
 
 ```js
-const arr = Array() // creates  an empty array
-console.log(arr)
+const arr = Array(); // creates  an empty array
+console.log(arr);
 
-const eightEmptyValues = Array(8) // it creates eight empty values
-console.log(eightEmptyValues) // [empty x 8]
+const eightEmptyValues = Array(8); // it creates eight empty values
+console.log(eightEmptyValues); // [empty x 8]
 ```
 
 ##### Creating static values with fill
@@ -586,17 +586,17 @@ console.log(eightEmptyValues) // [empty x 8]
 fill: Fill all the array elements with a static value
 
 ```js
-const arr = Array() // creates an an empty array
-console.log(arr)
+const arr = Array(); // creates an an empty array
+console.log(arr);
 
-const eightXvalues = Array(8).fill('X') // it creates eight element values filled with 'X'
-console.log(eightXvalues) // ['X', 'X','X','X','X','X','X','X']
+const eightXvalues = Array(8).fill("X"); // it creates eight element values filled with 'X'
+console.log(eightXvalues); // ['X', 'X','X','X','X','X','X','X']
 
-const eight0values = Array(8).fill(0) // it creates eight element values filled with '0'
-console.log(eight0values) // [0, 0, 0, 0, 0, 0, 0, 0]
+const eight0values = Array(8).fill(0); // it creates eight element values filled with '0'
+console.log(eight0values); // [0, 0, 0, 0, 0, 0, 0, 0]
 
-const four4values = Array(4).fill(4) // it creates 4 element values filled with '4'
-console.log(four4values) // [4, 4, 4, 4]
+const four4values = Array(4).fill(4); // it creates 4 element values filled with '4'
+console.log(four4values); // [4, 4, 4, 4]
 ```
 
 ##### Concatenating array using concat
@@ -604,19 +604,19 @@ console.log(four4values) // [4, 4, 4, 4]
 concat:To concatenate two arrays.
 
 ```js
-const firstList = [1, 2, 3]
-const secondList = [4, 5, 6]
-const thirdList = firstList.concat(secondList)
+const firstList = [1, 2, 3];
+const secondList = [4, 5, 6];
+const thirdList = firstList.concat(secondList);
 
-console.log(thirdList) // [1, 2, 3, 4, 5, 6]
+console.log(thirdList); // [1, 2, 3, 4, 5, 6]
 ```
 
 ```js
-const fruits = ['banana', 'orange', 'mango', 'lemon'] // array of fruits
-const vegetables = ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot'] // array of vegetables
-const fruitsAndVegetables = fruits.concat(vegetables) // concatenate the two arrays
+const fruits = ["banana", "orange", "mango", "lemon"]; // array of fruits
+const vegetables = ["Tomato", "Potato", "Cabbage", "Onion", "Carrot"]; // array of vegetables
+const fruitsAndVegetables = fruits.concat(vegetables); // concatenate the two arrays
 
-console.log(fruitsAndVegetables)
+console.log(fruitsAndVegetables);
 ```
 
 ```sh
@@ -628,8 +628,8 @@ console.log(fruitsAndVegetables)
 Length:To know the size of the array
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-console.log(numbers.length) // -> 5 is the size of the array
+const numbers = [1, 2, 3, 4, 5];
+console.log(numbers.length); // -> 5 is the size of the array
 ```
 
 ##### Getting index of an element in an array
@@ -637,12 +637,12 @@ console.log(numbers.length) // -> 5 is the size of the array
 indexOf:To check if an item exist in an array. If it exists it returns the index else it returns -1.
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5];
 
-console.log(numbers.indexOf(5)) // -> 4
-console.log(numbers.indexOf(0)) // -> -1
-console.log(numbers.indexOf(1)) // -> 0
-console.log(numbers.indexOf(6)) // -> -1
+console.log(numbers.indexOf(5)); // -> 4
+console.log(numbers.indexOf(0)); // -> -1
+console.log(numbers.indexOf(1)); // -> 0
+console.log(numbers.indexOf(6)); // -> -1
 ```
 
 Check an element if it exist in an array.
@@ -652,27 +652,27 @@ Check an element if it exist in an array.
 ```js
 // let us check if a banana exist in the array
 
-const fruits = ['banana', 'orange', 'mango', 'lemon']
-let index = fruits.indexOf('banana') // 0
+const fruits = ["banana", "orange", "mango", "lemon"];
+let index = fruits.indexOf("banana"); // 0
 
 if (index != -1) {
-  console.log('This fruit does exist in the array')
+  console.log("This fruit does exist in the array");
 } else {
-  console.log('This fruit does not exist in the array')
+  console.log("This fruit does not exist in the array");
 }
 // This fruit does exist in the array
 
 // we can use also ternary here
 index != -1
-  ? console.log('This fruit does exist in the array')
-  : console.log('This fruit does not exist in the array')
+  ? console.log("This fruit does exist in the array")
+  : console.log("This fruit does not exist in the array");
 
 // let us check if a avocado exist in the array
-let indexOfAvocado = fruits.indexOf('avocado') // -1, if the element not found index is -1
+let indexOfAvocado = fruits.indexOf("avocado"); // -1, if the element not found index is -1
 if (indexOfAvocado != -1) {
-  console.log('This fruit does exist in the array')
+  console.log("This fruit does exist in the array");
 } else {
-  console.log('This fruit does not exist in the array')
+  console.log("This fruit does not exist in the array");
 }
 // This fruit does not exist in the array
 ```
@@ -682,37 +682,37 @@ if (indexOfAvocado != -1) {
 lastIndexOf: It gives the position of the last item in the array. If it exist, it returns the index else it returns -1.
 
 ```js
-const numbers = [1, 2, 3, 4, 5, 3, 1, 2]
+const numbers = [1, 2, 3, 4, 5, 3, 1, 2];
 
-console.log(numbers.lastIndexOf(2)) // 7
-console.log(numbers.lastIndexOf(0)) // -1
-console.log(numbers.lastIndexOf(1)) //  6
-console.log(numbers.lastIndexOf(4)) //  3
-console.log(numbers.lastIndexOf(6)) // -1
+console.log(numbers.lastIndexOf(2)); // 7
+console.log(numbers.lastIndexOf(0)); // -1
+console.log(numbers.lastIndexOf(1)); //  6
+console.log(numbers.lastIndexOf(4)); //  3
+console.log(numbers.lastIndexOf(6)); // -1
 ```
 
 includes:To check if an item exist in an array. If it exist it returns the true else it returns false.
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5];
 
-console.log(numbers.includes(5)) // true
-console.log(numbers.includes(0)) // false
-console.log(numbers.includes(1)) // true
-console.log(numbers.includes(6)) // false
+console.log(numbers.includes(5)); // true
+console.log(numbers.includes(0)); // false
+console.log(numbers.includes(1)); // true
+console.log(numbers.includes(6)); // false
 
 const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB',
-] // List of web technologies
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Redux",
+  "Node",
+  "MongoDB",
+]; // List of web technologies
 
-console.log(webTechs.includes('Node')) // true
-console.log(webTechs.includes('C')) // false
+console.log(webTechs.includes("Node")); // true
+console.log(webTechs.includes("C")); // false
 ```
 
 ##### Checking array
@@ -720,11 +720,11 @@ console.log(webTechs.includes('C')) // false
 Array.isArray:To check if the data type is an array
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-console.log(Array.isArray(numbers)) // true
+const numbers = [1, 2, 3, 4, 5];
+console.log(Array.isArray(numbers)); // true
 
-const number = 100
-console.log(Array.isArray(number)) // false
+const number = 100;
+console.log(Array.isArray(number)); // false
 ```
 
 ##### Converting array to string
@@ -732,11 +732,11 @@ console.log(Array.isArray(number)) // false
 toString:Converts array to string
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-console.log(numbers.toString()) // 1,2,3,4,5
+const numbers = [1, 2, 3, 4, 5];
+console.log(numbers.toString()); // 1,2,3,4,5
 
-const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
-console.log(names.toString()) // Asabeneh,Mathias,Elias,Brook
+const names = ["Asabeneh", "Mathias", "Elias", "Brook"];
+console.log(names.toString()); // Asabeneh,Mathias,Elias,Brook
 ```
 
 ##### Joining array elements
@@ -744,29 +744,29 @@ console.log(names.toString()) // Asabeneh,Mathias,Elias,Brook
 join: It is used to join the elements of the array, the argument we passed in the join method will be joined in the array and return as a string. By default, it joins with a comma, but we can pass different string parameter which can be joined between the items.
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-console.log(numbers.join()) // 1,2,3,4,5
+const numbers = [1, 2, 3, 4, 5];
+console.log(numbers.join()); // 1,2,3,4,5
 
-const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+const names = ["Asabeneh", "Mathias", "Elias", "Brook"];
 
-console.log(names.join()) // Asabeneh,Mathias,Elias,Brook
-console.log(names.join('')) //AsabenehMathiasEliasBrook
-console.log(names.join(' ')) //Asabeneh Mathias Elias Brook
-console.log(names.join(', ')) //Asabeneh, Mathias, Elias, Brook
-console.log(names.join(' # ')) //Asabeneh # Mathias # Elias # Brook
+console.log(names.join()); // Asabeneh,Mathias,Elias,Brook
+console.log(names.join("")); //AsabenehMathiasEliasBrook
+console.log(names.join(" ")); //Asabeneh Mathias Elias Brook
+console.log(names.join(", ")); //Asabeneh, Mathias, Elias, Brook
+console.log(names.join(" # ")); //Asabeneh # Mathias # Elias # Brook
 
 const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB',
-] // List of web technologies
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Redux",
+  "Node",
+  "MongoDB",
+]; // List of web technologies
 
-console.log(webTechs.join()) // "HTML,CSS,JavaScript,React,Redux,Node,MongoDB"
-console.log(webTechs.join(' # ')) // "HTML # CSS # JavaScript # React # Redux # Node # MongoDB"
+console.log(webTechs.join()); // "HTML,CSS,JavaScript,React,Redux,Node,MongoDB"
+console.log(webTechs.join(" # ")); // "HTML # CSS # JavaScript # React # Redux # Node # MongoDB"
 ```
 
 ##### Slice array elements
@@ -774,12 +774,12 @@ console.log(webTechs.join(' # ')) // "HTML # CSS # JavaScript # React # Redux # 
 Slice: To cut out a multiple items in range. It takes two parameters:starting and ending position. It doesn't include the ending position.
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5];
 
-console.log(numbers.slice()) // -> it copies all  item
-console.log(numbers.slice(0)) // -> it copies all  item
-console.log(numbers.slice(0, numbers.length)) // it copies all  item
-console.log(numbers.slice(1, 4)) // -> [2,3,4] // it doesn't include the ending position
+console.log(numbers.slice()); // -> it copies all  item
+console.log(numbers.slice(0)); // -> it copies all  item
+console.log(numbers.slice(0, numbers.length)); // it copies all  item
+console.log(numbers.slice(1, 4)); // -> [2,3,4] // it doesn't include the ending position
 ```
 
 ##### Splice method in array
@@ -787,19 +787,19 @@ console.log(numbers.slice(1, 4)) // -> [2,3,4] // it doesn't include the ending 
 Splice: It takes three parameters:Starting position, number of times to be removed and number of items to be added.
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5];
 
-console.log(numbers.splice()) // -> remove all items
+console.log(numbers.splice()); // -> remove all items
 ```
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-console.log(numbers.splice(0, 1)) // remove the first item
+const numbers = [1, 2, 3, 4, 5];
+console.log(numbers.splice(0, 1)); // remove the first item
 ```
 
 ```js
-const numbers = [1, 2, 3, 4, 5, 6]
-console.log(numbers.splice(3, 3, 7, 8, 9)) // -> [1, 2, 3, 7, 8, 9] //it removes three item and replace three items
+const numbers = [1, 2, 3, 4, 5, 6];
+console.log(numbers.splice(3, 3, 7, 8, 9)); // -> [1, 2, 3, 7, 8, 9] //it removes three item and replace three items
 ```
 
 ##### Adding item to an array using push
@@ -808,31 +808,31 @@ Push: adding item in the end. To add item to the end of an existing array we use
 
 ```js
 // syntax
-const arr = ['item1', 'item2', 'item3']
-arr.push('new item')
+const arr = ["item1", "item2", "item3"];
+arr.push("new item");
 
-console.log(arr)
+console.log(arr);
 // ['item1', 'item2','item3','new item']
 ```
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-numbers.push(6)
+const numbers = [1, 2, 3, 4, 5];
+numbers.push(6);
 
-console.log(numbers) // -> [1,2,3,4,5,6]
+console.log(numbers); // -> [1,2,3,4,5,6]
 
-numbers.pop() // -> remove one item from the end
-console.log(numbers) // -> [1,2,3,4,5]
+numbers.pop(); // -> remove one item from the end
+console.log(numbers); // -> [1,2,3,4,5]
 ```
 
 ```js
-let fruits = ['banana', 'orange', 'mango', 'lemon']
-fruits.push('apple')
+let fruits = ["banana", "orange", "mango", "lemon"];
+fruits.push("apple");
 
-console.log(fruits) // ['banana', 'orange', 'mango', 'lemon', 'apple']
+console.log(fruits); // ['banana', 'orange', 'mango', 'lemon', 'apple']
 
-fruits.push('lime')
-console.log(fruits) // ['banana', 'orange', 'mango', 'lemon', 'apple', 'lime']
+fruits.push("lime");
+console.log(fruits); // ['banana', 'orange', 'mango', 'lemon', 'apple', 'lime']
 ```
 
 ##### Removing the end element using pop
@@ -840,10 +840,10 @@ console.log(fruits) // ['banana', 'orange', 'mango', 'lemon', 'apple', 'lime']
 pop: Removing item in the end.
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-numbers.pop() // -> remove one item from the end
+const numbers = [1, 2, 3, 4, 5];
+numbers.pop(); // -> remove one item from the end
 
-console.log(numbers) // -> [1,2,3,4]
+console.log(numbers); // -> [1,2,3,4]
 ```
 
 ##### Removing an element from the beginning
@@ -851,10 +851,10 @@ console.log(numbers) // -> [1,2,3,4]
 shift: Removing one array element in the beginning of the array.
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-numbers.shift() // -> remove one item from the beginning
+const numbers = [1, 2, 3, 4, 5];
+numbers.shift(); // -> remove one item from the beginning
 
-console.log(numbers) // -> [2,3,4,5]
+console.log(numbers); // -> [2,3,4,5]
 ```
 
 ##### Add an element from the beginning
@@ -862,10 +862,10 @@ console.log(numbers) // -> [2,3,4,5]
 unshift: Adding array element in the beginning of the array.
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-numbers.unshift(0) // -> add one item from the beginning
+const numbers = [1, 2, 3, 4, 5];
+numbers.unshift(0); // -> add one item from the beginning
 
-console.log(numbers) // -> [0,1,2,3,4,5]
+console.log(numbers); // -> [0,1,2,3,4,5]
 ```
 
 ##### Reversing array order
@@ -873,13 +873,13 @@ console.log(numbers) // -> [0,1,2,3,4,5]
 reverse: reverse the order of an array.
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-numbers.reverse() // -> reverse array order
+const numbers = [1, 2, 3, 4, 5];
+numbers.reverse(); // -> reverse array order
 
-console.log(numbers) // [5, 4, 3, 2, 1]
+console.log(numbers); // [5, 4, 3, 2, 1]
 
-numbers.reverse()
-console.log(numbers) // [1, 2, 3, 4, 5]
+numbers.reverse();
+console.log(numbers); // [1, 2, 3, 4, 5]
 ```
 
 ##### Sorting elements in array
@@ -888,20 +888,20 @@ sort: arrange array elements in ascending order. Sort takes a call back function
 
 ```js
 const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB',
-]
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Redux",
+  "Node",
+  "MongoDB",
+];
 
-webTechs.sort()
-console.log(webTechs) // ["CSS", "HTML", "JavaScript", "MongoDB", "Node", "React", "Redux"]
+webTechs.sort();
+console.log(webTechs); // ["CSS", "HTML", "JavaScript", "MongoDB", "Node", "React", "Redux"]
 
-webTechs.reverse() // after sorting we can reverse it
-console.log(webTechs) // ["Redux", "React", "Node", "MongoDB", "JavaScript", "HTML", "CSS"]
+webTechs.reverse(); // after sorting we can reverse it
+console.log(webTechs); // ["Redux", "React", "Node", "MongoDB", "JavaScript", "HTML", "CSS"]
 ```
 
 #### Array of arrays
@@ -909,22 +909,22 @@ console.log(webTechs) // ["Redux", "React", "Node", "MongoDB", "JavaScript", "HT
 Array can store different data types including an array itself. Let us create an array of arrays
 
 ```js
-const firstNums = [1, 2, 3]
-const secondNums = [1, 4, 9]
+const firstNums = [1, 2, 3];
+const secondNums = [1, 4, 9];
 
 const arrayOfArray = [
   [1, 2, 3],
   [1, 2, 3],
-]
-console.log(arrayOfArray[0]) // [1, 2, 3]
+];
+console.log(arrayOfArray[0]); // [1, 2, 3]
 
-const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
-const backEnd = ['Node', 'Express', 'MongoDB']
-const fullStack = [frontEnd, backEnd]
-console.log(fullStack) // [["HTML", "CSS", "JS", "React", "Redux"], ["Node", "Express", "MongoDB"]]
-console.log(fullStack.length) // 2
-console.log(fullStack[0]) // ["HTML", "CSS", "JS", "React", "Redux"]
-console.log(fullStack[1]) // ["Node", "Express", "MongoDB"]
+const frontEnd = ["HTML", "CSS", "JS", "React", "Redux"];
+const backEnd = ["Node", "Express", "MongoDB"];
+const fullStack = [frontEnd, backEnd];
+console.log(fullStack); // [["HTML", "CSS", "JS", "React", "Redux"], ["Node", "Express", "MongoDB"]]
+console.log(fullStack.length); // 2
+console.log(fullStack[0]); // ["HTML", "CSS", "JS", "React", "Redux"]
+console.log(fullStack[1]); // ["Node", "Express", "MongoDB"]
 ```
 
 ### 💻 Exercise
@@ -933,41 +933,90 @@ console.log(fullStack[1]) // ["Node", "Express", "MongoDB"]
 
 ```js
 const countries = [
-  'Albania',
-  'Bolivia',
-  'Canada',
-  'Denmark',
-  'Ethiopia',
-  'Finland',
-  'Germany',
-  'Hungary',
-  'Ireland',
-  'Japan',
-  'Kenya',
-]
+  "Albania",
+  "Bolivia",
+  "Canada",
+  "Denmark",
+  "Ethiopia",
+  "Finland",
+  "Germany",
+  "Hungary",
+  "Ireland",
+  "Japan",
+  "Kenya",
+];
 
 const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB',
-]
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Redux",
+  "Node",
+  "MongoDB",
+];
 ```
 
 1. Declare an _empty_ array;
+
+const arr = [];
+
 2. Declare an array with more than 5 number of elements
+
+const myArr = [1, "err", 9, true, "derty", 2]
+
 3. Find the length of your array
+
+let myArrLength = myArr.length
+
 4. Get the first item, the middle item and the last item of the array
+   //first item
+   let firstItem = myArr[0]
+
+//Middle item
+
+let middleItem = myArr[myArrLength/2]
+
 5. Declare an array called _mixedDataTypes_, put different data types in the array and find the length of the array. The array size should be greater than 5
+
+const mixedDataTypes = [23, 45, "fix", false, "chain", null]
+
 6. Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
+
+const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+
 7. Print the array using _console.log()_
+
+console.log(itCompanies)
+
 8. Print the number of companies in the array
+
+let numberOfCompanies = itCompanies.length
+
 9. Print the first company, middle and last company
-10. Print out each company
+   // The first company
+   const firstCompany = itCompanies[0]
+   console.log(firstCompany)
+
+//Print the middle company
+
+const middleCompany = numberOfCompanies
+console.log(middleCompany)
+
+// Print the last company
+console.log(numberOfCompanies.length - 1)
+
+10. Print out each company:
+
+    itCompanies.forEach((company) => {
+    console.log(company);
+    });
+
 11. Change each company name to uppercase one by one and print them out
+
+    let arrayOfString = itCompanies.toString();
+    let companiesUppercase = arrayOfString.toUpperCase()
+
 12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
 13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is _not found_
 14. Filter out companies which have more than one 'o' without the filter method
@@ -988,9 +1037,9 @@ const webTechs = [
 
    ```js
    let text =
-     'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
-   console.log(words)
-   console.log(words.length)
+     "I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.";
+   console.log(words);
+   console.log(words.length);
    ```
 
    ```sh
@@ -1002,7 +1051,7 @@ const webTechs = [
 1. In the following shopping cart add, remove, edit items
 
    ```js
-   const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+   const shoppingCart = ["Milk", "Coffee", "Tea", "Honey"];
    ```
 
    - add 'Meat' in the beginning of your shopping cart if it has not been already added
@@ -1015,10 +1064,10 @@ const webTechs = [
 1. Concatenate the following two variables and store it in a fullStack variable.
 
    ```js
-   const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
-   const backEnd = ['Node', 'Express', 'MongoDB']
+   const frontEnd = ["HTML", "CSS", "JS", "React", "Redux"];
+   const backEnd = ["Node", "Express", "MongoDB"];
 
-   console.log(fullStack)
+   console.log(fullStack);
    ```
 
    ```sh
@@ -1065,9 +1114,9 @@ if (condition) {
 **Example:**
 
 ```js
-let num = 3
+let num = 3;
 if (num > 0) {
-  console.log(`${num} is a positive number`)
+  console.log(`${num} is a positive number`);
 }
 //  3 is a positive number
 ```
@@ -1075,9 +1124,9 @@ if (num > 0) {
 As you can see in the condition example above, 3 is greater than 0, so it is a positive number. The condition was true and the block of code was executed. However, if the condition is false, we won't see any results.
 
 ```js
-let isRaining = true
+let isRaining = true;
 if (isRaining) {
-  console.log('Remember to take your rain coat.')
+  console.log("Remember to take your rain coat.");
 }
 ```
 
@@ -1097,37 +1146,37 @@ if (condition) {
 ```
 
 ```js
-let num = 3
+let num = 3;
 if (num > 0) {
-  console.log(`${num} is a positive number`)
+  console.log(`${num} is a positive number`);
 } else {
-  console.log(`${num} is a negative number`)
+  console.log(`${num} is a negative number`);
 }
 //  3 is a positive number
 
-num = -3
+num = -3;
 if (num > 0) {
-  console.log(`${num} is a positive number`)
+  console.log(`${num} is a positive number`);
 } else {
-  console.log(`${num} is a negative number`)
+  console.log(`${num} is a negative number`);
 }
 //  -3 is a negative number
 ```
 
 ```js
-let isRaining = true
+let isRaining = true;
 if (isRaining) {
-  console.log('You need a rain coat.')
+  console.log("You need a rain coat.");
 } else {
-  console.log('No need for a rain coat.')
+  console.log("No need for a rain coat.");
 }
 // You need a rain coat.
 
-isRaining = false
+isRaining = false;
 if (isRaining) {
-  console.log('You need a rain coat.')
+  console.log("You need a rain coat.");
 } else {
-  console.log('No need for a rain coat.')
+  console.log("No need for a rain coat.");
 }
 // No need for a rain coat.
 ```
@@ -1152,29 +1201,29 @@ if (condition) {
 **Example:**
 
 ```js
-let a = 0
+let a = 0;
 if (a > 0) {
-  console.log(`${a} is a positive number`)
+  console.log(`${a} is a positive number`);
 } else if (a < 0) {
-  console.log(`${a} is a negative number`)
+  console.log(`${a} is a negative number`);
 } else if (a == 0) {
-  console.log(`${a} is zero`)
+  console.log(`${a} is zero`);
 } else {
-  console.log(`${a} is not a number`)
+  console.log(`${a} is not a number`);
 }
 ```
 
 ```js
 // if else if else
-let weather = 'sunny'
-if (weather === 'rainy') {
-  console.log('You need a rain coat.')
-} else if (weather === 'cloudy') {
-  console.log('It might be cold, you need a jacket.')
-} else if (weather === 'sunny') {
-  console.log('Go out freely.')
+let weather = "sunny";
+if (weather === "rainy") {
+  console.log("You need a rain coat.");
+} else if (weather === "cloudy") {
+  console.log("It might be cold, you need a jacket.");
+} else if (weather === "sunny") {
+  console.log("Go out freely.");
 } else {
-  console.log('No need for rain coat.')
+  console.log("No need for rain coat.");
 }
 ```
 
@@ -1187,10 +1236,10 @@ The switch statement starts with a _switch_ keyword followed by a parenthesis an
 switch (caseValue) {
   case 1:
     // code
-    break
+    break;
   case 2:
     // code
-    break
+    break;
   case 3:
   // code
   default:
@@ -1199,68 +1248,68 @@ switch (caseValue) {
 ```
 
 ```js
-let weather = 'cloudy'
+let weather = "cloudy";
 switch (weather) {
-  case 'rainy':
-    console.log('You need a rain coat.')
-    break
-  case 'cloudy':
-    console.log('It might be cold, you need a jacket.')
-    break
-  case 'sunny':
-    console.log('Go out freely.')
-    break
+  case "rainy":
+    console.log("You need a rain coat.");
+    break;
+  case "cloudy":
+    console.log("It might be cold, you need a jacket.");
+    break;
+  case "sunny":
+    console.log("Go out freely.");
+    break;
   default:
-    console.log(' No need for rain coat.')
+    console.log(" No need for rain coat.");
 }
 
 // Switch More Examples
-let dayUserInput = prompt('What day is today ?')
-let day = dayUserInput.toLowerCase()
+let dayUserInput = prompt("What day is today ?");
+let day = dayUserInput.toLowerCase();
 
 switch (day) {
-  case 'monday':
-    console.log('Today is Monday')
-    break
-  case 'tuesday':
-    console.log('Today is Tuesday')
-    break
-  case 'wednesday':
-    console.log('Today is Wednesday')
-    break
-  case 'thursday':
-    console.log('Today is Thursday')
-    break
-  case 'friday':
-    console.log('Today is Friday')
-    break
-  case 'saturday':
-    console.log('Today is Saturday')
-    break
-  case 'sunday':
-    console.log('Today is Sunday')
-    break
+  case "monday":
+    console.log("Today is Monday");
+    break;
+  case "tuesday":
+    console.log("Today is Tuesday");
+    break;
+  case "wednesday":
+    console.log("Today is Wednesday");
+    break;
+  case "thursday":
+    console.log("Today is Thursday");
+    break;
+  case "friday":
+    console.log("Today is Friday");
+    break;
+  case "saturday":
+    console.log("Today is Saturday");
+    break;
+  case "sunday":
+    console.log("Today is Sunday");
+    break;
   default:
-    console.log('It is not a week day.')
+    console.log("It is not a week day.");
 }
 ```
 
 // Examples to use conditions in the cases
 
 ```js
-let num = prompt('Enter number')
+let num = prompt("Enter number");
 switch (true) {
   case num > 0:
-    console.log('Number is positive')
-    break
+    console.log("Number is positive");
+    break;
   case num == 0:
-    console.log('Numbers is zero')
-    break
+    console.log("Numbers is zero");
+    break;
   case num < 0:
-    console.log('Number is negative')
-    break
+    console.log("Number is negative");
+    break;
   default:
-    console.log('Entered value was not a number')
+    console.log("Entered value was not a number");
 }
 ```
 
@@ -1271,10 +1320,10 @@ Ternary operator is very common in _React_. It is a short way to write if else s
 To generalize, ternary operator is another way to write conditionals.
 
 ```js
-let isRaining = true
+let isRaining = true;
 isRaining
-  ? console.log('You need a rain coat.')
-  : console.log('No need for a rain coat.')
+  ? console.log("You need a rain coat.")
+  : console.log("No need for a rain coat.");
 ```
 
 ### 💻 Exercises
@@ -1304,8 +1353,8 @@ isRaining
    - ternary operator.
 
    ```js
-   let a = 4
-   let b = 3
+   let a = 4;
+   let b = 3;
    ```
 
    ```sh
@@ -1407,48 +1456,48 @@ This code prints from 0 to 5.
 
 ```js
 for (let i = 0; i < 6; i++) {
-  console.log(i)
+  console.log(i);
 }
 ```
 
 For example if we want to sum all the numbers from 0 to 100.
 
 ```js
-let sum = 0
+let sum = 0;
 for (let i = 0; i < 101; i++) {
-  sum += i
+  sum += i;
 }
 
-console.log(sum)
+console.log(sum);
 ```
 
 If we want to sum only even numbers:
 
 ```js
-let sum = 0
+let sum = 0;
 for (let i = 0; i < 101; i += 2) {
-  sum += i
+  sum += i;
 }
 
-console.log(sum)
+console.log(sum);
 
 // or another way
 
-let total = 0
+let total = 0;
 for (let i = 0; i < 101; i++) {
   if (i % 2 == 0) {
-    total += i
+    total += i;
   }
 }
-console.log(total)
+console.log(total);
 ```
 
 This code iterates through the array
 
 ```js
-const nums = [1, 2, 3, 4, 5]
+const nums = [1, 2, 3, 4, 5];
 for (let i = 0; i < 6; i++) {
-  console.log(nums[i])
+  console.log(nums[i]);
 }
 ```
 
@@ -1456,21 +1505,21 @@ This code prints 5 to 0. Looping in reverse order
 
 ```js
 for (let i = 5; i >= 0; i--) {
-  console.log(i)
+  console.log(i);
 }
 ```
 
 The Code below can reverse an array.
 
 ```js
-const nums = [1, 2, 3, 4, 5]
-const lastIndex = nums.length - 1
-const newArray = []
+const nums = [1, 2, 3, 4, 5];
+const lastIndex = nums.length - 1;
+const newArray = [];
 for (let i = lastIndex; i >= 0; i--) {
-  newArray.push(nums[i])
+  newArray.push(nums[i]);
 }
 
-console.log(newArray)
+console.log(newArray);
 ```
 
 ##### 2. while
@@ -1478,10 +1527,10 @@ console.log(newArray)
 We use the while loop when we do not know how man iteration we go in advance.
 
 ```js
-let count = prompt('Enter a positive number: ')
+let count = prompt("Enter a positive number: ");
 while (count > 0) {
-  console.log(count)
-  count--
+  console.log(count);
+  count--;
 }
 ```
 
@@ -1490,21 +1539,21 @@ while (count > 0) {
 Do while run at least once if the condition is true or false
 
 ```js
-let count = 0
+let count = 0;
 do {
-  console.log(count)
-  count++
-} while (count < 11)
+  console.log(count);
+  count++;
+} while (count < 11);
 ```
 
 The code below runs ones though the condition is false
 
 ```js
-let count = 11
+let count = 11;
 do {
-  console.log(count)
-  count++
-} while (count < 11)
+  console.log(count);
+  count++;
+} while (count < 11);
 ```
 
 While loop is the least important loop in many programming languages.
@@ -1514,14 +1563,14 @@ While loop is the least important loop in many programming languages.
 The for of loop is very handy to use it with array. If we are not interested in the index of the array a for of loop is preferable to regular for loop or forEach loop.
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5];
 for (const number of numbers) {
-  console.log(number)
+  console.log(number);
 }
 
-const countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
+const countries = ["Finland", "Sweden", "Norway", "Denmark", "Iceland"];
 for (const country of countries) {
-  console.log(country.toUpperCase())
+  console.log(country.toUpperCase());
 }
 ```
 
@@ -1530,15 +1579,15 @@ for (const country of countries) {
 If we are interested in the index of the array forEach is preferable to for of loop. The forEach array method takes a callback function, the callback function takes three arguments: the item, the index and the array itself.
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5];
 numbers.forEach((number, i) => {
-  console.log(number, i)
-})
+  console.log(number, i);
+});
 
-const countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
+const countries = ["Finland", "Sweden", "Norway", "Denmark", "Iceland"];
 countries.forEach((country, i, arr) => {
-  console.log(i, country.toUpperCase())
-})
+  console.log(i, country.toUpperCase());
+});
 ```
 
 ##### 6. for in
@@ -1547,15 +1596,15 @@ The for in loop can be used with object literals to get the keys of the object.
 
 ```js
 const user = {
-  firstName: 'Asabeneh',
-  lastName: 'Yetayeh',
+  firstName: "Asabeneh",
+  lastName: "Yetayeh",
   age: 250,
-  country: 'Finland',
-  skills: ['HTML', 'CSS', 'JS', 'React', 'Node', 'Python', 'D3.js'],
-}
+  country: "Finland",
+  skills: ["HTML", "CSS", "JS", "React", "Node", "Python", "D3.js"],
+};
 
 for (const key in user) {
-  console.log(key, user[key])
+  console.log(key, user[key]);
 }
 ```
 
@@ -1568,9 +1617,9 @@ Break is used to interrupt a loop.
 ```js
 for (let i = 0; i <= 5; i++) {
   if (i == 3) {
-    break
+    break;
   }
-  console.log(i)
+  console.log(i);
 }
 
 // 0 1 2
@@ -1585,9 +1634,9 @@ We use the keyword continue to skip a certain iterations.
 ```js
 for (let i = 0; i <= 5; i++) {
   if (i == 3) {
-    continue
+    continue;
   }
-  console.log(i)
+  console.log(i);
 }
 // 0 1 2 4 5
 ```
@@ -1621,15 +1670,15 @@ Without using console.log() open your browser and check, you will see the value 
 
 ```js
 //scope.js
-a = 'JavaScript' // is a window scope this found anywhere
-b = 10 // this is a window scope variable
+a = "JavaScript"; // is a window scope this found anywhere
+b = 10; // this is a window scope variable
 function letsLearnScope() {
-  console.log(a, b)
+  console.log(a, b);
   if (true) {
-    console.log(a, b)
+    console.log(a, b);
   }
 }
-console.log(a, b) // accessible
+console.log(a, b); // accessible
 ```
 
 #### Global scope
@@ -1638,19 +1687,19 @@ A globally declared variable can be accessed every where in the same file. But t
 
 ```js
 //scope.js
-let a = 'JavaScript' // is a global scope it will be found anywhere in this file
-let b = 10 // is a global scope it will be found anywhere in this file
+let a = "JavaScript"; // is a global scope it will be found anywhere in this file
+let b = 10; // is a global scope it will be found anywhere in this file
 function letsLearnScope() {
-  console.log(a, b) // JavaScript 10, accessible
+  console.log(a, b); // JavaScript 10, accessible
   if (true) {
-    let a = 'Python'
-    let b = 100
-    console.log(a, b) // Python 100
+    let a = "Python";
+    let b = 100;
+    console.log(a, b); // Python 100
   }
-  console.log(a, b)
+  console.log(a, b);
 }
-letsLearnScope()
-console.log(a, b) // JavaScript 10, accessible
+letsLearnScope();
+console.log(a, b); // JavaScript 10, accessible
 ```
 
 #### Local scope
@@ -1659,24 +1708,24 @@ A variable declared as local can be accessed only in certain block code.
 
 ```js
 //scope.js
-let a = 'JavaScript' // is a global scope it will be found anywhere in this file
-let b = 10 // is a global scope it will be found anywhere in this file
+let a = "JavaScript"; // is a global scope it will be found anywhere in this file
+let b = 10; // is a global scope it will be found anywhere in this file
 function letsLearnScope() {
-  console.log(a, b) // JavaScript 10, accessible
-  let c = 30
+  console.log(a, b); // JavaScript 10, accessible
+  let c = 30;
   if (true) {
     // we can access from the function and outside the function but
     // variables declared inside the if will not be accessed outside the if block
-    let a = 'Python'
-    let b = 20
-    let d = 40
-    console.log(a, b, c) // Python 20 30
+    let a = "Python";
+    let b = 20;
+    let d = 40;
+    console.log(a, b, c); // Python 20 30
   }
   // we can not access c because c's scope is only the if block
-  console.log(a, b) // JavaScript 10
+  console.log(a, b); // JavaScript 10
 }
-letsLearnScope()
-console.log(a, b) // JavaScript 10, accessible
+letsLearnScope();
+console.log(a, b); // JavaScript 10, accessible
 ```
 
 Now, you have an understanding of scope. A variable declared with _var_ only scoped to function but variable declared with _let_ or _const_ is block scope(function block, if block, loop etc). Block in JavaScript is a code in between two curly brackets ({}).
@@ -1684,21 +1733,21 @@ Now, you have an understanding of scope. A variable declared with _var_ only sco
 ```js
 //scope.js
 function letsLearnScope() {
-  var gravity = 9.81
-  console.log(gravity)
+  var gravity = 9.81;
+  console.log(gravity);
 }
 // console.log(gravity), Uncaught ReferenceError: gravity is not defined
 
 if (true) {
-  var gravity = 9.81
-  console.log(gravity) // 9.81
+  var gravity = 9.81;
+  console.log(gravity); // 9.81
 }
-console.log(gravity) // 9.81
+console.log(gravity); // 9.81
 
 for (var i = 0; i < 3; i++) {
-  console.log(i) // 1, 2, 3
+  console.log(i); // 1, 2, 3
 }
-console.log(i)
+console.log(i);
 ```
 
 In ES6 and above there is _let_ and _const_, so you will not suffer from the sneakiness of _var_. When we use _let_ our variable is block scoped and it will not infect other parts of our code.
@@ -1707,19 +1756,19 @@ In ES6 and above there is _let_ and _const_, so you will not suffer from the sne
 //scope.js
 function letsLearnScope() {
   // you can use let or const, but gravity is constant I prefer to use const
-  const gravity = 9.81
-  console.log(gravity)
+  const gravity = 9.81;
+  console.log(gravity);
 }
 // console.log(gravity), Uncaught ReferenceError: gravity is not defined
 
 if (true) {
-  const gravity = 9.81
-  console.log(gravity) // 9.81
+  const gravity = 9.81;
+  console.log(gravity); // 9.81
 }
 // console.log(gravity), Uncaught ReferenceError: gravity is not defined
 
 for (let i = 0; i < 3; i++) {
-  console.log(i) // 1, 2, 3
+  console.log(i); // 1, 2, 3
 }
 // console.log(i), Uncaught ReferenceError: gravity is not defined
 ```
@@ -1736,7 +1785,7 @@ To create an object literal, we use two curly brackets.
 An empty object
 
 ```js
-const person = {}
+const person = {};
 ```
 
 #### Creating an objecting with values
@@ -1749,28 +1798,28 @@ Let us see some examples of object. Each key has a value in the object.
 const rectangle = {
   length: 20,
   width: 20,
-}
-console.log(rectangle) // {length: 20, width: 20}
+};
+console.log(rectangle); // {length: 20, width: 20}
 
 const person = {
-  firstName: 'Asabeneh',
-  lastName: 'Yetayeh',
+  firstName: "Asabeneh",
+  lastName: "Yetayeh",
   age: 250,
-  country: 'Finland',
-  city: 'Helsinki',
+  country: "Finland",
+  city: "Helsinki",
   skills: [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Node',
-    'MongoDB',
-    'Python',
-    'D3.js',
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node",
+    "MongoDB",
+    "Python",
+    "D3.js",
   ],
   isMarried: true,
-}
-console.log(person)
+};
+console.log(person);
 ```
 
 #### Getting values from an object
@@ -1782,42 +1831,42 @@ We can access values of object using two methods:
 
 ```js
 const person = {
-  firstName: 'Asabeneh',
-  lastName: 'Yetayeh',
+  firstName: "Asabeneh",
+  lastName: "Yetayeh",
   age: 250,
-  country: 'Finland',
-  city: 'Helsinki',
+  country: "Finland",
+  city: "Helsinki",
   skills: [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Node',
-    'MongoDB',
-    'Python',
-    'D3.js',
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node",
+    "MongoDB",
+    "Python",
+    "D3.js",
   ],
   getFullName: function () {
-    return `${this.firstName}${this.lastName}`
+    return `${this.firstName}${this.lastName}`;
   },
-  'phone number': '+3584545454545',
-}
+  "phone number": "+3584545454545",
+};
 
 // accessing values using .
-console.log(person.firstName)
-console.log(person.lastName)
-console.log(person.age)
-console.log(person.location)
+console.log(person.firstName);
+console.log(person.lastName);
+console.log(person.age);
+console.log(person.location);
 
 // value can be accessed using square bracket and key name
-console.log(person['firstName'])
-console.log(person['lastName'])
-console.log(person['age'])
-console.log(person['age'])
-console.log(person['location'])
+console.log(person["firstName"]);
+console.log(person["lastName"]);
+console.log(person["age"]);
+console.log(person["age"]);
+console.log(person["location"]);
 
 // for instance to access the phone number we only use the square bracket method
-console.log(person['phone number'])
+console.log(person["phone number"]);
 ```
 
 #### Creating object methods
@@ -1826,27 +1875,27 @@ Now, the person object has getFullName properties. The getFullName is function i
 
 ```js
 const person = {
-  firstName: 'Asabeneh',
-  lastName: 'Yetayeh',
+  firstName: "Asabeneh",
+  lastName: "Yetayeh",
   age: 250,
-  country: 'Finland',
-  city: 'Helsinki',
+  country: "Finland",
+  city: "Helsinki",
   skills: [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Node',
-    'MongoDB',
-    'Python',
-    'D3.js',
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node",
+    "MongoDB",
+    "Python",
+    "D3.js",
   ],
   getFullName: function () {
-    return `${this.firstName} ${this.lastName}`
+    return `${this.firstName} ${this.lastName}`;
   },
-}
+};
 
-console.log(person.getFullName())
+console.log(person.getFullName());
 // Asabeneh Yetayeh
 ```
 
@@ -1858,45 +1907,45 @@ Setting a new keys in an object
 
 ```js
 const person = {
-  firstName: 'Asabeneh',
-  lastName: 'Yetayeh',
+  firstName: "Asabeneh",
+  lastName: "Yetayeh",
   age: 250,
-  country: 'Finland',
-  city: 'Helsinki',
+  country: "Finland",
+  city: "Helsinki",
   skills: [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Node',
-    'MongoDB',
-    'Python',
-    'D3.js',
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node",
+    "MongoDB",
+    "Python",
+    "D3.js",
   ],
   getFullName: function () {
-    return `${this.firstName} ${this.lastName}`
+    return `${this.firstName} ${this.lastName}`;
   },
-}
-person.nationality = 'Ethiopian'
-person.country = 'Finland'
-person.title = 'teacher'
-person.skills.push('Meteor')
-person.skills.push('SasS')
-person.isMarried = true
+};
+person.nationality = "Ethiopian";
+person.country = "Finland";
+person.title = "teacher";
+person.skills.push("Meteor");
+person.skills.push("SasS");
+person.isMarried = true;
 
 person.getPersonInfo = function () {
   let skillsWithoutLastSkill = this.skills
     .slice(0, this.skills.length - 1)
-    .join(', ')
-  let lastSkill = this.skills.slice(this.skills.length - 1)[0]
+    .join(", ");
+  let lastSkill = this.skills.slice(this.skills.length - 1)[0];
 
-  let skills = `${skillsWithoutLastSkill}, and ${lastSkill}`
-  let fullName = this.getFullName()
-  let statement = `${fullName} is a ${this.title}.\nHe lives in ${this.country}.\nHe teaches ${skills}.`
-  return statement
-}
-console.log(person)
-console.log(person.getPersonInfo())
+  let skills = `${skillsWithoutLastSkill}, and ${lastSkill}`;
+  let fullName = this.getFullName();
+  let statement = `${fullName} is a ${this.title}.\nHe lives in ${this.country}.\nHe teaches ${skills}.`;
+  return statement;
+};
+console.log(person);
+console.log(person.getPersonInfo());
 ```
 
 ```sh
@@ -1913,27 +1962,27 @@ _Object.assign_: To copy an object without modifying the original object
 
 ```js
 const person = {
-  firstName: 'Asabeneh',
+  firstName: "Asabeneh",
   age: 250,
-  country: 'Finland',
-  city: 'Helsinki',
-  skills: ['HTML', 'CSS', 'JS'],
-  title: 'teacher',
+  country: "Finland",
+  city: "Helsinki",
+  skills: ["HTML", "CSS", "JS"],
+  title: "teacher",
   address: {
-    street: 'Heitamienkatu 16',
+    street: "Heitamienkatu 16",
     pobox: 2002,
-    city: 'Helsinki',
+    city: "Helsinki",
   },
   getPersonInfo: function () {
-    return `I am ${this.firstName} and I live in ${this.city}, ${this.country}. I am ${this.age}.`
+    return `I am ${this.firstName} and I live in ${this.city}, ${this.country}. I am ${this.age}.`;
   },
-}
+};
 
 //Object methods: Object.assign, Object.keys, Object.values, Object.entries
 //hasOwnProperty
 
-const copyPerson = Object.assign({}, person)
-console.log(copyPerson)
+const copyPerson = Object.assign({}, person);
+console.log(copyPerson);
 ```
 
 ##### Getting object keys using Object.keys()
@@ -1941,10 +1990,10 @@ console.log(copyPerson)
 _Object.keys_: To get the keys or properties of an object as an array
 
 ```js
-const keys = Object.keys(copyPerson)
-console.log(keys) //['name', 'age', 'country', 'skills', 'address', 'getPersonInfo']
-const address = Object.keys(copyPerson.address)
-console.log(address) //['street', 'pobox', 'city']
+const keys = Object.keys(copyPerson);
+console.log(keys); //['name', 'age', 'country', 'skills', 'address', 'getPersonInfo']
+const address = Object.keys(copyPerson.address);
+console.log(address); //['street', 'pobox', 'city']
 ```
 
 ##### Getting object values using Object.values()
@@ -1952,8 +2001,8 @@ console.log(address) //['street', 'pobox', 'city']
 _Object.values_:To get values of an object as an array
 
 ```js
-const values = Object.values(copyPerson)
-console.log(values)
+const values = Object.values(copyPerson);
+console.log(values);
 ```
 
 ##### Getting object keys and values using Object.entries()
@@ -1961,8 +2010,8 @@ console.log(values)
 _Object.entries_:To get the keys and values in an array
 
 ```js
-const entries = Object.entries(copyPerson)
-console.log(entries)
+const entries = Object.entries(copyPerson);
+console.log(entries);
 ```
 
 ##### Checking properties using hasOwnProperty()
@@ -1970,8 +2019,8 @@ console.log(entries)
 _hasOwnProperty_: To check if a specific key or property exist in an object
 
 ```js
-console.log(copyPerson.hasOwnProperty('name'))
-console.log(copyPerson.hasOwnProperty('score'))
+console.log(copyPerson.hasOwnProperty("name"));
+console.log(copyPerson.hasOwnProperty("score"));
 ```
 
 🌕 You are astonishing. Now, you are super charged with the power of objects. You have just completed day 8 challenges and you are 8 steps a head into your way to greatness. Now do some exercises for your brain and for your muscle.
@@ -2060,76 +2109,76 @@ console.log(copyPerson.hasOwnProperty('score'))
 ```js
 const users = [
   {
-    _id: 'ab12ex',
-    username: 'Alex',
-    email: 'alex@alex.com',
-    password: '123123',
-    createdAt: '08/01/2020 9:00 AM',
+    _id: "ab12ex",
+    username: "Alex",
+    email: "alex@alex.com",
+    password: "123123",
+    createdAt: "08/01/2020 9:00 AM",
     isLoggedIn: false,
   },
   {
-    _id: 'fg12cy',
-    username: 'Asab',
-    email: 'asab@asab.com',
-    password: '123456',
-    createdAt: '08/01/2020 9:30 AM',
+    _id: "fg12cy",
+    username: "Asab",
+    email: "asab@asab.com",
+    password: "123456",
+    createdAt: "08/01/2020 9:30 AM",
     isLoggedIn: true,
   },
   {
-    _id: 'zwf8md',
-    username: 'Brook',
-    email: 'brook@brook.com',
-    password: '123111',
-    createdAt: '08/01/2020 9:45 AM',
+    _id: "zwf8md",
+    username: "Brook",
+    email: "brook@brook.com",
+    password: "123111",
+    createdAt: "08/01/2020 9:45 AM",
     isLoggedIn: true,
   },
   {
-    _id: 'eefamr',
-    username: 'Martha',
-    email: 'martha@martha.com',
-    password: '123222',
-    createdAt: '08/01/2020 9:50 AM',
+    _id: "eefamr",
+    username: "Martha",
+    email: "martha@martha.com",
+    password: "123222",
+    createdAt: "08/01/2020 9:50 AM",
     isLoggedIn: false,
   },
   {
-    _id: 'ghderc',
-    username: 'Thomas',
-    email: 'thomas@thomas.com',
-    password: '123333',
-    createdAt: '08/01/2020 10:00 AM',
+    _id: "ghderc",
+    username: "Thomas",
+    email: "thomas@thomas.com",
+    password: "123333",
+    createdAt: "08/01/2020 10:00 AM",
     isLoggedIn: false,
   },
-]
+];
 
 const products = [
   {
-    _id: 'eedfcf',
-    name: 'mobile phone',
-    description: 'Huawei Honor',
+    _id: "eedfcf",
+    name: "mobile phone",
+    description: "Huawei Honor",
     price: 200,
     ratings: [
-      { userId: 'fg12cy', rate: 5 },
-      { userId: 'zwf8md', rate: 4.5 },
+      { userId: "fg12cy", rate: 5 },
+      { userId: "zwf8md", rate: 4.5 },
     ],
     likes: [],
   },
   {
-    _id: 'aegfal',
-    name: 'Laptop',
-    description: 'MacPro: System Darwin',
+    _id: "aegfal",
+    name: "Laptop",
+    description: "MacPro: System Darwin",
     price: 2500,
     ratings: [],
-    likes: ['fg12cy'],
+    likes: ["fg12cy"],
   },
   {
-    _id: 'hedfcg',
-    name: 'TV',
-    description: 'Smart TV:Procaster',
+    _id: "hedfcg",
+    name: "TV",
+    description: "Smart TV:Procaster",
     price: 400,
-    ratings: [{ userId: 'fg12cy', rate: 5 }],
-    likes: ['fg12cy'],
+    ratings: [{ userId: "fg12cy", rate: 5 }],
+    likes: ["fg12cy"],
   },
-]
+];
 ```
 
 Imagine you are getting the above users collection from a MongoDB database.
@@ -2170,7 +2219,7 @@ Let us see how to declare a function and how to call a function.
 function functionName() {
   // code goes here
 }
-functionName() // calling function by its name and with parentheses
+functionName(); // calling function by its name and with parentheses
 ```
 
 #### Function without a parameter and return
@@ -2182,35 +2231,35 @@ Function can be declared without a parameter.
 ```js
 // function without parameter,  a function which make a number square
 function square() {
-  let num = 2
-  let sq = num * num
-  console.log(sq)
+  let num = 2;
+  let sq = num * num;
+  console.log(sq);
 }
 
-square() // 4
+square(); // 4
 
 // function without parameter
 function addTwoNumbers() {
-  let numOne = 10
-  let numTwo = 20
-  let sum = numOne + numTwo
+  let numOne = 10;
+  let numTwo = 20;
+  let sum = numOne + numTwo;
 
-  console.log(sum)
+  console.log(sum);
 }
 
-addTwoNumbers() // a function has to be called by its name to be executed
+addTwoNumbers(); // a function has to be called by its name to be executed
 ```
 
 ```js
 function printFullName() {
-  let firstName = 'Asabeneh'
-  let lastName = 'Yetayeh'
-  let space = ' '
-  let fullName = firstName + space + lastName
-  console.log(fullName)
+  let firstName = "Asabeneh";
+  let lastName = "Yetayeh";
+  let space = " ";
+  let fullName = firstName + space + lastName;
+  console.log(fullName);
 }
 
-printFullName() // calling a function
+printFullName(); // calling a function
 ```
 
 #### Function returning value
@@ -2219,24 +2268,24 @@ Function can also return values, if a function does not return values the value 
 
 ```js
 function printFullName() {
-  let firstName = 'Asabeneh'
-  let lastName = 'Yetayeh'
-  let space = ' '
-  let fullName = firstName + space + lastName
-  return fullName
+  let firstName = "Asabeneh";
+  let lastName = "Yetayeh";
+  let space = " ";
+  let fullName = firstName + space + lastName;
+  return fullName;
 }
-console.log(printFullName())
+console.log(printFullName());
 ```
 
 ```js
 function addTwoNumbers() {
-  let numOne = 2
-  let numTwo = 3
-  let total = numOne + numTwo
-  return total
+  let numOne = 2;
+  let numTwo = 3;
+  let total = numOne + numTwo;
+  return total;
 }
 
-console.log(addTwoNumbers())
+console.log(addTwoNumbers());
 ```
 
 #### Function with a parameter
@@ -2248,20 +2297,20 @@ In a function we can pass different data types(number, string, boolean, object, 
 function functionName(parm1) {
   //code goes her
 }
-functionName(parm1) // during calling or invoking one argument needed
+functionName(parm1); // during calling or invoking one argument needed
 
 function areaOfCircle(r) {
-  let area = Math.PI * r * r
-  return area
+  let area = Math.PI * r * r;
+  return area;
 }
 
-console.log(areaOfCircle(10)) // should be called with one argument
+console.log(areaOfCircle(10)); // should be called with one argument
 
 function square(number) {
-  return number * number
+  return number * number;
 }
 
-console.log(square(10))
+console.log(square(10));
 ```
 
 #### Function with two parameters
@@ -2271,25 +2320,25 @@ console.log(square(10))
 function functionName(parm1, parm2) {
   //code goes her
 }
-functionName(parm1, parm2) // during calling or invoking two arguments needed
+functionName(parm1, parm2); // during calling or invoking two arguments needed
 // Function without parameter doesn't take input, so lets make a function with parameters
 function sumTwoNumbers(numOne, numTwo) {
-  let sum = numOne + numTwo
-  console.log(sum)
+  let sum = numOne + numTwo;
+  console.log(sum);
 }
-sumTwoNumbers(10, 20) // calling functions
+sumTwoNumbers(10, 20); // calling functions
 // If a function doesn't return it doesn't store data, so it should return
 
 function sumTwoNumbers(numOne, numTwo) {
-  let sum = numOne + numTwo
-  return sum
+  let sum = numOne + numTwo;
+  return sum;
 }
 
-console.log(sumTwoNumbers(10, 20))
+console.log(sumTwoNumbers(10, 20));
 function printFullName(firstName, lastName) {
-  return `${firstName} ${lastName}`
+  return `${firstName} ${lastName}`;
 }
-console.log(printFullName('Asabeneh', 'Yetayeh'))
+console.log(printFullName("Asabeneh", "Yetayeh"));
 ```
 
 #### Function with many parameters
@@ -2400,9 +2449,9 @@ Anonymous function or without name
 ```js
 const anonymousFun = function () {
   console.log(
-    'I am an anonymous function and my value is stored in anonymousFun'
-  )
-}
+    "I am an anonymous function and my value is stored in anonymousFun"
+  );
+};
 ```
 
 #### Expression Function
@@ -2412,10 +2461,10 @@ Expression functions are anonymous functions. After we create a function without
 ```js
 // Function expression
 const square = function (n) {
-  return n * n
-}
+  return n * n;
+};
 
-console.log(square(2)) // -> 4
+console.log(square(2)); // -> 4
 ```
 
 #### Self Invoking Functions
@@ -2423,15 +2472,15 @@ console.log(square(2)) // -> 4
 Self invoking functions are anonymous functions which do not need to be called to return a value.
 
 ```js
-;(function (n) {
-  console.log(n * n)
-})(2) // 4, but instead of just printing if we want to return and store the data, we do as shown below
+(function (n) {
+  console.log(n * n);
+})(2); // 4, but instead of just printing if we want to return and store the data, we do as shown below
 
 let squaredNum = (function (n) {
-  return n * n
-})(10)
+  return n * n;
+})(10);
 
-console.log(squaredNum)
+console.log(squaredNum);
 ```
 
 #### Arrow Function
@@ -2444,50 +2493,50 @@ Arrow function uses arrow instead of the keyword _function_ to declare a functio
 // This is how we write normal or declaration function
 // Let us change this declaration function to an arrow function
 function square(n) {
-  return n * n
+  return n * n;
 }
 
-console.log(square(2)) // 4
+console.log(square(2)); // 4
 
 const square = (n) => {
-  return n * n
-}
+  return n * n;
+};
 
-console.log(square(2)) // -> 4
+console.log(square(2)); // -> 4
 
 // if we have only one line in the code block, it can be written as follows, explicit return
-const square = (n) => n * n // -> 4
+const square = (n) => n * n; // -> 4
 ```
 
 ```js
 const changeToUpperCase = (arr) => {
-  const newArr = []
+  const newArr = [];
   for (const element of arr) {
-    newArr.push(element.toUpperCase())
+    newArr.push(element.toUpperCase());
   }
-  return newArr
-}
+  return newArr;
+};
 
-const countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
-console.log(changeToUpperCase(countries))
+const countries = ["Finland", "Sweden", "Norway", "Denmark", "Iceland"];
+console.log(changeToUpperCase(countries));
 
 // ["FINLAND", "SWEDEN", "NORWAY", "DENMARK", "ICELAND"]
 ```
 
 ```js
 const printFullName = (firstName, lastName) => {
-  return `${firstName} ${lastName}`
-}
+  return `${firstName} ${lastName}`;
+};
 
-console.log(printFullName('Asabeneh', 'Yetayeh'))
+console.log(printFullName("Asabeneh", "Yetayeh"));
 ```
 
 The above function has only the return statement, therefore, we can explicitly return it as follows.
 
 ```js
-const printFullName = (firstName, lastName) => `${firstName} ${lastName}`
+const printFullName = (firstName, lastName) => `${firstName} ${lastName}`;
 
-console.log(printFullName('Asabeneh', 'Yetayeh'))
+console.log(printFullName("Asabeneh", "Yetayeh"));
 ```
 
 #### Function with default parameters
@@ -2502,50 +2551,50 @@ function functionName(param = value) {
 }
 
 // Calling function
-functionName()
-functionName(arg)
+functionName();
+functionName(arg);
 ```
 
 **Example:**
 
 ```js
-function greetings(name = 'Peter') {
-  let message = `${name}, welcome to 30 Days Of JavaScript!`
-  return message
+function greetings(name = "Peter") {
+  let message = `${name}, welcome to 30 Days Of JavaScript!`;
+  return message;
 }
 
-console.log(greetings())
-console.log(greetings('Asabeneh'))
+console.log(greetings());
+console.log(greetings("Asabeneh"));
 ```
 
 ```js
-function generateFullName(firstName = 'Asabeneh', lastName = 'Yetayeh') {
-  let space = ' '
-  let fullName = firstName + space + lastName
-  return fullName
+function generateFullName(firstName = "Asabeneh", lastName = "Yetayeh") {
+  let space = " ";
+  let fullName = firstName + space + lastName;
+  return fullName;
 }
 
-console.log(generateFullName())
-console.log(generateFullName('David', 'Smith'))
+console.log(generateFullName());
+console.log(generateFullName("David", "Smith"));
 ```
 
 ```js
 function calculateAge(birthYear, currentYear = 2019) {
-  let age = currentYear - birthYear
-  return age
+  let age = currentYear - birthYear;
+  return age;
 }
 
-console.log('Age: ', calculateAge(1819))
+console.log("Age: ", calculateAge(1819));
 ```
 
 ```js
 function weightOfObject(mass, gravity = 9.81) {
-  let weight = mass * gravity + ' N' // the value has to be changed to string first
-  return weight
+  let weight = mass * gravity + " N"; // the value has to be changed to string first
+  return weight;
 }
 
-console.log('Weight of an object in Newton: ', weightOfObject(100)) // 9.81 gravity at the surface of Earth
-console.log('Weight of an object in Newton: ', weightOfObject(100, 1.62)) // gravity at surface of Moon
+console.log("Weight of an object in Newton: ", weightOfObject(100)); // 9.81 gravity at the surface of Earth
+console.log("Weight of an object in Newton: ", weightOfObject(100, 1.62)); // gravity at surface of Moon
 ```
 
 Let us see how we write the above functions with arrow functions
@@ -2555,46 +2604,46 @@ Let us see how we write the above functions with arrow functions
 // Declaring a function
 const functionName = (param = value) => {
   //codes
-}
+};
 
 // Calling function
-functionName()
-functionName(arg)
+functionName();
+functionName(arg);
 ```
 
 **Example:**
 
 ```js
-const greetings = (name = 'Peter') => {
-  let message = name + ', welcome to 30 Days Of JavaScript!'
-  return message
-}
+const greetings = (name = "Peter") => {
+  let message = name + ", welcome to 30 Days Of JavaScript!";
+  return message;
+};
 
-console.log(greetings())
-console.log(greetings('Asabeneh'))
+console.log(greetings());
+console.log(greetings("Asabeneh"));
 ```
 
 ```js
-const generateFullName = (firstName = 'Asabeneh', lastName = 'Yetayeh') => {
-  let space = ' '
-  let fullName = firstName + space + lastName
-  return fullName
-}
+const generateFullName = (firstName = "Asabeneh", lastName = "Yetayeh") => {
+  let space = " ";
+  let fullName = firstName + space + lastName;
+  return fullName;
+};
 
-console.log(generateFullName())
-console.log(generateFullName('David', 'Smith'))
+console.log(generateFullName());
+console.log(generateFullName("David", "Smith"));
 ```
 
 ```js
-const calculateAge = (birthYear, currentYear = 2019) => currentYear - birthYear
-console.log('Age: ', calculateAge(1819))
+const calculateAge = (birthYear, currentYear = 2019) => currentYear - birthYear;
+console.log("Age: ", calculateAge(1819));
 ```
 
 ```js
-const weightOfObject = (mass, gravity = 9.81) => mass * gravity + ' N'
+const weightOfObject = (mass, gravity = 9.81) => mass * gravity + " N";
 
-console.log('Weight of an object in Newton: ', weightOfObject(100)) // 9.81 gravity at the surface of Earth
-console.log('Weight of an object in Newton: ', weightOfObject(100, 1.62)) // gravity at surface of Moon
+console.log("Weight of an object in Newton: ", weightOfObject(100)); // 9.81 gravity at the surface of Earth
+console.log("Weight of an object in Newton: ", weightOfObject(100, 1.62)); // gravity at surface of Moon
 ```
 
 #### Function declaration versus Arrow function
@@ -2624,12 +2673,12 @@ It ill be covered in other time
 1. Quadratic equation is calculated as follows: _ax2 + bx + c = 0_. Write a function which calculates value or values of a quadratic equation, _solveQuadEquation_.
 
    ```js
-   console.log(solveQuadratic()) // {0}
-   console.log(solveQuadratic(1, 4, 4)) // {-2}
-   console.log(solveQuadratic(1, -1, -2)) // {2, -1}
-   console.log(solveQuadratic(1, 7, 12)) // {-3, -4}
-   console.log(solveQuadratic(1, 0, -4)) //{2, -2}
-   console.log(solveQuadratic(1, -1, 0)) //{1, 0}
+   console.log(solveQuadratic()); // {0}
+   console.log(solveQuadratic(1, 4, 4)); // {-2}
+   console.log(solveQuadratic(1, -1, -2)); // {2, -1}
+   console.log(solveQuadratic(1, 7, 12)); // {-3, -4}
+   console.log(solveQuadratic(1, 0, -4)); //{2, -2}
+   console.log(solveQuadratic(1, -1, 0)); //{1, 0}
    ```
 
 2. Declare a function name _printArray_. It takes array as a parameter and it prints out each value of the array.
@@ -2643,16 +2692,16 @@ It ill be covered in other time
 4. Declare a function name _swapValues_. This function swaps value of x to y.
 
    ```js
-   swapValues(3, 4) // x => 4, y=>3
-   swapValues(4, 5) // x = 5, y = 4
+   swapValues(3, 4); // x => 4, y=>3
+   swapValues(4, 5); // x = 5, y = 4
    ```
 
 5. Declare a function name _reverseArray_. It takes array as a parameter and it returns the reverse of the array (don't use method).
 
    ```js
-   console.log(reverseArray([1, 2, 3, 4, 5]))
+   console.log(reverseArray([1, 2, 3, 4, 5]));
    //[5, 4, 3, 2, 1]
-   console.log(reverseArray(['A', 'B', 'C']))
+   console.log(reverseArray(["A", "B", "C"]));
    //['C', 'B', 'A']
    ```
 
@@ -2670,8 +2719,8 @@ The number of evens are 51.
 13. Write a function which takes any number of arguments and return the sum of the arguments
 
 ```js
-sum(1, 2, 3) // -> 6
-sum(1, 2, 3, 4) // -> 10
+sum(1, 2, 3); // -> 6
+sum(1, 2, 3, 4); // -> 10
 ```
 
 1.  Declare a function name _userIdGenerator_. When this function is called it generates seven character id. The function return the id.
@@ -2705,10 +2754,10 @@ console.log(userIdGenerator());
 2. Write a function **_generateColors_** which can generate any number of hexa or rgb colors.
 
    ```js
-   console.log(generateColors('hexa', 3)) // ['#a3e12f', '#03ed55', '#eb3d2b']
-   console.log(generateColors('hexa', 1)) // '#b334ef'
-   console.log(generateColors('rgb', 3)) // ['rgb(5, 55, 175)', 'rgb(50, 105, 100)', 'rgb(15, 26, 80)']
-   console.log(generateColors('rgb', 1)) // 'rgb(33,79, 176)'
+   console.log(generateColors("hexa", 3)); // ['#a3e12f', '#03ed55', '#eb3d2b']
+   console.log(generateColors("hexa", 1)); // '#b334ef'
+   console.log(generateColors("rgb", 3)); // ['rgb(5, 55, 175)', 'rgb(50, 105, 100)', 'rgb(15, 26, 80)']
+   console.log(generateColors("rgb", 1)); // 'rgb(33,79, 176)'
    ```
 
 3. Call your function _shuffleArray_, it takes an array as a parameter and it returns a shuffled array
@@ -2762,17 +2811,16 @@ console.log(higherOrder(2)(3)(10))
 Let us see were we use call back functions.For instance the _forEach_ method uses call back.
 
 ```js
-const numbers = [1, 2, 3, 4]
-const sumArray = arr => {
-  let sum = 0
-  const callback = function(element) {
-    sum += element
-  }
-  arr.forEach(callback)
-  return sum
-
-}
-console.log(sumArray(numbers))
+const numbers = [1, 2, 3, 4];
+const sumArray = (arr) => {
+  let sum = 0;
+  const callback = function (element) {
+    sum += element;
+  };
+  arr.forEach(callback);
+  return sum;
+};
+console.log(sumArray(numbers));
 ```
 
 ```sh
@@ -2815,14 +2863,14 @@ In JavaScript, we use setInterval higher order function to do some activity cont
 function callback() {
   // code goes here
 }
-setInterval(callback, duration)
+setInterval(callback, duration);
 ```
 
 ```js
 function sayHello() {
-  console.log('Hello')
+  console.log("Hello");
 }
-setInterval(sayHello, 2000) // it prints hello in every 2 seconds
+setInterval(sayHello, 2000); // it prints hello in every 2 seconds
 ```
 
 ##### setTimeout
@@ -2834,14 +2882,14 @@ In JavaScript, we use setTimeout higher order function to execute some action at
 function callback() {
   // code goes here
 }
-setTimeout(callback, duration) // duration in milliseconds
+setTimeout(callback, duration); // duration in milliseconds
 ```
 
 ```js
 function sayHello() {
-  console.log('Hello')
+  console.log("Hello");
 }
-setTimeout(sayHello, 2000) // it prints hello after it waits for 2 seconds.
+setTimeout(sayHello, 2000); // it prints hello after it waits for 2 seconds.
 ```
 
 ### 10. Destructuring and Spreading
@@ -2860,8 +2908,8 @@ Destructuring is a way to unpack arrays, and objects and assigning to a distinct
 Arrays are a list of different data types ordered by their index. Let's see an example of arrays:
 
 ```js
-const numbers = [1, 2, 3]
-const countries = ['Finland', 'Sweden', 'Norway']
+const numbers = [1, 2, 3];
+const countries = ["Finland", "Sweden", "Norway"];
 ```
 
 We can access an item from an array using a certain index by iterating through the loop or manually as shown in the example below.
@@ -2870,28 +2918,28 @@ Accessing array items using a loop
 
 ```js
 for (const number of numbers) {
-  console.log(number)
+  console.log(number);
 }
 
 for (const country of countries) {
-  console.log(country)
+  console.log(country);
 }
 ```
 
 Accessing array items manually
 
 ```js
-const numbers = [1, 2, 3]
-let num1 = numbers[0]
-let num2 = numbers[1]
-let num3 = numbers[2]
-console.log(num1, num2, num3) // 1, 2, 3
+const numbers = [1, 2, 3];
+let num1 = numbers[0];
+let num2 = numbers[1];
+let num3 = numbers[2];
+console.log(num1, num2, num3); // 1, 2, 3
 
-const countries = ['Finland', 'Sweden', 'Norway']
-let fin = countries[0]
-let swe = countries[1]
-let nor = countries[2]
-console.log(fin, swe, nor) // Finland, Sweden, Norway
+const countries = ["Finland", "Sweden", "Norway"];
+let fin = countries[0];
+let swe = countries[1];
+let nor = countries[2];
+console.log(fin, swe, nor); // Finland, Sweden, Norway
 ```
 
 Most of the time the size of an array is big and we use a loop to iterate through each item of the arrays. Sometimes, we may have short arrays. If the array size is very short it is ok to access the items manually as shown above but today we will see a better way to access the array item which is destructuring.
@@ -2915,16 +2963,16 @@ console.log(fin, swe, nor) // Finland, Sweden, Norway
 During destructuring each variable should match with the index of the desired item in the array. For instance, the variable fin matches to index 0 and the variable nor matches to index 2. What would be the value of den if you have a variable den next nor?
 
 ```js
-const [fin, swe, nor, den] = countries
-console.log(den) // undefined
+const [fin, swe, nor, den] = countries;
+console.log(den); // undefined
 ```
 
 If you tried the above task you confirmed that the value is undefined. Actually, we can pass a default value to the variable, and if the value of that specific index is undefined the default value will be used.
 
 ```js
-const countries = ['Finland', 'Sweden', undefined, 'Norway']
-const [fin, swe, ice = 'Iceland', nor, den = 'Denmark'] = countries
-console.log(fin, swe, ice, nor, den) // Finland, Sweden, Iceland, Norway, Denmark
+const countries = ["Finland", "Sweden", undefined, "Norway"];
+const [fin, swe, ice = "Iceland", nor, den = "Denmark"] = countries;
+console.log(fin, swe, ice, nor, den); // Finland, Sweden, Iceland, Norway, Denmark
 ```
 
 Destructuring Nested arrays
@@ -2955,32 +3003,32 @@ Skipping an Item during destructuring
 During destructuring if we are not interested in every item, we can omit a certain item by putting a comma at that index. Let's get only Finland, Iceland, and Denmark from the array. See the example below for more clarity:
 
 ```js
-const countries = ['Finland', 'Sweden', 'Iceland', 'Norway', 'Denmark']
-const [fin, , ice, , den] = countries
-console.log(fin, ice, den) // Finland, Iceland, Denmark
+const countries = ["Finland", "Sweden", "Iceland", "Norway", "Denmark"];
+const [fin, , ice, , den] = countries;
+console.log(fin, ice, den); // Finland, Iceland, Denmark
 ```
 
 Getting the rest of the array using the spread operator
 We use three dots(...) to spread or get the rest of an array during destructuring
 
 ```js
-const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const [num1, num2, num3, ...rest] = nums
-console.log(num1, num2, num3, rest) //1, 2, 3, [4, 5, 6, 7, 8, 9, 10]
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const [num1, num2, num3, ...rest] = nums;
+console.log(num1, num2, num3, rest); //1, 2, 3, [4, 5, 6, 7, 8, 9, 10]
 
 const countries = [
-  'Germany',
-  'France',
-  'Belgium',
-  'Finland',
-  'Sweden',
-  'Norway',
-  'Denmark',
-  'Iceland',
-]
+  "Germany",
+  "France",
+  "Belgium",
+  "Finland",
+  "Sweden",
+  "Norway",
+  "Denmark",
+  "Iceland",
+];
 
-let [gem, fra, , ...nordicCountries] = countries
-console.log(gem, fra, nordicCountries)
+let [gem, fra, , ...nordicCountries] = countries;
+console.log(gem, fra, nordicCountries);
 // Germany, France,  ["Finland", "Sweden", "Norway", "Denmark", "Iceland"]
 ```
 
@@ -2990,29 +3038,29 @@ Destructuring when we loop through arrays
 
 ```js
 const countries = [
-  ['Finland', 'Helsinki'],
-  ['Sweden', 'Stockholm'],
-  ['Norway', 'Oslo'],
-]
+  ["Finland", "Helsinki"],
+  ["Sweden", "Stockholm"],
+  ["Norway", "Oslo"],
+];
 
 for (const [country, city] of countries) {
-  console.log(country, city)
+  console.log(country, city);
 }
 
 const fullStack = [
-  ['HTML', 'CSS', 'JS', 'React'],
-  ['Node', 'Express', 'MongoDB'],
-]
+  ["HTML", "CSS", "JS", "React"],
+  ["Node", "Express", "MongoDB"],
+];
 
 for (const [first, second, third, fourth] of fullStack) {
-  console.log(first, second, third, fourt)
+  console.log(first, second, third, fourt);
 }
 ```
 
 What do you think about the code snippet below? If you have started React Hooks already it may remind you of the useState hook.
 
 ```js
-const [x, y] = [2, (value) => value ** 2]
+const [x, y] = [2, (value) => value ** 2];
 ```
 
 What is the value of x? And what is the value of y(x)? I leave this for you to figure out.
@@ -3020,7 +3068,7 @@ What is the value of x? And what is the value of y(x)? I leave this for you to f
 If you have used react hooks you are very familiar with this and as you may imagine it is destructuring. The initial value of count is 0 and the setCount is a method that changes the value of count.
 
 ```js
-const [count, setCount] = useState(0)
+const [count, setCount] = useState(0);
 ```
 
 Now, you know how to destructure arrays. Let's move on to destructuring objects.
@@ -3033,7 +3081,7 @@ An object literal is made of key and value pairs. A very simple example of an ob
 const rectangle = {
   width: 20,
   height: 10,
-}
+};
 ```
 
 We access the value of an object using the following methods:
@@ -3042,15 +3090,15 @@ We access the value of an object using the following methods:
 const rectangle = {
   width: 20,
   height: 10,
-}
+};
 
-let width = rectangle.width
-let height = recangle.height
+let width = rectangle.width;
+let height = recangle.height;
 
 // or
 
-let width = rectangle[width]
-let height = recangle[height]
+let width = rectangle[width];
+let height = recangle[height];
 ```
 
 But today, we will see how to access the value of an object using destructuring.
@@ -3061,10 +3109,10 @@ When we destructure an object the name of the variable should be exactly the sam
 const rectangle = {
   width: 20,
   height: 10,
-}
+};
 
-let { width, height } = rectangle
-console.log(width, height, perimeter) // 20, 10
+let { width, height } = rectangle;
+console.log(width, height, perimeter); // 20, 10
 ```
 
 What will be the value of we try to access a key which not in the object.
@@ -3073,13 +3121,13 @@ What will be the value of we try to access a key which not in the object.
 const rectangle = {
   width: 20,
   height: 10,
-}
+};
 
 let { width, height, perimeter } = rectangleconsole.log(
   width,
   height,
   perimeter
-) // 20, 10, undefined
+); // 20, 10, undefined
 ```
 
 The value of the perimeter in the above example is undefined.
@@ -3092,10 +3140,10 @@ Similar to the array, we can also use a default value in object destructuring.
 const rectangle = {
   width: 20,
   height: 10,
-}
+};
 
-let { width, height, perimeter = 200 } = rectangle
-console.log(width, height, perimeter) // 20, 10, undefined
+let { width, height, perimeter = 200 } = rectangle;
+console.log(width, height, perimeter); // 20, 10, undefined
 ```
 
 Renaming variable names
@@ -3104,9 +3152,9 @@ Renaming variable names
 const rectangle = {
   width: 20,
   height: 10,
-}
+};
 
-let { width: w, height: h } = rectangle
+let { width: w, height: h } = rectangle;
 ```
 
 Let's also destructure, nested objects. In the example below, we have nested objects and we can destructure it in two ways.
@@ -3164,30 +3212,30 @@ Destructuring during loop through an array
 
 ```js
 const languages = [
-  { lang: 'English', count: 91 },
-  { lang: 'French', count: 45 },
-  { lang: 'Arabic', count: 25 },
-  { lang: 'Spanish', count: 24 },
-  { lang: 'Russian', count: 9 },
-  { lang: 'Portuguese', count: 9 },
-  { lang: 'Dutch', count: 8 },
-  { lang: 'German', count: 7 },
-  { lang: 'Chinese', count: 5 },
-  { lang: 'Swahili', count: 4 },
-  { lang: 'Serbian', count: 4 },
-]
+  { lang: "English", count: 91 },
+  { lang: "French", count: 45 },
+  { lang: "Arabic", count: 25 },
+  { lang: "Spanish", count: 24 },
+  { lang: "Russian", count: 9 },
+  { lang: "Portuguese", count: 9 },
+  { lang: "Dutch", count: 8 },
+  { lang: "German", count: 7 },
+  { lang: "Chinese", count: 5 },
+  { lang: "Swahili", count: 4 },
+  { lang: "Serbian", count: 4 },
+];
 
 for (const { lang, count } of languages) {
-  console.log(`The ${lang} is spoken in ${count} countries.`)
+  console.log(`The ${lang} is spoken in ${count} countries.`);
 }
 ```
 
 Destructuring function parameter
 
 ```js
-const rectangle = { width: 20, height: 10 }
-const calcualteArea = ({ width, height }) => width * height
-const calculatePerimeter = ({ width, height } = 2 * (width + height))
+const rectangle = { width: 20, height: 10 };
+const calcualteArea = ({ width, height }) => width * height;
+const calculatePerimeter = ({ width, height } = 2 * (width + height));
 ```
 
 #### Exercises
@@ -3196,24 +3244,24 @@ Create a function called getPersonInfo. The getPersonInfo function takes an obje
 
 ```js
 const person = {
-  firstName: 'Asabeneh',
-  lastName: 'Yetayeh',
+  firstName: "Asabeneh",
+  lastName: "Yetayeh",
   age: 250,
-  country: 'Finland',
-  job: 'Instructor and Developer',
+  country: "Finland",
+  job: "Instructor and Developer",
   skills: [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Redux',
-    'Node',
-    'MongoDB',
-    'Python',
-    'D3.js',
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Redux",
+    "Node",
+    "MongoDB",
+    "Python",
+    "D3.js",
   ],
-  languages: ['Amharic', 'English', 'Suomi(Finnish)'],
-}
+  languages: ["Amharic", "English", "Suomi(Finnish)"],
+};
 
 /*
 Asabeneh Yetayeh lives in Finland. He is  250 years old. He is an Instructor and Developer. He teaches HTML, CSS, JavaScript, React, Redux, Node, MongoDB, Python and D3.js. He speaks Amharic, English and a little bit of Suomi(Finnish)
@@ -3241,21 +3289,21 @@ console.log(rest)
 
 ```js
 const countries = [
-  'Germany',
-  'France',
-  'Belgium',
-  'Finland',
-  'Sweden',
-  'Norway',
-  'Denmark',
-  'Iceland',
-]
+  "Germany",
+  "France",
+  "Belgium",
+  "Finland",
+  "Sweden",
+  "Norway",
+  "Denmark",
+  "Iceland",
+];
 
-let [gem, fra, , ...nordicCountries] = countries
+let [gem, fra, , ...nordicCountries] = countries;
 
-console.log(gem)
-console.log(fra)
-console.log(nordicCountries)
+console.log(gem);
+console.log(fra);
+console.log(nordicCountries);
 ```
 
 ```sh
@@ -3267,17 +3315,17 @@ France
 ##### Spread operator to copy array
 
 ```js
-const evens = [0, 2, 4, 6, 8, 10]
-const evenNumbers = [...evens]
+const evens = [0, 2, 4, 6, 8, 10];
+const evenNumbers = [...evens];
 
-const odds = [1, 3, 5, 7, 9]
-const oddNumbers = [...odds]
+const odds = [1, 3, 5, 7, 9];
+const oddNumbers = [...odds];
 
-const wholeNumbers = [...evens, ...odds]
+const wholeNumbers = [...evens, ...odds];
 
-console.log(evenNumbers)
-console.log(oddNumbers)
-console.log(wholeNumbers)
+console.log(evenNumbers);
+console.log(oddNumbers);
+console.log(wholeNumbers);
 ```
 
 ```sh
@@ -3287,11 +3335,11 @@ console.log(wholeNumbers)
 ```
 
 ```js
-const frontEnd = ['HTML', 'CSS', 'JS', 'React']
-const backEnd = ['Node', 'Express', 'MongoDB']
-const fullStack = [...frontEnd, ...backEnd]
+const frontEnd = ["HTML", "CSS", "JS", "React"];
+const backEnd = ["Node", "Express", "MongoDB"];
+const fullStack = [...frontEnd, ...backEnd];
 
-console.log(fullStack)
+console.log(fullStack);
 ```
 
 ```sh
@@ -3304,14 +3352,14 @@ We can copy an object using a spread operator
 
 ```js
 const user = {
-  name: 'Asabeneh',
-  title: 'Programmer',
-  country: 'Finland',
-  city: 'Helsinki',
-}
+  name: "Asabeneh",
+  title: "Programmer",
+  country: "Finland",
+  city: "Helsinki",
+};
 
-const copiedUser = { ...user }
-console.log(copiedUser)
+const copiedUser = { ...user };
+console.log(copiedUser);
 ```
 
 ```sh
@@ -3322,14 +3370,14 @@ Modifying or changing the object while copying
 
 ```js
 const user = {
-  name: 'Asabeneh',
-  title: 'Programmer',
-  country: 'Finland',
-  city: 'Helsinki',
-}
+  name: "Asabeneh",
+  title: "Programmer",
+  country: "Finland",
+  city: "Helsinki",
+};
 
-const copiedUser = { ...user, title: 'instructor' }
-console.log(copiedUser)
+const copiedUser = { ...user, title: "instructor" };
+console.log(copiedUser);
 ```
 
 ```sh
@@ -3342,10 +3390,10 @@ Whenever we like to write an arrow function which takes unlimited number of argu
 
 ```js
 const sumAllNums = (...args) => {
-  console.log(args)
-}
+  console.log(args);
+};
 
-sumAllNums(1, 2, 3, 4, 5)
+sumAllNums(1, 2, 3, 4, 5);
 ```
 
 ```sh
@@ -3355,14 +3403,14 @@ sumAllNums(1, 2, 3, 4, 5)
 
 ```js
 const sumAllNums = (...args) => {
-  let sum = 0
+  let sum = 0;
   for (const num of args) {
-    sum += num
+    sum += num;
   }
-  return sum
-}
+  return sum;
+};
 
-console.log(sumAllNums(1, 2, 3, 4, 5))
+console.log(sumAllNums(1, 2, 3, 4, 5));
 ```
 
 ```sh
@@ -3395,11 +3443,11 @@ We use forEach when we like to iterate through an array of items. The forEach is
 // syntax in a normal or a function declaration
 
 function callback(item, index, arr) {}
-array.forEach(callback)
+array.forEach(callback);
 
 // or syntax in an arrow function
-const callback = (item, i, arr) => {}
-array.forEach(callback)
+const callback = (item, i, arr) => {};
+array.forEach(callback);
 ```
 
 The call back function could be a function declaration or an arrow function.
@@ -3407,17 +3455,17 @@ The call back function could be a function declaration or an arrow function.
 Let see different examples
 
 ```js
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
+const countries = ["Finland", "Estonia", "Sweden", "Norway"];
 countries.forEach(function (country, index, arr) {
-  console.log(i, country.toUpperCase())
-})
+  console.log(i, country.toUpperCase());
+});
 ```
 
 If there is no much code inside the code block we can use an arrow function and we can write it without a curly bracket. The index and the array parameters are optional, we can omit them.
 
 ```js
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
-countries.forEach((country, i) => console.log(i, country.toUpperCase()))
+const countries = ["Finland", "Estonia", "Sweden", "Norway"];
+countries.forEach((country, i) => console.log(i, country.toUpperCase()));
 ```
 
 ```sh
@@ -3430,21 +3478,21 @@ countries.forEach((country, i) => console.log(i, country.toUpperCase()))
 For example if we like to change each country to uppercase and store it back to an array we write it as follows.
 
 ```js
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
-const newCountries = []
-countries.forEach((country) => newCountries.push(country))
+const countries = ["Finland", "Estonia", "Sweden", "Norway"];
+const newCountries = [];
+countries.forEach((country) => newCountries.push(country));
 
-console.log(newCountries) // ["Finland", "Estonia", "Sweden", "Norway"]
+console.log(newCountries); // ["Finland", "Estonia", "Sweden", "Norway"]
 ```
 
 Let us see more examples. For instance if we want to sum an array of numbers we can use forEach or reduce. Let us see how we use forEach to sum all numbers in an array.
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-let sum = 0
-numbers.forEach((n) => (sum += n))
+const numbers = [1, 2, 3, 4, 5];
+let sum = 0;
+numbers.forEach((n) => (sum += n));
 
-console.log(sum) // 15
+console.log(sum); // 15
 ```
 
 Let us move to the next functional programming method which is going to be a map.
@@ -3457,17 +3505,17 @@ We use the map method whenever we like to modify an array. We use the map method
 // syntax in a normal or a function declaration
 
 function callback(item, i) {
-  return // code goes here
+  return; // code goes here
 }
 
-const modifiedArray = array.map(callback)
+const modifiedArray = array.map(callback);
 
 // or syntax in an arrow function
 
 const callback = (item, i) => {
-  return // code goes here
-}
-const modifiedArray = array.map(callback)
+  return; // code goes here
+};
+const modifiedArray = array.map(callback);
 ```
 
 Now, let us modify the countries array using the map method. The index is an optional parameter
@@ -3475,38 +3523,38 @@ Now, let us modify the countries array using the map method. The index is an opt
 ```js
 // Using function declaration
 
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
+const countries = ["Finland", "Estonia", "Sweden", "Norway"];
 
 const newCountries = countries.map(function (country) {
-  return country.toUpperCase()
-})
+  return country.toUpperCase();
+});
 
-console.log(newCountries)
+console.log(newCountries);
 
 // map using an arrow function call back
 
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
-const newCountries = countries.map((country) => country.toUpperCase())
+const countries = ["Finland", "Estonia", "Sweden", "Norway"];
+const newCountries = countries.map((country) => country.toUpperCase());
 
-console.log(newCountries) // ["FINLAND", "ESTONIA", "SWEDEN", "NORWAY"]
+console.log(newCountries); // ["FINLAND", "ESTONIA", "SWEDEN", "NORWAY"]
 ```
 
 As you can see that map is very handy to modify an array and to get an array back. Now, let us create an array of the length of the countries from the countries array.
 
 ```js
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
-const countriesLength = countries.map((country) => country.length)
+const countries = ["Finland", "Estonia", "Sweden", "Norway"];
+const countriesLength = countries.map((country) => country.length);
 
-console.log(countriesLength) // [7, 7, 6, 6]
+console.log(countriesLength); // [7, 7, 6, 6]
 ```
 
 Let us see another more example
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-const squares = numbers.map((n) => n ** 2)
+const numbers = [1, 2, 3, 4, 5];
+const squares = numbers.map((n) => n ** 2);
 
-console.log(squares) // [1, 4, 9, 16, 25]
+console.log(squares); // [1, 4, 9, 16, 25]
 ```
 
 #### 3. filter
@@ -3518,45 +3566,45 @@ For instance if we want to filter out countries containing a substring land from
 ```js
 // syntax in a normal or a function declaration
 function callback(item) {
-  return // boolean
+  return; // boolean
 }
 
-const filteredArray = array.filter(callback)
+const filteredArray = array.filter(callback);
 
 // or syntax in an arrow function
 
 const callback = (item) => {
-  return // boolean
-}
-const filteredArray = array.filter(callback)
+  return; // boolean
+};
+const filteredArray = array.filter(callback);
 ```
 
 ```js
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
+const countries = ["Finland", "Estonia", "Sweden", "Norway", "Iceland"];
 const countriesWithLand = countries.filter((country) =>
-  country.includes('land')
-)
-console.log(countriesWithLand) // ["Finland", "Iceland"]
+  country.includes("land")
+);
+console.log(countriesWithLand); // ["Finland", "Iceland"]
 ```
 
 How about if we want to filter out countries not containing the substring land. We use negation to achieve that.
 
 ```js
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
+const countries = ["Finland", "Estonia", "Sweden", "Norway", "Iceland"];
 const countriesWithLand = countries.filter(
-  (country) => !country.includes('land')
-)
-console.log(countriesWithLand) // ["Estonia", "Sweden", "Norway"]
+  (country) => !country.includes("land")
+);
+console.log(countriesWithLand); // ["Estonia", "Sweden", "Norway"]
 ```
 
 Let's see an additional example about the filter, let us filter even or odd numbers from an array of numbers
 
 ```js
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const evens = numbers.filter((n) => n % 2 === 0)
-const odds = numbers.filter((n) => n % 2 !== 0)
-console.log(evens) // [0, 2, 4, 6, 8, 10]
-console.log(odds) // [1, 3, 5, 7, 9]
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const evens = numbers.filter((n) => n % 2 === 0);
+const odds = numbers.filter((n) => n % 2 !== 0);
+console.log(evens); // [0, 2, 4, 6, 8, 10]
+console.log(odds); // [1, 3, 5, 7, 9]
 ```
 
 Now, you know how to filter let us move on to the next functional programming, reduce.
@@ -3589,41 +3637,41 @@ The default initial value is 0. We can change the initial value if we want to ch
 For instance if we want to add all items in an array and if all the items are numbers we can use reduce.
 
 ```js
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const sum = numbers.reduce((acc, cur) => acc + cur)
-console.log(sum) // 55
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const sum = numbers.reduce((acc, cur) => acc + cur);
+console.log(sum); // 55
 ```
 
 Reduce has a default initial value which is zero. Now, let us use a different initial value which is 5 in this case.
 
 ```js
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const sum = numbers.reduce((acc, cur) => acc + cur, 5)
-console.log(sum) // 60
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const sum = numbers.reduce((acc, cur) => acc + cur, 5);
+console.log(sum); // 60
 ```
 
 Let us concatenate strings using reduce
 
 ```js
-const strs = ['Hello', 'world', '!']
-const helloWorld = strs.reduce((acc, cur) => acc + ' ' + cur)
-console.log(helloWorld) // "Hello world !"
+const strs = ["Hello", "world", "!"];
+const helloWorld = strs.reduce((acc, cur) => acc + " " + cur);
+console.log(helloWorld); // "Hello world !"
 ```
 
 We can multiply items of an array using reduce and we will return the value.
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-const value = numbers.reduce((acc, cur) => acc * cur)
-console.log(value) // 120
+const numbers = [1, 2, 3, 4, 5];
+const value = numbers.reduce((acc, cur) => acc * cur);
+console.log(value); // 120
 ```
 
 Let us try it with an initial value
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-const value = numbers.reduce((acc, cur) => acc * cur, 10)
-console.log(value) // 1200
+const numbers = [1, 2, 3, 4, 5];
+const value = numbers.reduce((acc, cur) => acc * cur, 10);
+console.log(value); // 1200
 ```
 
 #### 5. find
@@ -3650,27 +3698,27 @@ const item = array.find(callback)
 Let find the first even number and the first odd number in the numbers array.
 
 ```js
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const firstEvenNum = numbers.find((n) => n % 2 === 0)
-const firstOddNum = numbers.find((n) => n % 2 !== 0)
-console.log(firstEvenNum) // 0
-console.log(firstOddNum) // 1
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const firstEvenNum = numbers.find((n) => n % 2 === 0);
+const firstOddNum = numbers.find((n) => n % 2 !== 0);
+console.log(firstEvenNum); // 0
+console.log(firstOddNum); // 1
 ```
 
 Let us find the first country which contains a substring way
 
 ```js
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
-const countryWithWay = countries.find((country) => country.includes('way'))
-console.log(countriesWithWay) // Norway
+const countries = ["Finland", "Estonia", "Sweden", "Norway", "Iceland"];
+const countryWithWay = countries.find((country) => country.includes("way"));
+console.log(countriesWithWay); // Norway
 ```
 
 Let us find the first country which has only six characters
 
 ```js
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
-const sixCharsCountry = countries.find((country) => country.length === 6)
-console.log(sixCharsCountry) // Sweden
+const countries = ["Finland", "Estonia", "Sweden", "Norway", "Iceland"];
+const sixCharsCountry = countries.find((country) => country.length === 6);
+console.log(sixCharsCountry); // Sweden
 ```
 
 Let us find the first country in the array which has the letter 'o'
@@ -3705,11 +3753,11 @@ const index = array.findIndex(callback)
 Let us find the index of the first even number and the index of the first odd number in the numbers array.
 
 ```js
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const firstEvenIndex = numbers.findIndex((n) => n % 2 === 0)
-const firstOddIndex = numbers.findIndex((n) => n % 2 !== 0)
-console.log(firstEvenIndex) // 0
-console.log(firstOddIndex) // 1
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const firstEvenIndex = numbers.findIndex((n) => n % 2 === 0);
+const firstOddIndex = numbers.findIndex((n) => n % 2 !== 0);
+console.log(firstEvenIndex); // 0
+console.log(firstOddIndex); // 1
 ```
 
 Let us find the index of the first country in the array which has exactly six characters
@@ -3737,21 +3785,21 @@ The some method is used with array and return a boolean. If one or some of the i
 In the following array some numbers are even and some are odd, so if I ask you a question, are there even numbers in the array then your answer will be yes. If I ask you also another question, are there odd numbers in the array then your answer will be yes. On the contrary, if I ask you, are all the numbers even or odd then your answer will be no because all the numbers are not even or odd.
 
 ```js
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const someAreEvens = numbers.some((n) => n % 2 === 0)
-const someAreOdds = numbers.some((n) => n % 2 !== 0)
-console.log(someAreEvens) // true
-console.log(someAreOdds) // true
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const someAreEvens = numbers.some((n) => n % 2 === 0);
+const someAreOdds = numbers.some((n) => n % 2 !== 0);
+console.log(someAreEvens); // true
+console.log(someAreOdds); // true
 ```
 
 Let us another example
 
 ```js
-const evens = [0, 2, 4, 6, 8, 10]
-const someAreEvens = evens.some((n) => n % 2 === 0)
-const someAreOdds = evens.some((n) => n % 2 !== 0)
-console.log(someAreEvens) // true
-console.log(someAreOdds) // false
+const evens = [0, 2, 4, 6, 8, 10];
+const someAreEvens = evens.some((n) => n % 2 === 0);
+const someAreOdds = evens.some((n) => n % 2 !== 0);
+console.log(someAreEvens); // true
+console.log(someAreOdds); // false
 ```
 
 Now, let us see one more functional programming, every.
@@ -3781,13 +3829,13 @@ console.log(someAreOdds)  // false
 
 ```js
 const products = [
-  { product: 'banana', price: 3 },
-  { product: 'mango', price: 6 },
-  { product: 'potato', price: ' ' },
-  { product: 'avocado', price: 8 },
-  { product: 'coffee', price: 10 },
-  { product: 'tea', price: '' },
-]
+  { product: "banana", price: 3 },
+  { product: "mango", price: 6 },
+  { product: "potato", price: " " },
+  { product: "avocado", price: 8 },
+  { product: "coffee", price: 10 },
+  { product: "tea", price: "" },
+];
 ```
 
 1. Print the price of each product using forEach
@@ -3855,8 +3903,8 @@ Let us create a dog object from our Person class.
 class Person {
   // code goes here
 }
-const person = new Person()
-console.log(person)
+const person = new Person();
+console.log(person);
 ```
 
 ```sh
@@ -3876,15 +3924,15 @@ The following Person class constructor has firstName and lastName property. Thes
 ```js
 class Person {
   constructor(firstName, lastName) {
-    console.log(this) // Check the output from here
-    this.firstName = firstName
-    this.lastName = lastName
+    console.log(this); // Check the output from here
+    this.firstName = firstName;
+    this.lastName = lastName;
   }
 }
 
-const person = new Person()
+const person = new Person();
 
-console.log(person)
+console.log(person);
 ```
 
 ```sh
@@ -3896,14 +3944,14 @@ All the keys of the object are undefined. When ever we instantiate we should pas
 ```js
 class Person {
   constructor(firstName, lastName) {
-    this.firstName = firstName
-    this.lastName = lastName
+    this.firstName = firstName;
+    this.lastName = lastName;
   }
 }
 
-const person1 = new Person('Asabeneh', 'Yetayeh')
+const person1 = new Person("Asabeneh", "Yetayeh");
 
-console.log(person1)
+console.log(person1);
 ```
 
 ```sh
@@ -3915,19 +3963,19 @@ As we have stated at the very beginning that once we create a class we can creat
 ```js
 class Person {
   constructor(firstName, lastName) {
-    console.log(this) // Check the output from here
-    this.firstName = firstName
-    this.lastName = lastName
+    console.log(this); // Check the output from here
+    this.firstName = firstName;
+    this.lastName = lastName;
   }
 }
 
-const person1 = new Person('Asabeneh', 'Yetayeh')
-const person2 = new Person('Lidiya', 'Tekle')
-const person3 = new Person('Abraham', 'Yetayeh')
+const person1 = new Person("Asabeneh", "Yetayeh");
+const person2 = new Person("Lidiya", "Tekle");
+const person3 = new Person("Abraham", "Yetayeh");
 
-console.log(person1)
-console.log(person2)
-console.log(person3)
+console.log(person1);
+console.log(person2);
+console.log(person3);
 ```
 
 ```sh
@@ -3941,18 +3989,18 @@ Using the class Person we created three persons object. As you can see our class
 ```js
 class Person {
   constructor(firstName, lastName, age, country, city) {
-    console.log(this) // Check the output from here
-    this.firstName = firstName
-    this.lastName = lastName
-    this.age = age
-    this.country = country
-    this.city = city
+    console.log(this); // Check the output from here
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.country = country;
+    this.city = city;
   }
 }
 
-const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
+const person1 = new Person("Asabeneh", "Yetayeh", 250, "Finland", "Helsinki");
 
-console.log(person1)
+console.log(person1);
 ```
 
 ```sh
@@ -3966,25 +4014,25 @@ The constructor function properties may have a default value like other regular 
 ```js
 class Person {
   constructor(
-    firstName = 'Asabeneh',
-    lastName = 'Yetayeh',
+    firstName = "Asabeneh",
+    lastName = "Yetayeh",
     age = 250,
-    country = 'Finland',
-    city = 'Helsinki'
+    country = "Finland",
+    city = "Helsinki"
   ) {
-    this.firstName = firstName
-    this.lastName = lastName
-    this.age = age
-    this.country = country
-    this.city = city
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.country = country;
+    this.city = city;
   }
 }
 
-const person1 = new Person() // it will take the default values
-const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
+const person1 = new Person(); // it will take the default values
+const person2 = new Person("Lidiya", "Tekle", 28, "Finland", "Espoo");
 
-console.log(person1)
-console.log(person2)
+console.log(person1);
+console.log(person2);
 ```
 
 ```sh
@@ -3999,23 +4047,23 @@ The constructor inside a class is a builtin function which allow us to create a 
 ```js
 class Person {
   constructor(firstName, lastName, age, country, city) {
-    this.firstName = firstName
-    this.lastName = lastName
-    this.age = age
-    this.country = country
-    this.city = city
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.country = country;
+    this.city = city;
   }
   getFullName() {
-    const fullName = this.firstName + ' ' + this.lastName
-    return fullName
+    const fullName = this.firstName + " " + this.lastName;
+    return fullName;
   }
 }
 
-const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
-const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
+const person1 = new Person("Asabeneh", "Yetayeh", 250, "Finland", "Helsinki");
+const person2 = new Person("Lidiya", "Tekle", 28, "Finland", "Espoo");
 
-console.log(person1.getFullName())
-console.log(person2.getFullName())
+console.log(person1.getFullName());
+console.log(person2.getFullName());
 ```
 
 ```sh
@@ -4030,28 +4078,28 @@ When we create a class for some properties we may have an initial value. For ins
 ```js
 class Person {
   constructor(firstName, lastName, age, country, city) {
-    this.firstName = firstName
-    this.lastName = lastName
-    this.age = age
-    this.country = country
-    this.city = city
-    this.score = 0
-    this.skills = []
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.country = country;
+    this.city = city;
+    this.score = 0;
+    this.skills = [];
   }
   getFullName() {
-    const fullName = this.firstName + ' ' + this.lastName
-    return fullName
+    const fullName = this.firstName + " " + this.lastName;
+    return fullName;
   }
 }
 
-const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
-const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
+const person1 = new Person("Asabeneh", "Yetayeh", 250, "Finland", "Helsinki");
+const person2 = new Person("Lidiya", "Tekle", 28, "Finland", "Espoo");
 
-console.log(person1.score)
-console.log(person2.score)
+console.log(person1.score);
+console.log(person2.score);
 
-console.log(person1.skills)
-console.log(person2.skills)
+console.log(person1.skills);
+console.log(person2.skills);
 ```
 
 ```sh
@@ -4070,34 +4118,34 @@ The get method allow us to access value from the object. We write a get method u
 ```js
 class Person {
   constructor(firstName, lastName, age, country, city) {
-    this.firstName = firstName
-    this.lastName = lastName
-    this.age = age
-    this.country = country
-    this.city = city
-    this.score = 0
-    this.skills = []
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.country = country;
+    this.city = city;
+    this.score = 0;
+    this.skills = [];
   }
   getFullName() {
-    const fullName = this.firstName + ' ' + this.lastName
-    return fullName
+    const fullName = this.firstName + " " + this.lastName;
+    return fullName;
   }
   get getScore() {
-    return this.score
+    return this.score;
   }
   get getSkills() {
-    return this.skills
+    return this.skills;
   }
 }
 
-const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
-const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
+const person1 = new Person("Asabeneh", "Yetayeh", 250, "Finland", "Helsinki");
+const person2 = new Person("Lidiya", "Tekle", 28, "Finland", "Espoo");
 
-console.log(person1.getScore) // We do not need parenthesis to call a getter method
-console.log(person2.getScore)
+console.log(person1.getScore); // We do not need parenthesis to call a getter method
+console.log(person2.getScore);
 
-console.log(person1.getSkills)
-console.log(person2.getSkills)
+console.log(person1.getSkills);
+console.log(person2.getSkills);
 ```
 
 ```sh
@@ -4114,50 +4162,50 @@ The setter method allow us to modify the value of certain properties. We write a
 ```js
 class Person {
   constructor(firstName, lastName, age, country, city) {
-    this.firstName = firstName
-    this.lastName = lastName
-    this.age = age
-    this.country = country
-    this.city = city
-    this.score = 0
-    this.skills = []
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.country = country;
+    this.city = city;
+    this.score = 0;
+    this.skills = [];
   }
   getFullName() {
-    const fullName = this.firstName + ' ' + this.lastName
-    return fullName
+    const fullName = this.firstName + " " + this.lastName;
+    return fullName;
   }
   get getScore() {
-    return this.score
+    return this.score;
   }
   get getSkills() {
-    return this.skills
+    return this.skills;
   }
   set setScore(score) {
-    this.score += score
+    this.score += score;
   }
   set setSkill(skill) {
-    this.skills.push(skill)
+    this.skills.push(skill);
   }
 }
 
-const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
-const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
+const person1 = new Person("Asabeneh", "Yetayeh", 250, "Finland", "Helsinki");
+const person2 = new Person("Lidiya", "Tekle", 28, "Finland", "Espoo");
 
-person1.setScore = 1
-person1.setSkill = 'HTML'
-person1.setSkill = 'CSS'
-person1.setSkill = 'JavaScript'
+person1.setScore = 1;
+person1.setSkill = "HTML";
+person1.setSkill = "CSS";
+person1.setSkill = "JavaScript";
 
-person2.setScore = 1
-person2.setSkill = 'Planning'
-person2.setSkill = 'Managing'
-person2.setSkill = 'Organizing'
+person2.setScore = 1;
+person2.setSkill = "Planning";
+person2.setSkill = "Managing";
+person2.setSkill = "Organizing";
 
-console.log(person1.score)
-console.log(person2.score)
+console.log(person1.score);
+console.log(person2.score);
 
-console.log(person1.skills)
-console.log(person2.skills)
+console.log(person1.skills);
+console.log(person2.skills);
 ```
 
 ```sh
@@ -4172,67 +4220,67 @@ Do not be puzzled by the difference between regular method and a getter. If you 
 ```js
 class Person {
   constructor(firstName, lastName, age, country, city) {
-    this.firstName = firstName
-    this.lastName = lastName
-    this.age = age
-    this.country = country
-    this.city = city
-    this.score = 0
-    this.skills = []
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.country = country;
+    this.city = city;
+    this.score = 0;
+    this.skills = [];
   }
   getFullName() {
-    const fullName = this.firstName + ' ' + this.lastName
-    return fullName
+    const fullName = this.firstName + " " + this.lastName;
+    return fullName;
   }
   get getScore() {
-    return this.score
+    return this.score;
   }
   get getSkills() {
-    return this.skills
+    return this.skills;
   }
   set setScore(score) {
-    this.score += score
+    this.score += score;
   }
   set setSkill(skill) {
-    this.skills.push(skill)
+    this.skills.push(skill);
   }
   getPersonInfo() {
-    let fullName = this.getFullName()
+    let fullName = this.getFullName();
     let skills =
       this.skills.length > 0 &&
-      this.skills.slice(0, this.skills.length - 1).join(', ') +
-        ` and ${this.skills[this.skills.length - 1]}`
-    let formattedSkills = skills ? `He knows ${skills}` : ''
+      this.skills.slice(0, this.skills.length - 1).join(", ") +
+        ` and ${this.skills[this.skills.length - 1]}`;
+    let formattedSkills = skills ? `He knows ${skills}` : "";
 
-    let info = `${fullName} is ${this.age}. He lives ${this.city}, ${this.country}. ${formattedSkills}`
-    return info
+    let info = `${fullName} is ${this.age}. He lives ${this.city}, ${this.country}. ${formattedSkills}`;
+    return info;
   }
 }
 
-const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
-const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
-const person3 = new Person('John', 'Doe', 50, 'Mars', 'Mars city')
+const person1 = new Person("Asabeneh", "Yetayeh", 250, "Finland", "Helsinki");
+const person2 = new Person("Lidiya", "Tekle", 28, "Finland", "Espoo");
+const person3 = new Person("John", "Doe", 50, "Mars", "Mars city");
 
-person1.setScore = 1
-person1.setSkill = 'HTML'
-person1.setSkill = 'CSS'
-person1.setSkill = 'JavaScript'
+person1.setScore = 1;
+person1.setSkill = "HTML";
+person1.setSkill = "CSS";
+person1.setSkill = "JavaScript";
 
-person2.setScore = 1
-person2.setSkill = 'Planning'
-person2.setSkill = 'Managing'
-person2.setSkill = 'Organizing'
+person2.setScore = 1;
+person2.setSkill = "Planning";
+person2.setSkill = "Managing";
+person2.setSkill = "Organizing";
 
-console.log(person1.getScore)
-console.log(person2.getScore)
+console.log(person1.getScore);
+console.log(person2.getScore);
 
-console.log(person1.getSkills)
-console.log(person2.getSkills)
-console.log(person3.getSkills)
+console.log(person1.getSkills);
+console.log(person2.getSkills);
+console.log(person3.getSkills);
 
-console.log(person1.getPersonInfo())
-console.log(person2.getPersonInfo())
-console.log(person3.getPersonInfo())
+console.log(person1.getPersonInfo());
+console.log(person2.getPersonInfo());
+console.log(person3.getPersonInfo());
 ```
 
 ```sh
@@ -4253,70 +4301,70 @@ The static keyword defines a static method for a class. Static methods are not c
 ```js
 class Person {
   constructor(firstName, lastName, age, country, city) {
-    this.firstName = firstName
-    this.lastName = lastName
-    this.age = age
-    this.country = country
-    this.city = city
-    this.score = 0
-    this.skills = []
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.country = country;
+    this.city = city;
+    this.score = 0;
+    this.skills = [];
   }
   getFullName() {
-    const fullName = this.firstName + ' ' + this.lastName
-    return fullName
+    const fullName = this.firstName + " " + this.lastName;
+    return fullName;
   }
   get getScore() {
-    return this.score
+    return this.score;
   }
   get getSkills() {
-    return this.skills
+    return this.skills;
   }
   set setScore(score) {
-    this.score += score
+    this.score += score;
   }
   set setSkill(skill) {
-    this.skills.push(skill)
+    this.skills.push(skill);
   }
   getPersonInfo() {
-    let fullName = this.getFullName()
+    let fullName = this.getFullName();
     let skills =
       this.skills.length > 0 &&
-      this.skills.slice(0, this.skills.length - 1).join(', ') +
-        ` and ${this.skills[this.skills.length - 1]}`
+      this.skills.slice(0, this.skills.length - 1).join(", ") +
+        ` and ${this.skills[this.skills.length - 1]}`;
 
-    let formattedSkills = skills ? `He knows ${skills}` : ''
+    let formattedSkills = skills ? `He knows ${skills}` : "";
 
-    let info = `${fullName} is ${this.age}. He lives ${this.city}, ${this.country}. ${formattedSkills}`
-    return info
+    let info = `${fullName} is ${this.age}. He lives ${this.city}, ${this.country}. ${formattedSkills}`;
+    return info;
   }
   static favoriteSkill() {
-    const skills = ['HTML', 'CSS', 'JS', 'React', 'Python', 'Node']
-    const index = Math.floor(Math.random() * skills.length)
-    return skills[index]
+    const skills = ["HTML", "CSS", "JS", "React", "Python", "Node"];
+    const index = Math.floor(Math.random() * skills.length);
+    return skills[index];
   }
   static showDateTime() {
-    let now = new Date()
-    let year = now.getFullYear()
-    let month = now.getMonth() + 1
-    let date = now.getDate()
-    let hours = now.getHours()
-    let minutes = now.getMinutes()
+    let now = new Date();
+    let year = now.getFullYear();
+    let month = now.getMonth() + 1;
+    let date = now.getDate();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
     if (hours < 10) {
-      hours = '0' + hours
+      hours = "0" + hours;
     }
     if (minutes < 10) {
-      minutes = '0' + minutes
+      minutes = "0" + minutes;
     }
 
-    let dateMonthYear = date + '.' + month + '.' + year
-    let time = hours + ':' + minutes
-    let fullTime = dateMonthYear + ' ' + time
-    return fullTime
+    let dateMonthYear = date + "." + month + "." + year;
+    let time = hours + ":" + minutes;
+    let fullTime = dateMonthYear + " " + time;
+    return fullTime;
   }
 }
 
-console.log(Person.favoriteSkill())
-console.log(Person.showDateTime())
+console.log(Person.favoriteSkill());
+console.log(Person.showDateTime());
 ```
 
 ```sh
@@ -4342,15 +4390,15 @@ Let us create a Student child class from Person parent class.
 ```js
 class Student extends Person {
   saySomething() {
-    console.log('I am a child of the person class')
+    console.log("I am a child of the person class");
   }
 }
 
-const s1 = new Student('Asabeneh', 'Yetayeh', 'Finland', 250, 'Helsinki')
-console.log(s1)
-console.log(s1.saySomething())
-console.log(s1.getFullName())
-console.log(s1.getPersonInfo())
+const s1 = new Student("Asabeneh", "Yetayeh", "Finland", 250, "Helsinki");
+console.log(s1);
+console.log(s1.saySomething());
+console.log(s1.getFullName());
+console.log(s1.getPersonInfo());
 ```
 
 ```sh
@@ -4368,56 +4416,56 @@ As you can see, we manage to access all the methods in the Person Class and we u
 ```js
 class Student extends Person {
   constructor(firstName, lastName, age, country, city, gender) {
-    super(firstName, lastName, age, country, city)
-    this.gender = gender
+    super(firstName, lastName, age, country, city);
+    this.gender = gender;
   }
 
   saySomething() {
-    console.log('I am a child of the person class')
+    console.log("I am a child of the person class");
   }
   getPersonInfo() {
-    let fullName = this.getFullName()
+    let fullName = this.getFullName();
     let skills =
       this.skills.length > 0 &&
-      this.skills.slice(0, this.skills.length - 1).join(', ') +
-        ` and ${this.skills[this.skills.length - 1]}`
+      this.skills.slice(0, this.skills.length - 1).join(", ") +
+        ` and ${this.skills[this.skills.length - 1]}`;
 
-    let formattedSkills = skills ? `He knows ${skills}` : ''
-    let pronoun = this.gender == 'Male' ? 'He' : 'She'
+    let formattedSkills = skills ? `He knows ${skills}` : "";
+    let pronoun = this.gender == "Male" ? "He" : "She";
 
-    let info = `${fullName} is ${this.age}. ${pronoun} lives in ${this.city}, ${this.country}. ${formattedSkills}`
-    return info
+    let info = `${fullName} is ${this.age}. ${pronoun} lives in ${this.city}, ${this.country}. ${formattedSkills}`;
+    return info;
   }
 }
 
 const s1 = new Student(
-  'Asabeneh',
-  'Yetayeh',
+  "Asabeneh",
+  "Yetayeh",
   250,
-  'Finland',
-  'Helsinki',
-  'Male'
-)
-const s2 = new Student('Lidiya', 'Tekle', 28, 'Finland', 'Helsinki', 'Female')
-s1.setScore = 1
-s1.setSkill = 'HTML'
-s1.setSkill = 'CSS'
-s1.setSkill = 'JavaScript'
+  "Finland",
+  "Helsinki",
+  "Male"
+);
+const s2 = new Student("Lidiya", "Tekle", 28, "Finland", "Helsinki", "Female");
+s1.setScore = 1;
+s1.setSkill = "HTML";
+s1.setSkill = "CSS";
+s1.setSkill = "JavaScript";
 
-s2.setScore = 1
-s2.setSkill = 'Planning'
-s2.setSkill = 'Managing'
-s2.setSkill = 'Organizing'
+s2.setScore = 1;
+s2.setSkill = "Planning";
+s2.setSkill = "Managing";
+s2.setSkill = "Organizing";
 
-console.log(s1)
+console.log(s1);
 
-console.log(s1.saySomething())
-console.log(s1.getFullName())
-console.log(s1.getPersonInfo())
+console.log(s1.saySomething());
+console.log(s1.getFullName());
+console.log(s1.getPersonInfo());
 
-console.log(s2.saySomething())
-console.log(s2.getFullName())
-console.log(s2.getPersonInfo())
+console.log(s2.saySomething());
+console.log(s2.getFullName());
+console.log(s2.getPersonInfo());
 ```
 
 ```sh
@@ -4507,8 +4555,8 @@ So do not directly manipulate the DOM if you are using react. The only place we 
     <script>
       // const root = document.querySelector('.root')
       // const root = document.getElementById('root')
-      const root = document.querySelector('#root')
-      root.innerHTML = <h1>Welcome to 30 Days Of React </h1>
+      const root = document.querySelector("#root");
+      root.innerHTML = <h1>Welcome to 30 Days Of React </h1>;
     </script>
   </body>
 </html>
