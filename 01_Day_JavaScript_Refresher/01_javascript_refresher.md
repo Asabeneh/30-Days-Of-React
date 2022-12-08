@@ -1016,19 +1016,21 @@ console.log(numberOfCompanies.length - 1)
 
     let arrayOfString = itCompanies.toString();
     let companiesUppercase = arrayOfString.toUpperCase()
+    console.log(companiesUppercase.split(","))
 
 12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
+
+console.log(itCompanies.toString() + " are big It companies")
+
 13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is _not found_
-14. Filter out companies which have more than one 'o' without the filter method
-15. Sort the array using _sort()_ method
-16. Reverse the array using _reverse()_ method
-17. Slice out the first 3 companies from the array
-18. Slice out the last 3 companies from the array
-19. Slice out the middle IT company or companies from the array
-20. Remove the first IT company from the array
-21. Remove the middle IT company or companies from the array
-22. Remove the last IT company from the array
-23. Remove all IT companies
+
+// let us check if Apple exist in the array
+let indexOfApple = itCompanies.indexOf("Apple"); // -1, if the element not found index is -1
+if (indexOfApple != -1) {
+console.log("Apple does exist in the array");
+} else {
+console.log("a company is not found");
+} 14. Filter out companies which have more than one 'o' without the filter method 15. Sort the array using _sort()_ method 16. Reverse the array using _reverse()_ method 17. Slice out the first 3 companies from the array 18. Slice out the last 3 companies from the array 19. Slice out the middle IT company or companies from the array 20. Remove the first IT company from the array 21. Remove the middle IT company or companies from the array 22. Remove the last IT company from the array 23. Remove all IT companies
 
 ##### Exercise: Level 2
 
