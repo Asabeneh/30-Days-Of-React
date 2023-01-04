@@ -254,7 +254,7 @@ welcome: "Welcome to 30 Days Of React"
 }
 ```
 
-Since you are a JavaScript ninja by now, you know what do do with this object.
+Since you are a JavaScript ninja by now, you know what to do with this object.
 
 As you can see from the above example, the value of the props are written statically. However, if we want to apply some logic it is hard to implement with statically written data, so it will be better to use a variable as props. Let's see the following example:
 
