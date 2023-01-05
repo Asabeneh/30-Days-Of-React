@@ -40,7 +40,29 @@ console.log(sum);
 // - looks for first occurence of a certain array element.
 // returns first item that passes a test
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const found = numbers.find((element)=>{ return element > 4 && element < 8});
+const found = numbers.find((element)=>{return element > 4 && element < 8});
 console.log(found);
 
+// 6. findIndex
+// - works just like find() but returns index instead.
+const alphabet = ['A','B','C','D','E','F'];
+const index = alphabet.findIndex(element=>{return element == 'D'})
+console.log(`D is at index ${index}`);
 
+// 7. some
+// - some method is with arrays and returns a boolean.
+// - if one or some items satisfy criteria then return true else return false
+const digits = [0,1,2,3,4,5,6,7,8,9,10];
+const isEven = digits.some(element=>{return element % 2 === 0});
+const isOdd = digits.some(element =>{return element % 2 !== 0});
+console.log(`Array is even:`,isEven); //some values are even 
+console.log(`Array is odd:`,isOdd); // some values are odd
+
+// 8. every
+// -  every method is with arrays and returns a boolean
+// - is like some() methond BUT every item must statisfy the criteria
+/* using for testing const digits = [0,1,2,3,4,5,6,7,8,9,10];*/
+const isEven2 = digits.every(element=>{return element % 2 === 0});
+const isOdd2 = digits.every(element =>{return element % 2 !== 0});
+console.log(`Array is even:`,isEven2); // not every value is even 
+console.log(`Array is odd:`,isOdd2); // not every value is odd
