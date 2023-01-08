@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add react and react-dom CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+        rel="stylesheet"
+    />
+    <title>30 Days Of React Challenge</title>
+    <!-- Creating internal styling instead of object styling in the index.jsx file -->
+    <style>
+    /* == General style === */
+    * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+
+    html,
+    body {
+    height: 100%;
+    line-height: 1.5;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    color: black;
+    }
+
+    .root {
+    min-height: 100%;
+    position: relative;
+    }
+
+    .header-wrapper,
+    .main-wrapper,
+    .footer-wrapper {
+    width: 85%;
+    margin: auto;
+    }
+
+    .header-wrapper,
+    .main-wrapper {
+    padding: 10px;
+    margin: 2px auto;
+    }
+
+    h1 {
+    font-size: 70px;
+    font-weight: 300;
+    }
+
+    h2,
+    h3 {
+    font-weight: 300;
+    }
+
+    header {
+    background-color: #61dbfb;
+    padding: 10px;
+    }
+
+    main {
+    padding: 10px;
+    padding-bottom: 60px;
+    /* Height of the footer */
+    }
+
+    ul {
+    margin-left: 15px;
+    }
+
+    ul li {
+    list-style: none;
+    }
+
+    footer {
+    position: absolute;
+    bottom: 0;
+    left: 7.5%; /*added myself to offset footer to the right to match the header*/
+    width: 100%;
+    height: 60px;
+    /* Height of the footer */
+    background: #6cf;
+    }
+
+    .footer-wrapper {
+    font-weight: 400;
+    text-align: center;
+    line-height: 60px;
+    }
+
+    .app{
+        background-color: grey;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="root"></div>
+
+    <!-- add babel CDN -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- give script type of babel for transpiling react JSX to pure JS in browser -->
+    <script type="text/babel" src="index.jsx"></script>
+    <!-- <script type="text/babel" src="exercise.jsx"></script> -->
+</body>
+</html>
