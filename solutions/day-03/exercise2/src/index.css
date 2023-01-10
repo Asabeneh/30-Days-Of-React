@@ -1,0 +1,101 @@
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+/* change font  */
+body {
+height: 100%;
+line-height: 1.5;
+font-family: 'Montserrat';
+font-weight: 300;
+color: black;
+}
+
+
+/* make all images flex items and center them  */
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* change image size */
+.logos img{
+    width: 20%;
+}
+
+/* center title */
+.title h1{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* main wrapper */
+.main-wrapper{
+    background-color: lightblue;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+/* main h1 tag */
+.main-wrapper h1{
+    text-align: center;
+    padding: 30px 0;
+    text-transform: uppercase;
+}
+
+/* main p tag */
+.main-wrapper p{
+    text-align: center;
+    padding-bottom: 50px;
+    font-weight: 500;
+}
+
+
+/* main input wrapper */
+.dataEntry{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* main input tag */
+.dataEntry input{
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+/* main button */
+button{
+    margin: 50px 0;
+    padding: 10px 120px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    background-color: lightcoral;
+    color: white;
+}
+
+/* on smaller screens change items to make responsive */
+@media screen and (max-width: 700px) {
+    .logos img{
+        width: 100%;
+    }
+
+    .dataEntry input{
+        width: 33%;
+    }
+
+    button{
+        padding: 10px 60px;
+    }
+}
