@@ -28,6 +28,15 @@ function App() {
   console.log(staticFill);
   console.log(fruitsAndVeggies);
   console.log(fruitsAndVeggies.includes('fudge'));
+  console.log(numbers.slice(1, 4));
+  console.log(fruitsAndVeggies.push('turnip'));
+  console.log(fruitsAndVeggies);
+  fruitsAndVeggies.pop();
+  console.log(fruitsAndVeggies);
+  fruitsAndVeggies.shift();
+  console.log(fruitsAndVeggies);
+  fruitsAndVeggies.unshift('banana');
+  console.log(fruitsAndVeggies);
 
   return (
     <div className="App">
