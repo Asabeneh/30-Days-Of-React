@@ -1,0 +1,36 @@
+body{
+  padding: 0 ;
+  margin: 0;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.header-wrapper{
+  background-color: aqua;
+  padding-left: 40px;
+}
+
+.main-wrapper{
+  padding-left: 40px;
+}
+
+.main-wrapper h2 {
+  padding-left: 100px;
+}
+
+footer{
+  text-align: center;
+  background-color: aqua;
+  padding: 5px 0;
+}
+
+.imageDiv{
+  display: flex;
+  flex-direction: column;
+}
+
+img{
+  border-radius: 50%;
+  width: 350px;
+  height: 400px;
+  margin-top: 30px;
+}

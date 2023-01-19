@@ -1,0 +1,87 @@
+.hex {
+    text-align: center;
+    padding: 35px;
+    font-size: 24px;
+    color: white;
+}
+
+.colorsContainer{
+    margin-bottom: 40px;
+}
+
+/* set border and background color of app */
+.appBorder {
+    border: 10px solid lightgrey;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+/* set app background white*/
+.app {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-wrapper img {
+    border-radius: 50%;
+    width: 350px;
+    height: 400px;
+    margin-top: 30px;
+}
+
+/* add left padding to all elements */
+.header-wrapper,
+.main-wrapper,
+.footer-wrapper {
+    margin-left: 30px;
+}
+
+/* change size and color of check mark */
+span {
+    margin-left: 5px;
+    position: relative;
+    top: -5px;
+    background-color: rgb(10, 240, 220);
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 4px 7px;
+}
+
+.main-wrapper button {
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(10, 240, 220);
+    padding: 10px 27px;
+    margin: 5px 5px;
+}
+
+.footer-wrapper p {
+    padding: 20px 0;
+    margin: 0;
+}
+
+/* on smaller screens change items to make responsive */
+@media screen and (max-width: 700px) {
+    .header-wrapper {
+        margin-left: 18px;
+    }
+
+    .header-wrapper img {
+        width: 250px;
+        height: 300px;
+    }
+
+    .main-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 25px;
+    }
+}
