@@ -9,7 +9,7 @@ body{
   
 }
 
-.numContainer{
+.numContainer, .numContainer1{
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
@@ -21,6 +21,17 @@ body{
 .numContainer p{  
   color: white;
   font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  width: 210px;
+  height: 210px;
+}
+
+.numContainer1 p {
+  color: white;
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
