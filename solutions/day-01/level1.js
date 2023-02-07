@@ -115,3 +115,18 @@ const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux'];
 const backEnd = ['Node', 'Express', 'MongoDB'];
 const fullStack = frontEnd.concat(backEnd);
 console.log(fullStack);
+
+// Exercises: Level 3
+// 1.
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+console.log('1. ');
+console.log(ages.sort(), `Min: ${ages[0]}, Max: ${ages[ages.length - 1]}`);
+console.log(`Median: ${ages[Math.floor(ages.length / 2)]}`, `Avg: ${ages.reduce((a, b) => a + b, 0) / ages.length}`);
+console.log(`Range: ${ages[ages.length - 1] - ages[0]}`, `Max - Avg: ${Math.abs(ages[ages.length - 1] - ages.reduce((a, b) => a + b, 0) / ages.length)}`, `Min - Avg: ${Math.abs(ages[0] - ages.reduce((a, b) => a + b, 0) / ages.length)}`);
+console.log(countries.slice(0, 10));
+// 2. 
+console.log(`2. Mid Country: ${countries[Math.floor(countries.length / 2)]}`);
+// 3. 
+const firstHalf = countries.slice(0, Math.ceil(countries.length / 2));
+const secondHalf = countries.slice(Math.ceil(countries.length / 2), countries.length);
+console.log('3. ', { firstHalf, secondHalf });
