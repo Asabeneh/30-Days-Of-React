@@ -1,28 +1,7 @@
-// Exercises: Level 1
-const countries = [
-  'Albania',
-  'Bolivia',
-  'Canada',
-  'Denmark',
-  'Ethiopia',
-  'Finland',
-  'Germany',
-  'Hungary',
-  'Ireland',
-  'Japan',
-  'Kenya',
-]
+import { countries } from './countries.js';
+import { webTechs } from './web_techs.js';
 
-const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB',
-]
-// Exercises
+// Exercises: Level 1
 // 1. 
 const arr = [];
 // 2.
@@ -109,3 +88,30 @@ console.log('22. ', removeLastCompany);
 // 23.
 const removeAllCompanies = itCompanies.splice(0, itCompanies.length);
 console.log('23. ', removeAllCompanies);
+
+// Exercises: Level 2
+// 2.
+let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+text = text.replace(/[.,]/g, '');
+const words = text.split(' ');
+console.log(text);
+console.log(words);
+console.log(words.length);
+// 3.
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey'];
+shoppingCart.unshift('Meat');
+shoppingCart.push('Sugar');
+const honeyIndex = shoppingCart.indexOf('Honey');
+shoppingCart.splice(honeyIndex, 1);
+const teaIndex = shoppingCart.indexOf('Tea');
+shoppingCart.splice(teaIndex, 1, 'Green Tea');
+console.log(shoppingCart);
+// 4.
+countries.includes('Ethiopia') ? console.log('4. ETHIOPIA') : countries.push('Ethiopia');
+// 5. 
+webTechs.includes('Sass') ? console.log('5. Sass is a CSS preprocess') : webTechs.push('Sass');
+// 6.
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux'];
+const backEnd = ['Node', 'Express', 'MongoDB'];
+const fullStack = frontEnd.concat(backEnd);
+console.log(fullStack);
