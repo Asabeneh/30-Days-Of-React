@@ -3844,7 +3844,7 @@ class Person {
 }
 ```
 
-We have created an Person class but it does not have any thing inside.
+We have created a Person class but it does not have anything inside.
 
 #### Class Instantiation
 
@@ -3889,7 +3889,7 @@ console.log(person)
 ```
 
 ```sh
-Person {firstName: undefined, lastName}
+Person {firstName: undefined, lastName: undefined}
 ```
 
 All the keys of the object are undefined. When ever we instantiate we should pass the value of the properties. Let us pass value at this time when we instantiate the class.
@@ -3937,7 +3937,7 @@ Person {firstName: "Lidiya", lastName: "Tekle"}
 Person {firstName: "Abraham", lastName: "Yetayeh"}
 ```
 
-Using the class Person we created three persons object. As you can see our class did not many properties let us add more properties to the class.
+Using the class Person we created three persons object. As you can see our class did not have many properties. Let us add more properties to the class.
 
 ```js
 class Person {
@@ -3995,7 +3995,7 @@ Person {firstName: "Lidiya", lastName: "Tekle", age: 28, country: "Finland", ci
 
 #### Class methods
 
-The constructor inside a class is a builtin function which allow us to create a blueprint for the object. In a class we can create class methods. Methods are JavaScript functions inside the class. Let us create some class methods.
+The constructor inside a class is a bulitin function which allows us to create a blueprint for the object. In a class we can create class methods. Methods are JavaScript functions inside the class. Let us create some class methods.
 
 ```js
 class Person {
@@ -4026,7 +4026,7 @@ test.js:19 Lidiya Tekle
 
 #### Properties with initial value
 
-When we create a class for some properties we may have an initial value. For instance if you are playing a game, you starting score will be zero. So, we may have a starting score or score which is zero. In other way, we may have an initial skill and we will acquire some skill after some time.
+When we create a class for some properties we may have an initial value. For instance if you are playing a game, your starting score will be zero. So, we may have a starting score or score which is zero. In other way, we may have an initial skill and we will acquire some skill after some time.
 
 ```js
 class Person {
@@ -4329,7 +4329,7 @@ The static methods are methods which can be used as utility functions.
 
 #### Inheritance
 
-Using inheritance we can access all the properties and the methods of the parent class. This reduces repetition of code. If you remember, we have a Person parent class and we will create children from it. Our children class could be student, teach etc.
+Using inheritance we can access all the properties and the methods of the parent class. This reduces repetition of code. If you remember, we have a Person parent class and we will create children from it. Our children class could be student, teacher etc.
 
 ```js
 // syntax
@@ -4364,7 +4364,7 @@ Asabeneh Yetayeh is Finland. He lives Helsinki, 250.
 
 #### Overriding methods
 
-As you can see, we manage to access all the methods in the Person Class and we used it in the Student child class. We can customize the parent methods, we can add additional properties to a child class. If we want to customize, the methods and if we want to add extra properties, we need to use the constructor function the child class too. In side the constructor function we call the super() function to access all the properties from the parent class. The Person class didn't have gender but now let us give gender property for the child class, Student. If the same method name used in the child class, the parent method will be overridden.
+As you can see, we manage to access all the methods in the Person Class and we used it in the Student child class. We can customize the parent methods, we can add additional properties to a child class. If we want to customize the methods and if we want to add extra properties, we need to use the constructor function in the child class too. Inside the constructor function we call the super() function to access all the properties from the parent class. The Person class didn't have gender but now let us give gender property for the child class, Student. If the same method name was used in the child class, the parent method will be overridden.
 
 ```js
 class Student extends Person {
@@ -4486,9 +4486,9 @@ Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34
 
 ### 13 Document Object Model(DOM)
 
-HTML document is structured as a JavaScript Object. Every HTML element has a different properties which can help us to manipulate it. It is possible to get, create, append or remove HTML elements using JavaScript.
+HTML document is structured as a JavaScript Object. Every HTML element has a different property which can help us to manipulate it. It is possible to get, create, append or remove HTML elements using JavaScript.
 
-When it comes to React we do not directly manipulate the DOM instead React Virtual DOM will take care of update all necessary changes.
+When it comes to React we do not directly manipulate the DOM instead React Virtual DOM will take care of updating all necessary changes.
 
 So do not directly manipulate the DOM if you are using react. The only place we directly touch the DOM is here at the index.html. React is a single page application because all the components will be rendered on the index.html page and there will not be any other HTML in the entire React Application. You don't have to know DOM very well to use react but recommended to know.
 
@@ -4515,7 +4515,7 @@ So do not directly manipulate the DOM if you are using react. The only place we 
 </html>
 ```
 
-Check out there result on [codepen](https://codepen.io/Asabeneh/full/vYGqQxP)
+Check out the result on [codepen](https://codepen.io/Asabeneh/full/vYGqQxP)
 
 🌕 You are amazing! You have just completed day 1 challenge and you are on your way to greatness. Now you are a JavaScript Ninja and ready to dive into React.
 
