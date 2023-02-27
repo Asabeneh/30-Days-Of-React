@@ -50,6 +50,7 @@ const users = {
   }
 }
 
+
 // Find the person who has many skills in the users object.
 const userWithMaxSkills = (users) => Object.entries(users)
   .reduce((res, [username, data]) => {

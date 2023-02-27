@@ -15,6 +15,7 @@ dog.bark = function() {
   return 'woof woof'
 }
 
+
 // 4. Get name, legs, color, age and bark value from the dog object
 let values = Object.values(dog)
 

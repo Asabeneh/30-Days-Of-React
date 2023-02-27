@@ -43,6 +43,7 @@ else if (month == 'december') {
   console.log(`December has ${daysInMonth[11]} day`)
 }
 
+
 /** 
  *  1.2. Write a program which tells the number of days in a month, 
  *        now consider leap year.
