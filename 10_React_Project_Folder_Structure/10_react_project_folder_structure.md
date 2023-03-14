@@ -455,8 +455,8 @@ src
    -Footer.js
   assets
    -images
-   -icnons
-   - fonts
+   -icons
+   -fonts
   styles
    -button.js
    -button.scss
