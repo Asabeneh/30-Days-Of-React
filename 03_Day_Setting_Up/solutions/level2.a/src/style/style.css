@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1.5;
+  font-family: "Montserrat";
+  font-weight: 300;
+  color: white;
+  background-color: #202020;
+}
+
+.root {	
+  min-height: 100%;
+  position: relative;
+}
+
+.main-wrapper {
+  width: 85%;
+  margin: auto;
+}
+
+.main-wrapper {
+  padding: 10px;
+  margin: 2px auto;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 300;
+}
+
+h2,
+h3 {
+  font-weight: 300;
+}
+
+main {
+  padding: 10px;
+  padding-bottom: 60px;
+}
+
+.techs {
+  margin: 64px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.techs h3 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.tech-images-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.tech-images-wrapper img {
+  max-width: 150px;
+}
