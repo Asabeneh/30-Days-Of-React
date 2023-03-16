@@ -119,7 +119,7 @@ const child = new Child(
 )
 ```
 
-We just briefly covered function and class. React component is made of JavaScript functions or classes, so let's make a React component now.
+We just briefly covered function and class. A React component is made of JavaScript functions or classes, so let's make a React component now.
 
 ## Creating React Component
 
@@ -173,7 +173,7 @@ const Header = () => {
   )
 }
 
-// Even th above code can be written like this
+// Even the above code can be written like this
 // Explicitly returning the JSX
 const Header = () => (
   <header style={headerStyles}>
