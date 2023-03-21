@@ -1,4 +1,7 @@
-const countries = [
+
+export function country() 
+{
+  const countries = [
     'Albania',
     'Bolivia',
     'Canada',
@@ -10,4 +13,6 @@ const countries = [
     'Ireland',
     'Japan',
     'Kenya',
-  ]
+]
+  return countries
+}
