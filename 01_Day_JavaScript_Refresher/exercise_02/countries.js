@@ -1,5 +1,4 @@
-
-export function country() 
+function country() 
 {
   const countries = [
     'Albania',

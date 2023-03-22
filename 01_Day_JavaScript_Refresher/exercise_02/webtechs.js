@@ -1,4 +1,4 @@
-export function web_tech()
+function web_tech()
 {
     const webTechs = [
         'HTML',
