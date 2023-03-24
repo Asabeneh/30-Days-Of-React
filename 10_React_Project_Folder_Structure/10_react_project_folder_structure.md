@@ -66,7 +66,7 @@ In the above snippet of code, we have the App component. Let's create the App co
 
 ```js
 // src/App.js
-import React from 'react
+import React from 'react'
 const App = () => <h1>Welcome to 30 Days Of React</h1>
 ```
 
@@ -76,7 +76,7 @@ We just add the keyword export before _let_ or _const_ to make a named export.
 
 ```js
 // src/App.js
-import React from 'react
+import React from 'react'
 
 // named export in arrow function
 export const App = () => <h1>Welcome to 30 Days Of React</h1>
@@ -86,7 +86,7 @@ Exporting in a function declaration, a regular function
 
 ```js
 // src/App.js
-import React from 'react
+import React from 'react'
 // named export in regular function, function declaration
 export function App () {
 return <h1>Welcome to 30 Days Of React</h1>
@@ -109,7 +109,7 @@ We saw a named export and now let's implement it with default export. We can do 
 
 ```js
 // src/App.js
-import React from 'react
+import React from 'react'
 // export default in arrow function
 export default const App = () => <h1>Welcome to 30 Days Of React</h1>
 
@@ -117,7 +117,7 @@ export default const App = () => <h1>Welcome to 30 Days Of React</h1>
 
 ```js
 // src/App.js
-import React from 'react
+import React from 'react'
 // export default in arrow function
 export default function App () {
   return <h1>Welcome to 30 Days Of React</h1>
@@ -127,7 +127,7 @@ export default function App () {
 ```js
 // src/App.js
 // Recommended for most of the cases
-import React from 'react
+import React from 'react'
 const App = () => <h1>Welcome to 30 Days Of React</h1>
 export default App
 ```
