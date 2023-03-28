@@ -130,7 +130,7 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-### getDerivedStateFromPros
+### getDerivedStateFromProps
 
 As we can understand from the name, this method derives a state from props. The getDerivedStateFromProps() method is called right before rendering the component in the DOM. This the right place to set the state object based on the initial props.
 
@@ -427,7 +427,7 @@ class App extends Component {
 
   shouldComponentUpdate(nexProps, nextState) {
     console.log(nextProps, nextState)
-    // if the return is true, the application will never update.
+    // if the return is not true, the application will never update.
     return true
   }
 
