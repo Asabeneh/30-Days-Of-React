@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30 Days Of React Challenge</title>
+  </head>
+
+  <body>
+    <div class="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      // To get the root element from the HTML document
+      const rootElement = document.querySelector('.root')
+
+      // JSX element
+      const header = (
+        <header>
+          <h1>Welcome to 30 Days Of React</h1>
+          <h2>Getting Started React</h2>
+          <h3>JavaScript Library</h3>
+          <p>Asabeneh Yetayeh</p>
+          <small>Oct 2, 2020</small>
+        </header>
+      )
+
+      // we render the JSX element using the ReactDOM package
+      // ReactDOM has the render method and the render method takes two arguments
+      ReactDOM.render(header, rootElement)
+    </script>
+  </body>
+</html>
