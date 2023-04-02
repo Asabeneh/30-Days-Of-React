@@ -24,7 +24,8 @@ In this challenge, we have covered React with and without hooks. All the most im
 You have been learning and coding for the last 30 days and you made it to this day. You are a special person and you deserve recognition. Therefore, you can claim a 30 Days React challenge completion certificate. In addition, celebrate your success with a friend and family. I will see you in another challenge or courses. Thank you for being a proactive community member and part of the challenge. Finally, recommend the material for a family, friend or enemy if you believe that it helped you and of course support the author to create more learning materials.
 
 ## Testimony
-Now it is time to express your thoughts about the Author and 30DaysOfReact. You can leave your testimonial on this [link](https://testimonify.herokuapp.com/)
+Now it is time to express your thoughts about the Author and 30DaysOfReact. You can leave your testimonial on this [link](https://testimonial-vdzd.onrender.com)
+
 
 # Exercises
 
