@@ -3717,7 +3717,7 @@ Let us find the index of the first country in the array which has exactly six ch
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const index = countries.findIndex((country) => country.length === 6)
-console.log(index //2
+console.log(index) //2
 ```
 
 Let us find the index of the first country in the array which has the letter 'o'.
@@ -3725,7 +3725,7 @@ Let us find the index of the first country in the array which has the letter 'o'
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const index = countries.findIndex((country) => country.includes('o'))
-console.log(index // 1
+console.log(index) // 1
 ```
 
 Let us move on to the next functional programming, some.
