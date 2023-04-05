@@ -2124,7 +2124,7 @@ const products = [
   {
     _id: 'hedfcg',
     name: 'TV',
-    description: 'Smart TV:Procaster',
+    description: 'Smart TV: Procaster',
     price: 400,
     ratings: [{ userId: 'fg12cy', rate: 5 }],
     likes: ['fg12cy'],
