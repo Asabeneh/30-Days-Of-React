@@ -68,6 +68,7 @@ To summarize:
 - React latest release is 16.13.1
 - [React versions](https://reactjs.org/versions/)
 - React official documentation can be found [here](https://reactjs.org/docs/getting-started.html)
+- [React Developer Roadmap](https://roadmap.sh/react)
 
 ### 2. Why React?
 
