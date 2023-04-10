@@ -39,7 +39,7 @@ A React component is a small, reusable code, which is responsible for one part o
 Components can be:
 
 - Functional Component / Presentational Component / Stateless Component / Dumb Component
-- Class Component / Container Component/ Statefull Component / Smart Component
+- Class Component / Container Component/ Stateful Component / Smart Component
 
 The classification of components above does not work for the latest version of React, but it is good to know the former definition and how the previous versions work.
 
