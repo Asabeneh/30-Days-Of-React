@@ -555,11 +555,11 @@ class App extends Component {
         <div className='App'>
           <Navbar />
           <Switch>
-            <Route path="*" component={NotFound} />
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
             <Route path='/challenge' component={Challenges} />
             <Route exact path='/' component={Home} />
+            <Route path="*" component={NotFound} />
           </Switch>
         </div>
       </Router>
