@@ -495,7 +495,7 @@ class App extends Component {
             <Route path='/contact' component={Contact} />
             <Route path='/challenge' component={Challenges} />
             <Route path='/' component={Home} />
-            <Route component={NotFound} />
+            <Route path="*" component={NotFound} />
           </Switch>
         </div>
       </Router>
@@ -555,7 +555,7 @@ class App extends Component {
         <div className='App'>
           <Navbar />
           <Switch>
-            <Route component={NotFound} />
+            <Route path="*" component={NotFound} />
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
             <Route path='/challenge' component={Challenges} />
@@ -790,7 +790,7 @@ class App extends Component {
             <Route path='/contact' component={Contact} />
             <Route path='/challenges' component={Challenges} />
             <Route exact path='/' component={Home} />
-            <Route component={NotFound} />
+            <Route path="*" component={NotFound} />
           </Switch>
         </div>
       </Router>
@@ -1091,7 +1091,7 @@ class App extends Component {
               }}
             />
             <Route exact path='/' component={Home} />
-            <Route component={NotFound} />
+            <Route path="*" component={NotFound} />
           </Switch>
         </div>
       </Router>
@@ -1395,7 +1395,7 @@ class App extends Component {
               }}
             />
             <Route exact path='/' component={Home} />
-            <Route component={NotFound} />
+            <Route path="*" component={NotFound} />
           </Switch>
         </div>
       </Router>
@@ -1703,7 +1703,7 @@ class App extends Component {
               }}
             />
             <Route exact path='/' component={Home} />
-            <Route component={NotFound} />
+            <Route path="*" component={NotFound} />
           </Switch>
         </div>
       </Router>
