@@ -602,7 +602,7 @@ const challenges = [
     days: 30,
     level: 'Beginners to Advanced',
     duration: '20 Nov 2019 - 20 Dec 2019',
-    slug: 'pyhton',
+    slug: 'python',
     url:
       'https://github.com/https://https://github.com/Asabeneh/30-Days-Of-Python.com/Asabeneh/30-Days-Of-JavaScript/30-Days-Of-React',
     author: {
