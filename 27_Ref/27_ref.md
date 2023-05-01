@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 25](../25_Custom_Hooks/25_custom_hooks.md) | [Day 27>>]()
+[<< Day 25](../25_Custom_Hooks/25_custom_hooks.md) | [Day 27>>](../27_Ref/27_ref.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_27.jpg)
 
@@ -141,4 +141,4 @@ ReactDOM.render(<App />, rootElement
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 25](../25_Custom_Hooks/25_custom_hooks.md) | [Day 27>>]()
+[<< Day 25](../25_Custom_Hooks/25_custom_hooks.md) | [Day 27>>](../27_Ref/27_ref.md)
