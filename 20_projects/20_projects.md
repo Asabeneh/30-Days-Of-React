@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 19](../19_projects/19_projects.md) | [Day 21>>]()
+[<< Day 19](../19_projects/19_projects.md) | [Day 21>>](../21_Introducing_Hooks/21_introducing_hooks.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_20.jpg)
 
@@ -35,4 +35,4 @@ Your result should look like this [demo](https://www.30daysofreact.com/day-20/ca
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 19](../19_projects/19_projects.md) | [Day 21>>]()
+[<< Day 19](../19_projects/19_projects.md) | [Day 21>>](../21_Introducing_Hooks/21_introducing_hooks.md)
