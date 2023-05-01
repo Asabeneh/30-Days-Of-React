@@ -123,7 +123,7 @@ class App extends Component {
           value={firstName}
           onChange={this.handleChange}
         />
-        <h1>{this.state.firstName}</h1>
+        <h1>{firstName}</h1>
       </div>
     )
   }
