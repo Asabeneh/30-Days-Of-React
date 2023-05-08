@@ -888,14 +888,6 @@ export const countriesData = [
     currency: 'British pound',
   },
   {
-    name: 'Israel',
-    capital: 'Jerusalem',
-    languages: ['Hebrew (modern)', 'Arabic'],
-    population: 8527400,
-    flag: 'https://restcountries.eu/data/isr.svg',
-    currency: 'Israeli new shekel',
-  },
-  {
     name: 'Italy',
     capital: 'Rome',
     languages: ['Italian'],
@@ -1368,12 +1360,12 @@ export const countriesData = [
     currency: '[E]',
   },
   {
-    name: 'Palestine, State of',
-    capital: 'Ramallah',
+    name: 'Palestine',
+    capital: 'Jerusalem',
     languages: ['Arabic'],
     population: 4682467,
     flag: 'https://restcountries.eu/data/pse.svg',
-    currency: 'Israeli new sheqel',
+    currency: 'Sheqel',
   },
   {
     name: 'Panama',
