@@ -19,7 +19,6 @@ const SubTitle = styled.h2`
 
 const Header = styled.header`
   background-color: #61dbfb;
-  padding: 25;
   padding: 10px;
   margin: 0;
 `
