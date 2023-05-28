@@ -174,4 +174,4 @@ Most of the time we use controlled input instead of uncontrolled input. In case 
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 12](../12_Day_Forms/12_forms.md) | [Day 14 >>]()
+[<< Day 12](../12_Day_Forms/12_forms.md) | [Day 14 >>](../14_Day_Component_Life_Cycles/14_component_life_cycles.md)
