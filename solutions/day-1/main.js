@@ -225,14 +225,118 @@ for (const user in users) {
 }
 console.log(`${overFifty} people have fifty or more pts`);
 
-let mern = ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'];
-for (const user in users) {
-  if (users[user].skills.every(mern)) {
-    console.log('MERN dev!');
+function isMERNDev(devName) {
+  const dev = users[devName];
+  if (dev && dev.skills) {
+    const requiredSkills = ['MongoDB', 'Express', 'React', 'Node'];
+    return requiredSkills.every((skill) => dev.skills.includes(skill));
+  }
+  return false;
+}
+console.log(isMERNDev());
+
+function fullName(firstName, lastName) {
+  let fullName = firstName + ' ' + lastName;
+  return fullName;
+}
+console.log(fullName('Colby', 'Faisst'));
+
+function areaOfCircle(r1, r2) {
+  let pi = 3.14;
+  let area = pi * r1 * r2;
+  return area;
+}
+
+const products = [
+  { product: 'banana', price: 3 },
+  { product: 'mango', price: 6 },
+  { product: 'potato', price: ' ' },
+  { product: 'avocado', price: 8 },
+  { product: 'coffee', price: 10 },
+  { product: 'tea', price: '' },
+];
+
+products.forEach((product) => {
+  let price = product.price;
+  let food = product.product;
+  if (typeof price == 'number') {
+    console.log(`the price of ${food} is ${price}`);
   } else {
-    console.log('not a mern dev');
+    console.log(`the price of ${food} is unknown`);
+  }
+});
+
+let totalPrice = 0;
+products.forEach((item) => {
+  let price = item.price;
+  if (typeof price == 'number') {
+    totalPrice = totalPrice + price;
+  }
+});
+console.log(totalPrice);
+
+const priceList = products.map((product) => product.price);
+console.log(priceList);
+
+const hasPrice = products.filter((food) => {
+  return typeof food.price == 'number';
+});
+console.log(hasPrice);
+
+const sumPrice = products
+  .filter((item) => typeof item.price === 'number' && !isNaN(item.price))
+  .map((item) => item.price)
+  .reduce((acc, curr) => acc + curr, 0);
+
+console.log(sumPrice);
+
+class Person {
+  constructor(firstName, lastName, age, country, city) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.country = country;
+    this.city = city;
+    this.score = 0;
+    this.skills = [];
+  }
+  getFullName() {
+    const fullName = this.firstName + ' ' + this.lastName;
+    return fullName;
+  }
+  get getScore() {
+    return this.score;
+  }
+  get getSkills() {
+    return this.skills;
+  }
+  set setScore(score) {
+    this.score += score;
+  }
+  set setSkill(skill) {
+    this.skills.push(skill);
   }
 }
 
-//START HERE
-//https://bobbyhadz.com/blog/javascript-check-if-multiple-values-exist-in-array
+const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki');
+const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo');
+
+person1.setScore = 1;
+person1.setSkill = 'HTML';
+person1.setSkill = 'CSS';
+person1.setSkill = 'JavaScript';
+
+console.log(person1.getScore); // We do not need parenthesis to call a getter method
+console.log(person2.getScore);
+
+console.log(person1.getSkills);
+console.log(person2.getSkills);
+
+class Animal {
+  constructor(name, age, color, legs) {
+    this.name = name;
+    this.age = age;
+    this.color = color;
+    this.legs = legs;
+  }
+}
