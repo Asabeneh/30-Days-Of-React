@@ -340,3 +340,5 @@ class Animal {
     this.legs = legs;
   }
 }
+
+class Dog extends Animal {}
