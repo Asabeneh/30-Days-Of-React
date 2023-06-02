@@ -120,6 +120,30 @@ class Statistics {
         const count = this.count();
         return this.arvuKauguseRuutMeanistSumma()/count;
     }
+
+    public freqDist() {
+        const sortedArray = this._ages.sort();
+        const count = sortedArray.length;
+        var arvudJaEsinemine = [];
+        var hetkeArv = sortedArray[0];
+        var hetkeStreak = 1;
+
+        for (var i = 1; i < count; i++) {
+            if (sortedArray[i] == hetkeArv) {
+                hetkeStreak += 1;
+            } else {
+                arvudJaEsinemine.push([hetkeStreak, hetkeArv]);
+                hetkeStreak = 1;
+                hetkeArv = sortedArray[i];
+            }
+        }
+
+        var newSortedArray = arvudJaEsinemine.sort(function(a, b) {
+            return b[0] - a[0];
+          });
+
+        return newSortedArray;
+    }
 }
 
 const ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
