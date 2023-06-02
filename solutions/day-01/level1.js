@@ -1,22 +1,34 @@
 "use strict";
 class Animal {
     constructor(name, age, color, legs) {
-        this.name = name;
-        this.age = age;
-        this.color = color;
-        this.legs = legs;
+        this._name = name;
+        this._age = age;
+        this._color = color;
+        this._legs = legs;
     }
-    GetName() {
-        return this.name;
+    get name() {
+        return this._name;
     }
-    GetAge() {
-        return this.age;
+    set name(value) {
+        this._name = value;
     }
-    GetColor() {
-        return this.color;
+    get age() {
+        return this._age;
     }
-    GetLegs() {
-        return this.legs;
+    set age(value) {
+        this._age = value;
+    }
+    get color() {
+        return this._color;
+    }
+    set color(value) {
+        this._color = value;
+    }
+    get legs() {
+        return this._legs;
+    }
+    set legs(value) {
+        this._legs = value;
     }
 }
 class Dog extends Animal {
@@ -24,12 +36,12 @@ class Dog extends Animal {
         super(name, age, color, 4);
         this.breed = breed;
     }
-    GetBreed() {
-        return this.breed;
-    }
-    Bark() {
+    bark() {
         console.log("woof");
     }
 }
 const john = new Dog('john', 10, "blue", "rotweiler");
-john.Bark();
+var dog = new Dog('dog', 10, "green", "hi");
+dog.name = 'may';
+console.log(dog.name);
+john.bark();
