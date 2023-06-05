@@ -58,17 +58,21 @@ const Main = ({ numbers }) => (
 )
 
 //Population
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+}
+
 const Country = ({ countries }) => {
   const countryList = countries.map((country) =>
     <tr className='tr'>
       <td className='td-name'>{country.name}</td>
       <td className='td-line'>
-        <div className='div-line' style={{marginRight : `${100 - country.prc}%`, color: 'white'}}>
+        <div className='div-line' style={{ marginRight: `${100 - country.prc}%`, color: 'white' }}>
           {country.name}
         </div>
       </td>
       <td className='td-value'>
-        {new Intl.NumberFormat('ru-RU').format(country.population)}
+        {numberWithCommas(country.population)}
       </td>
     </tr>
   )
@@ -79,7 +83,7 @@ const Country = ({ countries }) => {
 const Population = ({ countries, count }) => (
   <main>
     <h1>{count} most populated countries in the world</h1>
-    <Country countries={countries} />
+    <table className='table'><Country countries={countries} /></table>
   </main>
 )
 
@@ -101,7 +105,7 @@ const App = () => {
       .map((country) => {
         return { name: country.name, population: country.population }
       })
-  
+
     const world = data
       .map((country) => {
         return { name: country.name, population: country.population }
@@ -110,7 +114,7 @@ const App = () => {
         return { name: 'World', population: w.population += c.population, languages: [] }
       }, { name: 'World', population: 0 })
     data.push(world)
-  
+
     // find top <count> countries by population and add field Prc - country population / world population
     const topCountries = data
       .map((country) => {
@@ -121,7 +125,7 @@ const App = () => {
       ))
       .slice(0, count + 1)
       .map(({ name, population }) => ({ name: name, population: population, prc: (population / world.population) * 100 }))
-  
+
     return topCountries
   })
 
