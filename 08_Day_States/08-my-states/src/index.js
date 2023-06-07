@@ -177,7 +177,7 @@ class Flag extends React.Component {
       <main style={this.props.styles}>
         <div className='flag-wrapper'>
           <div className='flag'>
-            <img src={countries[countryId].flag} alt='Country flah' />
+            <img src={countries[countryId].flag} alt='Country flag' />
           </div>
           <div className='country-name'>
             <h3><b>{countries[countryId].name}</b></h3>
