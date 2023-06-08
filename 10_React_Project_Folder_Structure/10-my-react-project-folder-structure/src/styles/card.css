@@ -1,0 +1,62 @@
+
+.card-wrapper {
+    padding: 5%;
+  }
+
+  .avatar-wrapper {
+    display: inline-block;
+    width: 25%;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .name-and-check {
+    display: flex;
+    width: 25%;
+  }
+
+  .position-wrapper {
+    display: flex;
+    width: 25%;
+  }
+
+  .card-footer {
+    height: 50%;
+  }
+
+  .clock-wrapper {
+    display: inline-block;
+    width: 3%;
+    height: auto;
+  }
+
+  .clock {
+    height: 10%;
+  }
+
+  .join {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    height: auto;
+  }
+
+  .skills-wrapper {
+    display: flex;
+    width: 90%;
+  }
+
+  .skill {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgb(41,207, 207);
+    margin: 5px 5px 5px 0;
+  }
