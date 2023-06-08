@@ -1,0 +1,12 @@
+.box-wrapper {
+    width: 90%;
+    height: 200px;
+}
+
+.flying-box {
+    position: relative;
+    width: 10%;
+    height: 50px;
+    background-color: aqua;
+    text-align: center;
+}
