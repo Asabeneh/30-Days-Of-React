@@ -83,37 +83,31 @@ class App extends Component {
           type='text'
           name='Default style'
           placeholder='Default Styled input'
-          style='default'
         />
         <ReactInput
           type='text'
           name='React style'
           placeholder='React Styled input'
-          style='react'
         />
         <InfoInput
           type='text'
           name='Info style'
           placeholder='Info Styled input'
-          style='info'
         />
         <SuccessInput
           type='text'
           name='Success style'
           placeholder='Success Styled input'
-          style='success'
         />
         <WarningInput
           type='text'
           name='Warning style'
           placeholder='Warning Styled input'
-          style='warining'
         />
         <DangerInput
           type='text'
           name='Danger style'
           placeholder='Danger Styled input'
-          style='danger'
         />
       </div>
     )
