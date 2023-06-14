@@ -1,0 +1,33 @@
+.App {
+    background-color: rgb(217, 210, 246);
+    text-align: center;
+
+}
+
+.cat {
+    padding-top: 3px;
+}
+
+.cat_name {
+    font-size: 90%;
+}
+
+.cat_text {
+    font-size: 80%;
+}
+
+.cat-average {
+    margin: 20px 5px 20px 5px ;
+}
+
+.cats-wrapper {
+
+}
+
+.cat-weight-age {
+    display: inline;
+    border-radius: 50%;
+    border-color: white;
+    border-style: dotted;
+    padding: 10px;
+}
