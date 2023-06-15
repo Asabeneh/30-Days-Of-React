@@ -1,0 +1,21 @@
+footer {
+    height: 150px;
+    background: linear-gradient(to right,rgb(137, 85, 233), rgb(77, 116, 230));
+}
+
+.cat-average {
+    margin: 20px 5px 20px 5px ;
+}
+
+.cats-wrapper {
+    padding-top: 10px;
+    height: 100%;
+}
+
+.cat-weight-age {
+    display: inline;
+    border-radius: 50%;
+    border-color: white;
+    border-style: dotted;
+    padding: 10px;
+}

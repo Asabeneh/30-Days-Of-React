@@ -1,0 +1,15 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(97, 219, 251);
+    text-shadow: 1px 1px 2px black;
+}
+
+header {
+    background: linear-gradient(to right,rgb(137, 85, 233), rgb(77, 116, 230));
+}
+
+.App {
+    background: linear-gradient(to right,rgb(137, 85, 233), rgb(77, 116, 230));
+    text-align: center;
+}
+

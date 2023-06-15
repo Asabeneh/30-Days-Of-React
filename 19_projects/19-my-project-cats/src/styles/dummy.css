@@ -1,0 +1,15 @@
+.cat-info {
+    height: 250px;
+}
+
+.cat {
+    padding-top: 3px;
+}
+
+.cat_name {
+    font-size: 90%;
+}
+
+.cat_text {
+    font-size: 80%;
+}

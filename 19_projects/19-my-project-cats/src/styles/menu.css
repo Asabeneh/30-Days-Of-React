@@ -1,0 +1,20 @@
+.menu-wrapper {
+    height: 100px;
+    width: 100%;
+}
+
+.menu-box {
+    display: inline-block;
+    margin-left: 0%;
+    width: 15%;
+    
+}
+
+.menu-point {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-data {
+    background: linear-gradient(to right,rgb(137, 85, 233), rgb(77, 116, 230));
+}
