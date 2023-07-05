@@ -1,5 +1,7 @@
 // Exercise 2 - Level 3
 
+// 1. Write a program which tells the number of days in a month. Then, consider leap year.
+
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
 
