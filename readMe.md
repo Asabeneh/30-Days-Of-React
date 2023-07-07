@@ -103,7 +103,7 @@ If you are good at arrays, loops, functions, objects, functional programming, de
 
 Before you dive into this course, you may check the [review](https://t.me/thirtydaysofreact) of 30 Days Of React.
 
-This challenge is easy to read, written in conversational English, engaging, motivating and at the same time, it is very demanding. You need to allocate much time to finish this challenge. If you are a visual learner, you may get the video lesson on <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw"> Washera</a> YouTube channel. Subscribe the channel, comment and ask questions on YouTube vides and be proactive, the author will eventually notice you. 
+This challenge is easy to read, written in conversational English, engaging, motivating and at the same time, it is very demanding. You need to allocate much time to finish this challenge. If you are a visual learner, you may get the video lesson on <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw"> Washera</a> YouTube channel. Subscribe the channel, comment and ask questions on YouTube videos and be proactive, the author will eventually notice you.
 
 The author likes to hear your opinion about the challenge, share your thoughts about the 30DaysOfJavaScript challenge. You can leave your testimonial on this [link](https://testimonial-vdzd.onrender.com/)
 
@@ -262,7 +262,7 @@ Ctl+Shift+I
 To write our first JavaScript code, we used a built-in function **console.log()**. We passed an argument as input data, and the function displays the output. We passed 'Hello, World' as input data or argument in the console.log() function.
 
 ```js
-console.log('Hello, World!')
+console.log("Hello, World!");
 ```
 
 ##### Console.log with Multiple Arguments
@@ -272,9 +272,9 @@ The **console.log()** function can take multiple parameters separated by comma. 
 ![console log multiple arguments](./images/console_log_multipl_arguments.png)
 
 ```js
-console.log('Hello', 'World', '!')
-console.log('HAPPY', 'NEW', 'YEAR', 2020)
-console.log('Welcome', 'to', 30, 'Days', 'Of', 'JavaScript')
+console.log("Hello", "World", "!");
+console.log("HAPPY", "NEW", "YEAR", 2020);
+console.log("Welcome", "to", 30, "Days", "Of", "JavaScript");
 ```
 
 As you can see from the snippet code above, _console.log()_ can take multiple arguments. It is recommended to use as many console.log() prints to check what is happening in your code but don't keep all console.log() tests on your code forever. Make your life easy by keeping the browser console open.
@@ -299,24 +299,24 @@ This is a multiline comment
 
 ##### Syntax
 
-Programming languages are similar to human languages. English or many other language uses words, phrases, sentences, compound sentences and other more to convey a meaningful message. The English meaning of syntax is _the arrangement of words and phrases to create well-formed sentences in a language_. The technical definition of syntax is _the structure of statements in a computer language._ Programing languages have syntax. JavaScript is a programming language and like other programming languages it has its own syntax. If we do not write a syntax that JavaScript understands, it will raise different types of errors. We will explore different kinds of JavaScript errors later. For now, let us see syntax errors.
+Programming languages are similar to human languages. English or many other language uses words, phrases, sentences, compound sentences and other more to convey a meaningful message. The English meaning of syntax is _the arrangement of words and phrases to create well-formed sentences in a language_. The technical definition of syntax is _the structure of statements in a computer language._ Programming languages have syntax. JavaScript is a programming language and like other programming languages it has its own syntax. If we do not write a syntax that JavaScript understands, it will raise different types of errors. We will explore different kinds of JavaScript errors later. For now, let us see syntax errors.
 
 ![Error](images/raising_syntax_error.png)
 
 I made a deliberate mistake. As a result, the console raises syntax errors. Actually, the syntax is very informative. It informs what type of mistake was made. By reading the error feedback guideline, we can correct the syntax and fix the problem. The process of identifying and removing errors from a program is called debugging. Let us fix the errors:
 
 ```js
-console.log('Hello, World!')
-console.log('Hello, World!')
+console.log("Hello, World!");
+console.log("Hello, World!");
 ```
 
 So far, we saw how to display text using the _console.log()_. If we are printing text or string using _console.log()_, the text has to be inside the single quotes, double quotes, or a backtick quotes.
 **Example:**
 
 ```js
-console.log('Hello, World!')
-console.log('Hello, World!')
-console.log(`Hello, World!`)
+console.log("Hello, World!");
+console.log("Hello, World!");
+console.log(`Hello, World!`);
 ```
 
 #### Arithmetics
@@ -328,12 +328,12 @@ The console can directly take arguments without the **_console.log()_** function
 ![Arithmetic](images/arithmetic.png)
 
 ```js
-console.log(2 + 3) // Addition
-console.log(3 - 2) // Subtraction
-console.log(2 * 3) // Multiplication
-console.log(3 / 2) // Division
-console.log(3 % 2) // Modulus - finding remainder
-console.log(3 ** 2) // Exponentiation 3 ** 2 == 3 * 3
+console.log(2 + 3); // Addition
+console.log(3 - 2); // Subtraction
+console.log(2 * 3); // Multiplication
+console.log(3 / 2); // Division
+console.log(3 % 2); // Modulus - finding remainder
+console.log(3 ** 2); // Exponentiation 3 ** 2 == 3 * 3
 ```
 
 ### Code Editor
