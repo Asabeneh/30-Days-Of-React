@@ -199,15 +199,59 @@ You may not need node.js right now but you may need it for later. Install [node.
 
 ![Node download](images/download_node.png)
 
+For recent node download as at July 12 2023, The interface of the nodejs site is seen below. 
+
+![Node download](images/download_node_recent.png)
+
 After downloading double click and install
 
 ![Install node](images/install_node.png)
+
+To install Node.js from a tar.gz file on Linux using the cli interface, follow these steps:
+
+Extract the contents of the tar.gz file. Open a terminal and navigate to the directory where the tar.gz file is located. Use the following command to extract the contents:
+
+```sh
+tar -xvf node-vXX.XX.X.tar.gz
+```
+
+Replace "XX.XX.X" with the actual version number of the Node.js tar.gz file you downloaded. This will create a new directory with the extracted files.
+
+Move into the extracted directory:
+
+```sh
+cd node-vXX.XX.X
+```
+
+Again, replace "XX.XX.X" with the version number.
+
+Configure the installation. Run the following command to configure the installation:
+
+```sh
+./configure
+```
+
+This step checks for dependencies and prepares the build environment.
+
+Build and install Node.js. Execute the following command to build and install Node.js:
+
+```sh
+make
+sudo make install
+```
+
+This will compile and install Node.js on your system. The `sudo` command is used to run the `make install` command with administrative privileges.
+
 
 We can check if node is installed on our local machine by opening our device terminal or command prompt.
 
 ```sh
 asabeneh $ node -v
 v12.14.0
+
+asabeneh $ npm -v
+v6.13.4
+
 ```
 
 When making this tutorial I was using node version 12.14.0, but now the recommended version of node.js for download is 12.17.0.
@@ -255,6 +299,9 @@ Command+Option+I
 
 Windows:
 Ctl+Shift+I
+
+Linux:
+Ctrl+Shift+J
 ```
 
 ##### Console.log
