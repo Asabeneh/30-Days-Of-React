@@ -166,7 +166,7 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-As you can see the above example, all the routes have slush(/). We usually make the home with just slush(/), then let's use the slush(/) for home.
+As you can see the above example, all the routes have slash(/). We usually make the home with just slash(/), then let's use the slash(/) for home.
 
 ```js
 import React, { Component } from 'react'
@@ -205,7 +205,7 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-Now if you try to navigate by writing / or /about you will see the home page all the time. The home route has (/) which common to other routes. Since the home is lingering let's find a way to avoid this. We can solve in three ways. One with an attribute exact. If we don't like a URL to have a trailing slush(/about/) we can use strict attribute in addition to exact.
+Now if you try to navigate by writing / or /about you will see the home page all the time. The home route has (/) which common to other routes. Since the home is lingering let's find a way to avoid this. We can solve in three ways. One with an attribute exact. If we don't like a URL to have a trailing slash(/about/) we can use strict attribute in addition to exact.
 
 ```js
 import React, { Component } from 'react'
@@ -244,7 +244,7 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-If we don't like a URL to have a trailing slush, for instance(/about/), we can use strict attribute in addition to exact.
+If we don't like a URL to have a trailing slash, for instance(/about/), we can use strict attribute in addition to exact.
 
 ```js
 import React, { Component } from 'react'
