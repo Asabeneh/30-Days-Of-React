@@ -788,8 +788,8 @@ Splice: It takes three parameters:Starting position, number of times to be remov
 
 ```js
 const numbers = [1, 2, 3, 4, 5]
-
-console.log(numbers.splice()) // -> remove all items
+numbers.splice(0, numbers.length) // -> remove all items
+console.log(numbers)
 ```
 
 ```js
