@@ -1,8 +1,29 @@
-import { countries } from "./countries";
-// import { webTechs } from "./web_tech";
+const countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya',
+  ];
+
+const webTechs = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Redux',
+    'Node',
+    'MongoDB',
+  ]
 
 /**
- * EXERCISE: Level 2
+ * EXERCISE: LEVEL 2
  */
 
 // 1. Create a separate countries.js file and store the countries array into this file, 
@@ -32,4 +53,23 @@ console.log(shoppingCart);
 
 // 4. In countries array check if 'Ethiopia' exist in the array if it exists print 'ETHIOPIA'. If it does not exist add
 //    to the countries list
-console.log(countries)
+if (countries.includes("Ethiopia")) {
+    console.log('ETHIOPIA');
+} else {
+    countries.push('Ethiopia');
+}
+
+// 5. In webTechs array check is Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. 
+//    If it does not exist add Sass to the array and print the array
+if (webTechs.includes('Sass')) {
+    console.log('Sass is a CSS preprocess');
+} else {
+    webTechs.push('Sass');
+    console.log(webTechs);
+}
+
+// 6. Concatenate the following two variable and store it in a fullStack variable
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux'];
+const backEnd = ['Node', 'Express', 'MongoDB'];
+const fullStack = frontEnd.concat(backEnd);
+console.log(fullStack);
