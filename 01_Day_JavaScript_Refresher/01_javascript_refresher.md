@@ -1696,9 +1696,9 @@ if (true) {
 console.log(gravity) // 9.81
 
 for (var i = 0; i < 3; i++) {
-  console.log(i) // 1, 2, 3
+  console.log(i) // 0, 1, 2 
 }
-console.log(i)
+console.log(i) //3
 ```
 
 In ES6 and above there is _let_ and _const_, so you will not suffer from the sneakiness of _var_. When we use _let_ our variable is block scoped and it will not infect other parts of our code.
