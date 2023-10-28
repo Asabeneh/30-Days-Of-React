@@ -3075,7 +3075,8 @@ const rectangle = {
   height: 10,
 }
 
-let { width, height, perimeter } = rectangleconsole.log(
+let { width, height, perimeter } = rectangle
+console.log(
   width,
   height,
   perimeter
