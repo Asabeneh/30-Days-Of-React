@@ -11,7 +11,7 @@ const hexaColor = () => {
 const RandomDiv = () => {
     return (
     <div
-    style={{backgroundColor: hexaColor(), display: 'flex' , alignItems: 'center',  justifyContent: 'center', borderRadius: "0.25vw", height: "10vh" , width: "50%", margin: '5px auto'}}
+    style={{backgroundColor: hexaColor(), display: 'flex' , alignItems: 'center',  justifyContent: 'center', borderRadius: "1vw", height: "10vh" , width: "50%", margin: '0.5vh auto'}}
     >{hexaColor()}</div>)
 }
 
