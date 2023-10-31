@@ -4,7 +4,7 @@ import RandomDiv from './RandomColorDiv'
 export default function Home() {
   return (
     <main>
-      <div>
+      <div style={{display:'flex', flexDirection:'column', justifyContent: 'center', height: "100vh"}}>
       <RandomDiv/>
       <RandomDiv/>
       <RandomDiv/>
