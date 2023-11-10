@@ -734,7 +734,7 @@ ReactDOM.render(app, rootElement)
 
 ![All JSX together final](../images/all_jsx_final.png)
 
-The boilerplate code can be found [here](../03_Day_Setting_Up/03_setting_up_boilerplate)
+The boilerplate code can be found [here](../03_setting_up_boilerplate)
 
 # Exercises
 
