@@ -1,0 +1,41 @@
+1 .what is React?
+--------------
+1. what is React?
+
+--React is a JavaScript library for building a reusable user interface(UI). It was initially released on May 29, 2013.
+React makes creating UI components very easy
+
+2. what is library?
+
+--- library is a collection of pre-written code and resources that provide specific functionality and can be reused in different projects. A library typically consists of a set of functions, classes, or modules that encapsulate specific tasks or features, making it easier for developers to incorporate that functionality into their own applications without having to write everything from scratch.
+
+3.what is component?
+
+---In React, a component is a reusable and self-contained building block for building user interfaces. Components are the fundamental units of a React application, and they can be thought of as custom HTML elements that encapsulate their own functionality, state, and rendering logic.
+
+4. what is a singlepage application? 
+
+---A Single-Page Application (SPA) is a web application that loads and operates within a single HTML page. Instead of navigating to different pages by requesting new HTML documents from the server, a single-page application dynamically updates the existing page by manipulating the Document Object Model (DOM) in response to user interactions.
+
+5.what is the latest version of React?
+---- 17.02 
+
+6.What is DOM?
+
+DOM stands for Document Object Model. It is a programming interface for web documents, representing the structure and content of an HTML or XML document as a tree-like structure. The DOM represents the web page in a way that allows programming languages, like JavaScript, to interact with and manipulate the content, structure, and style of the document.
+
+7.What is React Virtual DOM?
+
+React Virtual DOM (Virtual Document Object Model) is a concept and technique used by React to optimize the rendering performance of web applications. It is a lightweight and efficient representation of the actual DOM that React uses to track and manage changes to the user interface.
+
+8.What does a web application or a website(composed of) have?
+
+A web application or website is composed of various components,that work together to deliver the desired functionality and user experience. Here are some key components commonly found in a web application or website:
+
+User Interface (UI): The user interface encompasses the visual and interactive elements of the application or website that users interact with. It includes components such as menus, buttons, forms, images, and other visual elements that facilitate user interaction.
+
+HTML/CSS: HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are the foundational technologies used to structure and style web pages. HTML defines the structure and content of the page, while CSS is used to define the visual presentation and layout of the elements.
+
+JavaScript: JavaScript is a powerful scripting language that runs in the browser and enables dynamic interactivity and functionality on web pages. It is commonly used to handle user interactions, perform client-side validation, manipulate the DOM, make asynchronous requests to servers (AJAX), and implement various features and behaviors.
+
+Backend: The backend of a web application consists of server-side technologies and infrastructure responsible for processing requests, handling business logic, and interacting with
