@@ -1595,11 +1595,11 @@ for (let i = 0; i <= 5; i++) {
 #### Conclusions
 
 - Regular for loop can be used anywhere when the number of iteration is known.
-- While loop when the number of iteration is not know
-- Do while loop and while loop are almost the same but do while loop run at least once even when the condition is false
-- for of is used only for array
-- forEach is used for array
-- for in is used for object
+- While loop when the number of iteration is not known.
+- Do while loop and while loop are almost the same but do while loops run at least once even when the condition is false.
+- for of is used only for array items.
+- forEach is used for array items and index.
+- for in is used for keys in an object.
 
 ### 6. Scope
 
