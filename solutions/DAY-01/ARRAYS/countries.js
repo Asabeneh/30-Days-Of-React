@@ -12,4 +12,5 @@ const countries = [
     'Kenya',
   ]
   
+ module.exports = countries
  

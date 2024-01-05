@@ -7,3 +7,5 @@ const webTechs = [
     'Node',
     'MongoDB',
   ]
+
+  module.exports = webTechs
