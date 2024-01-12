@@ -56,7 +56,7 @@ const getUserInfo = (firstName, lastName, country) => {
   return `${firstName} ${lastName}. Lives in ${country}.`
 }
 
-// calling a functons
+// calling a function
 
 getUserInfo('Asabeneh', 'Yeteyeh', 'Finland')
 
