@@ -155,6 +155,32 @@ function rateProduct(userID, productID, rating) {
     console.log("There is no such product");
 }
 
-function averageRating() {
-    
+function averageRating(productID) {
+    products.forEach(product => {
+        if (product._id == productID) {
+            return product.ratings.average();
+        }
+    })
+}
+
+product.ratings.average = function() {
+    sum = 0;
+    this.forEach(rating => {
+        sum += rating;
+    });
+    sum = sum / this.length;
+    return sum;
+}
+
+function likeProduct(userID, productID) {
+    products.forEach(product => { // i realise this is not the most efficient way to find the product with the correect ID
+        if (product._id == productID) {
+            if (product.likes.find(userID) == -1) {
+                product.likes.push(userID);    
+            } else {
+                product.likes.splice(product.likes.find(userID),1);
+            }
+            
+        }
+    })
 }
