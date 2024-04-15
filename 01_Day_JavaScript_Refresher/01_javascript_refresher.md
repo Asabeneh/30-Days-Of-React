@@ -3128,7 +3128,6 @@ const props = {
 skills:['JS', 'React', 'Redux', 'Node', 'Python']
 
 }
-}
 
 const {user, post, skills} = props
 const {firstName, lastName, age} = user
