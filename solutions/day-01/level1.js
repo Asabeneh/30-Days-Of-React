@@ -1,4 +1,5 @@
 // Exercise: Level 1
+console.log("Exercise: Level 1");
 
 const countries = [
   "Albania",
@@ -83,9 +84,33 @@ console.log(
 );
 
 // Filter out companies which have more than one 'o' without the filter method
-let filteredCompanies = itCompanies.reduce((company) => {
-  return company.split("o").length - 1 > 0 ? [] : [...company];
-});
+const companies = [
+  "Google",
+  "Microsoft",
+  "Facebook",
+  "Amazon",
+  "Oracle",
+  "Sony",
+];
+const filteredCompanies = [];
+
+for (let company of companies) {
+  let oCount = 0;
+
+  // Efficiently count 'o' and break early if more than 1
+  for (let char of company) {
+    if (char.toLowerCase() === "o") {
+      oCount++;
+      if (oCount > 1) break; // Stop checking further if more than 1 'o' is found
+    }
+  }
+
+  if (oCount <= 1) {
+    filteredCompanies.push(company);
+  }
+}
+
+console.log(filteredCompanies);
 
 // Sort the array using sort() method
 itCompanies.sort((a, b) => a.localeCompare(b));
