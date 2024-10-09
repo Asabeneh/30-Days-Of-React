@@ -5,6 +5,10 @@
 <div align="center">
 
   <h1> 30 Days Of React</h1>
+
+  <strong>Learn with Asabeneh by joining the upcoming [<em>CODING BOOTCAMP</em>](https://docs.google.com/forms/d/e/1FAIpQLSf0oNIYR9XU1DCctfl-pY36KbWse-SQX5aQaUgetqSinFYnmQ/viewform) </strong>
+
+
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -105,7 +109,9 @@ Before you dive into this course, you may check the [review](https://t.me/thirty
 
 This challenge is easy to read, written in conversational English, engaging, motivating and at the same time, it is very demanding. You need to allocate much time to finish this challenge. If you are a visual learner, you may get the video lesson on <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw"> Washera</a> YouTube channel. Subscribe the channel, comment and ask questions on YouTube vides and be proactive, the author will eventually notice you. 
 
-The author likes to hear your opinion about the challenge, share your thoughts about the 30DaysOfJavaScript challenge. You can leave your testimonial on this [link](https://testimonial-vdzd.onrender.com/)
+The author likes to hear your opinion about the challenge, share your thoughts about the 30DaysOfJavaScript challenge. You can leave your testimonial on this [link](https://testimonial-s3sw.onrender.com/)
+
+<strong>Learn with Asabeneh by joining the upcoming [<em>CODING BOOTCAMP</em>](https://docs.google.com/forms/d/e/1FAIpQLSf0oNIYR9XU1DCctfl-pY36KbWse-SQX5aQaUgetqSinFYnmQ/viewform) </strong>
 
 ## Requirements
 
