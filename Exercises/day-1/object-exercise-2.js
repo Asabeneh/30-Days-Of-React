@@ -50,43 +50,43 @@ const users = {
   }
 }
 // Find the person who has many skills in the users object.
-//  let maxskill =0
-//  let mostskilledperson=null
-//  for (const user in users){
-//     const skillcount = users[user].skills.length
-//     if (skillcount > maxskill){
-//         maxskill = skillcount
-//         mostskilledperson = user 
-//     }
-//  }
-//  console.log(`The person with the most skills is ${mostskilledperson} with ${maxskill} skills.`)
+ let maxskill =0
+ let mostskilledperson=null
+ for (const user in users){
+    const skillcount = users[user].skills.length
+    if (skillcount > maxskill){
+        maxskill = skillcount
+        mostskilledperson = user 
+    }
+ }
+ console.log(`The person with the most skills is ${mostskilledperson} with ${maxskill} skills.`)
 
 // Count logged in users,count users having greater than equal to 50 points from the following object.
-// let looged = 0 
-// let person = 0
-// for (const user in users ){
-//   if (users[user].points >= 50 ){
-//     person++
+let looged = 0 
+let person = 0
+for (const user in users ){
+  if (users[user].points >= 50 ){
+    person++
     
-//   }
-//   if (users[user].isLoggedIn){
-//     looged++
-//   }
-// }
+  }
+  if (users[user].isLoggedIn){
+    looged++
+  }
+}
 
-// console.log(`Number of logged in users are ${looged}.  ${person} users are greater than 50`)
+console.log(`Number of logged in users are ${looged}.  ${person} users are greater than 50`)
 
 // Find people who are MERN stack developer from the users object
-// const mern = ["MongoDB", "Express", "React", "Node"];
-// let dev = 0;
+const mern = ["MongoDB", "Express", "React", "Node"];
+let dev = 0;
 
-// for (const user in users) {
-//   if (mern.every(skill => users[user].skills.includes(skill))) {
-//     dev++;
-//   }
-// }
+for (const user in users) {
+  if (mern.every(skill => users[user].skills.includes(skill))) {
+    dev++;
+  }
+}
 
-// console.log(`Number of MERN stack developers are ${dev}.`);
+console.log(`Number of MERN stack developers are ${dev}.`);
 
 // Set your name in the users object without modifying the original users object
 const copyperson = Object.assign({}, users)
@@ -98,18 +98,15 @@ copyperson.Fitsum = {
 };
 
 // console.log(copyperson.Fitsum);
-
-// const key = Object.keys(copyperson)
-// console.log(`Key ${key}`)
+const key = Object.keys(copyperson)
+console.log(`Key ${key}`)
 
 
 // Get all the values of users object
-
-// const val = Object.values(copyperson)
-// console.log(`Value ${val}`)
+const val = Object.values(copyperson)
+console.log(`Value ${val}`)
 
 // Use the countries object to print a country name, capital, populations and languages.
-
 const country = {
   name: "Japan",
   capital: "Tokyo",
