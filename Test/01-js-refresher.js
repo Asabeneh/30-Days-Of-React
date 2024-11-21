@@ -36,10 +36,15 @@ const mixedDataTypes = [1, 'two', true, { name: 'John' }, [1, 2, 3, 4, 5]]
 // Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
 const itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
 // Print the array using console.log()
+console.log(itCompanies)
 // Print the number of companies in the array
+console.log(itCompanies.length)
 // Print the first company, middle and last company
+console.log(itCompanies[0], itCompanies[Math.floor(itCompanies.length / 2)], itCompanies[itCompanies.length - 1])
 // Print out each company
+itCompanies.forEach(company => console.log(company))
 // Change each company name to uppercase one by one and print them out
+itCompanies.forEach(company => console.log(company.toUpperCase()))
 // Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
 // Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
 // Filter out companies which have more than one 'o' without the filter method
