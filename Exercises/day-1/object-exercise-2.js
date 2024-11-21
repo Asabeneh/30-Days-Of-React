@@ -89,6 +89,14 @@ for (const user in users) {
 console.log(`Number of MERN stack developers are ${dev}.`);
 
 // Set your name in the users object without modifying the original users object
+const copyperson = Object.assign({}, users)
+copyperson.Fitsum = {
+  name: "Fitsum",
+  skills: ["HTML", "CSS", "JavaScript", "React"],
+  points: 95,
+  isLoggedIn: true,
+};
+console.log(copyperson.Fitsum);
 
 // Get all keys or properties of users object
 
