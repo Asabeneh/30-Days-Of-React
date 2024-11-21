@@ -77,16 +77,16 @@ const users = {
 // console.log(`Number of logged in users are ${looged}.  ${person} users are greater than 50`)
 
 // Find people who are MERN stack developer from the users object
-const mern = ["MongoDB", "Express", "React", "Node"];
-let dev = 0;
+// const mern = ["MongoDB", "Express", "React", "Node"];
+// let dev = 0;
 
-for (const user in users) {
-  if (mern.every(skill => users[user].skills.includes(skill))) {
-    dev++;
-  }
-}
+// for (const user in users) {
+//   if (mern.every(skill => users[user].skills.includes(skill))) {
+//     dev++;
+//   }
+// }
 
-console.log(`Number of MERN stack developers are ${dev}.`);
+// console.log(`Number of MERN stack developers are ${dev}.`);
 
 // Set your name in the users object without modifying the original users object
 const copyperson = Object.assign({}, users)
@@ -96,9 +96,12 @@ copyperson.Fitsum = {
   points: 95,
   isLoggedIn: true,
 };
-console.log(copyperson.Fitsum);
 
-// Get all keys or properties of users object
+// console.log(copyperson.Fitsum);
+
+const key = Object.keys(copyperson)
+console.log(`Key ${key}`)
+
 
 // Get all the values of users object
 
