@@ -105,4 +105,7 @@ console.log(`Key ${key}`)
 
 // Get all the values of users object
 
+const val = Object.values(copyperson)
+console.log(`Value ${val}`)
+
 // Use the countries object to print a country name, capital, populations and languages.
