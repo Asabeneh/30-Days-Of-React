@@ -99,13 +99,28 @@ copyperson.Fitsum = {
 
 // console.log(copyperson.Fitsum);
 
-const key = Object.keys(copyperson)
-console.log(`Key ${key}`)
+// const key = Object.keys(copyperson)
+// console.log(`Key ${key}`)
 
 
 // Get all the values of users object
 
-const val = Object.values(copyperson)
-console.log(`Value ${val}`)
+// const val = Object.values(copyperson)
+// console.log(`Value ${val}`)
 
 // Use the countries object to print a country name, capital, populations and languages.
+
+const country = {
+  name: "Japan",
+  capital: "Tokyo",
+  population: 126476461,
+  languages: ["Japanese"],
+}
+const getinfo = function (copyperson ) {
+  console.log(`Country Name: ${copyperson.name}`)
+  console.log(`Capital: ${copyperson.capital}`)
+  console.log(`Population: ${copyperson.population}`)
+  console.log(`Languages: ${copyperson.languages.join(", ")}`)
+}
+
+getinfo(country)
