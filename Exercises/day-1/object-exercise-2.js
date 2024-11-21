@@ -62,6 +62,19 @@ const users = {
  console.log(`The person with the most skills is ${mostskilledperson} with ${maxskill} skills.`)
 
 // Count logged in users,count users having greater than equal to 50 points from the following object.
+let looged = 0 
+let person = 0
+for (const user in users ){
+  if (users[user].points >= 50 ){
+    person++
+    
+  }
+  if (users[user].isLoggedIn){
+    looged++
+  }
+}
+
+console.log(`Number of logged in users are ${looged}.  ${person} users are greater than 50`)
 
 // Find people who are MERN stack developer from the users object
 
