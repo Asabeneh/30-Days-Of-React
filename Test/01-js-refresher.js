@@ -74,3 +74,4 @@ console.log(itCompanies.splice(3, 1))
 // Remove the last IT company from the array
 console.log(itCompanies.pop())
 // Remove all IT companies
+console.log(itCompanies.splice(0))
