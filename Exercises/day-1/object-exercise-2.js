@@ -50,33 +50,43 @@ const users = {
   }
 }
 // Find the person who has many skills in the users object.
- let maxskill =0
- let mostskilledperson=null
- for (const user in users){
-    const skillcount = users[user].skills.length
-    if (skillcount > maxskill){
-        maxskill = skillcount
-        mostskilledperson = user 
-    }
- }
- console.log(`The person with the most skills is ${mostskilledperson} with ${maxskill} skills.`)
+//  let maxskill =0
+//  let mostskilledperson=null
+//  for (const user in users){
+//     const skillcount = users[user].skills.length
+//     if (skillcount > maxskill){
+//         maxskill = skillcount
+//         mostskilledperson = user 
+//     }
+//  }
+//  console.log(`The person with the most skills is ${mostskilledperson} with ${maxskill} skills.`)
 
 // Count logged in users,count users having greater than equal to 50 points from the following object.
-let looged = 0 
-let person = 0
-for (const user in users ){
-  if (users[user].points >= 50 ){
-    person++
+// let looged = 0 
+// let person = 0
+// for (const user in users ){
+//   if (users[user].points >= 50 ){
+//     person++
     
-  }
-  if (users[user].isLoggedIn){
-    looged++
+//   }
+//   if (users[user].isLoggedIn){
+//     looged++
+//   }
+// }
+
+// console.log(`Number of logged in users are ${looged}.  ${person} users are greater than 50`)
+
+// Find people who are MERN stack developer from the users object
+const mern = ["MongoDB", "Express", "React", "Node"];
+let dev = 0;
+
+for (const user in users) {
+  if (mern.every(skill => users[user].skills.includes(skill))) {
+    dev++;
   }
 }
 
-console.log(`Number of logged in users are ${looged}.  ${person} users are greater than 50`)
-
-// Find people who are MERN stack developer from the users object
+console.log(`Number of MERN stack developers are ${dev}.`);
 
 // Set your name in the users object without modifying the original users object
 
