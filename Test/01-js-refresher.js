@@ -55,9 +55,14 @@ if (itCompanies.includes(company)) {
   console.log(company +'is not found in the array.')
 }
 // Filter out companies which have more than one 'o' without the filter method
+const filteredCompanies = itCompanies.filter(company => company.toLowerCase().indexOf('o') === -1)
+console.log(filteredCompanies)
 // Sort the array using sort() method
+console.log(itCompanies.sort())
 // Reverse the array using reverse() method
+console.log(itCompanies.reverse())
 // Slice out the first 3 companies from the array
+console.log(itCompanies.slice(0, 3))
 // Slice out the last 3 companies from the array
 // Slice out the middle IT company or companies from the array
 // Remove the first IT company from the array
