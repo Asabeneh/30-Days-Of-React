@@ -103,7 +103,7 @@ const products = [
 // Imagine you are getting the above users collection from a MongoDB database.
     // a. Create a function called signUp which allows user to add to the collection. If user exists, inform the user that he has already an account.
     const newuser = {
-        _id: 'abc123',
+        _id: 'eedfcf',
         username: 'John Doe',
         email: 'johndoe@johndoe.com',
         password: '123456',
@@ -111,18 +111,31 @@ const products = [
         isLoggedIn: false,
       };
     const signUp = (newuser) => {
-        const userexist = users.find((user) => user._id === newuser._id)
-        if (userexist) {
-            console.log('User already exists!')
-            return;
-        }
-        else{
-            users.push(newuser)
-            console.log('User added successfully!')
+        // const userExists = users.some((user) => user._id === newuser._id);
+        // if (userExists) {
+        //     console.log('User already exists!')
+        //     return;
+        // }
+        // else{
+        //     users.push(newuser)
+        //     console.log('User added successfully!')
+        // }
+
+        for (const user of users ){
+            if(user._id === newuser._id){
+                console.log('User already exists!')
+                return;
+            }
+            else{
+                users.push(newuser)
+                console.log('User added successfully!')
+                break;
+            }
         }
     }
     signUp(newuser);
-        
+ 
+
         // b. Create a function called signIn which allows user to sign in to the application
 
 // The products array has three elements and each of them has six properties.
