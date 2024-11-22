@@ -1,30 +1,30 @@
 // Exercises: Level 3
 
 // Create an object literal called personAccount. It has firstName, lastName, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is a set of incomes and its description.
-// const personAccount = {
-//     firstName: 'fitsum',
-//     lastName: 'helina'
-//     incomes: [
-//       { description: 'Salary', amount: 50000 },
-//       { description: 'Bonus', amount: 10000 },
-//     ],
-//     expenses: [
-//       { description: 'Rent', amount: 10000 },
-//       { description: 'Groceries', amount: 5000 },
-//     ],
-//     totalIncome() {
-//       return this.incomes.reduce((total, income) => total + income.amount, 0);
-//     },
-//     totalExpense() {
-//       return this.expenses.reduce((total, expense) => total + expense.amount, 0);
-//     },
-//     accountInfo() {
-//       return `Account Information: ${this.firstName} ${this.lastName}`;
-//     },
-//     addIncome(description, amount) {
-//       this.incomes.push({ description, amount });
-//     },
-// }
+const personAccount = {
+    firstName: 'fitsum',
+    lastName: 'helina',
+    incomes: [
+      { description: 'Salary', amount: 50000 },
+      { description: 'Bonus', amount: 10000 },
+    ],
+    expenses: [
+      { description: 'Rent', amount: 10000 },
+      { description: 'Groceries', amount: 5000 },
+    ],
+    totalIncome() {
+      return this.incomes.reduce((total, income) => total + income.amount, 0);
+    },
+    totalExpense() {
+      return this.expenses.reduce((total, expense) => total + expense.amount, 0);
+    },
+    accountInfo() {
+      return `Account Information: ${this.firstName} ${this.lastName}`;
+    },
+    addIncome(description, amount) {
+      this.incomes.push({ description, amount });
+    },
+}
 
 // **** Questions:2, 3 and 4 are based on the following two arrays:users and products ()
 
@@ -111,33 +111,32 @@ const newuser = {
   isLoggedIn: null,
 };
 
-//     const signUp = (newuser) => {
-
+    const signUp = (newuser) => {
 // //solution1
-//         const userExists = users.some((user) => user._id === newuser._id);
-//         if (userExists) {
-//             console.log('User already exists!')
-//             return;
-//         }
-//         else{
-//             users.push(newuser)
-//             console.log('User added successfully!')
-//         }
+        const userExists = users.find((user) => user._id === newuser._id);
+        if (userExists) {
+            console.log('User already exists!')
+            return;
+        }
+        else{
+            users.push(newuser)
+            console.log('User added successfully!')
+        }
 
-// // solution 2
-//         for (const user of users ){
-//             if(user._id === newuser._id){
-//                 console.log('User already exists!')
-//                 return;
-//             }
-//             else{
-//                 users.push(newuser)
-//                 console.log('User added successfully!')
-//                 break;
-//             }
-//         }
-//     }
-//     signUp(newuser);
+// solution 2
+        for (const user of users ){
+            if(user._id === newuser._id){
+                console.log('User already exists!')
+                return;
+            }
+            else{
+                users.push(newuser)
+                console.log('User added successfully!')
+                break;
+            }
+        }
+    }
+    signUp(newuser);
 
 // b. Create a function called signIn which allows user to sign in to the application
 const signIn = (newuser) => {
@@ -197,5 +196,36 @@ const rateproduct = (productId, userid, rate) => {
   }
 };
 // b. Create a function called averageRating which calculate the average rating of a product
+const averageRating = (productid , products ) => {
+    const product = products.find ((item) => productid === item._id);
+    if (product) {
+        if (product.ratings.length === 0){
+            console.log(`No ratings yet for ${product.name}`)
+            return;
+        }
+        const sum = product.ratings.reduce((sum,rating) => sum + rating.rate ,0)
+        const average = sum / product.ratings.length
+        console.log(`average rating for ${product.name} is ${average} and it had ${product.ratings.length} rates `)
+    }
+    else {
+        console.log("product not found");
+    }
+}
 
 // Create a function called likeProduct. This function will helps to like to the product if it is not liked and remove like if it was liked.
+
+const likeProduct = (productId, userId, products) => {
+    const product = products.find((item) => productId === item._id);
+    if (product) {
+        const exixst = product.likes.find((like) => userId === like);
+        if (exixst) {
+            product.likes = product.likes.filter((like) => like !== userId);
+            console.log(`${userId} has removed like from ${product.name}`);
+        } else {
+            product.likes.push(userId);
+            console.log(`${userId} has liked ${product.name}`);
+        }
+    } else {
+        console.log("product not found");
+    }
+}
