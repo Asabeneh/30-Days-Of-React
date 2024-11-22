@@ -3,7 +3,7 @@
 // Create an object literal called personAccount. It has firstName, lastName, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is a set of incomes and its description.
 // const personAccount = {
 //     firstName: 'fitsum',
-//     lastName: 'helina',
+//     lastName: 'helina'
 //     incomes: [
 //       { description: 'Salary', amount: 50000 },
 //       { description: 'Bonus', amount: 10000 },
@@ -155,6 +155,7 @@ const products = [
         }
 
 // The products array has three elements and each of them has six properties.
+            
     // a. Create a function called rateProduct which rates the product
     // b. Create a function called averageRating which calculate the average rating of a product
 
