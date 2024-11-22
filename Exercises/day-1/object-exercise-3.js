@@ -155,8 +155,52 @@ const products = [
         }
 
 // The products array has three elements and each of them has six properties.
-            
+      const product =[
+          {
+            _id: 'eedfcf',
+            name: 'Mobile phone',
+            description: 'Huawei Honor',
+            price: 200,
+            ratings: [
+              { userId: 'fg12cy', rate: 5 },
+              { userId: 'zwf8md', rate: 4.5 },
+            ],
+            likes: [],
+          },
+          {
+            _id: 'aegfal',
+            name: 'Laptop',
+            description: 'MacPro: System Darwin',
+            price: 2500,
+            ratings: [],
+            likes: ['fg12cy'],
+          },
+          {
+            _id: 'hedfcg',
+            name: 'TV',
+            description: 'Smart TV: Procaster',
+            price: 400,
+            ratings: [{ userId: 'fg12cy', rate: 5 }],
+            likes: ['fg12cy'],
+          },
+        ]
+
     // a. Create a function called rateProduct which rates the product
+    const rateproduct = (productId , userid , rate ) => {
+        const product = product.find (item=>productId===item._id)
+        if (product){
+            const exixst = product.ratings.find(rating => userid===rating.userId)
+            if(exixst){
+                console.log("user already rated this product")
+            }
+            else{
+                product.rating.push({userid ,rate})
+            }
+        }
+        else{
+            console.log("product not found")
+        }
+    }
     // b. Create a function called averageRating which calculate the average rating of a product
 
 // Create a function called likeProduct. This function will helps to like to the product if it is not liked and remove like if it was liked.
