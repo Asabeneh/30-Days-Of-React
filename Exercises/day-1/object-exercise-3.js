@@ -108,35 +108,51 @@ const products = [
         email: 'johndoe@johndoe.com',
         password: '123456',
         createdAt: '08/01/2020 10:15 AM',
-        isLoggedIn: false,
+        isLoggedIn: null,
       };
-    const signUp = (newuser) => {
-        // const userExists = users.some((user) => user._id === newuser._id);
-        // if (userExists) {
-        //     console.log('User already exists!')
-        //     return;
-        // }
-        // else{
-        //     users.push(newuser)
-        //     console.log('User added successfully!')
-        // }
 
-        for (const user of users ){
-            if(user._id === newuser._id){
-                console.log('User already exists!')
-                return;
-            }
-            else{
-                users.push(newuser)
-                console.log('User added successfully!')
-                break;
-            }
-        }
-    }
-    signUp(newuser);
+//     const signUp = (newuser) => {
+
+// //solution1
+//         const userExists = users.some((user) => user._id === newuser._id);
+//         if (userExists) {
+//             console.log('User already exists!')
+//             return;
+//         }
+//         else{
+//             users.push(newuser)
+//             console.log('User added successfully!')
+//         }
+
+// // solution 2
+//         for (const user of users ){
+//             if(user._id === newuser._id){
+//                 console.log('User already exists!')
+//                 return;
+//             }
+//             else{
+//                 users.push(newuser)
+//                 console.log('User added successfully!')
+//                 break;
+//             }
+//         }
+//     }
+//     signUp(newuser);
  
 
         // b. Create a function called signIn which allows user to sign in to the application
+        const signIn  = (newuser) => {
+            const exists = users.find(user => user._id === newuser._id);
+            if (exists){
+                exists.isLoggedIn = true;
+                console.log ("user signIn success")
+            }
+            else{
+                exists.isLoggedIn = false;
+                console.log ("account does not exist")
+            }
+            
+        }
 
 // The products array has three elements and each of them has six properties.
     // a. Create a function called rateProduct which rates the product
