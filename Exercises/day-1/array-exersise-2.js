@@ -1,10 +1,12 @@
 // Exercise: Level 2
 // Create a separate countries.js file and store the countries array into this file, create a separate file web_techs.js and store the webTechs array into this file. Access both file in main.js file
 
+
 // First remove all the punctuations and change the string to array and count the number of words in the array
 
 let text ='I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
-const word = text.replace(/[,.]/ ,'')
+const word = text.replace(/[,.]/gi ,'').split(' ')
+console.log(word)
 // In the following shopping cart add, remove, edit items
 
 const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
