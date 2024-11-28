@@ -1,13 +1,7 @@
-arr=[1,2,3,4,5]
-
-
-const squre = () => {
-  const result =[]
-  arr.forEach(element => {
-   result.push( element*2 )
-    
-  });
-  return result
+const rectangle = {
+  width: 20,
+  height: 10,
 }
 
-console.log(squre())
+let { width, height, perimeter = 200 } = rectangle
+console.log(width, height, perimeter) 
