@@ -64,12 +64,12 @@ const price =products.map((product) => product.price)
 // const product = products.indexOf ((product) => product.price === undefined)
 
 // Check if some products do not have a price value
-const items = products.some((product) => product.price === '' )
+// const items = products.some((product) => product.price === '' )
 
 // Check if all the products have price value
+const items = products.every((product) => product.price === '' )
+
 
 // Explain the difference between forEach, map, filter and reduce
-
 // Explain the difference between filter, find and findIndex
-
 // Explain the difference between some and every
