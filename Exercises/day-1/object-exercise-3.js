@@ -272,7 +272,7 @@ const products = [
 //   }
 // }
 
-
+//total rated product list by user
 const userRatedProducts = (userId, products) => {
 
   const ratedProducts = products.filter((item) =>
