@@ -28,48 +28,48 @@
 
 // // **** Questions:2, 3 and 4 are based on the following two arrays:users and products ()
 
-// const users = [
-//   {
-//     _id: "ab12ex",
-//     username: "Alex",
-//     email: "alex@alex.com",
-//     password: "123123",
-//     createdAt: "08/01/2020 9:00 AM",
-//     isLoggedIn: false,
-//   },
-//   {
-//     _id: "fg12cy",
-//     username: "Asab",
-//     email: "asab@asab.com",
-//     password: "123456",
-//     createdAt: "08/01/2020 9:30 AM",
-//     isLoggedIn: true,
-//   },
-//   {
-//     _id: "zwf8md",
-//     username: "Brook",
-//     email: "brook@brook.com",
-//     password: "123111",
-//     createdAt: "08/01/2020 9:45 AM",
-//     isLoggedIn: true,
-//   },
-//   {
-//     _id: "eefamr",
-//     username: "Martha",
-//     email: "martha@martha.com",
-//     password: "123222",
-//     createdAt: "08/01/2020 9:50 AM",
-//     isLoggedIn: false,
-//   },
-//   {
-//     _id: "ghderc",
-//     username: "Thomas",
-//     email: "thomas@thomas.com",
-//     password: "123333",
-//     createdAt: "08/01/2020 10:00 AM",
-//     isLoggedIn: false,
-//   },
-// ];
+const users = [
+  {
+    _id: "ab12ex",
+    username: "Alex",
+    email: "alex@alex.com",
+    password: "123123",
+    createdAt: "08/01/2020 9:00 AM",
+    isLoggedIn: false,
+  },
+  {
+    _id: "fg12cy",
+    username: "Asab",
+    email: "asab@asab.com",
+    password: "123456",
+    createdAt: "08/01/2020 9:30 AM",
+    isLoggedIn: true,
+  },
+  {
+    _id: "zwf8md",
+    username: "Brook",
+    email: "brook@brook.com",
+    password: "123111",
+    createdAt: "08/01/2020 9:45 AM",
+    isLoggedIn: true,
+  },
+  {
+    _id: "eefamr",
+    username: "Martha",
+    email: "martha@martha.com",
+    password: "123222",
+    createdAt: "08/01/2020 9:50 AM",
+    isLoggedIn: false,
+  },
+  {
+    _id: "ghderc",
+    username: "Thomas",
+    email: "thomas@thomas.com",
+    password: "123333",
+    createdAt: "08/01/2020 10:00 AM",
+    isLoggedIn: false,
+  },
+];
 
 const products = [
   {
@@ -79,7 +79,7 @@ const products = [
     price: 200,
     ratings: [
       { userId: "fg12cy", rate: 5 },
-      { userId: "zwf8md", rate: 4.5 },
+      { userId: "ab12ex", rate: 4.5 },
     ],
     likes: [],
   },
@@ -150,35 +150,35 @@ const products = [
 // };
 
 // The products array has three elements and each of them has six properties.
-const product = [
-  {
-    _id: "eedfcf",
-    name: "Mobile phone",
-    description: "Huawei Honor",
-    price: 200,
-    ratings: [
-      { userId: "fg12cy", rate: 5 },
-      { userId: "zwf8md", rate: 4.5 },
-    ],
-    likes: [],
-  },
-  {
-    _id: "aegfal",
-    name: "Laptop",
-    description: "MacPro: System Darwin",
-    price: 2500,
-    ratings: [],
-    likes: ["fg12cy"],
-  },
-  {
-    _id: "hedfcg",
-    name: "TV",
-    description: "Smart TV: Procaster",
-    price: 400,
-    ratings: [{ userId: "fg12cy", rate: 5 }, { userId: "zwf8md", rate: 3.5 },],
-    likes: ["fg12cy"],
-  },
-];
+// const product = [
+//   {
+//     _id: "eedfcf",
+//     name: "Mobile phone",
+//     description: "Huawei Honor",
+//     price: 200,
+//     ratings: [
+//       { userId: "fg12cy", rate: 5 },
+//       { userId: "zwf8md", rate: 4.5 },
+//     ],
+//     likes: [],
+//   },
+//   {
+//     _id: "aegfal",
+//     name: "Laptop",
+//     description: "MacPro: System Darwin",
+//     price: 2500,
+//     ratings: [],
+//     likes: ["fg12cy"],
+//   },
+//   {
+//     _id: "hedfcg",
+//     name: "TV",
+//     description: "Smart TV: Procaster",
+//     price: 400,
+//     ratings: [{ userId: "aegfal", rate: 5 }, { userId: "zwf8md", rate: 3.5 },],
+//     likes: ["fg12cy"],
+//   },
+// ];
 
 // a. Create a function called rateProduct which rates the product
 // const rateproduct = (productId, userid, rate) => {
@@ -194,6 +194,34 @@ const product = [
 //     console.log("product not found");
 //   }
 // };
+
+
+// const rateProduct = (productId, userId, rate) => {
+//   const product = products.find((product) => product._id === productId );
+//   if (product) {
+//     const user = users.find((users) => users._id === userId);
+//     if (user) {
+//       const existingRating = product.ratings.find(
+//         (rating) => rating.userId === userId
+//       );
+//       if(!existingRating){
+//       product.ratings.push({ userId: users._id, rate });
+//       console.log("Product rating updated successfully");}
+//       else{
+//         console.log("User already rated this product");
+//       }
+//     }
+//     else{
+//       console.log("User not found");
+//     }
+//   }
+//   else{
+//     console.log("Product not found");
+//   }
+// }
+// rateProduct("aegfal", "ab12ex", 2);
+
+
 
 // // b. Create a function called averageRating which calculate the average rating of a product
 // const averageRating = (productid, products) => {
@@ -244,6 +272,7 @@ const product = [
 //   }
 // }
 
+
 const userRatedProducts = (userId, products) => {
 
   const ratedProducts = products.filter((item) =>
@@ -252,6 +281,7 @@ const userRatedProducts = (userId, products) => {
   return ratedProducts.map((item) => item.name);
 };
 
-const ratedByUser = userRatedProducts("zwf8md", product);
+const ratedByUser = userRatedProducts("ab12ex", products);
 console.log(ratedByUser);
+
 
