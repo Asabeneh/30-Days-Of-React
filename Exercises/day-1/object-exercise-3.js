@@ -222,7 +222,7 @@ const likeProduct = (productId, userId, products) => {
       console.log(`${userId} has removed like from ${product.name}`);
     } else {
       product.likes.push(userId);
-      console.log(`${userId} has liked ${product.name}`);
+      console.log(`${userId} has liked ${product.name}`); 
     }
   } else {
     console.log("product not found");
