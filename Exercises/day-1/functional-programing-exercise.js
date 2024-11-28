@@ -52,17 +52,19 @@ const price =products.map((product) => product.price)
 
 
 // Find the first product which doesn't have a price value
-const items = products.find ((product) => product.price === '')
-if (items){
-    console.log(items.product)
-}
- else{
-    console.log('No product with price value')
- }
+// const items = products.find ((product) => product.price === '')
+// if (items){
+//     console.log(items.product)
+// }
+//  else{
+//     console.log('No product with price value')
+//  }
+
 // Find the index of the first product which does not have price value
-const product = products.indexOf ((product) => product.price === undefined)
+// const product = products.indexOf ((product) => product.price === undefined)
 
 // Check if some products do not have a price value
+const items = products.some((product) => product.price === '' )
 
 // Check if all the products have price value
 
