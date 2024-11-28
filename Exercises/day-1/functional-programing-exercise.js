@@ -1,11 +1,12 @@
 const products = [
-  { product: 'banana', price: 3 },
-  { product: 'mango', price: 6 },
-  { product: 'potato', price: 2 },
-  { product: 'avocado', price: 8 },
-  { product: 'coffee', price: 10 },
-  { product: 'tea', price: 20 },
-]
+    { product: 'banana', price: 3 },
+    { product: 'mango', price: 6 },
+    { product: 'potato', price: '' },
+    { product: 'avocado', price: 8 },
+    { product: 'coffee', price: 10 },
+    { product: 'tea', price: '' },
+  ]
+  
 // // Print the price of each product using forEach
 // const product = (i,item)=> {
 //     products.forEach(item => {
@@ -33,20 +34,33 @@ const products = [
 // sum()
 
 // Create an array of prices using map and store it in a variable prices
-// const price =products.map((product) => product.price)
+const price =products.map((product) => product.price)
 // console.log(price)
 
 // Filter products with prices
-const product = products.filter((item) => item.price)
-console.log(product)
+// const product = products.filter((item) => item.price)
+// console.log(product)
 
 // Use method chaining to get the sum of the prices(map, filter, reduce)
+// let total= 0
+// const sum = price.map((item) => total+=item )
+// const sum = price.filter((item) => total+=item )
+// const sum = price.reduce((acc,cur) => acc+=cur)
 
-// Calculate the sum of all the prices using reduce only
+// console.log(total)
+// console.log(sum)
+
 
 // Find the first product which doesn't have a price value
-
+const items = products.find ((product) => product.price === '')
+if (items){
+    console.log(items.product)
+}
+ else{
+    console.log('No product with price value')
+ }
 // Find the index of the first product which does not have price value
+const product = products.indexOf ((product) => product.price === undefined)
 
 // Check if some products do not have a price value
 
