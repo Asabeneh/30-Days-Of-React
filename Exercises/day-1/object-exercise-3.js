@@ -276,7 +276,7 @@ const products = [
 const userRatedProducts = (userId, products) => {
 
   const ratedProducts = products.filter((item) =>
-    item.ratings.find((rating) => rating.userId === userId)
+    item.ratings.some((rating) => rating.userId === userId)
   );
   return ratedProducts.map((item) => item.name);
 };
