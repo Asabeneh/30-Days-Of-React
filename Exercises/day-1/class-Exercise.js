@@ -130,14 +130,14 @@ const ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26
 
 const stats = new Statistics(ages);
 
-console.log("Mean:", stats.mean());                   // Mean
-console.log("Median:", stats.median());               // Median
-console.log("Mode:", stats.mode());                   // Mode
-console.log("Range:", stats.range());                 // Range
-console.log("Variance:", stats.variance());           // Variance
-console.log("Standard Deviation:", stats.standardDeviation()); // Standard Deviation
-console.log("Min:", stats.min());                     // Min
-console.log("Max:", stats.max());                     // Max
-console.log("Count:", stats.count());                 // Count
-console.log("50th Percentile:", stats.percentile(50)); // 50th Percentile (Median)
-console.log("Frequency Distribution:", stats.frequencyDistribution()); // Frequency Distribution
+console.log("Mean:", stats.mean());                   // Mean ,🎯
+console.log("Median:", stats.median());               // Median 🎯
+console.log("Mode:", stats.mode());                   // Mode 
+console.log("Range:", stats.range());                 // Range 🎯
+console.log("Variance:", stats.variance());           // Variance 🎯
+console.log("Standard Deviation:", stats.standardDeviation()); // Standard Deviation 🎯
+console.log("Min:", stats.min());                     // Min 🎯
+console.log("Max:", stats.max());                     // Max 🎯
+console.log("Count:", stats.count());                 // Count 🎯
+console.log("50th Percentile:", stats.percentile(50)); // 50th Percentile (Median) 🎯
+console.log("Frequency Distribution:", stats.frequencyDistribution()); // Frequency Distribution 🎯
