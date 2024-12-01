@@ -1,34 +1,56 @@
-// Create a function called getPersonInfo. The getPersonInfo function takes an object parameter.
-//  The structure of the object and the output of the function is given below. Try to use both a regular way and destructuring 
-// and compare the cleanness of the code. If you want to compare your solution with my solution, check this link.
+// Exercises: Level 1
 
-const person = {
-  firstName: 'Asabeneh',
-  lastName: 'Yetayeh',
-  age: 250,
-  country: 'Finland',
-  job: 'Instructor and Developer',
-  skills: [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Redux',
-    'Node',
-    'MongoDB',
-    'Python',
-    'D3.js',
-  ],
-  languages: ['Amharic', 'English', 'Suomi(Finnish)'],
+// Declare a function fullName and it takes firstName, lastName as a parameter and it returns your full - name.
+const fullname = (firstname, lastname) => {
+    return `${firstname} ${lastname}`
+}
+// Declare a function addNumbers and it takes two two parameters and it returns sum.
+const sum = (a, b) =>{
+    return a + b
 }
 
-const getPersonInfo = (person) => {
-    const {firstName, lastName, age, country, job, skills, languages} = person;
-    const {skill1,skill2,skill3,skill4,skill5,skill6,skill7,skill8,skill9} = skills;
-    console.log(`${firstName} ${lastName} lives in ${country}. He is ${age} years old. He is an ${job}. He teaches ${skill1}, ${skill2}, ${skill3}, ${skill4}, ${skill5}, ${skill6}, ${skill7}, ${skill8}, ${skill9}. He speaks ${languages[0]}, ${languages[1]} and a little bit of ${languages[2]}`);
+// Area of a circle is calculated as follows: area = π x r x r. Write a function which calculates _areaOfCircle
+const areaOfCircle = (r,pi=3.14) => {
+    return pi * r * r
 }
 
-getPersonInfo(person)
-/*
-Asabeneh Yetayeh lives in Finland. He is  250 years old. He is an Instructor and Developer. He teaches HTML, CSS, JavaScript, React, Redux, Node, MongoDB, Python and D3.js. He speaks Amharic, English and a little bit of Suomi(Finnish)
-*/
+// Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32. Write a function which convert oC to oF convertCelciusToFahrenheit.
+const temperature = (oC) => {
+    return (oC * 9/5) + 32
+}
+
+// Body mass index(BMI) is calculated as follows: bmi = weight in Kg / (height x height) in m2. Write a function which calculates bmi. BMI is used to broadly define different weight groups in adults 20 years old or older.Check if a person is underweight, normal, overweight or obese based the information given below.
+    const BMI = (W,H) => {
+        let bmi=  W / (H * H)
+        if (bmi>18.4 || bmi<25){
+            return 'Normal weight'
+        }
+        else if (bmi>25){
+            return 'Overweight'
+        }
+        else{
+            return 'Underweight'
+        }
+    }
+    // The same groups apply to both men and women.
+    
+    // Underweight: BMI is less than 18.5
+    // Normal weight: BMI is 18.5 to 24.9
+    // Overweight: BMI is 25 to 29.9
+    // Obese: BMI is 30 or more
+
+// Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
+    const checkSeason = (month) => {
+        if (month >= 3 && month <= 5){
+            return 'Spring'
+        }
+        else if (month >= 6 && month <= 8){
+            return 'Summer'
+        }
+        else if (month >= 9 && month <= 11){
+            return 'Autumn'
+        }
+        else{
+            return 'Winter'
+        }
+    }
