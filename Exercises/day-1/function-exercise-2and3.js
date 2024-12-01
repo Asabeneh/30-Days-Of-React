@@ -150,3 +150,39 @@ const userIdGenerator = () => {
   }
   return id;
 };
+
+
+// Call your function shuffleArray, it takes an array as a parameter and it returns a shuffled array
+const shuffleArray = (arr) =>{
+  let shuffeled = []
+  arr.forEach((item) => {
+    let randomindex = Math.floor(Math.random()*arr.length)
+    shuffeled.push(arr[randomindex])
+
+  });
+  return shuffeled
+}
+
+// Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
+const factorial = (num) => {
+  let result = 1
+  for (let i =num; i>0; i--){
+    result *=i
+  }
+  return result
+}
+
+// Call your function isEmpty, it takes a parameter and it checks if it is empty or not
+const isEmpty = (param) => {
+  if (param === undefined || param === null || param === "" || param === 0 || param === false) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// Write a function called average, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback.
+const avarage = (arr) => {
+  const sum = arr.reduce((acc, cur)=>acc+cur)
+  return sum/arr.length
+}
