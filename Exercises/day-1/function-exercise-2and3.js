@@ -151,6 +151,20 @@ const userIdGenerator = () => {
   return id;
 };
 
+// Write a function generateColors which can generate any number of hexa or rgb colors.
+
+const generateColors = (type, count) => {
+  let colors = [];
+  for (let i = 0; i < count; i++) {
+    if (type === 'hexa') {
+      colors.push('#' + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0'));
+    } else if (type === 'rgb') {
+      colors.push(`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`);
+    }
+  }
+  return colors;
+};
+
 
 // Call your function shuffleArray, it takes an array as a parameter and it returns a shuffled array
 const shuffleArray = (arr) =>{
