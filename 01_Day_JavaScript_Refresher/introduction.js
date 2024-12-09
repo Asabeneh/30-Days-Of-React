@@ -270,3 +270,33 @@ let category = categorizebmi(weight, height);
 console.log("This is considered:", category);
 
 
+// Question 6 (1)
+
+function checkSeason(month) {
+    month = month.toLowerCase();
+
+    if(['december', 'january', 'ferbuary'].includes(month)) {
+        return 'Winter'
+    };
+    if (['march', 'april', 'may'].includes(month)) {
+        return 'Spring'
+    };
+    if(['june', 'july', 'august'].includes(month)) {
+        return 'Summer'
+    };
+    if(['september', 'october', 'november'].includes(month)) {
+        return 'Autumn'
+    } else {
+        return 'Invalid Month'
+    };
+}
+
+console.log(checkSeason("october"))
+
+
+
+// Exercises: Level 2
+// 1
+function solveQuadraticEquation() {
+    return ax
+}
