@@ -296,7 +296,53 @@ console.log(checkSeason("october"))
 
 
 // Exercises: Level 2
+// Quadratic equation is calculated as follows: ax2 + bx + c = 0. Write a function which calculates value or values of a quadratic equation, solveQuadEquation.
 // 1
-function solveQuadraticEquation() {
-    return ax
-}
+function solveQuadratic(a, b, c) {
+    const discriminant = b * b - 4 * a * c;
+
+    let root1, root2;
+
+    if(discriminant > 0) {
+        root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+        root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+    } else if (discriminant === 0) {
+        
+        root1 = root2 = -b / (2 * a);
+    } else {
+        root1 = (-b / (2 * a)) + " + " + Math.sqrt(-discriminant) / (2 * a) + "i";
+        root2 = (-b / (2 * a)) - " + " + Math.sqrt(-discriminant) / (2 * a) + "i";
+    }
+    return [root1, root2];
+    }
+
+console.log(solveQuadratic()) // {0}
+console.log(solveQuadratic(1, 4, 4)) // {-2}
+console.log(solveQuadratic(1, -1, -2)) // {2, -1}
+console.log(solveQuadratic(1, 7, 12)) // {-3, -4}
+console.log(solveQuadratic(1, 0, -4)) //{2, -2}
+console.log(solveQuadratic(1, -1, 0)) //{1, 0}
+
+
+// Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
+ function printNewArray(arr) {
+    
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
+ }
+ const newArray = [10, 20, 30, 40, 50];
+ printNewArray(newArray);
+
+ const names = ['joe', 'lewis', 'clue'];
+ printNewArray(names);
+
+ 
+ function printArrays(arr) {
+    arr.forEach(element => {
+        console.log(element);
+    });
+ }
+
+ const numbs = [1, 2, 3, 4, 5];
+ printArrays(numbs);
