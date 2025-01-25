@@ -12,14 +12,15 @@ const skills = ['HTML', 'CSS', 'JS', 'React',
 
   
 //repeat elements inside the box
-export default function Hexacolor ({ skillIndex })  {
+//We can use skillIndex as well instead of props keyword
+export default function Hexacolor ({ props })  {
  
    
   
     return (
       
    
-        <h2>{skills[skillIndex]}</h2>
+        <h2>{skills[props]}</h2>
        
     )
   
