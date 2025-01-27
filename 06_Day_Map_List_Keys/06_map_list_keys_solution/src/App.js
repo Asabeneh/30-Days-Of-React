@@ -1,10 +1,13 @@
 import './App.css';
 
+import { BarChart } from '@mui/x-charts/BarChart';
+import { dataset, valueFormatter } from './weather.js';
 //Numbers from 1 to 31 in 4 arrays 
 const arrayOne = [0, 1, 2, 3, 4, 5, 6, 7]
 const arrayTwo = [8, 9, 10, 11, 12, 13, 14,15]
 const arrayThree = [16, 17, 18, 19, 20, 21, 22,23]
 const arrayFour = [24, 25, 26, 27, 28, 29, 30, 31]
+const smallArray = [12,13,14,15]
 
 //Hex color arrays
 const hexArrayOne = ["#4e417e", "#02dc92", "#dfbaa0", "#d8394e", "#7c31d3", "#7fcfd2", "#0e5d46", "#d98590"]
@@ -14,6 +17,22 @@ const hexArrayTwo = ["#7923d7", "#6e5eeb", "#2a176b", "#dea1d8", "#cbae6f", "#b6
 const hexArrayThree = ["#393b73", "#8cface", "#1a4f07", "#045529", "#04e754", "#697980", "#018120", "#5bdcc7"]
 
 const hexArrayFour = ["#7010b2", "#c50007", "#cfe583", "#cdb58e", "#298b5d", "#58e253", "#a9c3c5", "#66fec5"]
+
+//Ten highest population
+export const tenHighestPopulation = [
+  { country: 'World', population: 8045311447 },
+  { country: 'India', population: 1425775850 },
+  { country: 'China', population: 	1409670000 },
+  { country: 'United States of America', population: 337449016 },
+  { country: 'Indonesia', population: 278696200 },
+  { country: 'Pakistan', population: 229488994},
+  { country: 'Nigeria', population: 216746934	},
+  { country: 'Brazil', population: 218723173 },
+  { country: 'Bangladesh', population: 168220000 },
+  { country: 'Russian Federation', population: 147190000 },
+  { country: 'Mexico', population: 128271248 },
+]
+
 
 
 //Function to determine if the number is prime 
@@ -73,7 +92,28 @@ const DivBoxesHexColor = ({ array }) => {
   )
 };
 
+//Bar chart function 
+const chartSetting = {
+  xAxis: [
+    {
+      label: 'Population in Billions',
+    },
+  ],
+  width: 500,
+  height: 400,
+};
 
+function HorizontalBars() {
+  return (
+    <BarChart
+      dataset={tenHighestPopulation}
+      yAxis={[{ scaleType: 'band', dataKey: 'country' }]}
+      series={[{ dataKey: 'population', label:'Population'}]}
+      layout="horizontal"
+      {...chartSetting}
+    />
+  );
+}
 function App() {
 
  return (
@@ -111,7 +151,15 @@ function App() {
     <div id="hex-color-board-row">
     <DivBoxesHexColor array={hexArrayFour} />
     </div>
+=================================================================================
+  <h2>World population</h2>
+  <p>Ten most populated countries</p>
 
+
+  <div id="chart">
+ 
+    <HorizontalBars />
+    </div>
     </>
   );
 }
