@@ -95,7 +95,7 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-### Contructor
+### Constructor
 
 Nowadays we write class based-component without a constructor and we can write the state also outside the constructor. In older version React we the state used be always inside the constructor.
 
