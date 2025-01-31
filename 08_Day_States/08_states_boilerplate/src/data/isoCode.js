@@ -141,6 +141,7 @@ export const countryIsoCode = [
     { code: 'UA', name: 'Ukraine' },
     { code: 'AE', name: 'United Arab Emirates' },
     { code: 'GB', name: 'United Kingdom' },
+    //this is where chat gpt made an error 
     { code: 'US', name: 'United States' },
     { code: 'UY', name: 'Uruguay' },
     { code: 'UZ', name: 'Uzbekistan' },
