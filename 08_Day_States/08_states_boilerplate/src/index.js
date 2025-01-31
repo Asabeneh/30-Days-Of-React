@@ -1,9 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import asabenehImage from './images/asabeneh.jpg'
-
-
-
+import './index.css';
+import { countriesData } from './data/countries.js'
+import { countryCodes } from './data/countryCodes.js';
+import { countryIsoCode } from './data/isoCode.js'
+import { countriesAppended } from './data/countriesAppended.js';
 // User Card Component
 const UserCard = ({ user: { firstName, lastName, image } }) => (
   <div className='user-card'>
@@ -83,6 +85,112 @@ class TechList extends React.Component {
   }
 }
 
+class PrintImages extends React.Component {
+  
+ 
+  constructor(props) {
+    super(props)
+  }
+ 
+
+
+  state = {   
+    country: {
+      imageLink: `https://countryflagsapi.netlify.app/flag/${countriesAppended[132].code}.svg`,
+      countryName: `${countriesAppended[132].name}`,
+  capital: `${countriesAppended[132].capital}`, 
+  population: `${countriesAppended[132].population}`,
+  currency: `${countriesAppended[132].currency}`,
+  },
+  }
+
+
+
+    
+  printCountries = () => {
+   // console.log('country ISO codes', countryIsoCode[0])
+ 
+    //console.log('countires appended', countriesAppended[0].code)
+   // console.log('random number', getRandomIntInclusive(0,140))
+   function getRandomIntInclusive(min, max) {
+    const minCeiled = Math.ceil(min);
+    const maxFloored = Math.floor(max);
+    return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
+  }
+  let randomNumberOne = getRandomIntInclusive(0,138)
+  let randomNumberTwo = getRandomIntInclusive(0,138)
+  let randomCountry =   {
+      imageLink: `https://countryflagsapi.netlify.app/flag/${countriesAppended[132].code}.svg`,
+      countryName: `${countriesAppended[132].name}`,
+  capital: `${countriesAppended[132].capital}`, 
+  population: `${countriesAppended[132].population}`,
+  currency: `${countriesAppended[132].currency}`,
+  }
+
+
+ console.log('random country',randomCountry)
+  let firstCountryObject = {
+    imageLink: `https://countryflagsapi.netlify.app/flag/${countriesAppended[randomNumberOne].code}.svg`,
+    countryName: `${countriesAppended[randomNumberOne].name}`,
+capital: `${countriesAppended[randomNumberOne].capital}`, 
+population: `${countriesAppended[randomNumberOne].population}`,
+currency: `${countriesAppended[randomNumberOne].currency}`,
+}
+
+
+let secondCountryObject = {
+  imageLink: `https://countryflagsapi.netlify.app/flag/${countriesAppended[randomNumberTwo].code}.svg`,
+  countryName: `${countriesAppended[randomNumberTwo].name}`,
+capital: `${countriesAppended[randomNumberTwo].capital}`, 
+population: `${countriesAppended[randomNumberTwo].population}`,
+currency: `${countriesAppended[randomNumberTwo].currency}`,
+}
+console.log('firstCountry object',firstCountryObject)
+  console.log('second country object', secondCountryObject)
+
+
+   // let firstCountry = `https://countryflagsapi.netlify.app/flag/${countriesAppended[randomNumberTwo].code}.svg`
+    //let secondCountry =   `https://countryflagsapi.netlify.app/flag/${countriesAppended[randomNumberTwo].code}.svg`
+    
+    //let imageLink = this.state.imageLink === firstCountry ? secondCountry :firstCountry
+    //let  countryName = this.state.country.countryName 
+ let country = this.state.country == firstCountryObject ? secondCountryObject: firstCountryObject
+    this.setState ({
+      country
+   
+    })
+    
+    //console.log(firstCountry )
+   // console.log(firstCountry)
+
+
+  
+  }
+  //imageLink = this.printCountries()
+  render() {
+   
+    return (
+    <>
+     
+      <div id ="country-container" style={{backgroundColor: this.props.backgroundColor}} >
+    <div id="image-container">
+      <img id="flag-image" src={this.state.country.imageLink} width="100" height="100"></img>
+      </div>
+      <div id ="info-container"></div>
+      <b>Country Name:</b><p>{this.state.country.countryName}</p>  
+      <b>Capital:</b><p>{this.state.country.capital}</p>
+      <b>Population:</b><p>{this.state.country.population}</p>
+      <b>Currency:</b><p>{this.state.country.currency}</p>
+      <div>
+        
+      <Button text="Change Country" onClick={this.printCountries} style={buttonStyles} />
+      </div>
+      </div>
+      </>
+    )
+  }
+}
+
 // Main Component
 // Class Component
 class Main extends React.Component {
@@ -96,6 +204,7 @@ class Main extends React.Component {
       greetPeople,
       handleTime,
       changeBackground,
+      printCountries,
       bgColor
     
     } = this.props
@@ -103,20 +212,18 @@ class Main extends React.Component {
   
       <main style={{ backgroundColor: bgColor, color: "black" }}>
         <div className='main-wrapper'>
-          <p>Prerequisite to get started react.js:</p>
-          <ul>
-            <TechList techs={techs} />
-          </ul>
-          <UserCard user={user} />
-          <Button
-            text='Greet People'
-            onClick={greetPeople}
-            style={buttonStyles}
-          />
-          <Button text='Show Time' onClick={handleTime} style={buttonStyles} />
-          <Button text="Change Background" onClick={changeBackground} style={buttonStyles} />
+       
+          <div id ="flag-image-div">
         
-        </div>
+       
+      
+          </div>
+          <div id ="background-button">
+          <Button text="Change Background" onClick={changeBackground} style={buttonStyles} />
+          </div>
+          
+          </div>
+        
       </main>
       
      
@@ -134,7 +241,7 @@ class Footer extends React.Component {
     return (
       <footer style = {{backgroundColor: this.props.backgroundColor, position: 'relative'}}>
         <div className='footer-wrapper'>
-          <p>Love</p>
+          <p>Copyright 2025</p>
          {/* <p>Copyright {this.props.date.getFullYear()}</p> */}
         </div>
       </footer>
@@ -143,11 +250,7 @@ class Footer extends React.Component {
 }
 
 class App extends React.Component {
-  /*
-  state = {
-    bgColor: '',
-  };
-  */
+  
 
    state = {
     count: 0,
@@ -156,29 +259,19 @@ class App extends React.Component {
       color: '',
     },
   }
-  //This would cause you to change color in 2 clicks 
-  //mainBgColor = this.state.styles.backgroundColor
-  //otherElementBgColor = this.state.styles.color
-  
-  //Without initialization you would need 2 clicks
-  /*
-  state = {
-    mainBgColor: "white",
-    otherElementBgColor: "", // Instead of an empty string
-  };
- */
+
     // Function to toggle main background color
     toggleMainBg = () => {
      
       this.setState({
-        backgroundColor: this.state.backgroundColor === "white" ? "purple" : "white",
+        backgroundColor: this.state.backgroundColor === "white" ? "#2a176b" : "white",
       
       });
     };
   // Function to toggle header and footer background color
   toggleHeaderFooterBg = () => {
     this.setState({
-      otherElementBgColor: this.state.otherElementBgColor === "" ? "purple" : "",
+      otherElementBgColor: this.state.otherElementBgColor === "" ? "#2a176b" : "",
     });
   };
 
@@ -195,6 +288,12 @@ class App extends React.Component {
   });
   */
   };
+  printCountries = () => {
+    const firstCountry = 'AF'
+    //console.log(firstCountry )
+    //console.log(firstCountry)
+    return firstCountry
+  } 
   /*
   state = {
     mainBgColor: "white", // Initial background for Main
@@ -257,17 +356,20 @@ class App extends React.Component {
     return (
      
       <div className='app'  >
-        {this.state.backgroundColor }
+   
         <Header data={data} backgroundColor={this.state.otherElementBgColor} />
 
+        <PrintImages  backgroundColor={this.state.otherElementBgColor} />
         <Main
           user={user}
           techs={techs}
           handleTime={this.handleTime}
           greetPeople={this.greetPeople}
           changeBackground={this.changeBackground}
+          printCountries = {this.printCountries}
           bgColor={this.state.backgroundColor}
         />
+       
        <Footer backgroundColor={this.state.otherElementBgColor} />
       </div>
       
@@ -278,8 +380,6 @@ class App extends React.Component {
 
 const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
-
-
 
 
 
