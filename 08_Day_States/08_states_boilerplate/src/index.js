@@ -1,60 +1,292 @@
 import React from 'react'
-import ReactDom from 'react-dom'
+import ReactDOM from 'react-dom'
+import asabenehImage from './images/asabeneh.jpg'
 
 
-class App extends React.Component {
-  //declaring state 
 
-  state = {
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAOsR0U0cMQrip5q8C330243NWFIMVT0306A&s',
-    buttonName: 'Click to see your pet'
- 
+// User Card Component
+const UserCard = ({ user: { firstName, lastName, image } }) => (
+  <div className='user-card'>
+    <img src={image} alt={firstName} />
+    <h2>
+      {firstName}
+      {lastName}
+    </h2>
+  </div>
+)
+
+// A button component
+const Button = ({ text, onClick, style }) => (
+  <button style={style} onClick={onClick}>
+    {text}
+  </button>
+)
+
+// CSS styles in JavaScript Object
+const buttonStyles = {
+  backgroundColor: '#61dbfb',
+  padding: 10,
+  border: 'none',
+  borderRadius: 5,
+  margin: 3,
+  cursor: 'pointer',
+  fontSize: 18,
+  color: 'white',
 }
-  changeAnimal = () => {
-    let dogURL =
-      'https://images.pexels.com/photos/236622/pexels-photo-236622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    let catURL =
-      'https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-      let image = this.state.image === catURL ? dogURL : catURL
-      this.setState({ image })
-    
-    }
-    changeButtonName = () => {
-      
-      let buttonDog = 'dog'; 
-      let buttonCat = 'cat'
-    let  buttonName=this.state.buttonName === buttonDog ? buttonCat : buttonDog
-      this.setState({ buttonName });
-  };
-  handleButtonClick = () => {
-    this.changeAnimal();
-    this.changeButtonName();
-  };
-   
+
+// class based component
+
+// class based component
+class Header extends React.Component {
+  constructor(props) {
+    super(props)
+    // the code inside the constructor run before any other code
+  }
   render() {
-   
-    //accessing the state value 
-    const count = this.state.count 
-     // method which add one to the state
+    //console.log(this.props.data)
+    const {
+      welcome,
+      title,
+      subtitle,
+      author: { firstName, lastName },
+      date,
+      
+    } = this.props.data
 
- 
     return (
-      <div className='App'>
-        <h1>{count} </h1>
-        <h1>30 Days Of React</h1>
-        <div className='animal'>
-        <img src={this.state.image} alt='animal' />
+      //this works 
+   /*   <header style={{ backgroundColor: this.props.backgroundColor }}> */
+     <header style={{ backgroundColor: this.props.backgroundColor }}> 
+        <div className='header-wrapper'>
+          <h1>{welcome}</h1>
+          <h2>{title}</h2>
+          <h3>{subtitle}</h3>
+          <p>
+            {firstName} {lastName}
+          </p>
+          <small>{date}</small>
         </div>
-
-        <button onClick={this.handleButtonClick} className="btn btn-add">
-      {this.state.buttonName}
-    </button>
-        
-      </div>
-
-    
+      </header>
     )
   }
 }
-const rootElment = document.getElementById('root')
-ReactDom.render(<App />, rootElment)
+// TechList Component
+// class base component
+class TechList extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+  render() {
+    const { techs } = this.props
+    const techsFormatted = techs.map((tech) => <li key={tech}>{tech}</li>)
+    return techsFormatted
+  }
+}
+
+// Main Component
+// Class Component
+class Main extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+  render() {
+    const {
+      techs,
+      user,
+      greetPeople,
+      handleTime,
+      changeBackground,
+      bgColor
+    
+    } = this.props
+    return (
+  
+      <main style={{ backgroundColor: bgColor, color: "black" }}>
+        <div className='main-wrapper'>
+          <p>Prerequisite to get started react.js:</p>
+          <ul>
+            <TechList techs={techs} />
+          </ul>
+          <UserCard user={user} />
+          <Button
+            text='Greet People'
+            onClick={greetPeople}
+            style={buttonStyles}
+          />
+          <Button text='Show Time' onClick={handleTime} style={buttonStyles} />
+          <Button text="Change Background" onClick={changeBackground} style={buttonStyles} />
+        
+        </div>
+      </main>
+      
+     
+    )
+  }
+}
+
+// Footer Component
+// Class component
+class Footer extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+  render() {
+    return (
+      <footer style = {{backgroundColor: this.props.backgroundColor, position: 'relative'}}>
+        <div className='footer-wrapper'>
+          <p>Love</p>
+         {/* <p>Copyright {this.props.date.getFullYear()}</p> */}
+        </div>
+      </footer>
+    )
+  }
+}
+
+class App extends React.Component {
+  /*
+  state = {
+    bgColor: '',
+  };
+  */
+
+   state = {
+    count: 0,
+    styles: {
+      backgroundColor: '',
+      color: '',
+    },
+  }
+  //This would cause you to change color in 2 clicks 
+  //mainBgColor = this.state.styles.backgroundColor
+  //otherElementBgColor = this.state.styles.color
+  
+  //Without initialization you would need 2 clicks
+  /*
+  state = {
+    mainBgColor: "white",
+    otherElementBgColor: "", // Instead of an empty string
+  };
+ */
+    // Function to toggle main background color
+    toggleMainBg = () => {
+     
+      this.setState({
+        backgroundColor: this.state.backgroundColor === "white" ? "purple" : "white",
+      
+      });
+    };
+  // Function to toggle header and footer background color
+  toggleHeaderFooterBg = () => {
+    this.setState({
+      otherElementBgColor: this.state.otherElementBgColor === "" ? "purple" : "",
+    });
+  };
+
+  // Single function to change both backgrounds
+  
+  changeBackground = () => {
+    this.toggleMainBg();
+    this.toggleHeaderFooterBg();
+    console.log('click')
+   /* 
+    this.setState({
+    backgroundColor: this.state.styles.backgroundColor === "white" ? "purple" : "white",
+    color: this.state.styles.color=== "" ? "purple" : "",
+  });
+  */
+  };
+  /*
+  state = {
+    mainBgColor: "white", // Initial background for Main
+    headerFooterBgColor: "blue", // Initial background for Header & Footer
+  };
+  */
+  showDate = (time) => {
+    const months = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December',
+    ]
+
+    const month = months[time.getMonth()].slice(0, 3)
+    const year = time.getFullYear()
+    const date = time.getDate()
+    return ` ${month} ${date}, ${year}`
+  }
+ 
+  handleTime = () => {
+    alert(this.showDate(new Date()))
+  }
+  greetPeople = () => {
+    alert('Welcome to 30 Days Of React Challenge, 2020')
+  }
+ 
+  changeBackgroundHeader = () => {
+        this.state.styles.backgroundColor = 'red'
+        this.setState({ backgroundColor: this.state.styles.backgroundColor })
+  }
+
+ render() {
+
+    const data = {
+      welcome: 'Welcome to 30 Days Of React',
+      title: 'Getting Started React',
+      subtitle: 'JavaScript Library',
+      author: {
+        firstName: 'Asabeneh',
+        lastName: 'Yetayeh',
+      },
+      date: 'Oct 7, 2020',
+    
+    }
+  
+    const techs = ['HTML', 'CSS', 'JavaScript']
+    const date = new Date()
+    // copying the author from data object to user variable using spread operator
+    const user = { ...data.author, image: asabenehImage }
+     const styles = 'red'
+    return (
+     
+      <div className='app'  >
+        {this.state.backgroundColor }
+        <Header data={data} backgroundColor={this.state.otherElementBgColor} />
+
+        <Main
+          user={user}
+          techs={techs}
+          handleTime={this.handleTime}
+          greetPeople={this.greetPeople}
+          changeBackground={this.changeBackground}
+          bgColor={this.state.backgroundColor}
+        />
+       <Footer backgroundColor={this.state.otherElementBgColor} />
+      </div>
+      
+      
+    )
+  }
+}
+
+const rootElement = document.getElementById('root')
+ReactDOM.render(<App />, rootElement)
+
+
+
+
+
+
+
+
+
+
+
+
