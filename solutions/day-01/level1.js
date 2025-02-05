@@ -1,5 +1,4 @@
-
-  let arr1 = []
+let arr1 = []
   let arr2 = [10,20,30,40,50,60,70]
   console.log(arr2.length)
   console.log(arr2[0])
