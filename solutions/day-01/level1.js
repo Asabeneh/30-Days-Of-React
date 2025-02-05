@@ -1,26 +1,4 @@
-const countries = [
-    'Albania',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan',
-    'Kenya',
-  ]
-  
-  const webTechs = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Redux',
-    'Node',
-    'MongoDB',
-  ]
+
   let arr1 = []
   let arr2 = [10,20,30,40,50,60,70]
   console.log(arr2.length)
@@ -69,34 +47,34 @@ for(let i = 0 ; i < itCompanies.length ; i++){
       }
     }
 }
-//console.log(reqComp)
+console.log(reqComp)
 
-//console.log(itCompanies.sort())
-//console.log(itCompanies.reverse())
+console.log(itCompanies.sort())
+console.log(itCompanies.reverse())
 
-//onsole.log(itCompanies.slice(0,3))
+onsole.log(itCompanies.slice(0,3))
 //console.log(itCompanies.splice(4,))
 let length = itCompanies.length
-// let lower = Math.floor((length-1)/2)
-// let upper = Math.ceil((length-1)/2)
-// console.log(lower)
-// console.log(upper)
-// console.log(itCompanies.slice(lower , upper+1))
+let lower = Math.floor((length-1)/2)
+let upper = Math.ceil((length-1)/2)
+console.log(lower)
+console.log(upper)
+console.log(itCompanies.slice(lower , upper+1))
 
-// itCompanies.splice(0,1)
-// console.log(itCompanies)
+itCompanies.splice(0,1)
+console.log(itCompanies)
 
-//let floorMid = Math.floor((length-1)/2)
-// let ceilMid = Math.ceil((length-1)/2)
-// if(length%2 == 0){
-//     itCompanies.splice(floorMid,2)
-// }else{
-//     itCompanies.splice(floorMid,1)
-// }
-// console.log(itCompanies)
+let floorMid = Math.floor((length-1)/2)
+let ceilMid = Math.ceil((length-1)/2)
+if(length%2 == 0){
+    itCompanies.splice(floorMid,2)
+}else{
+    itCompanies.splice(floorMid,1)
+}
+console.log(itCompanies)
 
-// itCompanies.splice(itCompanies.length-1,1)
-// console.log(itCompanies)
+itCompanies.splice(itCompanies.length-1,1)
+console.log(itCompanies)
 
-// itCompanies.splice(0)
-// console.log(itCompanies)
+itCompanies.splice(0)
+console.log(itCompanies)
