@@ -98,5 +98,5 @@ let length = itCompanies.length
 // itCompanies.splice(itCompanies.length-1,1)
 // console.log(itCompanies)
 
-itCompanies.splice(0)
-console.log(itCompanies)
+// itCompanies.splice(0)
+// console.log(itCompanies)
