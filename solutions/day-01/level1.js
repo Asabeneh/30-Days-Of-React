@@ -100,3 +100,53 @@ dogs.getDogInfo = function(){
     return `name: ${this.name} , color : ${this.color} , age : ${this.age} , breed : ${this.breed}`
 }
 console.log(dogs.getDogInfo());
+
+
+function fullName(firstName , lastName){
+    return `${firstName} ${lastName}`
+}
+
+console.log(fullName("Ashim","Debnath"))
+
+function addNumbers(num1 ,num2){
+     return (num1 + num2)
+}
+
+console.log(addNumbers(5,5))
+
+const pi = 3.14
+
+function areaOfCircle(pi , r){
+    return (pi*r*r)
+}
+
+console.log(areaOfCircle(pi,4))
+
+function celciusToFarenheit(c){
+    let f = c*(9/5)+32
+    return f
+}
+
+console.log(celciusToFarenheit(100))
+
+function BMIcalculator(weight , height , age){
+     if(age>=20){
+        const BMI = weight/(height*height)
+      if(BMI < 18.5){
+        return "You are underweight";
+      }
+      else if(BMI >= 18.5 && BMI <= 24.5){
+        return "Normal weight";
+      }
+      else if(BMI >= 25 && BMI <= 29.5){
+       return "overweight"
+      }
+      else{
+         return "obese"
+      }
+     }else{
+        return "age is less than 20, can not calculate BMI"
+     }
+}
+
+console.log(BMIcalculator(80 , 1.70 , 21))
