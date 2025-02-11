@@ -1922,6 +1922,7 @@ export const countriesData = [
     flag: 'https://restcountries.eu/data/gbr.svg',
     currency: 'British pound',
   },
+   //this is where chat gpt made an error unites states of amercia here and united states in isoCode
   {
     name: 'United States of America',
     capital: 'Washington, D.C.',
