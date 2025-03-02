@@ -61,7 +61,7 @@ import {
 } from 'react-router-dom'
 ```
 
-We may not all these components in every project but it is good to know that it exists.
+We may not need to know all these components in every project but it is good to know that it exists.
 
 ## BroswerRouter
 
