@@ -72,7 +72,7 @@ import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 ```
 
-Let's make make use of BrowserRouter to make a navigation for a React application.
+Let's make use of BrowserRouter to make a navigation for a React application.
 
 ```js
 import React, { Component } from 'react'

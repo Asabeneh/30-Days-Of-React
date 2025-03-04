@@ -1,5 +1,4 @@
 /* == General style === */
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,7 +9,7 @@ html,
 body {
   height: 100%;
   line-height: 1.5;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 300;
   color: black;
 }
@@ -45,6 +44,7 @@ h3 {
 
 header {
   background-color: #61dbfb;
+  padding: 25;
   padding: 10px;
 }
 
@@ -76,10 +76,14 @@ footer {
   text-align: center;
   line-height: 60px;
 }
+
 .user-card {
   margin-top: 10px;
 }
+
 .user-card > img {
   border-radius: 50%;
   width: 14%;
 }
+
+/*# sourceMappingURL=index.css.map */
