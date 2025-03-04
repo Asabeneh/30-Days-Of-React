@@ -957,15 +957,15 @@ const webTechs = [
 ]
 ```
 
-1. Declare an _empty_ array;
-2. Declare an array with more than 5 number of elements
-3. Find the length of your array
-4. Get the first item, the middle item and the last item of the array
-5. Declare an array called _mixedDataTypes_, put different data types in the array and find the length of the array. The array size should be greater than 5
-6. Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
-7. Print the array using _console.log()_
-8. Print the number of companies in the array
-9. Print the first company, middle and last company
+1. Declare an _empty_ array; .... Done
+2. Declare an array with more than 5 number of elements ... Done
+3. Find the length of your array ... Done
+4. Get the first item, the middle item and the last item of the array  ... Done
+5. Declare an array called _mixedDataTypes_, put different data types in the array and find the length of the array. The array size should be greater than 5 ... Done
+6. Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon .... Done
+7. Print the array using _console.log()_ .... Done
+8. Print the number of companies in the array ... Done
+9. Print the first company, middle and last company ... Done
 10. Print out each company
 11. Change each company name to uppercase one by one and print them out
 12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
