@@ -201,8 +201,6 @@ class App extends React.Component {
   }
 
   render() {
-    // accessing the state value
-    const count = this.state.count
     return (
       <div className='App'>
         <h1>30 Days Of React</h1>
