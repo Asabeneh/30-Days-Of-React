@@ -73,7 +73,7 @@ const App = () => {
 
 ```js
 import React, { Component } from 'react'
-// if it is functional components
+// if it is class components
 class App extends Component {
   greetPeople = () => {
     alert('Welcome to 30 Days Of React Challenge')
