@@ -24,7 +24,7 @@
 - [Exercises](#exercises)
   - [Exercises: Level 1](#exercises-level-1)
 
-# Uncotrolled Components
+# Uncontrolled Components
 
 In the previous day challenge we have covered controlled inputs. In react most of the time we use controlled inputs as recommended on the official [documentation of React](https://reactjs.org/docs/uncontrolled-components.html).
 
