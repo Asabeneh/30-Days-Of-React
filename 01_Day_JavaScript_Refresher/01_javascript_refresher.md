@@ -3432,9 +3432,9 @@ For example if we like to change each country to uppercase and store it back to 
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
 const newCountries = []
-countries.forEach((country) => newCountries.push(country))
+countries.forEach((country) => newCountries.push(country.toUpperCase()))
 
-console.log(newCountries) // ["Finland", "Estonia", "Sweden", "Norway"]
+console.log(newCountries) // ["FINLAND", "ESTONIA", "SWEDEN", "NORWAY"]
 ```
 
 Let us see more examples. For instance if we want to sum an array of numbers we can use forEach or reduce. Let us see how we use forEach to sum all numbers in an array.
