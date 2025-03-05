@@ -3045,12 +3045,12 @@ const rectangle = {
 }
 
 let width = rectangle.width
-let height = recangle.height
+let height = rectangle.height
 
 // or
 
 let width = rectangle[width]
-let height = recangle[height]
+let height = rectangle[height]
 ```
 
 But today, we will see how to access the value of an object using destructuring.
@@ -3075,7 +3075,9 @@ const rectangle = {
   height: 10,
 }
 
-let { width, height, perimeter } = rectangleconsole.log(
+let { width, height, perimeter } = rectangle
+
+console.log(
   width,
   height,
   perimeter
