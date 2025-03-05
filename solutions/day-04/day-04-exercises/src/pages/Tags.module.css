@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+    max-width: 80px;
+    padding: 2px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: aqua;
+}
