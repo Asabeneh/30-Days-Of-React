@@ -492,7 +492,7 @@ I believe that now you have a very good understanding of state. After this, we w
 2. What is state in React ?
 3. What is the difference between props and state in React ?
 4. How do you access state in a React component ?
-5. How do you set a set in a React component ?
+5. How do you set a state in a React component ?
 
 ### Exercises: Level 2
 
