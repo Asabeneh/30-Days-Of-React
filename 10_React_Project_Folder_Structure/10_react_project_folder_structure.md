@@ -47,7 +47,7 @@ In all my React project, I will use CamelCase file name for all components. I pr
 
 I found it easy to put all images, icons and fonts in the assets folder and all CSS style sheets in styles folder. All components will be in the components folder.
 
-So far, we have been working on index.js file. We have lots of component on index.js. Today we will move every component to a single file and we will import all the files to App.js. In the process, you will see my folder structure. Currently, we are at src directory. All the folder structure will be inside the src directory. Let's start from the index.js file. In addition to index.js file, let's create an App.js file and move most of the components we had to App.js for the time being.
+So far, we have been working on index.js file. We have lots of component in index.js. Today we will move every component to a single file and we will import all the files to App.js. In the process, you will see my folder structure. Currently, we are at src directory. All the folder structure will be inside the src directory. Let's start from the index.js file. In addition to index.js file, let's create an App.js file and move most of the components we had to App.js for the time being.
 The index.js is your getaway to connect the component with index.html.
 
 ```js
@@ -66,7 +66,7 @@ In the above snippet of code, we have the App component. Let's create the App co
 
 ```js
 // src/App.js
-import React from 'react
+import React from 'react'
 const App = () => <h1>Welcome to 30 Days Of React</h1>
 ```
 
@@ -76,7 +76,7 @@ We just add the keyword export before _let_ or _const_ to make a named export.
 
 ```js
 // src/App.js
-import React from 'react
+import React from 'react'
 
 // named export in arrow function
 export const App = () => <h1>Welcome to 30 Days Of React</h1>
@@ -86,7 +86,7 @@ Exporting in a function declaration, a regular function
 
 ```js
 // src/App.js
-import React from 'react
+import React from 'react'
 // named export in regular function, function declaration
 export function App () {
 return <h1>Welcome to 30 Days Of React</h1>
@@ -109,7 +109,7 @@ We saw a named export and now let's implement it with default export. We can do 
 
 ```js
 // src/App.js
-import React from 'react
+import React from 'react'
 // export default in arrow function
 export default const App = () => <h1>Welcome to 30 Days Of React</h1>
 
@@ -117,7 +117,7 @@ export default const App = () => <h1>Welcome to 30 Days Of React</h1>
 
 ```js
 // src/App.js
-import React from 'react
+import React from 'react'
 // export default in arrow function
 export default function App () {
   return <h1>Welcome to 30 Days Of React</h1>
@@ -127,7 +127,7 @@ export default function App () {
 ```js
 // src/App.js
 // Recommended for most of the cases
-import React from 'react
+import React from 'react'
 const App = () => <h1>Welcome to 30 Days Of React</h1>
 export default App
 ```
