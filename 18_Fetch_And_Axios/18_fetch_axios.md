@@ -277,8 +277,7 @@ ReactDOM.render(<App />, rootElement)
 
 Now, let's see how to do the same API call using axios.
 
-How can do fetch if we have multiple API two call ?
-
+How can we fetch if we have multiple API calls?
 ## Axios
 
 Axios is a third party package and we need to install it using npm. It is the most popular way to make HTTP requests(GET, POST, PUT, PATCH, DELETE). In this example, we will cover only a get request.
