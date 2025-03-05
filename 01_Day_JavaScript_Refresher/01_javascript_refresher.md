@@ -1670,12 +1670,12 @@ function letsLearnScope() {
     let a = 'Python'
     let b = 20
     let d = 40
-    console.log(a, b, c) // Python 20 30
+    console.log(a, b, c, d) // Python 20 30 40
   }
-  // we can not access c because c's scope is only the if block
-  console.log(a, b) // JavaScript 10
+  console.log(a, b, c) // JavaScript 10 30
 }
 letsLearnScope()
+// we can not access c because c's scope is only the function 'letsLearnScope' block
 console.log(a, b) // JavaScript 10, accessible
 ```
 
