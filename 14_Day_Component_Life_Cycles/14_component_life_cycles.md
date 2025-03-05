@@ -427,7 +427,7 @@ class App extends Component {
 
   shouldComponentUpdate(nexProps, nextState) {
     console.log(nextProps, nextState)
-    // if the return is true, the application will never update.
+    // if the return is true, the application will update.
     return true
   }
 
@@ -458,6 +458,7 @@ class App extends Component {
     this.state = {
       firstName: 'John',
       day: 1,
+      congratulate: '',
     }
   }
 
