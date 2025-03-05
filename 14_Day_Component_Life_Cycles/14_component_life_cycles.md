@@ -275,7 +275,7 @@ class App extends Component {
 
   componentDidMount() {
     console.log('I am componentDidMount and I will be last to run.')
-    const API_URL = 'https://restcountries.eu/rest/v2/all'
+    const API_URL = 'https://restcountries.com/v3.1/all'
     fetch(API_URL)
       .then((response) => {
         return response.json()
@@ -300,16 +300,16 @@ class App extends Component {
           <p>There are {this.state.data.length} countries in the api</p>
           <div className='countries-wrapper'>
             {this.state.data.map((country) => (
-              <div>
-                <div>
-                  {' '}
-                  <img src={country.flag} alt={country.name} />{' '}
-                </div>
-                <div>
-                  <h1>{country.name}</h1>
-                  <p>Capital: {country.capital}</p>
-                  <p>Population: {country.population}</p>
-                </div>
+               <div>
+                  <div>
+                      {' '}
+                      <img src={country.flags.png} alt={country.name.official} />{' '}
+                  </div>
+                  <div>
+                      <h1>{country.name.common}</h1>
+                      <p>Capital: {country.capital}</p>
+                      <p>Population: {country.population}</p>
+                  </div>
               </div>
             ))}
           </div>
