@@ -2338,7 +2338,7 @@ function sumAllNums() {
  console.log(arguments)
 }
 
-sumAllNums(1, 2, 3, 4))
+sumAllNums(1, 2, 3, 4)
 // Arguments(4) [1, 2, 3, 4, callee: ƒ, Symbol(Symbol.iterator): ƒ]
 
 ```
@@ -2354,7 +2354,7 @@ function sumAllNums() {
   return sum
 }
 
-console.log(sumAllNums(1, 2, 3, 4)) // 10
+console.log(sumAllNums(1, 2, 3, 4) // 10
 console.log(sumAllNums(10, 20, 13, 40, 10))  // 93
 console.log(sumAllNums(15, 20, 30, 25, 10, 33, 40))  // 173
 ```
@@ -2372,7 +2372,7 @@ const sumAllNums = (...args) => {
  console.log(args)
 }
 
-sumAllNums(1, 2, 3, 4))
+sumAllNums(1, 2, 3, 4)
 // [1, 2, 3, 4]
 
 ```
@@ -2388,7 +2388,7 @@ const sumAllNums = (...args) => {
   return sum
 }
 
-console.log(sumAllNums(1, 2, 3, 4)) // 10
+console.log(sumAllNums(1, 2, 3, 4) // 10
 console.log(sumAllNums(10, 20, 13, 40, 10))  // 93
 console.log(sumAllNums(15, 20, 30, 25, 10, 33, 40))  // 173
 ```
