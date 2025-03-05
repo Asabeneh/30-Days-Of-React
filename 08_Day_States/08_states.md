@@ -65,7 +65,7 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-If you run the above code you will see zero on the browser. We can increase or decrease the value the state by changing the value of the state using JavaScript method.
+If you run the above code you will see zero on the browser. We can increase or decrease the value of the state by changing the value of the state using JavaScript method.
 
 ## Resetting a state using a JavaScript method
 
