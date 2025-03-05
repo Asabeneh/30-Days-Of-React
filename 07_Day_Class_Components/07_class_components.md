@@ -112,7 +112,7 @@ import ReactDOM from 'react-dom'
 class Header extends React.Component {
   constructor(props) {
     super(props)
-    // the code inside the constructor run before any other code
+    // the code inside the constructor runs before any other code
   }
   render() {
     return (
