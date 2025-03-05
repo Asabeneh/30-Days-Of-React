@@ -2,6 +2,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import asabenehImage from './images/asabeneh.jpg'
+import { App } from './App';
 
 const hexaColor = () => {
   let str = '0123456789abcdef'
@@ -97,13 +98,13 @@ const Footer = () => (
 )
 
 // The App, or the parent or the container component
-const App = () => (
+/*const App = () => (
   <div className='app'>
     <Header />
     <Main />
     <Footer />
   </div>
-)
+)*/
 
 const rootElement = document.getElementById('root')
 // we render the App component using the ReactDOM package

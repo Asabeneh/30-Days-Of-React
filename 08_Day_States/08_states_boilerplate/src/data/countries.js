@@ -1,10 +1,11 @@
-export const countriesData = [
+
+const countriesData = [
   {
     name: 'Afghanistan',
     capital: 'Kabul',
     languages: ['Pashto', 'Uzbek', 'Turkmen'],
     population: 27657145,
-    flag: 'https://restcountries.eu/data/afg.svg',
+    flag: 'https://st.myideasoft.com/idea/gj/33/myassets/products/150/tuzsuz-leblebi.jpg?revision=1598520160',
     currency: 'Afghan afghani',
   },
   {
@@ -2011,3 +2012,5 @@ export const countriesData = [
     currency: 'Botswana pula',
   },
 ]
+
+export default countriesData

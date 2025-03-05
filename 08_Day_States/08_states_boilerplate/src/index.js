@@ -1,7 +1,9 @@
 // index.js
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Mine from './mine'
 import asabenehImage from './images/asabeneh.jpg'
+import {Country} from "./country";
 
 // Fuction to show month date year
 
@@ -176,8 +178,8 @@ class App extends React.Component {
   state = {
     count: 0,
     styles: {
-      backgroundColor: '',
-      color: '',
+      backgroundColor: 'black',
+      color: 'white',
     },
   }
   showDate = (time) => {
@@ -209,13 +211,15 @@ class App extends React.Component {
   minusOne = () => {
     this.setState({ count: this.state.count - 1 })
   }
+
   handleTime = () => {
     alert(this.showDate(new Date()))
   }
+
   greetPeople = () => {
     alert('Welcome to 30 Days Of React Challenge, 2020')
   }
-  changeBackground = () => {}
+
   render() {
     const data = {
       welcome: 'Welcome to 30 Days Of React',
@@ -234,19 +238,7 @@ class App extends React.Component {
 
     return (
       <div className='app'>
-        {this.state.backgroundColor}
-        <Header data={data} />
-        <Main
-          user={user}
-          techs={techs}
-          handleTime={this.handleTime}
-          greetPeople={this.greetPeople}
-          changeBackground={this.changeBackground}
-          addOne={this.addOne}
-          minusOne={this.minusOne}
-          count={this.state.count}
-        />
-        <Footer date={new Date()} />
+        <Country/>
       </div>
     )
   }
