@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container h1 {
+    color: rgb(55, 53, 53);
+    text-align: left;
+    margin-bottom: 15px;
+}
