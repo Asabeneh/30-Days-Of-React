@@ -2147,7 +2147,7 @@ a. Create a function called signUp which allows user to add to the collection. I
 So far we have seen many builtin JavaScript functions. In this section, we will focus on custom functions. What is a function? Before we start making functions, lets understand what function is and why we need function?
 
 A function is a reusable block of code or programming statements designed to perform a certain task.
-A function is declared by a function key word followed by a name, followed by parentheses (). A parentheses can take a parameter. If a function take a parameter it will be called with argument. A function can also take a default parameter. To store a data to a function, a function has to return certain data types. To get the value we call or invoke a function.
+A function is declared by a function key word followed by a name, followed by parentheses {}. A parentheses can take a parameter. If a function take a parameter it will be called with argument. A function can also take a default parameter. To store a data to a function, a function has to return certain data types. To get the value we call or invoke a function.
 Function makes code:
 
 - clean and easy to read
@@ -3005,7 +3005,7 @@ const fullStack = [
 ]
 
 for (const [first, second, third, fourth] of fullStack) {
-  console.log(first, second, third, fourt)
+  console.log(first, second, third, fourth)
 }
 ```
 
