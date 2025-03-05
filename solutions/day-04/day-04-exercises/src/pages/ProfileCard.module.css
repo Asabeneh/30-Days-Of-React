@@ -1,0 +1,12 @@
+.container img {
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.container h1,
+.container p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(36, 35, 35);
+}
