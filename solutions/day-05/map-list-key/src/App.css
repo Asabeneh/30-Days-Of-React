@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Exercise 1 */
+/* 
+.container ul {
+  list-style: none;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbersContainer {
+  max-width: 800px;
+}
+
+.numbersContainer ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1px 1px;
+}
+
+.numbersContainer ul li {
+  display: flex;
+  margin: 1px;
+} */
+
+/* Exercise 2 */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.container ul li {
+  width: 100px;
+  height: 100px;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
