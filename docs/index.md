@@ -6,8 +6,7 @@
 
   <h1> 30 Days Of React</h1>
 
-  <strong>Learn with Asabeneh by joining the upcoming [<em>CODING BOOTCAMP</em>](https://docs.google.com/forms/d/e/1FAIpQLSf0oNIYR9XU1DCctfl-pY36KbWse-SQX5aQaUgetqSinFYnmQ/viewform) </strong>
-
+<strong>Learn with Asabeneh by joining the upcoming [<em>CODING BOOTCAMP</em>](https://docs.google.com/forms/d/e/1FAIpQLSf0oNIYR9XU1DCctfl-pY36KbWse-SQX5aQaUgetqSinFYnmQ/viewform) </strong>
 
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
@@ -61,7 +60,7 @@
 🧡🧡🧡 HAPPY CODING 🧡🧡🧡
 
 <div>
-<small>Support the <strong>author</strong> to create more educational materials</small> <br />  
+<small>Support the <strong>author</strong> to create more educational materials</small> <br />
 <a href = "https://www.paypal.me/asabeneh"><img src='./images/paypal_lg.png' alt='Paypal Logo' style="width:10%"/></a>
 </div>
 
@@ -107,7 +106,7 @@ If you are good at arrays, loops, functions, objects, functional programming, de
 
 Before you dive into this course, you may check the [review](https://t.me/thirtydaysofreact) of 30 Days Of React.
 
-This challenge is easy to read, written in conversational English, engaging, motivating and at the same time, it is very demanding. You need to allocate much time to finish this challenge. If you are a visual learner, you may get the video lesson on <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw"> Washera</a> YouTube channel. Subscribe the channel, comment and ask questions on YouTube vides and be proactive, the author will eventually notice you. 
+This challenge is easy to read, written in conversational English, engaging, motivating and at the same time, it is very demanding. You need to allocate much time to finish this challenge. If you are a visual learner, you may get the video lesson on <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw"> Washera</a> YouTube channel. Subscribe the channel, comment and ask questions on YouTube vides and be proactive, the author will eventually notice you.
 
 The author likes to hear your opinion about the challenge, share your thoughts about the 30DaysOfJavaScript challenge. You can leave your testimonial on this [link](https://www.asabeneh.com/testimonials)
 
@@ -268,7 +267,7 @@ Ctl+Shift+I
 To write our first JavaScript code, we used a built-in function **console.log()**. We passed an argument as input data, and the function displays the output. We passed 'Hello, World' as input data or argument in the console.log() function.
 
 ```js
-console.log('Hello, World!')
+console.log('Hello, World!');
 ```
 
 ##### Console.log with Multiple Arguments
@@ -278,9 +277,9 @@ The **console.log()** function can take multiple parameters separated by comma. 
 ![console log multiple arguments](./images/console_log_multipl_arguments.png)
 
 ```js
-console.log('Hello', 'World', '!')
-console.log('HAPPY', 'NEW', 'YEAR', 2020)
-console.log('Welcome', 'to', 30, 'Days', 'Of', 'JavaScript')
+console.log('Hello', 'World', '!');
+console.log('HAPPY', 'NEW', 'YEAR', 2020);
+console.log('Welcome', 'to', 30, 'Days', 'Of', 'JavaScript');
 ```
 
 As you can see from the snippet code above, _console.log()_ can take multiple arguments. It is recommended to use as many console.log() prints to check what is happening in your code but don't keep all console.log() tests on your code forever. Make your life easy by keeping the browser console open.
@@ -291,17 +290,17 @@ We add comments to our code. Comments are very important to make code more reada
 
 **Example: Single Line Comment**
 
-// This is the first comment  
- // This is the second comment  
- // I am a single line comment
+// This is the first comment
+// This is the second comment
+// I am a single line comment
 
 **Example: Multiline Comment**
 
 /\*
-This is a multiline comment  
- Multiline comments can take multiple lines  
- JavaScript is the language of the web  
- \*/
+This is a multiline comment
+Multiline comments can take multiple lines
+JavaScript is the language of the web
+\*/
 
 ##### Syntax
 
@@ -312,17 +311,17 @@ Programming languages are similar to human languages. English or many other lang
 I made a deliberate mistake. As a result, the console raises syntax errors. Actually, the syntax is very informative. It informs what type of mistake was made. By reading the error feedback guideline, we can correct the syntax and fix the problem. The process of identifying and removing errors from a program is called debugging. Let us fix the errors:
 
 ```js
-console.log('Hello, World!')
-console.log('Hello, World!')
+console.log('Hello, World!');
+console.log('Hello, World!');
 ```
 
 So far, we saw how to display text using the _console.log()_. If we are printing text or string using _console.log()_, the text has to be inside the single quotes, double quotes, or a backtick quotes.
 **Example:**
 
 ```js
-console.log('Hello, World!')
-console.log('Hello, World!')
-console.log(`Hello, World!`)
+console.log('Hello, World!');
+console.log('Hello, World!');
+console.log(`Hello, World!`);
 ```
 
 #### Arithmetics
@@ -334,12 +333,12 @@ The console can directly take arguments without the **_console.log()_** function
 ![Arithmetic](images/arithmetic.png)
 
 ```js
-console.log(2 + 3) // Addition
-console.log(3 - 2) // Subtraction
-console.log(2 * 3) // Multiplication
-console.log(3 / 2) // Division
-console.log(3 % 2) // Modulus - finding remainder
-console.log(3 ** 2) // Exponentiation 3 ** 2 == 3 * 3
+console.log(2 + 3); // Addition
+console.log(3 - 2); // Subtraction
+console.log(2 * 3); // Multiplication
+console.log(3 / 2); // Division
+console.log(3 % 2); // Modulus - finding remainder
+console.log(3 ** 2); // Exponentiation 3 ** 2 == 3 * 3
 ```
 
 ### Code Editor
@@ -372,7 +371,7 @@ Open the Visual Studio Code by double-clicking its icon. When you open it, you w
 
 ![coding running](./images/launched_on_new_tab.png)
 
-Congratulations! You have completed the setup you need to get started with React, but before we dive into React let's do a JavaScript refresher. If you are very comfortable with JavaScript you may skip day 1 JavaScript refresher. The JavaScript refresher section is vast and it may take more than one day. From my experience people usually get stuck in React because their JavaScript knowledge is very shallow therefore to fill that gap all the necessary JavaScript features which can be used in React are covered in the JavaScript refresher section. There are many exercises but you are not required to solve them. Click [here](../30-Days-Of-React/02_Day_Introduction_to_React/02_introduction_to_react.md) if you want skip JavaScript and jump directly into React.
+Congratulations! You have completed the setup you need to get started with React, but before we dive into React let's do a JavaScript refresher. If you are very comfortable with JavaScript you may skip day 1 JavaScript refresher. The JavaScript refresher section is vast and it may take more than one day. From my experience people usually get stuck in React because their JavaScript knowledge is very shallow therefore to fill that gap all the necessary JavaScript features which can be used in React are covered in the JavaScript refresher section. There are many exercises but you are not required to solve them. Click [here](./02_Day_Introduction_to_React/02_introduction_to_react.md) if you want skip JavaScript and jump directly into React.
 
 🎉 CONGRATULATIONS ! 🎉
 

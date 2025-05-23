@@ -1,0 +1,60 @@
+site_name: 30 Days Of React
+site_description: 30 Days of React challenge is a step by step guide to learn React in 30 days. These videos may help too
+site_author: "Asabeneh Yetayeh"
+repo_url: https://github.com/Asabeneh/30-Days-Of-React
+
+nav:
+  - Home: index.md
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: red
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+    - navigation.top
+    - navigation.expand
+    - navigation.sections
+    - navigation.tracking
+    - navigation.search.highlight
+    - navigation.search.share
+    - navigation.search.suggest
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+
+
+
+# to run the server
+# source .venv/bin/activate  # ✅ required
+# mkdocs serve
+
+# to automatically activate the virtual environment
+# direnv allows you to automatically load and unload environment variables when you cd into a directory
+# Install direnv once
+# sudo apt install direnv
+
+# In your project:
+# echo "source .venv/bin/activate" > .envrc
+# direnv allow
