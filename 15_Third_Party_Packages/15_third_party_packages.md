@@ -240,10 +240,10 @@ class App extends Component {
       })
   }
 
-  renderCountries = () => {
+  renderCountries = () => {  
     return this.state.data.map((country) => {
       const languageOrLanguages =
-        country.languages.length > 1 ? 'Langauges' : 'Language'
+        country.languages.length > 1 ? 'Languages' : 'Language'
       const formatLanguages = country.languages
         .map(({ name }) => name)
         .join(', ')
