@@ -21,7 +21,7 @@
 - [Component Life Cycles](#component-life-cycles)
   - [What is component life cycle](#what-is-component-life-cycle)
   - [Mounting](#mounting)
-    - [Contructor](#contructor)
+    - [Constructor](#constructor)
     - [getDerivedStateFromPros](#getderivedstatefrompros)
     - [Render](#render)
     - [ComponentDidMount](#componentdidmount)
@@ -95,7 +95,7 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-### Contructor
+### Constructor
 
 Nowadays we write class based-component without a constructor and we can write the state also outside the constructor. In older version React we the state used be always inside the constructor.
 
@@ -219,7 +219,7 @@ ReactDOM.render(<App firstName='Asabeneh' />, rootElement)
 
 ### ComponentDidMount
 
-As we can understand the name of the method that this method called after component is render. This a place place to setting time interval and calling API. Look at the following setTimeout implementation in componentDidMount method.
+As we can understand the name of the method that this method called after component is render. This is a place to setting time interval and calling API. Look at the following setTimeout implementation in componentDidMount method.
 
 ```js
 import React, { Component } from 'react'
