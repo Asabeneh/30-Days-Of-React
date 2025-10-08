@@ -219,7 +219,7 @@ ReactDOM.render(<App firstName='Asabeneh' />, rootElement)
 
 ### ComponentDidMount
 
-As we can understand the name of the method that this method called after component is render. This a place place to setting time interval and calling API. Look at the following setTimeout implementation in componentDidMount method.
+As we can understand the name of the method that this method called after component is render. This is a place to setting time interval and calling API. Look at the following setTimeout implementation in componentDidMount method.
 
 ```js
 import React, { Component } from 'react'
