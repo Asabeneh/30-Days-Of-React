@@ -9,7 +9,7 @@ const Country = ({ country: { name, flag, population } }) => {
         <img src={flag} alt={name} />
       </div>
       <h3 className='country_name'>{name.toUpperCase()}</h3>
-      <div class='country_text'>
+      <div className='country_text'>
         <p>
           <span>Population: </span>
           {population}
@@ -28,9 +28,10 @@ class App extends Component {
     this.fetchCountryData()
   }
   fetchCountryData = async () => {
-    const url = 'https://restcountries.eu/rest/v2/all'
+    const url = 'https://restcountries.com/v2/all'
     try {
-      const response = await axios.get(url)
+      const response = await axios.get(url);
+      console.log("response",response)
       const data = await response.data
       this.setState({
         data,
