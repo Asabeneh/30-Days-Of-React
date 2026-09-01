@@ -2,11 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 
-// importing data
-
-import { countriesData } from './data/countries'
-import { tenMostHighestPopulations } from './data/ten_most_highest_populations'
-
 const countries = [
   { name: 'Finland', city: 'Helsinki' },
   { name: 'Sweden', city: 'Stockholm' },
