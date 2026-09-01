@@ -10,6 +10,7 @@ import doSomeMath from './math.js'
 // to import the other modules
 // since these modules were not exported as default we have to desctructure
 import { addTwo, multiply, subtract } from './math.js'
+import { UserCard } from "./UserCard";
 
 import * as everything from './math.js'
 console.log(addTwo(5, 5))
@@ -64,7 +65,7 @@ const personAge = (
 
 // JSX element, main
 const techs = ['HTML', 'CSS', 'JavaScript']
-const techsFormatted = techs.map((tech) => <li>{tech}</li>)
+const techsFormatted = techs.map((tech) => <li key={tech}>{tech}</li>)
 
 const user = (
   <div>
@@ -105,9 +106,7 @@ const footer = (
 // JSX element, app
 const app = (
   <div className='app'>
-    {header}
-    {main}
-    {footer}
+      {UserCard}
   </div>
 )
 

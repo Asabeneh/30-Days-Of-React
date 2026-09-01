@@ -148,34 +148,33 @@ class App extends Component {
             <div className='form-group'>
               <label htmlFor='firstName'>First Name </label>
               <input
-                type='text'
-                name='firstName'
-                value={this.state.firstName}
-                onChange={this.handleChange}
-                onBlur={this.handleBlur}
-                placeholder='First Name'
-              />{' '}
-              <br />
+                  type='text'
+                  name='firstName'
+                  value={this.state.firstName}
+                  onChange={this.handleChange}
+                  onBlur={this.handleBlur}
+                  placeholder='First Name'
+              /> <br />
               <small>{firstName}</small>
             </div>
             <div className='form-group'>
               <label htmlFor='lastName'>Last Name </label>
               <input
-                type='text'
-                name='lastName'
-                value={this.state.lastName}
-                onChange={this.handleChange}
-                placeholder='Last Name'
+                  type='text'
+                  name='lastName'
+                  value={this.state.lastName}
+                  onChange={this.handleChange}
+                  placeholder='Last Name'
               />
             </div>
             <div className='form-group'>
               <label htmlFor='email'>Email </label>
               <input
-                type='email'
-                name='email'
-                value={this.state.email}
-                onChange={this.handleChange}
-                placeholder='Email'
+                  type='email'
+                  name='email'
+                  value={this.state.email}
+                  onChange={this.handleChange}
+                  placeholder='Email'
               />
             </div>
           </div>
@@ -183,44 +182,44 @@ class App extends Component {
           <div className='form-group'>
             <label htmlFor='tel'>Telephone </label>
             <input
-              type='tel'
-              name='tel'
-              value={this.state.tel}
-              onChange={this.handleChange}
-              placeholder='Tel'
+                type='tel'
+                name='tel'
+                value={this.state.tel}
+                onChange={this.handleChange}
+                placeholder='Tel'
             />
           </div>
 
           <div className='form-group'>
             <label htmlFor='dateOfBirth'>Date of birth </label>
             <input
-              type='date'
-              name='dateOfBirth'
-              value={this.state.dateOfBirth}
-              onChange={this.handleChange}
-              placeholder='Date of Birth'
+                type='date'
+                name='dateOfBirth'
+                value={ this.state.dateOfBirth }
+                onChange={ this.handleChange }
+                placeholder='Date of Birth'
             />
           </div>
           <div className='form-group'>
             <label htmlFor='favoriteColor'>Favorite Color</label>
             <input
-              type='color'
-              id='favoriteColor'
-              name='favoriteColor'
-              value={this.state.favoriteColor}
-              onChange={this.handleChange}
-              placeholder='Favorite Color'
+                type='color'
+                id='favoriteColor'
+                name='favoriteColor'
+                value={this.state.favoriteColor}
+                onChange={this.handleChange}
+                placeholder='Favorite Color'
             />
           </div>
           <div className='form-group'>
             <label htmlFor='weight'>Weight </label>
             <input
-              type='number'
-              id='weight'
-              name='weight'
-              value={this.state.weight}
-              onChange={this.handleChange}
-              placeholder='Weight in Kg'
+                type='number'
+                id='weight'
+                name='weight'
+                value={this.state.weight}
+                onChange={this.handleChange}
+                placeholder='Weight in Kg'
             />
           </div>
           <div>
@@ -234,34 +233,34 @@ class App extends Component {
             <p>Gender</p>
             <div>
               <input
-                type='radio'
-                id='female'
-                name='gender'
-                value='Female'
-                onChange={this.handleChange}
-                checked={this.state.gender === 'Female'}
+                  type='radio'
+                  id='female'
+                  name='gender'
+                  value='Female'
+                  onChange={this.handleChange}
+                  checked={this.state.gender === 'Female'}
               />
               <label htmlFor='female'>Female</label>
             </div>
             <div>
               <input
-                id='male'
-                type='radio'
-                name='gender'
-                value='Male'
-                onChange={this.handleChange}
-                checked={this.state.gender === 'Male'}
+                  id='male'
+                  type='radio'
+                  name='gender'
+                  value='Male'
+                  onChange={this.handleChange}
+                  checked={this.state.gender === 'Male'}
               />
               <label htmlFor='male'>Male</label>
             </div>
             <div>
               <input
-                id='other'
-                type='radio'
-                name='gender'
-                value='Other'
-                onChange={this.handleChange}
-                checked={this.state.gender === 'Other'}
+                  id='other'
+                  type='radio'
+                  name='gender'
+                  value='Other'
+                  onChange={this.handleChange}
+                  checked={this.state.gender === 'Other'}
               />
               <label htmlFor='other'>Other</label>
             </div>
@@ -271,28 +270,28 @@ class App extends Component {
             <p>Select your skills</p>
             <div>
               <input
-                type='checkbox'
-                id='html'
-                name='html'
-                onChange={this.handleChange}
+                  type='checkbox'
+                  id='html'
+                  name='html'
+                  onChange={this.handleChange}
               />
               <label htmlFor='html'>HTML</label>
             </div>
             <div>
               <input
-                type='checkbox'
-                id='css'
-                name='css'
-                onChange={this.handleChange}
+                  type='checkbox'
+                  id='css'
+                  name='css'
+                  onChange={this.handleChange}
               />
               <label htmlFor='css'>CSS</label>
             </div>
             <div>
               <input
-                type='checkbox'
-                id='javascript'
-                name='javascript'
-                onChange={this.handleChange}
+                  type='checkbox'
+                  id='javascript'
+                  name='javascript'
+                  onChange={this.handleChange}
               />
               <label htmlFor='javascript'>JavaScript</label>
             </div>
@@ -300,16 +299,15 @@ class App extends Component {
           <div>
             <label htmlFor='bio'>Bio</label> <br />
             <textarea
-              id='bio'
-              name='bio'
-              value={this.state.bio}
-              onChange={this.handleChange}
-              cols='120'
-              rows='10'
-              placeholder='Write about yourself ...'
+                id='bio'
+                name='bio'
+                value={this.state.bio}
+                onChange={this.handleChange}
+                cols='120'
+                rows='10'
+                placeholder='Write about yourself ...'
             />
           </div>
-
           <div>
             <input type='file' name='file' onChange={this.handleChange} />
           </div>
