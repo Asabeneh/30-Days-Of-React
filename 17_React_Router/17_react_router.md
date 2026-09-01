@@ -22,7 +22,7 @@
   - [What is React Router ?](#what-is-react-router-)
   - [BroswerRouter](#broswerrouter)
   - [Route](#route)
-  - [Switch](#switch)
+  - [Routes](#Routes)
   - [NavLink](#navlink)
   - [Nested Routing](#nested-routing)
   - [Redirect](#redirect)
@@ -54,7 +54,7 @@ import {
   BrowserRouter,
   Route,
   NavLink,
-  Switch,
+  Routes,
   Redirect,
   Prompt,
   withRouter,
@@ -116,7 +116,7 @@ class App extends Component {
     return (
       <Router>
         <div className='App'>
-          <Route path='/home' component={Home} />
+          <Route path='/home' element={<Home />} />
         </div>
       </Router>
     )
@@ -152,10 +152,10 @@ class App extends Component {
     return (
       <Router>
         <div className='App'>
-          <Route path='/home' component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/contact' component={Contact} />
-          <Route path='/challenges' component={Challenges} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/challenges' element={<Challenges />} />
         </div>
       </Router>
     )
@@ -191,10 +191,10 @@ class App extends Component {
     return (
       <Router>
         <div className='App'>
-          <Route path='/' component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/contact' component={Contact} />
-          <Route path='/challenges' component={Challenges} />
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/challenges' element={<Challenges />} />
         </div>
       </Router>
     )
@@ -230,10 +230,10 @@ class App extends Component {
     return (
       <Router>
         <div className='App'>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/contact' component={Contact} />
-          <Route exact path='/challenges' component={Challenges} />
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/about' element={<About />} />
+          <Route exact path='/contact' element={<Contact />} />
+          <Route exact path='/challenges' element={<Challenges />} />
         </div>
       </Router>
     )
@@ -269,10 +269,10 @@ class App extends Component {
     return (
       <Router>
         <div className='App'>
-          <Route exact path='/' component={Home} />
-          <Route exact strict path='/about' component={About} />
-          <Route exact strict path='/contact' component={Contact} />
-          <Route exact strict path='/challenges' component={Challenges} />
+          <Route exact path='/' element={<Home />} />
+          <Route exact strict path='/about' element={<About />} />
+          <Route exact strict path='/contact' element={<Contact />} />
+          <Route exact strict path='/challenges' element={<Challenges />} />
         </div>
       </Router>
     )
@@ -283,16 +283,16 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-The other way to avoid the lingering home page is rearranging the routing order and Switch component. Just putting the home route at the bottom.
+The other way to avoid the lingering home page is rearranging the routing order and Routes component. Just putting the home route at the bottom.
 
-## Switch
+## Routes
 
-The Switch component allows only on component to be rendered.
+The Routes component allows only on component to be rendered.
 
 ```js
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 // Home component
 const Home = (props) => <h1>Welcome Home</h1>
@@ -312,12 +312,12 @@ class App extends Component {
     return (
       <Router>
         <div className='App'>
-          <Switch>
-            <Route exact path='/about' component={About} />
-            <Route exact path='/contact' component={Contact} />
-            <Route exact path='/challenges' component={Challenges} />
-            <Route exact path='/' component={Home} />
-          </Switch>
+          <Routes>
+            <Route exact path='/about' element={<About />} />
+            <Route exact path='/contact' element={<Contact />} />
+            <Route exact path='/challenges' element={<Challenges />} />
+            <Route exact path='/' element={<Home />} />
+          </Routes>
         </div>
       </Router>
     )
@@ -340,7 +340,7 @@ import ReactDOM from 'react-dom'
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
+  Routes,
   NavLink,
 } from 'react-router-dom'
 
@@ -368,12 +368,12 @@ class App extends Component {
             </li>
           </ul>
 
-          <Switch>
-            <Route path='/about' component={About} />
-            <Route path='/contact' component={Contact} />
-            <Route path='/challenges' component={Challenges} />
-            <Route path='/' component={Home} />
-          </Switch>
+          <Routes>
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/challenges' element={<Challenges />} />
+            <Route path='/' element={<Home />} />
+          </Routes>
         </div>
       </Router>
     )
@@ -392,7 +392,7 @@ import ReactDOM from 'react-dom'
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
+  Routes,
   NavLink,
 } from 'react-router-dom'
 
@@ -429,12 +429,12 @@ class App extends Component {
             </li>
           </ul>
 
-          <Switch>
-            <Route path='/about' component={About} />
-            <Route path='/contact' component={Contact} />
-            <Route path='/challenges' component={Challenges} />
-            <Route path='/' component={Home} />
-          </Switch>
+          <Routes>
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/challenges' element={<Challenges />} />
+            <Route path='/' element={<Home />} />
+          </Routes>
         </div>
       </Router>
     )
@@ -453,7 +453,7 @@ import ReactDOM from 'react-dom'
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
+  Routes,
   NavLink,
 } from 'react-router-dom'
 
@@ -490,13 +490,13 @@ class App extends Component {
             </li>
           </ul>
 
-          <Switch>
-            <Route path='/about' component={About} />
-            <Route path='/contact' component={Contact} />
-            <Route path='/challenge' component={Challenges} />
-            <Route path='/' component={Home} />
+          <Routes>
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/challenge' element={<Challenges />} />
+            <Route path='/' element={<Home />} />
             <Route component={NotFound} />
-          </Switch>
+          </Routes>
         </div>
       </Router>
     )
@@ -515,7 +515,7 @@ import ReactDOM from 'react-dom'
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
+  Routes,
   NavLink,
 } from 'react-router-dom'
 
@@ -554,13 +554,13 @@ class App extends Component {
       <Router>
         <div className='App'>
           <Navbar />
-          <Switch>
+          <Routes>
             <Route component={NotFound} />
-            <Route path='/about' component={About} />
-            <Route path='/contact' component={Contact} />
-            <Route path='/challenge' component={Challenges} />
-            <Route exact path='/' component={Home} />
-          </Switch>
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/challenge' element={<Challenges />} />
+            <Route exact path='/' element={<Home />} />
+          </Routes>
         </div>
       </Router>
     )
@@ -581,7 +581,7 @@ import ReactDOM from 'react-dom'
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
+  Routes,
   NavLink,
 } from 'react-router-dom'
 
@@ -747,7 +747,7 @@ const Challenges = (props) => {
           </li>
         ))}
       </ul>
-      <Switch>
+      <Routes>
         <Route
           exact
           path={'/challenges'}
@@ -757,7 +757,7 @@ const Challenges = (props) => {
           path={path}
           component={(props) => <Challenge challenge={challenge} />}
         />
-      </Switch>
+      </Routes>
     </div>
   )
 }
@@ -785,13 +785,13 @@ class App extends Component {
       <Router>
         <div className='App'>
           <Navbar />
-          <Switch>
-            <Route path='/about' component={About} />
-            <Route path='/contact' component={Contact} />
-            <Route path='/challenges' component={Challenges} />
-            <Route exact path='/' component={Home} />
+          <Routes>
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/challenges' element={<Challenges />} />
+            <Route exact path='/' element={<Home />} />
             <Route component={NotFound} />
-          </Switch>
+          </Routes>
         </div>
       </Router>
     )
@@ -814,7 +814,7 @@ import ReactDOM from 'react-dom'
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
+  Routes,
   NavLink,
   Redirect,
 } from 'react-router-dom'
@@ -981,7 +981,7 @@ const Challenges = (props) => {
           </li>
         ))}
       </ul>
-      <Switch>
+      <Routes>
         <Route
           exact
           path={'/challenges'}
@@ -991,7 +991,7 @@ const Challenges = (props) => {
           path={path}
           component={(props) => <Challenge challenge={challenge} />}
         />
-      </Switch>
+      </Routes>
     </div>
   )
 }
@@ -1057,9 +1057,9 @@ class App extends Component {
       <Router>
         <div className='App'>
           <Navbar username={this.state.firstName} />
-          <Switch>
-            <Route path='/about' component={About} />
-            <Route path='/contact' component={Contact} />
+          <Routes>
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
             <Route
               path='/user/:username'
               component={(props) => (
@@ -1090,9 +1090,9 @@ class App extends Component {
                 )
               }}
             />
-            <Route exact path='/' component={Home} />
+            <Route exact path='/' element={<Home />} />
             <Route component={NotFound} />
-          </Switch>
+          </Routes>
         </div>
       </Router>
     )
@@ -1115,7 +1115,7 @@ import ReactDOM from 'react-dom'
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
+  Routes,
   NavLink,
   Redirect,
   Prompt,
@@ -1283,7 +1283,7 @@ const Challenges = (props) => {
           </li>
         ))}
       </ul>
-      <Switch>
+      <Routes>
         <Route
           exact
           path={'/challenges'}
@@ -1293,7 +1293,7 @@ const Challenges = (props) => {
           path={path}
           component={(props) => <Challenge challenge={challenge} />}
         />
-      </Switch>
+      </Routes>
     </div>
   )
 }
@@ -1361,9 +1361,9 @@ class App extends Component {
           <Navbar username={this.state.firstName} />
           <Prompt message='Are you sure you want to leave?' />
 
-          <Switch>
-            <Route path='/about' component={About} />
-            <Route path='/contact' component={Contact} />
+          <Routes>
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
             <Route
               path='/user/:username'
               component={(props) => (
@@ -1394,9 +1394,9 @@ class App extends Component {
                 )
               }}
             />
-            <Route exact path='/' component={Home} />
+            <Route exact path='/' element={<Home />} />
             <Route component={NotFound} />
-          </Switch>
+          </Routes>
         </div>
       </Router>
     )
@@ -1415,7 +1415,7 @@ import ReactDOM from 'react-dom'
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
+  Routes,
   NavLink,
   Redirect,
   Prompt,
@@ -1583,7 +1583,7 @@ const Challenges = (props) => {
           </li>
         ))}
       </ul>
-      <Switch>
+      <Routes>
         <Route
           exact
           path={'/challenges'}
@@ -1593,7 +1593,7 @@ const Challenges = (props) => {
           path={path}
           component={(props) => <Challenge challenge={challenge} />}
         />
-      </Switch>
+      </Routes>
     </div>
   )
 }
@@ -1669,9 +1669,9 @@ class App extends Component {
             }}
           />
 
-          <Switch>
-            <Route path='/about' component={About} />
-            <Route path='/contact' component={Contact} />
+          <Routes>
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
             <Route
               path='/user/:username'
               component={(props) => (
@@ -1702,9 +1702,9 @@ class App extends Component {
                 )
               }}
             />
-            <Route exact path='/' component={Home} />
+            <Route exact path='/' element={<Home />} />
             <Route component={NotFound} />
-          </Switch>
+          </Routes>
         </div>
       </Router>
     )
@@ -1721,7 +1721,7 @@ ReactDOM.render(<App />, rootElement)
 
 1. What package do you use to implement routing in react?
 2. What is the default export in react-router-dom?
-3. What is the use of the following Components(Route, NavLink, Switch, Redirect, Prompt)
+3. What is the use of the following Components(Route, NavLink, Routes, Redirect, Prompt)
 
 ## Exercises: Level 2
 
