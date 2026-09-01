@@ -1565,9 +1565,9 @@ Now, you have a very good understanding of how to create JSX elements and also h
 
 #### Exercises: Why React?
 
-1. Why did you chose to use react?
-2. What measures do you use to know popularity ?
-3. What is more popular, React or Vue ?
+1. Why did you chose to use react?  ... Beacause my Manager said so else I'll get fired
+2. What measures do you use to know popularity ?.. By viewing the stars on one's framework libraby on github as per this page
+3. What is more popular, React or Vue ? ... It's the one and only React
 
 #### Exercises: JSX
 
