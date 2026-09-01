@@ -39,4 +39,4 @@ Coming ...
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 27](../27_Ref/27_ref.md) | [Day 29>>]()
+[<< Day 28](../28_project/28_project.md) | [Day 30 >>](../30_conclusions/30_conclusions.md)

@@ -141,4 +141,4 @@ ReactDOM.render(<App />, rootElement
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 25](../25_Custom_Hooks/25_custom_hooks.md) | [Day 27>>]()
+[<< Day 26](../26_Context/26_context.md) | [Day 28 >>](../28_project/28_project.md)

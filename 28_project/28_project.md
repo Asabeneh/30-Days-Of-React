@@ -33,4 +33,4 @@ In this section, you and I will develop an old version of twitter post.
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 27](../27_Ref/27_ref.md) | [Day 29>>]()
+[<< Day 27](../27_Ref/27_ref.md) | [Day 29>>](../29_explore/29_explore.md)

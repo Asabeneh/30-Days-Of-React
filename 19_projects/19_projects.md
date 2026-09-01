@@ -35,4 +35,4 @@ Your result should look like this [demo](https://www.30daysofreact.com/day-19/ca
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 18](../18_Fetch_And_Axios/18_fetch_axios.md) | [Day 20>>]()
+[<< Day 18](../18_Fetch_And_Axios/18_fetch_axios.md) | [Day 20>>](../20_projects/20_projects.md)
