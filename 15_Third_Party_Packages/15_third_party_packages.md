@@ -94,7 +94,7 @@ header {
 ```js
 // Header.js
 import React from 'react'
-import './styles/header.scss
+import './styles/header.scss'
 const Header = () = (
    <header>
           <div className='header-wrapper'>
@@ -115,7 +115,7 @@ export default Header
 
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import './styles/header.scss
+import './styles/header.scss'
 
 class App extends Component {
   render() {
@@ -160,7 +160,7 @@ Naming:
 ```js
 // Header.js
 import React from 'react'
-import headerStyles from  './styles/header.module.scss
+import headerStyles from  './styles/header.module.scss'
 // We can all destructure the class name
 const {header, headerWrapper} = headerStyles
 const Header = () = (
@@ -183,7 +183,7 @@ export default Header
 
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import './styles/header.scss
+import './styles/header.scss'
 
 class App extends Component {
   render() {
