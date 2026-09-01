@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 27](../27_Ref/27_ref.md) | [Day 29>>]()
+[<< Day 27](../27_Ref/27_ref.md) | [Day 29>>](../29_explore/29_explore.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_28.jpg)
 
@@ -33,4 +33,4 @@ In this section, you and I will develop an old version of twitter post.
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 27](../27_Ref/27_ref.md) | [Day 29>>]()
+[<< Day 27](../27_Ref/27_ref.md) | [Day 29>>](../29_explore/29_explore.md)
