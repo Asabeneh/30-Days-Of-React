@@ -202,6 +202,7 @@ It is good to know these folders and files.
   - index.js - a file which allows to connect all the components with index.html
   - App.js - A file where we usually import most of the presentational components
   - serviceWorker.js: is used to add progressive web app features
+  (some of you, instead of serviceWorker.js, you may have reportWebVitals.js)
   - setupTests.js - to write testing cases
 
 - package.json- List of packages the applications uses
