@@ -112,7 +112,7 @@ Your Company Logo goes here
 
 ---
 
-## Introduction
+## Introduction 123
 
 **Congratulations** on deciding to participate in 30 days of React programming challenge. In this challenge you will learn everything you need to use to develop a React application. In the end of the challenge you will get a 30DaysOfReact programming challenge completion certificate. In order to get a certificate, you have to enroll to [DevOsome](https://www.devosome.com/) which is an interactive and engaging online educational platform.
 
