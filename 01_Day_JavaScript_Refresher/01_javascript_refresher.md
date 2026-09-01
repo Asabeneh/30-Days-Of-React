@@ -1672,7 +1672,7 @@ function letsLearnScope() {
     let d = 40
     console.log(a, b, c) // Python 20 30
   }
-  // we can not access c because c's scope is only the if block
+  // we can not access d because d's scope is only the if block
   console.log(a, b) // JavaScript 10
 }
 letsLearnScope()
