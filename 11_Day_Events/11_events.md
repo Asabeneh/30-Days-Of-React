@@ -62,7 +62,7 @@ In React, it is slightly different
 
 ```js
 import React from 'react'
-// if it is functional components
+// if it is a functional component
 const App = () => {
   const greetPeople = () => {
     alert('Welcome to 30 Days Of React Challenge')
@@ -73,7 +73,7 @@ const App = () => {
 
 ```js
 import React, { Component } from 'react'
-// if it is functional components
+// if it's a class based component
 class App extends Component {
   greetPeople = () => {
     alert('Welcome to 30 Days Of React Challenge')
