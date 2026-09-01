@@ -1319,7 +1319,7 @@ isRaining
    2 is an even number
 
    Enter a number: 9
-   9 is is an odd number.
+   9 is an odd number.
    ```
 
 ##### Exercises: Level 2
