@@ -1,0 +1,12 @@
+.container {
+    width: 100vw;
+    height: 15vh;
+    margin-bottom: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
