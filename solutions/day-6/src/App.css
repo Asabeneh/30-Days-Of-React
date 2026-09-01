@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@300&family=Rajdhani:wght@500&display=swap);
+
+* {
+     margin: 0;
+     padding: 0;
+     font-family: 'Rajdhani', sans-serif;
+     box-sizing: border-box;
+}
+
+.container {
+     height: 100vh;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+}
+
+.container h1,
+.container h2 {
+     text-transform: capitalize;
+     text-align: center;
+     word-spacing: .3rem;
+}
+
+.container h1 {
+     font-size: 48px;
+}
+
+.container h2 {
+     font-weight: 300;
+     color: #7a7a7a;
+}
+
+.container,
+.numbers {
+     display: flex;
+}
+
+.colors,
+.number {
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.number {
+     width: 90%;
+     gap: 2px;
+     margin: auto;
+}
+
+.number h1 {
+     padding: 24px;
+     width: calc(100%/9);
+     color: #fff;
+     background-color: #20be73;
+}
+
+.colors {
+     width: 80%;
+}
+
+.colorBg {
+     height: 150px;
+     width: calc(100%/8);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.colorBg h3 {
+     color: #fff;
+}
+
+table,
+tr {
+     width: 80%;
+}
+
+.bigBlock {
+     width: 60%;
+}
+
+table,
+td,
+tr {
+     padding: 8px 16px;
+}
+
+.chart {
+     background-color: #fea501;
+     border-radius: 3px;
+     height: 30px;
+}
+
+.population h2 {
+     text-align: left;
+     color: #000;
+     font-weight: 600;
+}
+
+.popNumber {
+     text-align: right;
+}

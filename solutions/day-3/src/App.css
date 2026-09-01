@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@100&family=Poppins:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #c2e6f467;
+}
+
+h2 {
+  text-transform: capitalize;
+}
+
+.App,
+.techCard {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  width: 100%;
+  display: flex;
+  padding: 16px 32px;
+  gap: 3em;
+}
+
+.techCard {
+  background-color: #fff;
+  width: 80%;
+  border-radius: 15px;
+  padding: 32px;
+  height: 80vh;
+}
+
+.tech,
+.techCard {
+  display: flex;
+  gap: 2em;
+}
+
+.tech img {
+  width: 8rem;
+}
+
+.sub h2 {
+  margin-bottom: 2rem;
+}
+
+.card,
+.sub {
+  display: flex;
+  width: 80%;
+}
+
+.sub {
+  background-color: #c2e6f4;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  border-radius: .7em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.sub button,
+.sub input {
+  height: 2.2rem;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+}
+
+.sub input {
+  width: 15rem;
+  margin: 2em .3em;
+  padding-left: 8px;
+}
+
+.sub button {
+  background-color: #f37575;
+  color: #fff;
+  width: 20rem;
+}
+
+.sub p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 1em;
+}
+
+.card {
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start center;
+  text-align: left;
+  padding: 32px 16px 10px;
+  margin: 10px auto;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.card .person {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.card .icon {
+  width: 1em;
+  align-items: center;
+}
+
+.details h2,
+.skills h2,
+.sub h2 {
+  text-transform: uppercase;
+}
+
+.skills h2 {
+  font-size: 18px;
+}
+
+.details h2 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.details {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.card p {
+  text-transform: capitalize;
+  font-size: 12px;
+  margin: 2em 0;
+}
+
+.skills h2 {
+  margin-bottom: 1em;
+}
+
+.card .skill {
+  background-color: #2acece;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 4px 8px;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #c2e6f467;
+}
+
+h2 {
+  text-transform: capitalize;
+}
+
+.App,
+.techCard {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  width: 100%;
+  display: flex;
+  padding: 16px 32px;
+  gap: 3em;
+}
+
+.techCard {
+  background-color: #fff;
+  width: 80%;
+  border-radius: 15px;
+  padding: 32px;
+  height: 80vh;
+}
+
+.tech,
+.techCard {
+  display: flex;
+  gap: 2em;
+}
+
+.tech img {
+  width: 8rem;
+}
+
+.sub h2 {
+  margin-bottom: 2rem;
+}
+
+.card,
+.sub {
+  display: flex;
+  width: 80%;
+}
+
+.sub {
+  background-color: #c2e6f4;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  border-radius: .7em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.sub button,
+.sub input {
+  height: 2.2rem;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+}
+
+.sub input {
+  width: 15rem;
+  margin: 2em .3em;
+  padding-left: 8px;
+}
+
+.sub button {
+  background-color: #f37575;
+  color: #fff;
+  width: 20rem;
+}
+
+.sub p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 1em;
+}
+
+.card {
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start center;
+  text-align: left;
+  padding: 32px 16px 10px;
+  margin: 10px auto;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.card .person {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.card .icon {
+  width: 1em;
+  align-items: center;
+}
+
+.details h2,
+.skills h2,
+.sub h2 {
+  text-transform: uppercase;
+}
+
+.skills h2 {
+  font-size: 18px;
+}
+
+.details h2 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.details {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.card p {
+  text-transform: capitalize;
+  font-size: 12px;
+  margin: 2em 0;
+}
+
+.skills h2 {
+  margin-bottom: 1em;
+}
+
+.card .skill {
+  background-color: #2acece;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 4px 8px;
+  color: #fff;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+     <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>30 Days Of React Challenge</title>
+          <style>
+               *{
+                    padding: 0;
+                    margin: 0;
+                    box-sizing: border-box;
+                    font-family: sans-serif;
+               }
+               h1{
+                    font-size: 40px;
+               }
+               h3{
+                    text-decoration: underline;
+               }
+          </style>
+     </head>
+
+     <body>
+          <div class="root">
+
+          </div>
+
+          <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+          <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+          <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+          <script type="text/babel">
+               //React code goes here
+               // JSX Elements
+
+
+               const rootElement = document.querySelector('.root');
+               let nameElement = <h1>Satya Surendra</h1>
+               let country = <p>India</p>,
+                    title = <p>Student</p>,
+                    gender = <p>Male</p>,
+                    email = <p>sathyaxxxxxxx@gmail.com</p>,
+                    phoneNumber = <p>9550xxxxxx</p>;
+               let footerElement = <footer>This is the footer.</footer>
+               let style = {
+                    color:'red'
+               }
+               let personInfo = (
+                    <section>
+                         <header>
+
+                         </header>
+                         <main>
+                              {nameElement}
+                              <h3 style={style}>Details of the user</h3>
+                              {country}
+                              {title}
+                              {gender}
+                              {email}
+                              {phoneNumber}     
+                         </main> 
+                         {footerElement}   
+                    </section>
+               );
+               ReactDOM.render(personInfo,rootElement)
+          </script>
+     </body>
+
+</html>
