@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 20](../20_projects/20_projects.md) | [Day 22>>]()
+[<< Day 20](../20_projects/20_projects.md) | [Day 22>>](../22_Form_Using_Hooks/22_form_using_hooks.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_21.jpg)
 
@@ -404,4 +404,4 @@ ReactDOM.render(<App />, rootElement)
 Convert everything you wrote to React hooks.
 
 🎉 CONGRATULATIONS ! 🎉
-[<< Day 20](../20_projects/20_projects.md) | [Day 22>>]()
+[<< Day 20](../20_projects/20_projects.md) | [Day 22>>](../22_Form_Using_Hooks/22_form_using_hooks.md)
