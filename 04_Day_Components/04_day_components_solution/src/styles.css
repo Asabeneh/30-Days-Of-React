@@ -1,0 +1,45 @@
+
+
+#image {
+    width: 200px;
+    height: 200px;
+    
+    border-radius: 100px;
+}
+
+#tick {
+    margin-top: 30px;
+    padding-left: 5px;
+    width: 25px;
+    height: 25px;
+    
+    border-radius: 100px;
+}
+
+#name-tag{
+    display: flex;
+}
+
+
+#skill-box {
+    background: #9aede6;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    margin: 2px;
+    border-radius: 5px;
+    width: 100px;
+    border: 2px solid black;
+    color: white;
+  }
+  
+  #skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 10px; 
+  }

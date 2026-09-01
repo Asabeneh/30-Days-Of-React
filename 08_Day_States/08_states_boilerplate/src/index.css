@@ -1,0 +1,16 @@
+
+
+#country-container{
+    display: flex;
+    flex-direction: column;
+    padding-left:400px ;
+}
+.image-container {
+    width:"100";
+    height:"100";
+  margin-left: 400px;
+ }
+
+ #background-button {
+    padding-left:300px ;  
+ }
