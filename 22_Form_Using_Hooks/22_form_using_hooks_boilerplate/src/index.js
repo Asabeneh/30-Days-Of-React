@@ -346,7 +346,7 @@ const App = (props) => {
             onChange={onChange}
             cols='120'
             rows='10'
-            placeholder='Write about yourself ...'
+            placeholder='Write yourself ...'
           />
         </div>
 
