@@ -425,7 +425,7 @@ const Footer = () => (
 )
 
 // JSX element, app
-const app = () => (
+const App = () => (
   <div className='app'>
     <Header />
     <Main />
