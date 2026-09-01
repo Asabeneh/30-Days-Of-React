@@ -85,7 +85,7 @@
     - [Local scope](#local-scope)
   - [7. Object](#7-object)
     - [Creating an empty object](#creating-an-empty-object)
-    - [Creating an objecting with values](#creating-an-objecting-with-values)
+    - [Creating an object with values](#creating-an-object-with-values)
     - [Getting values from an object](#getting-values-from-an-object)
     - [Creating object methods](#creating-object-methods)
     - [Setting new key for an object](#setting-new-key-for-an-object)
@@ -1603,7 +1603,7 @@ for (let i = 0; i <= 5; i++) {
 
 ### 6. Scope
 
-Variable is the fundamental part in programming. We declare variable to store different data types. To declare a variable we use the key word _var_, _let_ and _const_. A variable can declared at different scope. In this section we will see the scope, scope of variables when we use var or let.
+Variable is the fundamental part in programming. We declare variable to store different data types. To declare a variable we use the key word _var_, _let_ and _const_. A variable can be declared at different scopes. In this section we will see the scope, scope of variables when we use var or let.
 Variables scopes can be:
 
 - Window
@@ -1613,7 +1613,7 @@ Variables scopes can be:
 Variable can be declared globally or locally or window scope. We will see both global and local scope.
 Anything declared without let, var or const is scoped at window level.
 
-Let us image we have a scope.js file.
+Let us imagine we have a scope.js file.
 
 #### Window Scope
 
@@ -1634,7 +1634,7 @@ console.log(a, b) // accessible
 
 #### Global scope
 
-A globally declared variable can be accessed every where in the same file. But the term global is relative. It can be global to the file or it can be global relative to some block of codes.
+A globally declared variable can be accessed everywhere in the same file. But the term global is relative. It can be global to the file or it can be global relative to some block of codes.
 
 ```js
 //scope.js
@@ -1724,7 +1724,7 @@ for (let i = 0; i < 3; i++) {
 // console.log(i), Uncaught ReferenceError: gravity is not defined
 ```
 
-The scope _let_ and _const_ is the same. The difference is only reassigning. We can not change or reassign the value of const variable. I would strongly suggest you to use _let_ and _const_, by using _let_ and _const_ you will writ clean code and avoid hard to debug mistakes. As a rule of thumb, you can use _let_ for any value which change, _const_ for any constant value, and for array, object, arrow function and function expression.
+The scope _let_ and _const_ are the same. The difference is only reassigning. We can not change or reassign the value of const variable. I would strongly suggest you to use _let_ and _const_, by using _let_ and _const_ you will write clean code and avoid hard to debug mistakes. As a rule of thumb, you can use _let_ for any value which changes, _const_ for any constant value, and for array, object, arrow function and function expression.
 
 ### 7. Object
 
@@ -1739,11 +1739,11 @@ An empty object
 const person = {}
 ```
 
-#### Creating an objecting with values
+#### Creating an object with values
 
 Now, the person object has firstName, lastName, age, location, skills and isMarried properties. The value of properties or keys could be a string, number, boolean, an object, null, undefined or a function.
 
-Let us see some examples of object. Each key has a value in the object.
+Let us see some examples of objects. Each key has a value in the object.
 
 ```js
 const rectangle = {
