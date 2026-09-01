@@ -111,9 +111,9 @@ JSX stands for JavaScript XML. JSX allows us to write HTML elements with JavaScr
 // JSX syntax
 // we don't need to use quotes with JSX
 
-const jsxElement = <h1>I am a JSX element</h1>
-const welcome = <h1>Welcome to 30 Days of React Challenge</h1>
-const data = <small>Oct 2, 2020</small>
+const jsxElement = <h1>I am a JSX element</h1>;
+const welcome = <h1>Welcome to 30 Days of React Challenge</h1>;
+const data = <small>Oct 2, 2020</small>;
 ```
 
 The above strange looking code seems like JavaScript and it seems like , but it is not JavaScript and it seems like HTML but not completely an HTML element. It is a mix of JavaScript and an HTML elements. JSX can allow us to use HTML in JavaScript. The HTML element in the JSX above is _h1_ and _small_.
@@ -125,13 +125,13 @@ As you have seen in the example above, JSX has a JavaScript and HTML like syntax
 This JSX element has only one HTML element which is _h1_.
 
 ```js
-const jsxElement = <h1>I am a JSX element</h1> // JS with HTML
+const jsxElement = <h1>I am a JSX element</h1>; // JS with HTML
 ```
 
 Let's make more JSX elements by declaring a new variable named title and content inside _h2_.
 
 ```js
-const title = <h2>Getting Started React</h2>
+const title = <h2>Getting Started React</h2>;
 ```
 
 Let us add a subtitles and other contents to this JSX element by adding additional HTML elements. Every HTML element should be wrapped by an outer HTML element to create a valid JSX element. The name title variable also should be changed to header because our JSX element is containing almost all of the header of the application.
@@ -143,7 +143,7 @@ const header = (
     <h2>Getting Started React</h2>
     <h3>JavaScript Library</h3>
   </header>
-)
+);
 ```
 
 Let us keep adding more elements. Additional HTML elements to display the author name and year.
@@ -157,7 +157,7 @@ const header = (
     <p>Asabeneh Yetayeh</p>
     <small>Oct 2, 2020</small>
   </header>
-)
+);
 ```
 
 As you can see the _header_ element is a parent element for all the inner HTML elements and JSX must be wrapped by an outer parent element. Without the _header_ HTML element or other parent HTML element the above JSX is invalid.
@@ -247,13 +247,13 @@ The babel library is linked to our document and now we can make use of it. The n
     ></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
-      console.log(React)
+      console.log(React);
     </script>
   </body>
 </html>
 ```
 
-Now the index.html has everything we need to write React code. Let us get the root element using document.querySelect('.root') and assign it to a variable name rootElement. The is the only place we directly interact with DOM.
+Now the index.html has everything we need to write React code. Let us get the root element using document.querySelect('.root') and assign it to a variable name rootElement. This is the only place we directly interact with DOM.
 
 Now, you knew JSX and JSX element. Let us render the JSX element on the browser, in order to do so we need the React and ReactDOM library. In addition to the React and ReactDOM we need babel to transpile the JSX to JavaScript code. The ReactDOM package has a method render. The render method takes two arguments:a JSX element or a component and the root document. See the code below. [Live on code pen](https://codepen.io/Asabeneh/full/JjdbjqK).
 
@@ -280,14 +280,14 @@ Now, you knew JSX and JSX element. Let us render the JSX element on the browser,
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
       // To get the root element from the HTML document
-      const rootElement = document.querySelector('.root')
+      const rootElement = document.querySelector(".root");
 
       // JSX element
-      const jsxElement = <h1>I am a JSX element</h1>
+      const jsxElement = <h1>I am a JSX element</h1>;
 
       // we render the JSX element using the ReactDOM package
       // ReactDOM has the render method and the render method takes two arguments
-      ReactDOM.render(jsxElement, rootElement)
+      ReactDOM.render(jsxElement, rootElement);
     </script>
   </body>
 </html>
@@ -321,7 +321,7 @@ Let us render more content. To render more content, the JSX element should have 
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
       // To get the root element from the HTML document
-      const rootElement = document.querySelector('.root')
+      const rootElement = document.querySelector(".root");
 
       // JSX element
       const header = (
@@ -332,11 +332,11 @@ Let us render more content. To render more content, the JSX element should have 
           <p>Asabeneh Yetayeh</p>
           <small>Oct 2, 2020</small>
         </header>
-      )
+      );
 
       // we render the JSX element using the ReactDOM package
       // ReactDOM has the render method and the render method takes two arguments
-      ReactDOM.render(header, rootElement)
+      ReactDOM.render(header, rootElement);
     </script>
   </body>
 </html>
@@ -359,7 +359,7 @@ const main = (
       <li>JavaScript</li>
     </ul>
   </main>
-)
+);
 ```
 
 JSX element for the footer part of the website.
@@ -370,7 +370,7 @@ const footer = (
   <footer>
     <p>Copyright 2020</p>
   </footer>
-)
+);
 ```
 
 Now, we have three JSX elements: the header, main and footer. The best way to render all of the three JSX elements is by wrapping them all in a parent JSX element or putting them in an array. To include JSX element inside another JSX element we use the curly bracket, {} and call the name of the JSX inside the curly bracket.
@@ -385,7 +385,7 @@ const header = (
     <p>Asabeneh Yetayeh</p>
     <small>Oct 2, 2020</small>
   </header>
-)
+);
 
 // JSX element for the main part of the website
 const main = (
@@ -397,14 +397,14 @@ const main = (
       <li>JavaScript</li>
     </ul>
   </main>
-)
+);
 
 // JSX element for the footer part of the website
 const footer = (
   <footer>
     <p>Copyright 2020</p>
   </footer>
-)
+);
 
 // JSX element which contain all, it is a container or parent
 const app = (
@@ -413,7 +413,7 @@ const app = (
     {main}
     {footer}
   </div>
-)
+);
 ```
 
 Now, let us put everything together and render it to the browser. [Live on code pen](https://codepen.io/Asabeneh/full/MWwbYWg).
@@ -441,7 +441,7 @@ Now, let us put everything together and render it to the browser. [Live on code 
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
       // To get the root element from the HTML document
-      const rootElement = document.querySelector('.root')
+      const rootElement = document.querySelector(".root");
 
       // JSX element, header
       const header = (
@@ -452,7 +452,7 @@ Now, let us put everything together and render it to the browser. [Live on code 
           <p>Asabeneh Yetayeh</p>
           <small>Oct 2, 2020</small>
         </header>
-      )
+      );
 
       // JSX element, main
       const main = (
@@ -464,14 +464,14 @@ Now, let us put everything together and render it to the browser. [Live on code 
             <li>JavaScript</li>
           </ul>
         </main>
-      )
+      );
 
       // JSX element, footer
       const footer = (
         <footer>
           <p>Copyright 2020</p>
         </footer>
-      )
+      );
 
       // JSX element, app, a container or a parent
       const app = (
@@ -480,11 +480,11 @@ Now, let us put everything together and render it to the browser. [Live on code 
           {main}
           {footer}
         </div>
-      )
+      );
 
       // we render the JSX element using the ReactDOM package
       // ReactDOM has the render method and the render method takes two argument
-      ReactDOM.render(app, rootElement)
+      ReactDOM.render(app, rootElement);
       // or
       //  ReactDOM.render([header, main, footer], rootElement)
     </script>
@@ -509,7 +509,7 @@ To add style to a JSX element we use inline style or className. We inject the st
 ```js
 const header = (
   <header
-    style={{ border: '2px solid orange', color: 'black', fontSize: '18px' }}
+    style={{ border: "2px solid orange", color: "black", fontSize: "18px" }}
   >
     <h1>Welcome to 30 Days Of React</h1>
     <h2>Getting Started React</h2>
@@ -517,11 +517,11 @@ const header = (
     <p>Asabeneh Yetayeh</p>
     <small>Oct 2, 2020</small>
   </header>
-)
+);
 
 // or we can write it this way
 
-const style = { border: '2px solid orange', color: 'black', fontSize: '18px' }
+const style = { border: "2px solid orange", color: "black", fontSize: "18px" };
 
 const header = (
   <header style={style}>
@@ -531,7 +531,7 @@ const header = (
     <p>Asabeneh Yetayeh</p>
     <small>Oct 2, 2020</small>
   </header>
-)
+);
 ```
 
 It is good practice to open the browser console while you are developing your application to know, if everything goes well.
@@ -541,13 +541,13 @@ Let us keep styling all the JSX elements we have created: the header, main and t
 In JSX element we write className instead of class because class is a reserved word in JavaScript. Similar to className, htmlFor instead of for in label tag. See the example below.
 
 ```js
-const title = <h1 className='title'>Getting Started React</h1>
+const title = <h1 className="title">Getting Started React</h1>;
 const inputField = (
   <div>
-    <label htmlFor='firstname'>First Name</label>
-    <input type='text' id='firstname' placeholder='First Name' />
+    <label htmlFor="firstname">First Name</label>
+    <input type="text" id="firstname" placeholder="First Name" />
   </div>
-)
+);
 ```
 
 The id used in the input element is not for styling purpose, instead to refer the label to the input field.
@@ -581,20 +581,20 @@ Now, you know how to use the inline style and how to use className. Let us style
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
       // To get the root element from the HTML document
-      const rootElement = document.querySelector('.root')
+      const rootElement = document.querySelector(".root");
 
       // style
       const headerStyles = {
-        backgroundColor: '#61DBFB',
-        fontFamily: 'Helvetica Neue',
+        backgroundColor: "#61DBFB",
+        fontFamily: "Helvetica Neue",
         padding: 25,
         lineHeight: 1.5,
-      }
+      };
 
       // JSX element, header
       const header = (
         <header style={headerStyles}>
-          <div className='header-wrapper'>
+          <div className="header-wrapper">
             <h1>Welcome to 30 Days Of React</h1>
             <h2>Getting Started React</h2>
             <h3>JavaScript Library</h3>
@@ -602,12 +602,12 @@ Now, you know how to use the inline style and how to use className. Let us style
             <small>Oct 2, 2020</small>
           </div>
         </header>
-      )
+      );
 
       // JSX element, main
       const mainStyles = {
-        backgroundColor: '#F3F0F5',
-      }
+        backgroundColor: "#F3F0F5",
+      };
       const main = (
         <main style={mainStyles}>
           <p>Prerequisite to get started react.js:</p>
@@ -617,29 +617,29 @@ Now, you know how to use the inline style and how to use className. Let us style
             <li>JavaScript</li>
           </ul>
         </main>
-      )
+      );
 
       const footerStyles = {
-        backgroundColor: '#61DBFB',
-      }
+        backgroundColor: "#61DBFB",
+      };
       // JSX element, footer
       const footer = (
         <footer style={footerStyles}>
           <p>Copyright 2020</p>
         </footer>
-      )
+      );
 
       // JSX element, app
       const app = (
-        <div className='app'>
+        <div className="app">
           {header}
           {main}
           {footer}
         </div>
-      )
+      );
 
       // we render the JSX element using the ReactDOM package
-      ReactDOM.render(app, rootElement)
+      ReactDOM.render(app, rootElement);
     </script>
   </body>
 </html>
@@ -673,7 +673,7 @@ Instead of style object using regular styling method is more easy than the one a
       body {
         height: 100%;
         line-height: 1.5;
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-weight: 300;
         color: black;
       }
@@ -756,12 +756,12 @@ Instead of style object using regular styling method is more easy than the one a
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
       // To get the root element from the HTML document
-      const rootElement = document.querySelector('.root')
+      const rootElement = document.querySelector(".root");
 
       // JSX element, header
       const header = (
         <header>
-          <div className='header-wrapper'>
+          <div className="header-wrapper">
             <h1>Welcome to 30 Days Of React</h1>
             <h2>Getting Started React</h2>
             <h3>JavaScript Library</h3>
@@ -769,14 +769,14 @@ Instead of style object using regular styling method is more easy than the one a
             <small>Date: Oct 1, 2020</small>
           </div>
         </header>
-      )
+      );
 
       // JSX element, main
       const main = (
         <main>
-          <div className='main-wrapper'>
+          <div className="main-wrapper">
             <p>
-              Prerequisite to get started{' '}
+              Prerequisite to get started{" "}
               <strong>
                 <em>react.js</em>
               </strong>
@@ -789,28 +789,28 @@ Instead of style object using regular styling method is more easy than the one a
             </ul>
           </div>
         </main>
-      )
+      );
 
       // JSX element, footer
       const footer = (
         <footer>
-          <div className='footer-wrapper'>
+          <div className="footer-wrapper">
             <p>Copyright 2020</p>
           </div>
         </footer>
-      )
+      );
 
       // JSX element, app
       const app = (
-        <div className='app'>
+        <div className="app">
           {header}
           {main}
           {footer}
         </div>
-      )
+      );
 
       // we render the JSX element using the ReactDOM package
-      ReactDOM.render(app, rootElement)
+      ReactDOM.render(app, rootElement);
     </script>
   </body>
 </html>
@@ -823,17 +823,17 @@ Instead of style object using regular styling method is more easy than the one a
 So far, we used static data on the JSX elements, but we can also pass different data types as a dynamic data. The dynamic data could be string, number, boolean, array or object. Let us see each of the data types step by step. To inject data to a JSX we use the {} bracket.
 
 ```js
-const welcome = 'Welcome to 30 Days Of React'
-const title = 'Getting Started React'
-const subtitle = 'JavaScript Library'
-const authorFirstName = 'Asabeneh'
-const authorLastName = 'Yetayeh'
-const date = 'Oct 1, 2020'
+const welcome = "Welcome to 30 Days Of React";
+const title = "Getting Started React";
+const subtitle = "JavaScript Library";
+const authorFirstName = "Asabeneh";
+const authorLastName = "Yetayeh";
+const date = "Oct 1, 2020";
 
 // JSX element, header
 const header = (
   <header>
-    <div className='header-wrapper'>
+    <div className="header-wrapper">
       <h1>{welcome}</h1>
       <h2>{title}</h2>
       <h3>{subtitle}</h3>
@@ -843,7 +843,7 @@ const header = (
       <small>Date: {date}</small>
     </div>
   </header>
-)
+);
 ```
 
 Similar to the header JSX element, we can implement data injection to main and footer JSX elements.
@@ -853,19 +853,19 @@ Similar to the header JSX element, we can implement data injection to main and f
 In this section we inject only strings
 
 ```js
-const welcome = 'Welcome to 30 Days Of React'
-const title = 'Getting Started React'
-const subtitle = 'JavaScript Library'
-const firstName = 'Asabeneh'
-const lastName = 'Yetayeh'
-const date = 'Oct 2, 2020'
+const welcome = "Welcome to 30 Days Of React";
+const title = "Getting Started React";
+const subtitle = "JavaScript Library";
+const firstName = "Asabeneh";
+const lastName = "Yetayeh";
+const date = "Oct 2, 2020";
 
 // JSX element, header
 
 // JSX element, header
 const header = (
   <header>
-    <div className='header-wrapper'>
+    <div className="header-wrapper">
       <h1>{welcome}</h1>
       <h2>{title}</h2>
       <h3>{subtitle}</h3>
@@ -875,25 +875,25 @@ const header = (
       <small>Date: {date}</small>
     </div>
   </header>
-)
+);
 ```
 
 ##### Injecting a number to a JSX Element
 
 ```js
-const numOne = 3
-const numTwo = 2
+const numOne = 3;
+const numTwo = 2;
 
 const result = (
   <p>
     {numOne} + {numTwo} = {numOne + numTwo}
   </p>
-)
+);
 
-const yearBorn = 1820
-const currentYear = new Date().getFullYear()
-const age = currentYear - yearBorn
-const personAge = <p> {age}</p>
+const yearBorn = 1820;
+const currentYear = new Date().getFullYear();
+const age = currentYear - yearBorn;
+const personAge = <p> {age}</p>;
 ```
 
 As you can see in the example above, it is possible to do some arithmetic calculations and ternary operations.
@@ -903,14 +903,14 @@ As you can see in the example above, it is possible to do some arithmetic calcul
 To give an example for an array, let us change the HTML, CSS, JavaScript to an array and inject it to the main JSX element below. We will cover more in much detail later, in rendering lists section.
 
 ```js
-const techs = ['HTML', 'CSS', 'JavaScript']
+const techs = ["HTML", "CSS", "JavaScript"];
 
 // JSX element, main
 const main = (
   <main>
-    <div className='main-wrapper'>
+    <div className="main-wrapper">
       <p>
-        Prerequisite to get started{' '}
+        Prerequisite to get started{" "}
         <strong>
           <em>react.js</em>
         </strong>
@@ -919,7 +919,7 @@ const main = (
       <ul>{techs}</ul>
     </div>
   </main>
-)
+);
 ```
 
 ##### Injecting an object to a JSX Element
@@ -952,7 +952,7 @@ Now, let us put everything together. Here, in the example below, the data is inj
       body {
         height: 100%;
         line-height: 1.5;
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-weight: 300;
         color: black;
       }
@@ -1034,21 +1034,21 @@ Now, let us put everything together. Here, in the example below, the data is inj
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
       // To get the root element from the HTML document
-      const rootElement = document.querySelector('.root')
+      const rootElement = document.querySelector(".root");
       // JSX element, header
-      const welcome = 'Welcome to 30 Days Of React'
-      const title = 'Getting Started React'
-      const subtitle = 'JavaScript Library'
+      const welcome = "Welcome to 30 Days Of React";
+      const title = "Getting Started React";
+      const subtitle = "JavaScript Library";
       const author = {
-        firstName: 'Asabeneh',
-        lastName: 'Yetayeh',
-      }
-      const date = 'Oct 2, 2020'
+        firstName: "Asabeneh",
+        lastName: "Yetayeh",
+      };
+      const date = "Oct 2, 2020";
 
       // JSX element, header
       const header = (
         <header>
-          <div className='header-wrapper'>
+          <div className="header-wrapper">
             <h1>{welcome}</h1>
             <h2>{title}</h2>
             <h3>{subtitle}</h3>
@@ -1058,36 +1058,36 @@ Now, let us put everything together. Here, in the example below, the data is inj
             <small>Date: {date}</small>
           </div>
         </header>
-      )
+      );
 
-      const numOne = 3
-      const numTwo = 2
+      const numOne = 3;
+      const numTwo = 2;
 
       const result = (
         <p>
           {numOne} + {numTwo} = {numOne + numTwo}
         </p>
-      )
+      );
 
-      const yearBorn = 1820
-      const currentYear = new Date().getFullYear()
-      const age = currentYear - yearBorn
+      const yearBorn = 1820;
+      const currentYear = new Date().getFullYear();
+      const age = currentYear - yearBorn;
       const personAge = (
         <p>
-          {' '}
+          {" "}
           {author.firstName} {author.lastName} is {age} years old
         </p>
-      )
+      );
 
       // JSX element, main
-      const techs = ['HTML', 'CSS', 'JavaScript']
+      const techs = ["HTML", "CSS", "JavaScript"];
 
       // JSX element, main
       const main = (
         <main>
-          <div className='main-wrapper'>
+          <div className="main-wrapper">
             <p>
-              Prerequisite to get started{' '}
+              Prerequisite to get started{" "}
               <strong>
                 <em>react.js</em>
               </strong>
@@ -1098,30 +1098,30 @@ Now, let us put everything together. Here, in the example below, the data is inj
             {personAge}
           </div>
         </main>
-      )
+      );
 
-      const copyRight = 'Copyright 2020'
+      const copyRight = "Copyright 2020";
 
       // JSX element, footer
       const footer = (
         <footer>
-          <div className='footer-wrapper'>
+          <div className="footer-wrapper">
             <p>{copyRight}</p>
           </div>
         </footer>
-      )
+      );
 
       // JSX element, app
       const app = (
-        <div className='app'>
+        <div className="app">
           {header}
           {main}
           {footer}
         </div>
-      )
+      );
 
       // we render the JSX element using the ReactDOM package
-      ReactDOM.render(app, rootElement)
+      ReactDOM.render(app, rootElement);
     </script>
   </body>
 </html>
@@ -1132,8 +1132,8 @@ Now, let us put everything together. Here, in the example below, the data is inj
 As you can see the lists are all in one line. Therefore, we should format the list the way we want, before we inject it to JSX. In order to format the list, we should modify the array before we will inject it to JSX. We can modify the array using _map_. As a react developer you should have a very good understanding of functional programming(map, filter, reduce, find, some, every). If you don't have good understanding of functional programming, check out day 1.
 
 ```js
-const techs = ['HTML', 'CSS', 'JavaScript']
-const techsFormatted = techs.map((tech) => <li>{tech}</li>)
+const techs = ["HTML", "CSS", "JavaScript"];
+const techsFormatted = techs.map((tech) => <li>{tech}</li>);
 ```
 
 In the following code example, the list is now containing list elements and it is formatted properly.
@@ -1162,7 +1162,7 @@ In the following code example, the list is now containing list elements and it i
       body {
         height: 100%;
         line-height: 1.5;
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-weight: 300;
         color: black;
       }
@@ -1244,21 +1244,21 @@ In the following code example, the list is now containing list elements and it i
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
       // To get the root element from the HTML document
-      const rootElement = document.querySelector('.root')
+      const rootElement = document.querySelector(".root");
       // JSX element, header
-      const welcome = 'Welcome to 30 Days Of React Challenge'
-      const title = 'Getting Started React'
-      const subtitle = 'JavaScript Library'
+      const welcome = "Welcome to 30 Days Of React Challenge";
+      const title = "Getting Started React";
+      const subtitle = "JavaScript Library";
       const author = {
-        firstName: 'Asabeneh',
-        lastName: 'Yetayeh',
-      }
-      const date = 'Oct 2, 2020'
+        firstName: "Asabeneh",
+        lastName: "Yetayeh",
+      };
+      const date = "Oct 2, 2020";
 
       // JSX element, header
       const header = (
         <header>
-          <div className='header-wrapper'>
+          <div className="header-wrapper">
             <h1>{welcome}</h1>
             <h2>{title}</h2>
             <h3>{subtitle}</h3>
@@ -1268,37 +1268,37 @@ In the following code example, the list is now containing list elements and it i
             <small>Date: {date}</small>
           </div>
         </header>
-      )
+      );
 
-      const numOne = 3
-      const numTwo = 2
+      const numOne = 3;
+      const numTwo = 2;
 
       const result = (
         <p>
           {numOne} + {numTwo} = {numOne + numTwo}
         </p>
-      )
+      );
 
-      const yearBorn = 1820
-      const currentYear = new Date().getFullYear()
-      const age = currentYear - yearBorn
+      const yearBorn = 1820;
+      const currentYear = new Date().getFullYear();
+      const age = currentYear - yearBorn;
       const personAge = (
         <p>
-          {' '}
+          {" "}
           {author.firstName} {author.lastName} is {age} years old
         </p>
-      )
+      );
 
       // JSX element, main
-      const techs = ['HTML', 'CSS', 'JavaScript']
-      const techsFormatted = techs.map((tech) => <li>{tech}</li>)
+      const techs = ["HTML", "CSS", "JavaScript"];
+      const techsFormatted = techs.map((tech) => <li>{tech}</li>);
 
       // JSX element, main
       const main = (
         <main>
-          <div className='main-wrapper'>
+          <div className="main-wrapper">
             <p>
-              Prerequisite to get started{' '}
+              Prerequisite to get started{" "}
               <strong>
                 <em>react.js</em>
               </strong>
@@ -1309,30 +1309,30 @@ In the following code example, the list is now containing list elements and it i
             {personAge}
           </div>
         </main>
-      )
+      );
 
-      const copyRight = 'Copyright 2020'
+      const copyRight = "Copyright 2020";
 
       // JSX element, footer
       const footer = (
         <footer>
-          <div className='footer-wrapper'>
+          <div className="footer-wrapper">
             <p>{copyRight}</p>
           </div>
         </footer>
-      )
+      );
 
       // JSX element, app
       const app = (
-        <div className='app'>
+        <div className="app">
           {header}
           {main}
           {footer}
         </div>
-      )
+      );
 
       // we render the JSX element using the ReactDOM package
-      ReactDOM.render(app, rootElement)
+      ReactDOM.render(app, rootElement);
     </script>
   </body>
 </html>
@@ -1367,7 +1367,7 @@ As you can see above, now the lists are formatted properly, but there is a warni
       body {
         height: 100%;
         line-height: 1.5;
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-weight: 300;
         color: black;
       }
@@ -1450,21 +1450,21 @@ As you can see above, now the lists are formatted properly, but there is a warni
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
       // To get the root element from the HTML document
-      const rootElement = document.querySelector('.root')
+      const rootElement = document.querySelector(".root");
       // JSX element, header
-      const welcome = 'Welcome to 30 Days Of React Challenge'
-      const title = 'Getting Started React'
-      const subtitle = 'JavaScript Library'
+      const welcome = "Welcome to 30 Days Of React Challenge";
+      const title = "Getting Started React";
+      const subtitle = "JavaScript Library";
       const author = {
-        firstName: 'Asabeneh',
-        lastName: 'Yetayeh',
-      }
-      const date = 'Oct 2, 2020'
+        firstName: "Asabeneh",
+        lastName: "Yetayeh",
+      };
+      const date = "Oct 2, 2020";
 
       // JSX element, header
       const header = (
         <header>
-          <div className='header-wrapper'>
+          <div className="header-wrapper">
             <h1>{welcome}</h1>
             <h2>{title}</h2>
             <h3>{subtitle}</h3>
@@ -1474,37 +1474,37 @@ As you can see above, now the lists are formatted properly, but there is a warni
             <small>Date: {date}</small>
           </div>
         </header>
-      )
+      );
 
-      const numOne = 3
-      const numTwo = 2
+      const numOne = 3;
+      const numTwo = 2;
 
       const result = (
         <p>
           {numOne} + {numTwo} = {numOne + numTwo}
         </p>
-      )
+      );
 
-      const yearBorn = 1820
-      const currentYear = 2020
-      const age = currentYear - yearBorn
+      const yearBorn = 1820;
+      const currentYear = 2020;
+      const age = currentYear - yearBorn;
       const personAge = (
         <p>
-          {' '}
+          {" "}
           {author.firstName} {author.lastName} is {age} years old
         </p>
-      )
+      );
 
       // JSX element, main
-      const techs = ['HTML', 'CSS', 'JavaScript']
-      const techsFormatted = techs.map((tech) => <li key={tech}>{tech}</li>)
+      const techs = ["HTML", "CSS", "JavaScript"];
+      const techsFormatted = techs.map((tech) => <li key={tech}>{tech}</li>);
 
       // JSX element, main
       const main = (
         <main>
-          <div className='main-wrapper'>
+          <div className="main-wrapper">
             <p>
-              Prerequisite to get started{' '}
+              Prerequisite to get started{" "}
               <strong>
                 <em>react.js</em>
               </strong>
@@ -1515,30 +1515,30 @@ As you can see above, now the lists are formatted properly, but there is a warni
             {personAge}
           </div>
         </main>
-      )
+      );
 
-      const copyRight = 'Copyright 2020'
+      const copyRight = "Copyright 2020";
 
       // JSX element, footer
       const footer = (
         <footer>
-          <div className='footer-wrapper'>
+          <div className="footer-wrapper">
             <p>{copyRight}</p>
           </div>
         </footer>
-      )
+      );
 
       // JSX element, app
       const app = (
-        <div className='app'>
+        <div className="app">
           {header}
           {main}
           {footer}
         </div>
-      )
+      );
 
       // we render the JSX element using the ReactDOM package
-      ReactDOM.render(app, rootElement)
+      ReactDOM.render(app, rootElement);
     </script>
   </body>
 </html>
