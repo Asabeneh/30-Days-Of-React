@@ -85,7 +85,7 @@
     - [Local scope](#local-scope)
   - [7. Object](#7-object)
     - [Creating an empty object](#creating-an-empty-object)
-    - [Creating an objecting with values](#creating-an-objecting-with-values)
+    - [Creating an object with values](#creating-an-objecting-with-values)
     - [Getting values from an object](#getting-values-from-an-object)
     - [Creating object methods](#creating-object-methods)
     - [Setting new key for an object](#setting-new-key-for-an-object)
