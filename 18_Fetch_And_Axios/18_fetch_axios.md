@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 17](../17_React_Router/17_react_router.md) | [Day 19>>]()
+[<< Day 17](../17_React_Router/17_react_router.md) | [Day 19>>](../19_projects/19_projects.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_18.jpg)
 
@@ -443,4 +443,4 @@ As you have seen, there is no much difference between fetch and axios. But I rec
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 17](../17_React_Router/17_react_router.md) | [Day 19>>]()
+[<< Day 17](../17_React_Router/17_react_router.md) | [Day 19>>](../19_projects/19_projects.md)
