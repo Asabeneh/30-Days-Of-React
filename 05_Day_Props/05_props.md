@@ -192,7 +192,7 @@ Now, when you do console.log(props) you should get the following object, that me
 }
 ```
 
-As you can see in the above code, we passed only single props to Header component, the welcome props. A component can have one or many props. Props could be different data types. It could be a string, number, boolean, array, object or a function. We will cover different kind of props in the next sections.
+As you can see in the above code, we passed only single props to Header component, the welcome props. A component can have one or many props. Props could be different data types. It could be a string, number, boolean, array, object or a function. We will cover different kinds of props in the next sections.
 
 ### Different data type props
 
@@ -1096,4 +1096,4 @@ We will cover propTypes in detail in other sections.
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 4](../04_Day_Component/04_components.md) | [Day 6 >>](../06_Day_Map_List_Keys/06_map_list_keys.md)
+[<< Day 4](../04_Day_Components/04_components.md) | [Day 6 >>](../06_Day_Map_List_Keys/06_map_list_keys.md)
