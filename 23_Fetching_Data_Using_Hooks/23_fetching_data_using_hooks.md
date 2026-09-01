@@ -36,13 +36,13 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import ReactDOM, { findDOMNode } from 'react-dom'
 
-const Country = ({ country: { name, flag, population } }) => {
+const Country = ({ country: { name, flags, population } }) => {
   return (
     <div className='country'>
       <div className='country_flag'>
-        <img src={flag} alt={name} />
+        <img src={flags.png} alt={name.common} />
       </div>
-      <h3 className='country_name'>{name.toUpperCase()}</h3>
+      <h3 className='country_name'>{name.common.toUpperCase()}</h3>
       <div class='country_text'>
         <p>
           <span>Population: </span>
@@ -62,7 +62,7 @@ const App = (props) => {
   }, [])
 
   const fetchData = async () => {
-    const url = 'https://restcountries.eu/rest/v2/all'
+    const url = 'https://restcountries.com/v3.1/all'
     try {
       const response = await fetch(url)
       const data = await response.json()
