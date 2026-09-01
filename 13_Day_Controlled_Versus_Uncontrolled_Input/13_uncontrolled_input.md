@@ -18,13 +18,13 @@
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_13.jpg)
 
-- [Uncotrolled Components](#uncotrolled-components)
+- [Uncontrolled Components](#uncontrolled-components)
   - [Getting data from an uncontrolled input](#getting-data-from-an-uncontrolled-input)
   - [Getting multiple input data from form](#getting-multiple-input-data-from-form)
 - [Exercises](#exercises)
   - [Exercises: Level 1](#exercises-level-1)
 
-# Uncotrolled Components
+# Uncontrolled Components
 
 In the previous day challenge we have covered controlled inputs. In react most of the time we use controlled inputs as recommended on the official [documentation of React](https://reactjs.org/docs/uncontrolled-components.html).
 
