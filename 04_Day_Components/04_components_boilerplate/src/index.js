@@ -2,6 +2,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import asabenehImage from './images/asabeneh.jpg'
+import ImgSector from './ImgSector'
+import InputSec from './InputSec'
+import Id from './Id'
 
 const hexaColor = () => {
   let str = '0123456789abcdef'
@@ -16,10 +19,12 @@ const hexaColor = () => {
 const HexaColor = () => {
   const bgColor = hexaColor()
   const styles = {
+    backgroundColor: hexaColor(),
+    color: "#FFF",
     height: '100px',
     display: 'flex',
-    'justify-content': 'center',
-    'align-items': 'center',
+    justifyContent: 'center',
+    alignItems: 'center',
     fontFamily: 'Montserrat',
     margin: '2px auto',
     borderRadius: '5px',
@@ -80,9 +85,20 @@ const Main = () => (
       <UserCard />
       <div>
         {/* Generate two different hexa colors every time */}
-        <HexaColor />
-        <HexaColor />
       </div>
+      <br />
+      <ImgSector />
+      <br />
+      <InputSec />
+      <br />
+      <HexaColor />
+      <HexaColor />
+      <HexaColor />
+      <HexaColor />
+      <HexaColor />
+      <HexaColor />
+      <br />
+      <Id />
     </div>
   </main>
 )
@@ -101,7 +117,7 @@ const App = () => (
   <div className='app'>
     <Header />
     <Main />
-    <Footer />
+    {/* <Footer /> */}
   </div>
 )
 
