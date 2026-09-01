@@ -16,6 +16,13 @@
 
 <sub>Author: <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
 <small> October, 2020</small></sub>
+</sub>
+
+<div>
+
+🇨🇳 [Chinese](./Chinese/readMe.md)
+
+</div>
 
 </div>
 
